@@ -20,6 +20,7 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder -mwl"
   },
+  "files": ["**/*", "build/icon.*"],
   "mac": {
     "appId": "gl.cables.daplaya",
     "category": "public.app-category.graphics-design",
