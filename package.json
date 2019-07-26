@@ -19,7 +19,8 @@
     "start": "npm install && electron ./app",
     "pack": "electron-builder --dir",
     "dist": "electron-builder -wl",
-    "host": "electron-builder"
+    "host": "electron-builder",
+    "release": "electron-builder publish"
   },
   "files": [
     "**/*",
