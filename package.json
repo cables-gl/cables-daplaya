@@ -1,0 +1,66 @@
+{
+  "name": "cables-daplaya",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "a standalone player for cables.gl-patches using the electron framework\n\n",
+  "author": "undefined development <hi@undev.de",
+  "repository": "github:cables-gl/cables-daplaya",
+  "keywords": [
+    "cables",
+    "cables.gl",
+    "webgl",
+    "daplaya",
+    "electron"
+  ],
+  "main": "./app",
+  "scripts": {
+    "app": "electron ./app",
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron ./app",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "mac": {
+    "appId": "gl.cables.daplaya",
+    "category": "public.app-category.graphics-design",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "publish": [
+        "github"
+      ]
+    }
+  },
+  "linux": {
+    "target": [
+      "AppImage",
+      "deb"
+    ],
+    "publish": [
+      "github"
+    ]
+  },
+  "win": {
+    "target": "NSIS",
+    "icon": "build/icon.ico",
+    "publish": [
+      "github"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "5.0.8",
+    "electron-builder": "21.1.5",
+    "electron-packager": "14.0.3"
+  }
+}

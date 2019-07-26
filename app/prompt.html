@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script>
+      const Store = require('./Store');
+      const store = new Store();
+
+      function ok() {
+        const apikeyfield = document.getElementById('apiKey');
+        const patchIdField = document.getElementById('patchId');
+        store.set('apiKey', apikeyfield.value);
+        store.set('patchId', patchIdField.value);
+        this.close();
+      }
+
+      function cancel() {
+        this.close();
+      }
+    </script>
+</head>
+<body>
+<p id="label"></p>
+<p>
+    apiKey: <input type="text" id="apiKey" value=""><br/>
+    patchId: <input type="text" id="patchId" value=""><br/><br/>
+    <input type="button" id="ok" value="OK" onclick="ok()">
+    <input type="button" id="cancel" value="Cancel" onclick="cancel()">
+</p>
+</body>
+</html>
