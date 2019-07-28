@@ -1,4 +1,4 @@
-const { net, BrowserWindow, dialog } = require('electron');
+const { app, remote, net, BrowserWindow, dialog } = require('electron');
 
 const Stream = require('stream').Transform;
 
@@ -21,7 +21,7 @@ class DaPlaya {
     request.setHeader('X-apikey', apiKey);
     request.on('response', (response) => {
       if (response.statusCode !== 200) {
-        if(typeof errorCallback === "function"){
+        if (typeof errorCallback === 'function') {
           errorCallback(response);
         }
       }
@@ -40,7 +40,7 @@ class DaPlaya {
         zipRequest.setHeader('X-apikey', apiKey);
         zipRequest.on('response', (zipResponse) => {
           if (zipResponse.statusCode !== 200) {
-            if(typeof errorCallback === "function"){
+            if (typeof errorCallback === 'function') {
               errorCallback(zipResponse);
             }
           }
@@ -50,11 +50,15 @@ class DaPlaya {
           });
           zipResponse.on('end', () => {
 
-            const patchDir = path.join(__dirname, `/patches/current/`);
+            const userDataPath = (app || remote.app).getPath('userData');
+            const patchDir = path.join(userDataPath, `/patches/${patchId}/`);
+            if (!fs.existsSync(patchDir)) {
+              fs.mkdirSync(patchDir, { recursive: true });
+            }
             fs.writeFileSync(`${patchDir}${patchId}.zip`, zipContent.read());
             const zip = AdmZip(`${patchDir}${patchId}.zip`);
             zip.extractAllTo(patchDir, true);
-            if(typeof successCallback === "function"){
+            if (typeof successCallback === 'function') {
               successCallback(patchDir);
             }
           });
@@ -103,8 +107,8 @@ class DaPlaya {
       dialog.showMessageBox(mainWindow, {
         type: 'info',
         title: 'success',
-        message: "new patch configured, press ctrl-r to fetch and reload now",
-        buttons: ["got it"]
+        message: 'new patch configured, press ctrl-r to fetch and reload now',
+        buttons: ['got it']
       });
     });
   };

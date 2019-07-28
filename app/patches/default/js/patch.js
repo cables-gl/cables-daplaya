@@ -1,4 +1,4 @@
-var CABLES=CABLES||{};CABLES.exportedPatch={"settings":{"opExample":[],"isPublic":false},"ops":[{"opId":"4e96d5a2-a1ec-4f83-954d-7c34a9021e9c","objName":"Ops.Gl.Matrix.CircleTransform","id":"acf85a74-e365-4b4f-863a-ddd3a5f73469","uiAttribs":{"translate":{"x":276,"y":180},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"acf85a74-e365-4b4f-863a-ddd3a5f73469","objOut":"fa4b3a5a-8e77-4327-95da-a0769013b1e0"}]},{"name":"segments","value":100},{"name":"radius","value":0.51},{"name":"percent","value":1},{"name":"Rotate","value":true}],"portsOut":[{"name":"trigger"},{"name":"index"}]},{"opId":"a466bc1f-06e9-4595-8849-bffb9fe22f99","objName":"Ops.Sequence","id":"2903b1e1-5353-4431-9066-87d070ae3b87","uiAttribs":{"translate":{"x":276,"y":-300},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"2903b1e1-5353-4431-9066-87d070ae3b87","objOut":"0dbea999-3217-4edc-af2c-ba80fb0b1b6a"}]},{"name":"exe 0","value":0},{"name":"exe 1","value":0},{"name":"exe 2","value":0},{"name":"exe 3","value":0},{"name":"exe 4","value":0},{"name":"exe 5","value":0},{"name":"exe 6","value":0},{"name":"exe 7","value":0},{"name":"exe 8","value":0},{"name":"exe 9","value":0},{"name":"exe 10","value":0},{"name":"exe 11","value":0},{"name":"exe 12","value":0},{"name":"exe 13","value":0},{"name":"exe 14","value":0}],"portsOut":[{"name":"trigger 0"},{"name":"trigger 1","value":0},{"name":"trigger 2","value":0},{"name":"trigger 3","value":0},{"name":"trigger 4","value":0},{"name":"trigger 5","value":0},{"name":"trigger 6"},{"name":"trigger 7","value":0},{"name":"trigger 8","value":0},{"name":"trigger 9","value":0},{"name":"trigger 10","value":0},{"name":"trigger 11"},{"name":"trigger 12","value":0},{"name":"trigger 13","value":0},{"name":"trigger 14"},{"name":"trigger 15"}]},{"opId":"b0472a1d-db16-4ba6-8787-f300fbdc77bb","objName":"Ops.Gl.MainLoop","id":"0dbea999-3217-4edc-af2c-ba80fb0b1b6a","uiAttribs":{"translate":{"x":276,"y":-860},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"FPS Limit","value":0},{"name":"Reduce FPS loading","value":false},{"name":"Clear","value":true},{"name":"ClearAlpha","value":true},{"name":"Fullscreen Button","value":false},{"name":"Active","value":true},{"name":"Hires Displays","value":false}],"portsOut":[{"name":"trigger"},{"name":"width","value":431},{"name":"height","value":357}]},{"opId":"ff0535e2-603a-4c07-9ce6-e9e0db857dfe","objName":"Ops.Gl.Meshes.Cube","id":"ec31a46b-2b38-43bb-81eb-323d29cc6bc2","uiAttribs":{"translate":{"x":276,"y":700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"ec31a46b-2b38-43bb-81eb-323d29cc6bc2","objOut":"0c488e4b-c66c-45a9-afd7-8a49d6cab5d0"}]},{"name":"width","value":0.05},{"name":"height","value":0.05},{"name":"length","value":0.2},{"name":"center","value":true},{"name":"Active","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"geometry"}]},{"opId":"650baeb1-db2d-4781-9af6-ab4e9d4277be","objName":"Ops.Gl.Matrix.Transform","id":"b340460e-7c18-4d55-b5e1-cbe1c5bddf95","uiAttribs":{"translate":{"x":276,"y":580},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"b340460e-7c18-4d55-b5e1-cbe1c5bddf95","objOut":"b6360fe2-0594-4ab7-96f3-aac489c58295"}]},{"name":"posX","value":0},{"name":"posY","value":0},{"name":"posZ","value":0},{"name":"scale","value":1},{"name":"rotX","links":[{"portIn":"rotX","portOut":"result","objIn":"b340460e-7c18-4d55-b5e1-cbe1c5bddf95","objOut":"7b11f456-fd91-4830-97ea-43c05b686d41"}]},{"name":"rotY","value":0},{"name":"rotZ","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"9ba52457-5f0d-4b20-a97c-4ec4856b8e29","objName":"Ops.Gl.Matrix.ScaleXYZ","id":"b6360fe2-0594-4ab7-96f3-aac489c58295","uiAttribs":{"translate":{"x":276,"y":520},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"b6360fe2-0594-4ab7-96f3-aac489c58295","objOut":"dd51408d-45bb-44b5-8634-b8796414bfca"}]},{"name":"x","links":[{"portIn":"x","portOut":"result","objIn":"b6360fe2-0594-4ab7-96f3-aac489c58295","objOut":"b30fd793-24a6-48da-bc44-41bbbf5b4903"}]},{"name":"y","links":[{"portIn":"y","portOut":"result","objIn":"b6360fe2-0594-4ab7-96f3-aac489c58295","objOut":"1125545e-a426-425c-86ba-ba4cde0353e0"}]},{"name":"z","value":1}],"portsOut":[{"name":"trigger"}]},{"opId":"7857ee9e-6d60-4c30-9bc0-dfdddf2b47ad","objName":"Ops.Gl.Shader.MatCapMaterialNew","id":"0c488e4b-c66c-45a9-afd7-8a49d6cab5d0","uiAttribs":{"translate":{"x":276,"y":640},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"0c488e4b-c66c-45a9-afd7-8a49d6cab5d0","objOut":"b340460e-7c18-4d55-b5e1-cbe1c5bddf95"}]},{"name":"MatCap","links":[{"portIn":"MatCap","portOut":"texture","objIn":"0c488e4b-c66c-45a9-afd7-8a49d6cab5d0","objOut":"cec2a285-9323-482b-b234-bd359b1bc56a"}]},{"name":"Diffuse","value":0},{"name":"Normal","value":0},{"name":"Specular","links":[{"portIn":"Specular","portOut":"texture","objIn":"0c488e4b-c66c-45a9-afd7-8a49d6cab5d0","objOut":"51015c10-4648-47c2-b75a-807d90f97865"}]},{"name":"Specular MatCap","value":0},{"name":"AO Texture","value":0},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"Opacity","value":1},{"name":"AO Intensity","value":1},{"name":"Repeat X","value":1},{"name":"Repeat Y","value":1},{"name":"calc normal tangents","value":true},{"name":"projectCoords","value":"no"},{"name":"Screen Space Normals","value":false}],"portsOut":[{"name":"trigger"},{"name":"Shader"}]},{"opId":"855880fa-6a85-4ba0-aac8-50440ccae948","objName":"Ops.Math.RandomNumbers","id":"cca0a1c7-143f-4e45-968d-99ca32d3081a","uiAttribs":{"translate":{"x":444,"y":300},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"index","links":[{"portIn":"index","portOut":"index","objIn":"cca0a1c7-143f-4e45-968d-99ca32d3081a","objOut":"acf85a74-e365-4b4f-863a-ddd3a5f73469"}]},{"name":"random seed","links":[{"portIn":"random seed","portOut":"result","objIn":"cca0a1c7-143f-4e45-968d-99ca32d3081a","objOut":"9806d3d1-2722-49ea-9ed9-79615380c836"}]},{"name":"Min","value":0.1},{"name":"Max","value":1}],"portsOut":[{"name":"X"},{"name":"Y"},{"name":"Z","value":0.9852412765813463}]},{"opId":"1bbdae06-fbb2-489b-9bcc-36c9d65bd441","objName":"Ops.Math.Multiply","id":"1125545e-a426-425c-86ba-ba4cde0353e0","uiAttribs":{"translate":{"x":348,"y":440},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"X","objIn":"1125545e-a426-425c-86ba-ba4cde0353e0","objOut":"cca0a1c7-143f-4e45-968d-99ca32d3081a"}]},{"name":"number2","value":20}],"portsOut":[{"name":"result"}]},{"opId":"1bbdae06-fbb2-489b-9bcc-36c9d65bd441","objName":"Ops.Math.Multiply","id":"7b11f456-fd91-4830-97ea-43c05b686d41","uiAttribs":{"translate":{"x":420,"y":440},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"Y","objIn":"7b11f456-fd91-4830-97ea-43c05b686d41","objOut":"cca0a1c7-143f-4e45-968d-99ca32d3081a"}]},{"name":"number2","value":90}],"portsOut":[{"name":"result"}]},{"opId":"650baeb1-db2d-4781-9af6-ab4e9d4277be","objName":"Ops.Gl.Matrix.Transform","id":"dd51408d-45bb-44b5-8634-b8796414bfca","uiAttribs":{"translate":{"x":276,"y":320},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"dd51408d-45bb-44b5-8634-b8796414bfca","objOut":"acf85a74-e365-4b4f-863a-ddd3a5f73469"}]},{"name":"posX","value":0},{"name":"posY","value":0.05},{"name":"posZ","value":0},{"name":"scale","value":1},{"name":"rotX","links":[{"portIn":"rotX","portOut":"result","objIn":"dd51408d-45bb-44b5-8634-b8796414bfca","objOut":"776a8a33-56a8-4442-a87b-870b268f5633"}]},{"name":"rotY","links":[{"portIn":"rotY","portOut":"result","objIn":"dd51408d-45bb-44b5-8634-b8796414bfca","objOut":"3014c923-ab58-4b42-b795-8409d7ea0667"}]},{"name":"rotZ","links":[{"portIn":"rotZ","portOut":"result","objIn":"dd51408d-45bb-44b5-8634-b8796414bfca","objOut":"205a2837-9e21-49e8-90a4-56b6026a1363"}]}],"portsOut":[{"name":"trigger"}]},{"opId":"466394d4-6c1a-4e5d-a057-0063ab0f096a","objName":"Ops.Gl.Texture","id":"cec2a285-9323-482b-b234-bd359b1bc56a","uiAttribs":{"translate":{"x":444,"y":500},"subPatch":0,"error":null,"hint":null,"warning":null,"notWorkingMsg":null},"portsIn":[{"name":"file","value":"assets/lib_matcaps_strong_rim.png","display":"file"},{"name":"filter","value":"mipmap"},{"name":"wrap","value":"repeat"},{"name":"flip","value":false},{"name":"unpackPreMultipliedAlpha","value":false}],"portsOut":[{"name":"texture"},{"name":"width","value":256},{"name":"height","value":256},{"name":"loading","value":true},{"name":"Aspect Ratio","value":1}]},{"opId":"2d2e5f0e-b69f-4789-9a48-1ee6ade5049a","objName":"Ops.Anim.RandomAnim","id":"776a8a33-56a8-4442-a87b-870b268f5633","uiAttribs":{"translate":{"x":132,"y":120},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger 0","objIn":"776a8a33-56a8-4442-a87b-870b268f5633","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"min","value":60},{"name":"max","value":90},{"name":"random seed","value":0},{"name":"duration","value":4},{"name":"pause between","value":0},{"name":"easing","value":"smoothstep"}],"portsOut":[{"name":"Next","value":0},{"name":"result"},{"name":"Looped","value":0}]},{"opId":"2d2e5f0e-b69f-4789-9a48-1ee6ade5049a","objName":"Ops.Anim.RandomAnim","id":"3014c923-ab58-4b42-b795-8409d7ea0667","uiAttribs":{"translate":{"x":132,"y":260},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger 0","objIn":"3014c923-ab58-4b42-b795-8409d7ea0667","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"min","value":-90},{"name":"max","value":90},{"name":"random seed","value":0},{"name":"duration","value":5},{"name":"pause between","value":0},{"name":"easing","value":"smoothstep"}],"portsOut":[{"name":"Next","value":0},{"name":"result"},{"name":"Looped","value":0}]},{"opId":"466394d4-6c1a-4e5d-a057-0063ab0f096a","objName":"Ops.Gl.Texture","id":"51015c10-4648-47c2-b75a-807d90f97865","uiAttribs":{"translate":{"x":540,"y":500},"subPatch":0,"error":null,"hint":null,"warning":null,"notWorkingMsg":null},"portsIn":[{"name":"file","value":"assets/lib_matcaps_FlatSketch.png","display":"file"},{"name":"filter","value":"mipmap"},{"name":"wrap","value":"repeat"},{"name":"flip","value":false},{"name":"unpackPreMultipliedAlpha","value":false}],"portsOut":[{"name":"texture"},{"name":"width","value":256},{"name":"height","value":256},{"name":"loading","value":true},{"name":"Aspect Ratio","value":1}]},{"opId":"2d2e5f0e-b69f-4789-9a48-1ee6ade5049a","objName":"Ops.Anim.RandomAnim","id":"205a2837-9e21-49e8-90a4-56b6026a1363","uiAttribs":{"translate":{"x":120,"y":340},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger 0","objIn":"205a2837-9e21-49e8-90a4-56b6026a1363","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"min","value":-22.5},{"name":"max","value":22.5},{"name":"random seed","value":0},{"name":"duration","value":7},{"name":"pause between","value":0},{"name":"easing","value":"Cubic In Out"}],"portsOut":[{"name":"Next","value":0},{"name":"result"},{"name":"Looped","value":0}]},{"opId":"d01fa820-396c-4cb5-9d78-6b14762852af","objName":"Ops.Gl.Render2Texture","id":"e6b224aa-24bb-40c7-af67-911450aba159","uiAttribs":{"translate":{"x":276,"y":-240},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 0","objIn":"e6b224aa-24bb-40c7-af67-911450aba159","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"use viewport size","value":true},{"name":"texture width","value":431},{"name":"texture height","value":357},{"name":"filter","value":"linear"},{"name":"MSAA","value":"2x"},{"name":"HDR","value":false},{"name":"Depth","value":true},{"name":"Clear","value":true}],"portsOut":[{"name":"trigger"},{"name":"texture"},{"name":"textureDepth"}]},{"opId":"255bd15b-cc91-4a12-9b4e-53c710cbb282","objName":"Ops.Gl.Meshes.FullscreenRectangle","id":"1a2b8737-ddd9-479c-86de-1069b8cba5f7","uiAttribs":{"translate":{"x":1200,"y":0},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 15","objIn":"1a2b8737-ddd9-479c-86de-1069b8cba5f7","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"Center in Canvas","value":false},{"name":"Flip Y","value":false},{"name":"Texture","links":[{"portIn":"Texture","portOut":"texture_out","objIn":"1a2b8737-ddd9-479c-86de-1069b8cba5f7","objOut":"d2f3c72f-8ab0-4cb9-924d-53aeb85be018"}]}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"5c04608d-1e42-4e36-be00-1be4a81fc309","objName":"Ops.Gl.TextureEffects.ImageCompose","id":"b21f4eb4-240a-4c8d-9cfc-0b7105bed9dd","uiAttribs":{"hint":null,"warning":null,"translate":{"x":564,"y":20},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 11","objIn":"b21f4eb4-240a-4c8d-9cfc-0b7105bed9dd","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"use viewport size","value":false},{"name":"width","value":256},{"name":"height","value":256},{"name":"filter","value":"linear"},{"name":"wrap","value":"clamp to edge"},{"name":"HDR","value":false},{"name":"Background Alpha","value":1}],"portsOut":[{"name":"trigger"},{"name":"texture_out"},{"name":"Aspect Ratio","value":1}]},{"opId":"d11b89b2-c2e3-4fcb-b4da-632d23b69075","objName":"Ops.Gl.TextureEffects.DepthTextureFocus","id":"f5a391de-45d7-4a7d-82c8-40625fa60c88","uiAttribs":{"translate":{"x":612,"y":180},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"f5a391de-45d7-4a7d-82c8-40625fa60c88","objOut":"b21f4eb4-240a-4c8d-9cfc-0b7105bed9dd"}]},{"name":"image","links":[{"portIn":"image","portOut":"textureDepth","objIn":"f5a391de-45d7-4a7d-82c8-40625fa60c88","objOut":"e6b224aa-24bb-40c7-af67-911450aba159"}]},{"name":"farplane","value":4.22},{"name":"nearplane","value":0.1},{"name":"Invert","value":true},{"name":"Center","links":[{"portIn":"Center","portOut":"result","objIn":"f5a391de-45d7-4a7d-82c8-40625fa60c88","objOut":"688672c3-99b0-45e2-b21e-cd0a91282165"}]},{"name":"Width","value":0.331}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"5c04608d-1e42-4e36-be00-1be4a81fc309","objName":"Ops.Gl.TextureEffects.ImageCompose","id":"d2f3c72f-8ab0-4cb9-924d-53aeb85be018","uiAttribs":{"hint":"texture dimensions not power of two! - texture filtering will not work.","warning":null,"translate":{"x":924,"y":0},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 14","objIn":"d2f3c72f-8ab0-4cb9-924d-53aeb85be018","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"use viewport size","value":true},{"name":"width","value":431},{"name":"height","value":357},{"name":"filter","value":"linear"},{"name":"wrap","value":"clamp to edge"},{"name":"HDR","value":false},{"name":"Background Alpha","value":1}],"portsOut":[{"name":"trigger"},{"name":"texture_out"},{"name":"Aspect Ratio","value":1.207282913165266}]},{"opId":"8248b866-9492-48c8-897d-3097c6fe6fe8","objName":"Ops.Gl.TextureEffects.DrawImage","id":"fef43f35-718f-47e2-9e21-d032112a4117","uiAttribs":{"translate":{"x":924,"y":140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"fef43f35-718f-47e2-9e21-d032112a4117","objOut":"d2f3c72f-8ab0-4cb9-924d-53aeb85be018"}]},{"name":"amount","value":1},{"name":"blendMode","value":"normal"},{"name":"image","links":[{"portIn":"image","portOut":"texture","objIn":"fef43f35-718f-47e2-9e21-d032112a4117","objOut":"e6b224aa-24bb-40c7-af67-911450aba159"}]},{"name":"imageAlpha","value":0},{"name":"alphaSrc","value":"alpha channel"},{"name":"removeAlphaSrc","value":true},{"name":"invert alpha channel","value":false},{"name":"flip x","value":false},{"name":"flip y","value":false},{"name":"scale","value":1},{"name":"pos x","value":0},{"name":"pos y","value":0},{"name":"rotate","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"54f26f53-f637-44c1-9bfb-a2f2b722e998","objName":"Ops.Gl.TextureEffects.Blur","id":"a05fdbaf-bfad-4e33-9738-76fc6d7efddd","uiAttribs":{"translate":{"x":924,"y":320},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"a05fdbaf-bfad-4e33-9738-76fc6d7efddd","objOut":"e9ec7e00-ce00-49b5-8c6f-a4392e940b02"}]},{"name":"amount","value":0.25},{"name":"direction","value":"both"},{"name":"Fast","value":true},{"name":"mask","links":[{"portIn":"mask","portOut":"texture_out","objIn":"a05fdbaf-bfad-4e33-9738-76fc6d7efddd","objOut":"b21f4eb4-240a-4c8d-9cfc-0b7105bed9dd"}]}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"19b441eb-9f63-4f35-ba08-b87841517c4d","objName":"Ops.Gl.ClearColor","id":"d2671885-d528-4fb9-8e12-686db4dca369","uiAttribs":{"translate":{"x":276,"y":-160},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"d2671885-d528-4fb9-8e12-686db4dca369","objOut":"e6b224aa-24bb-40c7-af67-911450aba159"}]},{"name":"r","links":[{"portIn":"r","portOut":"R","objIn":"d2671885-d528-4fb9-8e12-686db4dca369","objOut":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31"}]},{"name":"g","links":[{"portIn":"g","portOut":"G","objIn":"d2671885-d528-4fb9-8e12-686db4dca369","objOut":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31"}]},{"name":"b","links":[{"portIn":"b","portOut":"B","objIn":"d2671885-d528-4fb9-8e12-686db4dca369","objOut":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31"}]},{"name":"a","value":1}],"portsOut":[{"name":"trigger"}]},{"opId":"2d2e5f0e-b69f-4789-9a48-1ee6ade5049a","objName":"Ops.Anim.RandomAnim","id":"688672c3-99b0-45e2-b21e-cd0a91282165","uiAttribs":{"translate":{"x":624,"y":80},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger 11","objIn":"688672c3-99b0-45e2-b21e-cd0a91282165","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"min","value":0.15},{"name":"max","value":0.67},{"name":"random seed","value":0},{"name":"duration","value":4},{"name":"pause between","value":0},{"name":"easing","value":"smoothstep"}],"portsOut":[{"name":"Next","value":0},{"name":"result"},{"name":"Looped","value":0}]},{"opId":"76d2dafc-aaf9-48ca-8b24-ee18492fba80","objName":"Ops.Gl.TextureEffects.SSAO2","id":"e9ec7e00-ce00-49b5-8c6f-a4392e940b02","uiAttribs":{"translate":{"x":924,"y":260},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"e9ec7e00-ce00-49b5-8c6f-a4392e940b02","objOut":"fef43f35-718f-47e2-9e21-d032112a4117"}]},{"name":"depth texture","links":[{"portIn":"depth texture","portOut":"textureDepth","objIn":"e9ec7e00-ce00-49b5-8c6f-a4392e940b02","objOut":"e6b224aa-24bb-40c7-af67-911450aba159"}]},{"name":"Frustum Near","value":0.1},{"name":"Frustum Far","value":20},{"name":"Samples","value":4},{"name":"Ao Radius","value":1},{"name":"Ao Clamp","value":0.169},{"name":"Luminance Influence","value":0.753},{"name":"Enable noise","value":false},{"name":"Noise amount","value":0.0008}],"portsOut":[{"name":"trigger"}]},{"opId":"650baeb1-db2d-4781-9af6-ab4e9d4277be","objName":"Ops.Gl.Matrix.Transform","id":"fa4b3a5a-8e77-4327-95da-a0769013b1e0","uiAttribs":{"translate":{"x":276,"y":140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"fa4b3a5a-8e77-4327-95da-a0769013b1e0","objOut":"d2671885-d528-4fb9-8e12-686db4dca369"}]},{"name":"posX","value":0},{"name":"posY","value":0},{"name":"posZ","value":0.25},{"name":"scale","value":1},{"name":"rotX","links":[{"portIn":"rotX","portOut":"result","objIn":"fa4b3a5a-8e77-4327-95da-a0769013b1e0","objOut":"fd0d6795-b2ff-4cb1-b9ff-c8fae84fd188"}]},{"name":"rotY","links":[{"portIn":"rotY","portOut":"result","objIn":"fa4b3a5a-8e77-4327-95da-a0769013b1e0","objOut":"2112d51b-c99c-45d3-9d36-02df0eaa5359"}]},{"name":"rotZ","links":[{"portIn":"rotZ","portOut":"Time","objIn":"fa4b3a5a-8e77-4327-95da-a0769013b1e0","objOut":"ff1f378f-e958-4758-92ce-ea7f0bd7cfe7"}]}],"portsOut":[{"name":"trigger"}]},{"opId":"aac7f721-208f-411a-adb3-79adae2e471a","objName":"Ops.Anim.Timer_v2","id":"ff1f378f-e958-4758-92ce-ea7f0bd7cfe7","uiAttribs":{"title":"Timer2","translate":{"x":396,"y":20},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Play","value":true},{"name":"Reset","value":0},{"name":"Speed","value":3}],"portsOut":[{"name":"Time"}]},{"opId":"736d3d0e-c920-449e-ade0-f5ca6018fb5c","objName":"Ops.Anim.SineAnim","id":"f6b5f245-85e1-4dd9-b47a-0d9d68cedc3e","uiAttribs":{"translate":{"x":336,"y":-100},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"f6b5f245-85e1-4dd9-b47a-0d9d68cedc3e","objOut":"d2671885-d528-4fb9-8e12-686db4dca369"}]},{"name":"phase","value":1},{"name":"frequency","value":0.33},{"name":"amplitude","value":5}],"portsOut":[{"name":"Trigger out","value":0},{"name":"result"}]},{"opId":"736d3d0e-c920-449e-ade0-f5ca6018fb5c","objName":"Ops.Anim.SineAnim","id":"653208e9-281e-498d-9016-8fbef140aa2c","uiAttribs":{"translate":{"x":336,"y":0},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"653208e9-281e-498d-9016-8fbef140aa2c","objOut":"d2671885-d528-4fb9-8e12-686db4dca369"}]},{"name":"phase","value":0.75},{"name":"frequency","value":0.5},{"name":"amplitude","value":5}],"portsOut":[{"name":"Trigger out","value":0},{"name":"result"}]},{"opId":"9de0c04f-666b-47cd-9722-a8cf36ab4720","objName":"Ops.Ui.Comment","id":"c7d5ce87-2ee9-4834-92e0-658225f8c5aa","uiAttribs":{"0":"t","1":"i","2":"t","3":"l","4":"e","title":"","translate":{"x":576,"y":-120},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"title","value":""},{"name":"text","value":"DOF chain"}],"portsOut":[]},{"opId":"9de0c04f-666b-47cd-9722-a8cf36ab4720","objName":"Ops.Ui.Comment","id":"e05c35e2-ca74-4205-a9f4-f12ded1f89be","uiAttribs":{"0":"t","1":"i","2":"t","3":"l","4":"e","title":"","translate":{"x":936,"y":-140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"title","value":""},{"name":"text","value":"SSAO2 and DOF fx\n"}],"portsOut":[]},{"opId":"0bf51f3e-3161-4cc5-aecf-6e9160089fd2","objName":"Ops.Devices.Mouse.Mouse","id":"39da14a2-9bb7-400b-8924-2a95429f70f8","uiAttribs":{"translate":{"x":480,"y":-600},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"relative","value":false},{"name":"normalize","value":true},{"name":"Active","value":true},{"name":"smooth","value":false},{"name":"smoothSpeed","value":20},{"name":"Area","value":"Canvas"},{"name":"multiply","value":0.2},{"name":"flip y","value":true}],"portsOut":[{"name":"x"},{"name":"y"},{"name":"button down","value":false},{"name":"click"},{"name":"Button Up","value":0},{"name":"click right","value":0},{"name":"mouseOver","value":false},{"name":"button","value":0}]},{"opId":"c8fb181e-0b03-4b41-9e55-06b6267bc634","objName":"Ops.Math.Sum","id":"fd0d6795-b2ff-4cb1-b9ff-c8fae84fd188","uiAttribs":{"translate":{"x":348,"y":-60},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"result","objIn":"fd0d6795-b2ff-4cb1-b9ff-c8fae84fd188","objOut":"f6b5f245-85e1-4dd9-b47a-0d9d68cedc3e"}]},{"name":"number2","links":[{"portIn":"number2","portOut":"result","objIn":"fd0d6795-b2ff-4cb1-b9ff-c8fae84fd188","objOut":"a31f6b4e-ebae-4d5a-afd1-264056042af7"}]}],"portsOut":[{"name":"result"}]},{"opId":"1bbdae06-fbb2-489b-9bcc-36c9d65bd441","objName":"Ops.Math.Multiply","id":"677a8bc0-2993-4a04-9294-3fbdf5e7d643","uiAttribs":{"translate":{"x":876,"y":-220},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"Out Value","objIn":"677a8bc0-2993-4a04-9294-3fbdf5e7d643","objOut":"6ddd6b18-92ba-40d1-b737-ea81db75917b"},{"portIn":"number1","portOut":"Result","objIn":"677a8bc0-2993-4a04-9294-3fbdf5e7d643","objOut":"b61a1cea-2e29-4466-a74f-ca5cbb2658d0"}]},{"name":"number2","value":25}],"portsOut":[{"name":"result"}]},{"opId":"c8fb181e-0b03-4b41-9e55-06b6267bc634","objName":"Ops.Math.Sum","id":"2112d51b-c99c-45d3-9d36-02df0eaa5359","uiAttribs":{"translate":{"x":348,"y":60},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"result","objIn":"2112d51b-c99c-45d3-9d36-02df0eaa5359","objOut":"653208e9-281e-498d-9016-8fbef140aa2c"}]},{"name":"number2","links":[{"portIn":"number2","portOut":"result","objIn":"2112d51b-c99c-45d3-9d36-02df0eaa5359","objOut":"677a8bc0-2993-4a04-9294-3fbdf5e7d643"}]}],"portsOut":[{"name":"result"}]},{"opId":"1bbdae06-fbb2-489b-9bcc-36c9d65bd441","objName":"Ops.Math.Multiply","id":"a31f6b4e-ebae-4d5a-afd1-264056042af7","uiAttribs":{"translate":{"x":732,"y":-160},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"Result","objIn":"a31f6b4e-ebae-4d5a-afd1-264056042af7","objOut":"11f98f26-55b7-4ad9-bf02-0d8e83ab5a41"},{"portIn":"number1","portOut":"Out Value","objIn":"a31f6b4e-ebae-4d5a-afd1-264056042af7","objOut":"6ddd6b18-92ba-40d1-b737-ea81db75917b"}]},{"name":"number2","value":-25}],"portsOut":[{"name":"result"}]},{"opId":"9989b1c0-1073-4d5f-bfa0-36dd98b66e27","objName":"Ops.Trigger.SetNumberOnTrigger","id":"6ddd6b18-92ba-40d1-b737-ea81db75917b","uiAttribs":{"translate":{"x":780,"y":-400},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Set","links":[{"portIn":"Set","portOut":"Next","objIn":"6ddd6b18-92ba-40d1-b737-ea81db75917b","objOut":"91039923-74dc-48b2-924b-3cb6c7591eeb"}]},{"name":"Number","value":0}],"portsOut":[{"name":"Out Value"}]},{"opId":"cf3544e4-e392-432b-89fd-fcfb5c974388","objName":"Ops.Trigger.TriggerOnce","id":"91039923-74dc-48b2-924b-3cb6c7591eeb","uiAttribs":{"translate":{"x":768,"y":-480},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Exec","links":[{"portIn":"Exec","portOut":"trigger","objIn":"91039923-74dc-48b2-924b-3cb6c7591eeb","objOut":"0dbea999-3217-4edc-af2c-ba80fb0b1b6a"}]},{"name":"Reset","value":0}],"portsOut":[{"name":"Next"},{"name":"Was Triggered","value":true}]},{"opId":"8cb69d73-3e0e-4785-b4cc-499c8372d03c","objName":"Ops.Math.Random2","id":"9806d3d1-2722-49ea-9ed9-79615380c836","uiAttribs":{"translate":{"x":516,"y":240},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Generate","links":[{"portIn":"Generate","portOut":"click","objIn":"9806d3d1-2722-49ea-9ed9-79615380c836","objOut":"39da14a2-9bb7-400b-8924-2a95429f70f8"}]},{"name":"min","value":0},{"name":"max","value":1},{"name":"Integer","value":false}],"portsOut":[{"name":"result"}]},{"opId":"eb4aa728-d0ee-4c53-833d-d0b086b11250","objName":"Ops.Math.ApproachInterpolation","id":"b61a1cea-2e29-4466-a74f-ca5cbb2658d0","uiAttribs":{"translate":{"x":876,"y":-280},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Update","links":[{"portIn":"Update","portOut":"trigger 6","objIn":"b61a1cea-2e29-4466-a74f-ca5cbb2658d0","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"Value","links":[{"portIn":"Value","portOut":"x","objIn":"b61a1cea-2e29-4466-a74f-ca5cbb2658d0","objOut":"39da14a2-9bb7-400b-8924-2a95429f70f8"}]},{"name":"Divisor","value":12}],"portsOut":[{"name":"Next","value":0},{"name":"Result"}]},{"opId":"eb4aa728-d0ee-4c53-833d-d0b086b11250","objName":"Ops.Math.ApproachInterpolation","id":"11f98f26-55b7-4ad9-bf02-0d8e83ab5a41","uiAttribs":{"translate":{"x":600,"y":-340},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Update","links":[{"portIn":"Update","portOut":"trigger 6","objIn":"11f98f26-55b7-4ad9-bf02-0d8e83ab5a41","objOut":"2903b1e1-5353-4431-9066-87d070ae3b87"}]},{"name":"Value","links":[{"portIn":"Value","portOut":"y","objIn":"11f98f26-55b7-4ad9-bf02-0d8e83ab5a41","objOut":"39da14a2-9bb7-400b-8924-2a95429f70f8"}]},{"name":"Divisor","value":12}],"portsOut":[{"name":"Next","value":0},{"name":"Result"}]},{"opId":"5a681c35-78ce-4cb3-9858-bc79c34c6819","objName":"Ops.Sidebar.Sidebar","id":"7bb68871-e16e-4742-87ea-17ade1be71df","uiAttribs":{"translate":{"x":-60,"y":-440},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Visible","links":[{"portIn":"Visible","portOut":"result","objIn":"7bb68871-e16e-4742-87ea-17ade1be71df","objOut":"407848e6-571c-46f2-970c-66830ef2f81c"}]},{"name":"Opacity","value":1},{"name":"Default Minimized","value":false},{"name":"Minimized Opacity","value":0.5},{"name":"Side","links":[{"portIn":"Side","portOut":"result","objIn":"7bb68871-e16e-4742-87ea-17ade1be71df","objOut":"f775e32f-f1dd-4499-ac3a-f1d6cf5503f4"}]}],"portsOut":[{"name":"childs"}]},{"opId":"eb3232e5-e947-4683-a17f-27a72d464b2c","objName":"Ops.Sidebar.Slider","id":"be50edad-6475-4ed4-9393-c77cb4edf6b4","uiAttribs":{"title":"Slider: hue","translate":{"x":-60,"y":-340},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"link","links":[{"portIn":"link","portOut":"childs","objIn":"be50edad-6475-4ed4-9393-c77cb4edf6b4","objOut":"7bb68871-e16e-4742-87ea-17ade1be71df"}]},{"name":"Text","value":"hue"},{"name":"Input","value":0.87895},{"name":"Min","value":0},{"name":"Max","value":1},{"name":"Step","value":0.00001},{"name":"Set Default","value":0},{"name":"Reset","value":0},{"name":"Default","value":0.87895}],"portsOut":[{"name":"childs"},{"name":"Result"}]},{"opId":"909ee871-b0f3-477f-bee2-d0ab40bb5804","objName":"Ops.Color.HSBtoRGB","id":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31","uiAttribs":{"translate":{"x":84,"y":-220},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Hue","links":[{"portIn":"Hue","portOut":"Result","objIn":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31","objOut":"be50edad-6475-4ed4-9393-c77cb4edf6b4"}]},{"name":"Saturation","links":[{"portIn":"Saturation","portOut":"Result","objIn":"f49d1452-c08d-42d4-a94f-d8cb7dc51e31","objOut":"c9341973-33fa-4da0-b8e6-937331935956"}]},{"name":"Brightness","value":0.5}],"portsOut":[{"name":"R"},{"name":"G"},{"name":"B"}]},{"opId":"eb3232e5-e947-4683-a17f-27a72d464b2c","objName":"Ops.Sidebar.Slider","id":"c9341973-33fa-4da0-b8e6-937331935956","uiAttribs":{"title":"Slider: saturation","translate":{"x":-60,"y":-240},"subPatch":0,"notWorkingMsg":"to work, this op needs to be a child of: Ops.Sidebar.Sidebar","working":false},"portsIn":[{"name":"link","value":null},{"name":"Text","value":"saturation"},{"name":"Input","value":0.75789},{"name":"Min","value":0},{"name":"Max","value":1},{"name":"Step","value":0.00001},{"name":"Set Default","value":0},{"name":"Reset","value":0},{"name":"Default","value":0.75789}],"portsOut":[{"name":"childs"},{"name":"Result"}]},{"opId":"f069c0db-4051-4eae-989e-6ef7953787fd","objName":"Ops.Devices.Keyboard.KeyPressLearn","id":"914a353f-45dd-4686-b456-fb2a2997738e","uiAttribs":{"translate":{"x":-120,"y":-680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"learn","value":0},{"name":"key code","value":90},{"name":"canvas only","value":false},{"name":"Mod Key","value":0},{"name":"Enabled","value":true},{"name":"Prevent Default","value":0}],"portsOut":[{"name":"on press"},{"name":"on release","value":0},{"name":"Pressed","value":false}]},{"opId":"712a25f4-3a93-4042-b8c5-2f56169186cc","objName":"Ops.Boolean.ToggleBool","id":"407848e6-571c-46f2-970c-66830ef2f81c","uiAttribs":{"translate":{"x":-120,"y":-520},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"trigger","links":[{"portIn":"trigger","portOut":"on press","objIn":"407848e6-571c-46f2-970c-66830ef2f81c","objOut":"914a353f-45dd-4686-b456-fb2a2997738e"},{"portIn":"trigger","portOut":"Next","objIn":"407848e6-571c-46f2-970c-66830ef2f81c","objOut":"96524e86-05cf-4ed8-9bd9-c031ebb5a6b3"}]},{"name":"reset","value":0}],"portsOut":[{"name":"result"}]},{"opId":"f069c0db-4051-4eae-989e-6ef7953787fd","objName":"Ops.Devices.Keyboard.KeyPressLearn","id":"eee06405-9368-4448-b04a-2e723b788b61","uiAttribs":{"translate":{"x":48,"y":-680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"learn","value":0},{"name":"key code","value":88},{"name":"canvas only","value":false},{"name":"Mod Key","value":0},{"name":"Enabled","value":true},{"name":"Prevent Default","value":false}],"portsOut":[{"name":"on press"},{"name":"on release","value":0},{"name":"Pressed","value":false}]},{"opId":"712a25f4-3a93-4042-b8c5-2f56169186cc","objName":"Ops.Boolean.ToggleBool","id":"f775e32f-f1dd-4499-ac3a-f1d6cf5503f4","uiAttribs":{"translate":{"x":48,"y":-540},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"trigger","links":[{"portIn":"trigger","portOut":"on press","objIn":"f775e32f-f1dd-4499-ac3a-f1d6cf5503f4","objOut":"eee06405-9368-4448-b04a-2e723b788b61"},{"portIn":"trigger","portOut":"Next","objIn":"f775e32f-f1dd-4499-ac3a-f1d6cf5503f4","objOut":"96524e86-05cf-4ed8-9bd9-c031ebb5a6b3"}]},{"name":"reset","value":0}],"portsOut":[{"name":"result"}]},{"opId":"cf3544e4-e392-432b-89fd-fcfb5c974388","objName":"Ops.Trigger.TriggerOnce","id":"96524e86-05cf-4ed8-9bd9-c031ebb5a6b3","uiAttribs":{"translate":{"x":-72,"y":-620},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Exec","links":[{"portIn":"Exec","portOut":"trigger","objIn":"96524e86-05cf-4ed8-9bd9-c031ebb5a6b3","objOut":"0dbea999-3217-4edc-af2c-ba80fb0b1b6a"}]},{"name":"Reset","value":0}],"portsOut":[{"name":"Next"},{"name":"Was Triggered","value":true}]},{"opId":"484b3a00-41b7-4e3f-8a99-a1b32a764eff","objName":"Ops.Devices.Midi.MidiInputDevice_v2","id":"08f52aa2-d89b-4c23-9576-366c687aec70","uiAttribs":{"title":"Midi loopMIDI Port","translate":{"x":528,"y":-860},"subPatch":0,"info":"no midi devices found","notWorkingMsg":null},"portsIn":[{"name":"Device","value":"loopMIDI Port"},{"name":"Learn","value":0},{"name":"Panic","value":0}],"portsOut":[{"name":"Event"},{"name":"Note"},{"name":"CC"},{"name":"NRPN"},{"name":"Clock"}]},{"opId":"517ed1fc-6110-4611-9cc7-8dd459191c65","objName":"Ops.Devices.Midi.MidiNote","id":"9b28f504-6f6c-431f-a30d-8cdd83373c91","uiAttribs":{"translate":{"x":540,"y":-780},"subPatch":0,"notWorkingMsg":null,"info":"bound to Note: E3 - 64"},"portsIn":[{"name":"MIDI Event In","links":[{"portIn":"MIDI Event In","portOut":"Note","objIn":"9b28f504-6f6c-431f-a30d-8cdd83373c91","objOut":"08f52aa2-d89b-4c23-9576-366c687aec70"}]},{"name":"MIDI Channel","value":1},{"name":"Note","value":"E3 - 64"},{"name":"Normalize Velocity","value":"none"},{"name":"Toggle Gate","value":false},{"name":"learn","value":0},{"name":"clear","value":0}],"portsOut":[{"name":"MIDI Event Out"},{"name":"Trigger Out"},{"name":"Current Note","value":64},{"name":"Velocity","value":0},{"name":"Gate","value":false}]},{"opId":"712a25f4-3a93-4042-b8c5-2f56169186cc","objName":"Ops.Boolean.ToggleBool","id":"f7b15776-00e7-4b44-bc27-98e691f00a72","uiAttribs":{"translate":{"x":552,"y":-720},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"trigger","links":[{"portIn":"trigger","portOut":"Trigger Out","objIn":"f7b15776-00e7-4b44-bc27-98e691f00a72","objOut":"9b28f504-6f6c-431f-a30d-8cdd83373c91"}]},{"name":"reset","value":0}],"portsOut":[{"name":"result"}]},{"opId":"06ad9d35-ccf5-4d31-889c-e23fa062588a","objName":"Ops.Anim.BoolAnim","id":"0b426865-78a6-4881-8fe1-494bfa62fef8","uiAttribs":{"translate":{"x":540,"y":-660},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"0b426865-78a6-4881-8fe1-494bfa62fef8","objOut":"0dbea999-3217-4edc-af2c-ba80fb0b1b6a"}]},{"name":"bool","links":[{"portIn":"bool","portOut":"result","objIn":"0b426865-78a6-4881-8fe1-494bfa62fef8","objOut":"f7b15776-00e7-4b44-bc27-98e691f00a72"}]},{"name":"easing","value":"linear"},{"name":"duration","value":0.1},{"name":"Direction","value":"Animate Both"},{"name":"value false","value":0.25},{"name":"value true","value":0.5}],"portsOut":[{"name":"trigger","value":0},{"name":"value","value":0.5},{"name":"finished","value":true},{"name":"Finished Trigger","value":0}]},{"opId":"28616ffc-a761-4792-9076-8625f9ccc965","objName":"Ops.Devices.Midi.MidiCC","id":"197715b3-1272-49b7-b240-47968a2856e3","uiAttribs":{"translate":{"x":684,"y":-780},"subPatch":0,"notWorkingMsg":null,"info":"bound to CC: 14"},"portsIn":[{"name":"MIDI Event In","links":[{"portIn":"MIDI Event In","portOut":"CC","objIn":"197715b3-1272-49b7-b240-47968a2856e3","objOut":"08f52aa2-d89b-4c23-9576-366c687aec70"}]},{"name":"MIDI Channel","value":1},{"name":"CC Index","value":14},{"name":"Normalize","value":"0 to 1"},{"name":"learn","value":0},{"name":"clear","value":0}],"portsOut":[{"name":"Event"},{"name":"Trigger Out","value":0},{"name":"CC Index Out","value":14},{"name":"CC Value Out"}]},{"opId":"8fb2bb5d-665a-4d0a-8079-12710ae453be","objName":"Ops.Value.Number","id":"b30fd793-24a6-48da-bc44-41bbbf5b4903","uiAttribs":{"title":"CC Index Out","translate":{"x":708,"y":-700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"value","links":[{"portIn":"value","portOut":"CC Value Out","objIn":"b30fd793-24a6-48da-bc44-41bbbf5b4903","objOut":"197715b3-1272-49b7-b240-47968a2856e3"}]}],"portsOut":[{"name":"result"}]}],"users":[],"userOps":[],"tags":[],"_id":"5d39b8e3f3c5dc4b43fece11","name":"Generative petals 01B","userId":"580bc022c27b386461fbeddf","created":"2019-07-25T14:12:51.717Z","updated":"2019-07-25T14:47:39.001Z","__v":12,"shortId":"VEzuFM","opsHash":"17c5d8e1f56acb9518e717360f68bdb8451dfae6","ui":{"viewBox":{"x":-158.50118463247952,"y":-910.2279145761443,"w":1559.7783569025062,"h":1671.2837091000254},"timeLineLength":20,"bookmarks":[],"subPatchViewBoxes":[],"renderer":{"w":431,"h":357,"s":1}},"updatedByUser":"andro","cachedUsername":"andro","views":0,"cachedNumComments":0,"cachedNumFavs":0,"statsAdmin":{"filenameScreenshots":["_screenshots/screenshot.png","_screenshots/screenshot_1564063972953.png"],"filenameExports":[],"filenameAssets":[],"hasOldScreenshots":false,"hasOldExports":false,"sizeScreenshots":113.8671875,"sizeExports":0,"sizeAssets":0},"exports":13}
+var CABLES=CABLES||{};CABLES.exportedPatch={"settings":{"opExample":[],"isPublic":false},"ops":[{"opId":"b0472a1d-db16-4ba6-8787-f300fbdc77bb","objName":"Ops.Gl.MainLoop","id":"b0554b84-b0b8-47db-a617-837fa376ad1b","uiAttribs":{"translate":{"x":156,"y":-200},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"FPS Limit","value":0},{"name":"Reduce FPS loading","value":false},{"name":"Clear","value":true},{"name":"ClearAlpha","value":true},{"name":"Fullscreen Button","value":false},{"name":"Active","value":true},{"name":"Hires Displays","value":false}],"portsOut":[{"name":"trigger"},{"name":"width","value":685},{"name":"height","value":437}]},{"opId":"85ae5cfa-5eca-4dd8-8b30-850ac34f7cd5","objName":"Ops.Gl.Shader.BasicMaterial","id":"2967b2d4-8d3a-41e9-8e4b-72d41289dab8","uiAttribs":{"translate":{"x":-288,"y":680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 0","objIn":"2967b2d4-8d3a-41e9-8e4b-72d41289dab8","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1},{"name":"texture","value":0},{"name":"textureOpacity","value":0},{"name":"colorizeTexture","value":false},{"name":"billboard","value":false},{"name":"Opacity TexCoords Transform","value":false},{"name":"preMultiplied alpha","value":false},{"name":"diffuseRepeatX","value":1},{"name":"diffuseRepeatY","value":1},{"name":"Tex Offset X","value":0},{"name":"Tex Offset Y","value":0}],"portsOut":[{"name":"trigger"},{"name":"shader"}]},{"opId":"50e7f565-0cdb-47ca-912b-87c04e2f00e3","objName":"Ops.Gl.Matrix.Scale","id":"06a764e9-3580-4fad-88fe-3c2d730d250f","uiAttribs":{"translate":{"x":156,"y":-80},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"06a764e9-3580-4fad-88fe-3c2d730d250f","objOut":"5858f38e-6306-4730-aaf9-81d7d06bd9b1"}]},{"name":"scale","value":1.8}],"portsOut":[{"name":"trigger"}]},{"opId":"f86a4a07-00ee-4f68-8839-e02d51d1cd2f","objName":"Ops.Gl.Shader.PointMaterial","id":"a8571c9e-f34e-41c9-849a-97e580210de6","uiAttribs":{"translate":{"x":36,"y":680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 1","objIn":"a8571c9e-f34e-41c9-849a-97e580210de6","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"PointSize","value":9.36},{"name":"Random Size","value":3},{"name":"Round","value":true},{"name":"Scale by Distance","value":false},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1},{"name":"preMultiplied alpha","value":false},{"name":"Vertex Colors","value":false},{"name":"texture","value":0},{"name":"Texture Mask","value":0},{"name":"colorizeTexture","value":false},{"name":"texture Lookup","value":false}],"portsOut":[{"name":"trigger"},{"name":"shader"}]},{"opId":"85ae5cfa-5eca-4dd8-8b30-850ac34f7cd5","objName":"Ops.Gl.Shader.BasicMaterial","id":"5858f38e-6306-4730-aaf9-81d7d06bd9b1","uiAttribs":{"translate":{"x":156,"y":-140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"5858f38e-6306-4730-aaf9-81d7d06bd9b1","objOut":"b0554b84-b0b8-47db-a617-837fa376ad1b"}]},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1},{"name":"texture","value":0},{"name":"textureOpacity","value":0},{"name":"colorizeTexture","value":false},{"name":"billboard","value":false},{"name":"Opacity TexCoords Transform","value":false},{"name":"preMultiplied alpha","value":false},{"name":"diffuseRepeatX","value":1},{"name":"diffuseRepeatY","value":1},{"name":"Tex Offset X","value":0},{"name":"Tex Offset Y","value":0}],"portsOut":[{"name":"trigger"},{"name":"shader"}]},{"opId":"e5d64a7d-b161-4f85-907e-e10a34691733","objName":"Ops.Gl.Shader.WireframeMaterial","id":"fc247d5a-750c-4c20-af56-3ac810ea2102","uiAttribs":{"error":null,"translate":{"x":336,"y":680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 2","objIn":"fc247d5a-750c-4c20-af56-3ac810ea2102","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"enable depth testing","value":true},{"name":"fill","value":true},{"name":"width","value":0.368},{"name":"opacity","value":1},{"name":"diffuse r","value":1},{"name":"diffuse g","value":1},{"name":"diffuse b","value":1},{"name":"Fill R","value":0},{"name":"Fill G","value":0},{"name":"Fill B","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"b6d933cf-1ef8-41d6-95c1-593be0b4be90","objName":"Ops.Gl.ShaderEffects.ExplodeDividedMesh","id":"5ffbbbce-838e-43bc-80e5-b238bacb47c0","uiAttribs":{"translate":{"x":600,"y":840},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"5ffbbbce-838e-43bc-80e5-b238bacb47c0","objOut":"0c5e3973-9b86-426d-ae21-5aa3654cec11"}]},{"name":"Distance","value":67.41},{"name":"Absolute","value":true},{"name":"add x","value":0},{"name":"add y","value":0},{"name":"add z","value":0.01},{"name":"mul x","value":1},{"name":"mul y","value":1},{"name":"mul z","value":1},{"name":"x","links":[{"portIn":"x","portOut":"X","objIn":"5ffbbbce-838e-43bc-80e5-b238bacb47c0","objOut":"c6f6243a-5f85-4b60-9401-f063109a242d"}]},{"name":"y","value":0},{"name":"z","value":0},{"name":"Size","value":0.64}],"portsOut":[{"name":"trigger"}]},{"opId":"40fa6f13-ee0e-4386-a86b-711e1fbcf1bc","objName":"Ops.Gl.RenderGeometry","id":"882e2209-5092-48e7-b70b-25db18dbcfe3","uiAttribs":{"translate":{"x":600,"y":880},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"882e2209-5092-48e7-b70b-25db18dbcfe3","objOut":"5ffbbbce-838e-43bc-80e5-b238bacb47c0"}]},{"name":"Geometry","links":[{"portIn":"Geometry","portOut":"Result","objIn":"882e2209-5092-48e7-b70b-25db18dbcfe3","objOut":"eefc4a4e-f9c7-40bf-b28a-98c1c23902ec"}]},{"name":"Update All","value":true},{"name":"Update Face Indices","value":false},{"name":"Update Vertices","value":false},{"name":"Update Texcoords","value":false},{"name":"Vertex Numbers","value":true}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"b0b2430c-5206-4d1f-a0a6-bc5d79a29027","objName":"Ops.Gl.Geometry.GeometryUnIndex","id":"eefc4a4e-f9c7-40bf-b28a-98c1c23902ec","uiAttribs":{"translate":{"x":900,"y":740},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Geometry","links":[{"portIn":"Geometry","portOut":"Geometry","objIn":"eefc4a4e-f9c7-40bf-b28a-98c1c23902ec","objOut":"10c199bf-419d-4dbf-bbb5-fbdf8df21e19"}]}],"portsOut":[{"name":"Result"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"26d273e7-10c6-49cf-af2d-848c1140baa7","uiAttribs":{"translate":{"x":-288,"y":740},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"26d273e7-10c6-49cf-af2d-848c1140baa7","objOut":"2967b2d4-8d3a-41e9-8e4b-72d41289dab8"}]},{"name":"Scale","value":1},{"name":"Draw","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"6910fe43-5666-4735-bc2a-6b7075d1de7d","uiAttribs":{"translate":{"x":36,"y":720},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"6910fe43-5666-4735-bc2a-6b7075d1de7d","objOut":"a8571c9e-f34e-41c9-849a-97e580210de6"}]},{"name":"Scale","value":1},{"name":"Draw","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"d936dd79-7e6c-420f-8d7d-07c1b68b165e","uiAttribs":{"translate":{"x":336,"y":720},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"d936dd79-7e6c-420f-8d7d-07c1b68b165e","objOut":"fc247d5a-750c-4c20-af56-3ac810ea2102"}]},{"name":"Scale","value":1},{"name":"Draw","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"10c199bf-419d-4dbf-bbb5-fbdf8df21e19","uiAttribs":{"translate":{"x":888,"y":700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"10c199bf-419d-4dbf-bbb5-fbdf8df21e19","objOut":"0c5e3973-9b86-426d-ae21-5aa3654cec11"}]},{"name":"Scale","value":1},{"name":"Draw","value":false}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"7857ee9e-6d60-4c30-9bc0-dfdddf2b47ad","objName":"Ops.Gl.Shader.MatCapMaterialNew","id":"0c5e3973-9b86-426d-ae21-5aa3654cec11","uiAttribs":{"translate":{"x":600,"y":700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 3","objIn":"0c5e3973-9b86-426d-ae21-5aa3654cec11","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"MatCap","links":[{"portIn":"MatCap","portOut":"texture_out","objIn":"0c5e3973-9b86-426d-ae21-5aa3654cec11","objOut":"946ffe49-dd08-4b45-9108-fb1af4ee2b74"}]},{"name":"Diffuse","value":0},{"name":"Normal","value":0},{"name":"Specular","value":0},{"name":"Specular MatCap","value":0},{"name":"AO Texture","value":0},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"Opacity","value":1},{"name":"AO Intensity","value":1},{"name":"Repeat X","value":1},{"name":"Repeat Y","value":1},{"name":"calc normal tangents","value":true},{"name":"projectCoords","value":"no"},{"name":"Screen Space Normals","value":false}],"portsOut":[{"name":"trigger"},{"name":"Shader"}]},{"opId":"59b94270-0364-4c0f-a9fc-ba2561696a23","objName":"Ops.Gl.Textures.ColorTexture","id":"946ffe49-dd08-4b45-9108-fb1af4ee2b74","uiAttribs":{"translate":{"x":612,"y":660},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1}],"portsOut":[{"name":"texture_out"}]},{"opId":"73c892c9-3e81-4ddc-952a-fbe6bf00ef2c","objName":"Ops.Trigger.TimedSequence","id":"12cb3df4-d426-4d47-8f3d-7e140b27ab38","uiAttribs":{"translate":{"x":156,"y":120},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"12cb3df4-d426-4d47-8f3d-7e140b27ab38","objOut":"06a764e9-3580-4fad-88fe-3c2d730d250f"}]},{"name":"current","links":[{"portIn":"current","portOut":"result","objIn":"12cb3df4-d426-4d47-8f3d-7e140b27ab38","objOut":"7a1d1e01-8272-4fa2-8a1c-42a6ec7a85b9"}]},{"name":"overwriteTime","value":false},{"name":"ignoreInSubPatch","value":false}],"portsOut":[{"name":"triggerAlways"},{"name":"Names"},{"name":"currentKeyTime","value":0},{"name":"Current","value":4},{"name":"trigger 0"},{"name":"trigger 1"},{"name":"trigger 2"},{"name":"trigger 3"},{"name":"trigger 4"},{"name":"trigger 5"},{"name":"trigger 6"},{"name":"trigger 7"},{"name":"trigger 8","value":0},{"name":"trigger 9","value":0},{"name":"trigger 10","value":0},{"name":"trigger 11","value":0},{"name":"trigger 12","value":0},{"name":"trigger 13","value":0},{"name":"trigger 14","value":0},{"name":"trigger 15","value":0},{"name":"trigger 16","value":0},{"name":"trigger 17","value":0},{"name":"trigger 18","value":0},{"name":"trigger 19","value":0},{"name":"trigger 20","value":0},{"name":"trigger 21","value":0},{"name":"trigger 22","value":0},{"name":"trigger 23","value":0},{"name":"trigger 24","value":0},{"name":"trigger 25","value":0},{"name":"trigger 26","value":0},{"name":"trigger 27","value":0},{"name":"trigger 28","value":0},{"name":"trigger 29","value":0},{"name":"trigger 30","value":0},{"name":"trigger 31","value":0}]},{"opId":"e640619f-235c-4543-bbf8-b358e0283180","objName":"Ops.Trigger.TriggerCounter","id":"884a4fd4-6753-49db-a6a9-95766bf1503c","uiAttribs":{"translate":{"x":444,"y":-80},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger","objIn":"884a4fd4-6753-49db-a6a9-95766bf1503c","objOut":"5f802e61-8267-473d-b971-e8e43be6ab16"}]},{"name":"reset","value":0}],"portsOut":[{"name":"trigger","value":0},{"name":"timesTriggered"}]},{"opId":"3e9bae10-38af-4e36-9fcc-35faeeaf57f8","objName":"Ops.Trigger.Interval","id":"5f802e61-8267-473d-b971-e8e43be6ab16","uiAttribs":{"translate":{"x":444,"y":-180},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"interval","value":222},{"name":"Active","value":true}],"portsOut":[{"name":"trigger"}]},{"opId":"ebc13b25-3705-4265-8f06-5f985b6a7bb1","objName":"Ops.Math.Modulo","id":"7a1d1e01-8272-4fa2-8a1c-42a6ec7a85b9","uiAttribs":{"translate":{"x":240,"y":40},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number1","links":[{"portIn":"number1","portOut":"timesTriggered","objIn":"7a1d1e01-8272-4fa2-8a1c-42a6ec7a85b9","objOut":"884a4fd4-6753-49db-a6a9-95766bf1503c"}]},{"name":"number2","value":8},{"name":"pingpong","value":false}],"portsOut":[{"name":"result"}]},{"opId":"d01fa820-396c-4cb5-9d78-6b14762852af","objName":"Ops.Gl.Render2Texture","id":"fb112f99-a94f-4867-949a-6d66db26ac16","uiAttribs":{"translate":{"x":1512,"y":800},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 2","objIn":"fb112f99-a94f-4867-949a-6d66db26ac16","objOut":"0b355a1d-d15b-414c-8139-5e36a83c4e86"}]},{"name":"use viewport size","value":true},{"name":"texture width","value":685},{"name":"texture height","value":437},{"name":"filter","value":"linear"},{"name":"MSAA","value":"none"},{"name":"HDR","value":false},{"name":"Depth","value":true},{"name":"Clear","value":true}],"portsOut":[{"name":"trigger"},{"name":"texture"},{"name":"textureDepth"}]},{"opId":"85ae5cfa-5eca-4dd8-8b30-850ac34f7cd5","objName":"Ops.Gl.Shader.BasicMaterial","id":"b7374c72-7f94-4988-903d-ae847ea59dc3","uiAttribs":{"translate":{"x":1512,"y":920},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"b7374c72-7f94-4988-903d-ae847ea59dc3","objOut":"fb112f99-a94f-4867-949a-6d66db26ac16"}]},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1},{"name":"texture","value":0},{"name":"textureOpacity","value":0},{"name":"colorizeTexture","value":false},{"name":"billboard","value":false},{"name":"Opacity TexCoords Transform","value":false},{"name":"preMultiplied alpha","value":false},{"name":"diffuseRepeatX","value":1},{"name":"diffuseRepeatY","value":1},{"name":"Tex Offset X","value":0},{"name":"Tex Offset Y","value":0}],"portsOut":[{"name":"trigger"},{"name":"shader"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"0ac3294d-056e-4319-b01f-9f295f7ae80b","uiAttribs":{"translate":{"x":1512,"y":980},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"0ac3294d-056e-4319-b01f-9f295f7ae80b","objOut":"b7374c72-7f94-4988-903d-ae847ea59dc3"}]},{"name":"Scale","value":1},{"name":"Draw","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"a466bc1f-06e9-4595-8849-bffb9fe22f99","objName":"Ops.Sequence","id":"0b355a1d-d15b-414c-8139-5e36a83c4e86","uiAttribs":{"translate":{"x":1536,"y":680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"triggerAlways","objIn":"0b355a1d-d15b-414c-8139-5e36a83c4e86","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"exe 0","value":0},{"name":"exe 1","value":null},{"name":"exe 2","value":0},{"name":"exe 3","value":0},{"name":"exe 4","value":0},{"name":"exe 5","value":0},{"name":"exe 6","value":0},{"name":"exe 7","value":0},{"name":"exe 8","value":0},{"name":"exe 9","value":0},{"name":"exe 10","value":0},{"name":"exe 11","value":0},{"name":"exe 12","value":0},{"name":"exe 13","value":0},{"name":"exe 14","value":0}],"portsOut":[{"name":"trigger 0","value":0},{"name":"trigger 1","value":0},{"name":"trigger 2"},{"name":"trigger 3","value":0},{"name":"trigger 4","value":0},{"name":"trigger 5","value":0},{"name":"trigger 6","value":0},{"name":"trigger 7","value":0},{"name":"trigger 8","value":0},{"name":"trigger 9","value":0},{"name":"trigger 10","value":0},{"name":"trigger 11","value":0},{"name":"trigger 12","value":0},{"name":"trigger 13","value":0},{"name":"trigger 14","value":0},{"name":"trigger 15","value":0}]},{"opId":"5c04608d-1e42-4e36-be00-1be4a81fc309","objName":"Ops.Gl.TextureEffects.ImageCompose","id":"6eb76731-1372-4c76-ac71-ca72543d4cd3","uiAttribs":{"hint":"texture dimensions not power of two! - texture filtering will not work.","warning":null,"translate":{"x":1920,"y":660},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 0","objIn":"6eb76731-1372-4c76-ac71-ca72543d4cd3","objOut":"bf879a09-3f38-401f-bf6f-c0f56e0b2e16"}]},{"name":"use viewport size","value":true},{"name":"width","value":685},{"name":"height","value":437},{"name":"filter","value":"linear"},{"name":"wrap","value":"repeat"},{"name":"HDR","value":false},{"name":"Background Alpha","value":1}],"portsOut":[{"name":"trigger"},{"name":"texture_out"},{"name":"Aspect Ratio","value":1.5675057208237986}]},{"opId":"8248b866-9492-48c8-897d-3097c6fe6fe8","objName":"Ops.Gl.TextureEffects.DrawImage","id":"6166cb9a-20a2-42ec-b06e-f0b1ec8f94e6","uiAttribs":{"translate":{"x":1920,"y":740},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"6166cb9a-20a2-42ec-b06e-f0b1ec8f94e6","objOut":"6eb76731-1372-4c76-ac71-ca72543d4cd3"}]},{"name":"amount","value":1},{"name":"blendMode","value":"normal"},{"name":"image","links":[{"portIn":"image","portOut":"texture","objIn":"6166cb9a-20a2-42ec-b06e-f0b1ec8f94e6","objOut":"fb112f99-a94f-4867-949a-6d66db26ac16"}]},{"name":"imageAlpha","value":0},{"name":"alphaSrc","value":"alpha channel"},{"name":"removeAlphaSrc","value":true},{"name":"invert alpha channel","value":false},{"name":"flip x","value":false},{"name":"flip y","value":false},{"name":"scale","value":1},{"name":"pos x","value":0},{"name":"pos y","value":0},{"name":"rotate","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"c76d3d21-e6d8-4b6c-af3d-0f0a5ecbdaa8","objName":"Ops.Gl.TextureEffects.Pixelate","id":"2a97edd2-a0c6-458e-9604-a0d9b86f69db","uiAttribs":{"translate":{"x":1920,"y":940},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"2a97edd2-a0c6-458e-9604-a0d9b86f69db","objOut":"75d100fc-9908-42bc-9588-31849c6d3027"}]},{"name":"Multiplier","value":0},{"name":"Blend Mode","value":"normal"},{"name":"Amount","value":1},{"name":"width","value":50},{"name":"height","value":30}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"a466bc1f-06e9-4595-8849-bffb9fe22f99","objName":"Ops.Sequence","id":"bf879a09-3f38-401f-bf6f-c0f56e0b2e16","uiAttribs":{"translate":{"x":1956,"y":540},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","links":[{"portIn":"exe","portOut":"trigger 4","objIn":"bf879a09-3f38-401f-bf6f-c0f56e0b2e16","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"exe 0","value":0},{"name":"exe 1","value":0},{"name":"exe 2","value":0},{"name":"exe 3","value":0},{"name":"exe 4","value":0},{"name":"exe 5","value":0},{"name":"exe 6","value":null},{"name":"exe 7","value":0},{"name":"exe 8","value":0},{"name":"exe 9","value":0},{"name":"exe 10","value":0},{"name":"exe 11","value":0},{"name":"exe 12","value":0},{"name":"exe 13","value":0},{"name":"exe 14","value":0}],"portsOut":[{"name":"trigger 0"},{"name":"trigger 1","value":0},{"name":"trigger 2","value":0},{"name":"trigger 3","value":0},{"name":"trigger 4","value":0},{"name":"trigger 5","value":0},{"name":"trigger 6","value":0},{"name":"trigger 7","value":0},{"name":"trigger 8","value":0},{"name":"trigger 9","value":0},{"name":"trigger 10"},{"name":"trigger 11","value":0},{"name":"trigger 12","value":0},{"name":"trigger 13","value":0},{"name":"trigger 14","value":0},{"name":"trigger 15","value":0}]},{"opId":"255bd15b-cc91-4a12-9b4e-53c710cbb282","objName":"Ops.Gl.Meshes.FullscreenRectangle","id":"e7e796ba-e841-44c5-aa60-60bf1a0436df","uiAttribs":{"translate":{"x":2136,"y":700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 10","objIn":"e7e796ba-e841-44c5-aa60-60bf1a0436df","objOut":"bf879a09-3f38-401f-bf6f-c0f56e0b2e16"}]},{"name":"Center in Canvas","value":false},{"name":"Flip Y","value":false},{"name":"Texture","links":[{"portIn":"Texture","portOut":"texture_out","objIn":"e7e796ba-e841-44c5-aa60-60bf1a0436df","objOut":"6eb76731-1372-4c76-ac71-ca72543d4cd3"}]}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"54f26f53-f637-44c1-9bfb-a2f2b722e998","objName":"Ops.Gl.TextureEffects.Blur","id":"0db0bff2-68db-47be-b930-4019a4c5e35d","uiAttribs":{"translate":{"x":1920,"y":840},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"0db0bff2-68db-47be-b930-4019a4c5e35d","objOut":"6166cb9a-20a2-42ec-b06e-f0b1ec8f94e6"}]},{"name":"amount","value":4},{"name":"direction","value":"both"},{"name":"Fast","value":true},{"name":"mask","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"9b151d99-7888-4948-81c7-cd23b334e8d4","objName":"Ops.Gl.TextureEffects.Scroll","id":"75d100fc-9908-42bc-9588-31849c6d3027","uiAttribs":{"translate":{"x":1920,"y":900},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"75d100fc-9908-42bc-9588-31849c6d3027","objOut":"0db0bff2-68db-47be-b930-4019a4c5e35d"}]},{"name":"amountX","value":0.01},{"name":"amountY","value":0.02},{"name":"Repeat","value":true}],"portsOut":[{"name":"trigger"}]},{"opId":"855880fa-6a85-4ba0-aac8-50440ccae948","objName":"Ops.Math.RandomNumbers","id":"c6f6243a-5f85-4b60-9401-f063109a242d","uiAttribs":{"translate":{"x":708,"y":800},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"index","links":[{"portIn":"index","portOut":"timesTriggered","objIn":"c6f6243a-5f85-4b60-9401-f063109a242d","objOut":"884a4fd4-6753-49db-a6a9-95766bf1503c"}]},{"name":"random seed","value":17710},{"name":"Min","value":0.4},{"name":"Max","value":0.7}],"portsOut":[{"name":"X"},{"name":"Y","value":0.5744135802469136},{"name":"Z","value":0.5841062242798354}]},{"opId":"59b94270-0364-4c0f-a9fc-ba2561696a23","objName":"Ops.Gl.Textures.ColorTexture","id":"b65e0505-008e-4077-a41f-ac2dfb8804a7","uiAttribs":{"translate":{"x":1056,"y":1080},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"a","value":1}],"portsOut":[{"name":"texture_out"}]},{"opId":"b6d933cf-1ef8-41d6-95c1-593be0b4be90","objName":"Ops.Gl.ShaderEffects.ExplodeDividedMesh","id":"ad69b273-2559-4bed-a0b7-2679c6038c2b","uiAttribs":{"translate":{"x":1044,"y":1300},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"ad69b273-2559-4bed-a0b7-2679c6038c2b","objOut":"518d4ca4-c3fc-4362-bbd4-3a8ff80c4b98"}]},{"name":"Distance","value":67.41},{"name":"Absolute","value":true},{"name":"add x","value":0},{"name":"add y","value":0},{"name":"add z","value":0.01},{"name":"mul x","value":1},{"name":"mul y","value":1},{"name":"mul z","value":1},{"name":"x","links":[{"portIn":"x","portOut":"X","objIn":"ad69b273-2559-4bed-a0b7-2679c6038c2b","objOut":"5f42e84f-9bc0-4475-8abb-46d62489f936"}]},{"name":"y","value":0},{"name":"z","value":0},{"name":"Size","value":0.64}],"portsOut":[{"name":"trigger"}]},{"opId":"40fa6f13-ee0e-4386-a86b-711e1fbcf1bc","objName":"Ops.Gl.RenderGeometry","id":"e3dfa9a1-4908-4fa3-a646-119f13422141","uiAttribs":{"translate":{"x":1044,"y":1340},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"e3dfa9a1-4908-4fa3-a646-119f13422141","objOut":"ad69b273-2559-4bed-a0b7-2679c6038c2b"}]},{"name":"Geometry","links":[{"portIn":"Geometry","portOut":"Result","objIn":"e3dfa9a1-4908-4fa3-a646-119f13422141","objOut":"277d2bf2-7210-4551-b906-1983097a7d0f"}]},{"name":"Update All","value":true},{"name":"Update Face Indices","value":false},{"name":"Update Vertices","value":false},{"name":"Update Texcoords","value":false},{"name":"Vertex Numbers","value":true}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"b0b2430c-5206-4d1f-a0a6-bc5d79a29027","objName":"Ops.Gl.Geometry.GeometryUnIndex","id":"277d2bf2-7210-4551-b906-1983097a7d0f","uiAttribs":{"translate":{"x":1344,"y":1180},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"Geometry","links":[{"portIn":"Geometry","portOut":"Geometry","objIn":"277d2bf2-7210-4551-b906-1983097a7d0f","objOut":"0dfda708-50af-47fb-8069-f209f2d9e71d"}]}],"portsOut":[{"name":"Result"}]},{"opId":"d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb","objName":"Ops.Gl.Meshes.CablesLogo","id":"0dfda708-50af-47fb-8069-f209f2d9e71d","uiAttribs":{"translate":{"x":1332,"y":1140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"0dfda708-50af-47fb-8069-f209f2d9e71d","objOut":"518d4ca4-c3fc-4362-bbd4-3a8ff80c4b98"}]},{"name":"Scale","value":1},{"name":"Draw","value":false}],"portsOut":[{"name":"trigger","value":0},{"name":"Geometry"}]},{"opId":"7857ee9e-6d60-4c30-9bc0-dfdddf2b47ad","objName":"Ops.Gl.Shader.MatCapMaterialNew","id":"518d4ca4-c3fc-4362-bbd4-3a8ff80c4b98","uiAttribs":{"translate":{"x":1044,"y":1140},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 5","objIn":"518d4ca4-c3fc-4362-bbd4-3a8ff80c4b98","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"MatCap","links":[{"portIn":"MatCap","portOut":"texture_out","objIn":"518d4ca4-c3fc-4362-bbd4-3a8ff80c4b98","objOut":"b65e0505-008e-4077-a41f-ac2dfb8804a7"}]},{"name":"Diffuse","value":0},{"name":"Normal","value":0},{"name":"Specular","value":0},{"name":"Specular MatCap","value":0},{"name":"AO Texture","value":0},{"name":"r","value":1},{"name":"g","value":1},{"name":"b","value":1},{"name":"Opacity","value":1},{"name":"AO Intensity","value":1},{"name":"Repeat X","value":1},{"name":"Repeat Y","value":1},{"name":"calc normal tangents","value":true},{"name":"projectCoords","value":"no"},{"name":"Screen Space Normals","value":false}],"portsOut":[{"name":"trigger"},{"name":"Shader"}]},{"opId":"855880fa-6a85-4ba0-aac8-50440ccae948","objName":"Ops.Math.RandomNumbers","id":"5f42e84f-9bc0-4475-8abb-46d62489f936","uiAttribs":{"translate":{"x":1152,"y":1240},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"index","links":[{"portIn":"index","portOut":"timesTriggered","objIn":"5f42e84f-9bc0-4475-8abb-46d62489f936","objOut":"884a4fd4-6753-49db-a6a9-95766bf1503c"}]},{"name":"random seed","value":17710},{"name":"Min","value":-0.5},{"name":"Max","value":-0.7}],"portsOut":[{"name":"X"},{"name":"Y","value":-0.6162757201646091},{"name":"Z","value":-0.6227374828532235}]},{"opId":"a466bc1f-06e9-4595-8849-bffb9fe22f99","objName":"Ops.Sequence","id":"af2fa3fa-345d-4c08-9076-ae6995f11856","uiAttribs":{"translate":{"x":2532,"y":540},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"exe","value":null},{"name":"exe 0","value":0},{"name":"exe 1","value":0},{"name":"exe 2","links":[{"portIn":"exe 2","portOut":"trigger 6","objIn":"af2fa3fa-345d-4c08-9076-ae6995f11856","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"exe 3","value":0},{"name":"exe 4","value":0},{"name":"exe 5","value":0},{"name":"exe 6","value":null},{"name":"exe 7","value":0},{"name":"exe 8","value":0},{"name":"exe 9","value":0},{"name":"exe 10","value":0},{"name":"exe 11","value":0},{"name":"exe 12","value":0},{"name":"exe 13","value":0},{"name":"exe 14","value":0}],"portsOut":[{"name":"trigger 0"},{"name":"trigger 1","value":0},{"name":"trigger 2","value":0},{"name":"trigger 3","value":0},{"name":"trigger 4","value":0},{"name":"trigger 5","value":0},{"name":"trigger 6","value":0},{"name":"trigger 7","value":0},{"name":"trigger 8","value":0},{"name":"trigger 9","value":0},{"name":"trigger 10"},{"name":"trigger 11","value":0},{"name":"trigger 12","value":0},{"name":"trigger 13"},{"name":"trigger 14","value":0},{"name":"trigger 15","value":0}]},{"opId":"5c04608d-1e42-4e36-be00-1be4a81fc309","objName":"Ops.Gl.TextureEffects.ImageCompose","id":"725f8e01-9b6c-4012-a06a-a86f24e21847","uiAttribs":{"hint":"texture dimensions not power of two! - texture filtering will not work.","warning":null,"translate":{"x":2496,"y":660},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 0","objIn":"725f8e01-9b6c-4012-a06a-a86f24e21847","objOut":"af2fa3fa-345d-4c08-9076-ae6995f11856"}]},{"name":"use viewport size","value":true},{"name":"width","value":685},{"name":"height","value":437},{"name":"filter","value":"linear"},{"name":"wrap","value":"repeat"},{"name":"HDR","value":false},{"name":"Background Alpha","value":1}],"portsOut":[{"name":"trigger"},{"name":"texture_out"},{"name":"Aspect Ratio","value":1.5675057208237986}]},{"opId":"8248b866-9492-48c8-897d-3097c6fe6fe8","objName":"Ops.Gl.TextureEffects.DrawImage","id":"94b9cfe6-3dcf-4a27-955f-64cc59de6638","uiAttribs":{"translate":{"x":2496,"y":740},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"94b9cfe6-3dcf-4a27-955f-64cc59de6638","objOut":"725f8e01-9b6c-4012-a06a-a86f24e21847"}]},{"name":"amount","value":1},{"name":"blendMode","value":"normal"},{"name":"image","links":[{"portIn":"image","portOut":"texture","objIn":"94b9cfe6-3dcf-4a27-955f-64cc59de6638","objOut":"fb112f99-a94f-4867-949a-6d66db26ac16"}]},{"name":"imageAlpha","value":0},{"name":"alphaSrc","value":"alpha channel"},{"name":"removeAlphaSrc","value":true},{"name":"invert alpha channel","value":false},{"name":"flip x","value":false},{"name":"flip y","value":false},{"name":"scale","value":1},{"name":"pos x","value":0},{"name":"pos y","value":0},{"name":"rotate","value":0}],"portsOut":[{"name":"trigger"}]},{"opId":"255bd15b-cc91-4a12-9b4e-53c710cbb282","objName":"Ops.Gl.Meshes.FullscreenRectangle","id":"83a4a319-b8e3-459e-83c8-356e36460a1e","uiAttribs":{"translate":{"x":2712,"y":700},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 10","objIn":"83a4a319-b8e3-459e-83c8-356e36460a1e","objOut":"af2fa3fa-345d-4c08-9076-ae6995f11856"}]},{"name":"Center in Canvas","value":false},{"name":"Flip Y","value":false},{"name":"Texture","links":[{"portIn":"Texture","portOut":"texture_out","objIn":"83a4a319-b8e3-459e-83c8-356e36460a1e","objOut":"725f8e01-9b6c-4012-a06a-a86f24e21847"}]}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"a55eea17-efb8-4418-bcf9-7fefeecf40e5","objName":"Ops.Gl.TextureEffects.Noise.GlitchNoise","id":"1601a398-b2f3-4545-a85b-a6ce600080f6","uiAttribs":{"translate":{"x":2892,"y":740},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"1601a398-b2f3-4545-a85b-a6ce600080f6","objOut":"99756b7e-26a2-43fd-892b-a2cb4563bcc9"}]},{"name":"Amount","value":1},{"name":"Blend Mode","value":"normal"},{"name":"Seed","links":[{"portIn":"Seed","portOut":"result","objIn":"1601a398-b2f3-4545-a85b-a6ce600080f6","objOut":"8ba7108f-85dc-4616-a03a-0da6e400a810"}]},{"name":"frequency","value":1},{"name":"strength","value":8},{"name":"Block size small x","value":39},{"name":"Block size small y","value":39},{"name":"Block size large x","value":20},{"name":"Block size large y","value":4},{"name":"Scroll X","value":0},{"name":"Scroll Y","value":0}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"c089646e-9324-48b2-8b32-81240408222e","objName":"Ops.Gl.TextureEffects.PixelDisplacement_v3","id":"42ebe8b1-2866-49a9-af2f-a7c2c2f5e52d","uiAttribs":{"translate":{"x":2472,"y":920},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"42ebe8b1-2866-49a9-af2f-a7c2c2f5e52d","objOut":"e9f23e8d-d54f-4d6e-9e9b-2b5c24defb67"}]},{"name":"displaceTex","links":[{"portIn":"displaceTex","portOut":"texture_out","objIn":"42ebe8b1-2866-49a9-af2f-a7c2c2f5e52d","objOut":"99756b7e-26a2-43fd-892b-a2cb4563bcc9"}]},{"name":"Blend Mode","value":"normal"},{"name":"Amount","value":1},{"name":"amount X","value":0.251},{"name":"amount Y","value":0.03},{"name":"Wrap","value":"Mirror"},{"name":"Input","value":"Luminance"},{"name":"Zero Displace","value":"Black"}],"portsOut":[{"name":"trigger"}]},{"opId":"5c04608d-1e42-4e36-be00-1be4a81fc309","objName":"Ops.Gl.TextureEffects.ImageCompose","id":"99756b7e-26a2-43fd-892b-a2cb4563bcc9","uiAttribs":{"hint":"texture dimensions not power of two! - texture filtering will not work.","warning":null,"translate":{"x":2868,"y":640},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 13","objIn":"99756b7e-26a2-43fd-892b-a2cb4563bcc9","objOut":"af2fa3fa-345d-4c08-9076-ae6995f11856"}]},{"name":"use viewport size","value":true},{"name":"width","value":685},{"name":"height","value":437},{"name":"filter","value":"linear"},{"name":"wrap","value":"mirrored repeat"},{"name":"HDR","value":false},{"name":"Background Alpha","value":1}],"portsOut":[{"name":"trigger"},{"name":"texture_out"},{"name":"Aspect Ratio","value":1.5675057208237986}]},{"opId":"9b151d99-7888-4948-81c7-cd23b334e8d4","objName":"Ops.Gl.TextureEffects.Scroll","id":"e59a6ec2-ad48-4f2a-b521-0f6d5ab05614","uiAttribs":{"translate":{"x":2484,"y":1000},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"e59a6ec2-ad48-4f2a-b521-0f6d5ab05614","objOut":"42ebe8b1-2866-49a9-af2f-a7c2c2f5e52d"}]},{"name":"amountX","value":-0.07},{"name":"amountY","value":0},{"name":"Repeat","value":true}],"portsOut":[{"name":"trigger"}]},{"opId":"6b5af21d-065f-44d2-9442-8b7a254753f6","objName":"Ops.Math.Abs","id":"8ba7108f-85dc-4616-a03a-0da6e400a810","uiAttribs":{"translate":{"x":2952,"y":680},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"number","links":[{"portIn":"number","portOut":"X","objIn":"8ba7108f-85dc-4616-a03a-0da6e400a810","objOut":"5f42e84f-9bc0-4475-8abb-46d62489f936"}]}],"portsOut":[{"name":"result"}]},{"opId":"c089646e-9324-48b2-8b32-81240408222e","objName":"Ops.Gl.TextureEffects.PixelDisplacement_v3","id":"e9f23e8d-d54f-4d6e-9e9b-2b5c24defb67","uiAttribs":{"translate":{"x":2472,"y":800},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"e9f23e8d-d54f-4d6e-9e9b-2b5c24defb67","objOut":"94b9cfe6-3dcf-4a27-955f-64cc59de6638"}]},{"name":"displaceTex","links":[{"portIn":"displaceTex","portOut":"texture_out","objIn":"e9f23e8d-d54f-4d6e-9e9b-2b5c24defb67","objOut":"6eb76731-1372-4c76-ac71-ca72543d4cd3"}]},{"name":"Blend Mode","value":"normal"},{"name":"Amount","value":1},{"name":"amount X","value":0.048},{"name":"amount Y","value":0},{"name":"Wrap","value":"Mirror"},{"name":"Input","value":"RedGreen"},{"name":"Zero Displace","value":"Black"}],"portsOut":[{"name":"trigger"}]},{"opId":"38ac43a1-1757-48f4-9450-29f07ac0d376","objName":"Ops.Gl.TextureEffects.ChromaticAberration","id":"5ac31074-0043-4cb3-a5f8-d8c3eb4187a0","uiAttribs":{"translate":{"x":2484,"y":1120},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger","objIn":"5ac31074-0043-4cb3-a5f8-d8c3eb4187a0","objOut":"e59a6ec2-ad48-4f2a-b521-0f6d5ab05614"}]},{"name":"Blend Mode","value":"normal"},{"name":"Amount","value":1},{"name":"Pixel","value":5},{"name":"Lens Distort","value":0},{"name":"Smooth","value":false},{"name":"Mask","value":0}],"portsOut":[{"name":"trigger","value":0}]},{"opId":"4db917cc-2cef-43f4-83d5-38c4572fe943","objName":"Ops.Gl.Meshes.Circle","id":"ea15e576-4abe-4a2c-b366-d766fc877bb7","uiAttribs":{"translate":{"x":-312,"y":320},"subPatch":0,"notWorkingMsg":null},"portsIn":[{"name":"render","links":[{"portIn":"render","portOut":"trigger 7","objIn":"ea15e576-4abe-4a2c-b366-d766fc877bb7","objOut":"12cb3df4-d426-4d47-8f3d-7e140b27ab38"}]},{"name":"radius","value":0.3},{"name":"innerRadius","value":0.682},{"name":"segments","value":40},{"name":"percent","value":1},{"name":"steps","value":5},{"name":"invertSteps","value":false},{"name":"mapping","value":"flat"},{"name":"Spline","value":false},{"name":"Draw","value":true}],"portsOut":[{"name":"trigger","value":0},{"name":"geometry"}]}],"users":[],"userOps":[],"tags":[],"_id":"5d385b9c20668302619c246a","name":"new project","userId":"55d744634cdc152216eb9aad","created":"2019-07-24T13:22:36.277Z","updated":"2019-07-25T09:38:01.642Z","__v":52,"shortId":"aQt9AM","opsHash":"3cf6b85df4f27a98963edd5e11753f0e44c2ed4d","ui":{"viewBox":{"x":-604.7636636946618,"y":-240.88965823122902,"w":1512.2839522784905,"h":1276.3247540506409},"timeLineLength":20,"bookmarks":[],"subPatchViewBoxes":[],"renderer":{"w":685,"h":437,"s":1}},"updatedByUser":"pandur","cachedUsername":"pandur","views":2,"cachedNumComments":0,"cachedNumFavs":0,"statsAdmin":{"filenameScreenshots":["_screenshots/screenshot.png","_screenshots/screenshot_1563974591813.png","_screenshots/screenshot_1563974656308.png","_screenshots/screenshot_1563974663733.png","_screenshots/screenshot_1563974722103.png","_screenshots/screenshot_1563974741106.png","_screenshots/screenshot_1563974762575.png","_screenshots/screenshot_1563974793847.png","_screenshots/screenshot_1563974828080.png","_screenshots/screenshot_1563974850063.png","_screenshots/screenshot_1563974852852.png","_screenshots/screenshot_1563974925976.png","_screenshots/screenshot_1563974941917.png","_screenshots/screenshot_1563974950703.png","_screenshots/screenshot_1563974968206.png","_screenshots/screenshot_1563974972541.png","_screenshots/screenshot_1563974974318.png","_screenshots/screenshot_1563975003859.png","_screenshots/screenshot_1563975019824.png","_screenshots/screenshot_1563975033135.png","_screenshots/screenshot_1563975055455.png","_screenshots/screenshot_1563975176216.png","_screenshots/screenshot_1563975179411.png","_screenshots/screenshot_1563975204231.png","_screenshots/screenshot_1563975232012.png","_screenshots/screenshot_1563975246891.png","_screenshots/screenshot_1563975251356.png","_screenshots/screenshot_1563975258733.png","_screenshots/screenshot_1563975271580.png","_screenshots/screenshot_1563975330530.png","_screenshots/screenshot_1563975337125.png","_screenshots/screenshot_1563975390176.png","_screenshots/screenshot_1563975482288.png","_screenshots/screenshot_1563975483380.png","_screenshots/screenshot_1563975498396.png","_screenshots/screenshot_1563975544641.png","_screenshots/screenshot_1563975618519.png","_screenshots/screenshot_1563975631295.png","_screenshots/screenshot_1563975652386.png","_screenshots/screenshot_1563975808667.png","_screenshots/screenshot_1563975833605.png","_screenshots/screenshot_1563975848897.png","_screenshots/screenshot_1563975863274.png","_screenshots/screenshot_1563975901364.png","_screenshots/screenshot_1563975957430.png","_screenshots/screenshot_1563976000744.png","_screenshots/screenshot_1563976018619.png","_screenshots/screenshot_1563976022874.png","_screenshots/screenshot_1563976032370.png","_screenshots/screenshot_1563976047772.png","_screenshots/screenshot_1563976069113.png","_screenshots/screenshot_1563976107576.png","_screenshots/screenshot_1563976112873.png","_screenshots/screenshot_1564047337264.png","_screenshots/screenshot_1564047431717.png","_screenshots/screenshot_1564047470897.png","_screenshots/screenshot_1564047482139.png"],"filenameExports":[],"filenameAssets":[],"hasOldScreenshots":false,"hasOldExports":false,"sizeScreenshots":275.6259765625,"sizeExports":0,"sizeAssets":0},"exports":1}
 !function(t,a){if("object"==typeof exports&&"object"==typeof module)module.exports=a();else if("function"==typeof define&&define.amd)define([],a);else{var n=a();for(var r in n)("object"==typeof exports?exports:t)[r]=n[r]}}(this,function(){return function(t){function a(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,a),o.loaded=!0,o.exports}var n={};return a.m=t,a.c=n,a.p="",a(0)}([function(t,a,n){a.glMatrix=n(1),a.mat2=n(2),a.mat2d=n(3),a.mat3=n(4),a.mat4=n(5),a.quat=n(6),a.vec2=n(9),a.vec3=n(7),a.vec4=n(8)},function(t,a){var n={};n.EPSILON=1e-6,n.ARRAY_TYPE="undefined"!=typeof Float32Array?Float32Array:Array,n.RANDOM=Math.random,n.ENABLE_SIMD=!1,n.SIMD_AVAILABLE=n.ARRAY_TYPE===this.Float32Array&&"SIMD"in this,n.USE_SIMD=n.ENABLE_SIMD&&n.SIMD_AVAILABLE,n.setMatrixArrayType=function(t){n.ARRAY_TYPE=t};var r=Math.PI/180;n.toRadian=function(t){return t*r},n.equals=function(t,a){return Math.abs(t-a)<=n.EPSILON*Math.max(1,Math.abs(t),Math.abs(a))},t.exports=n},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(4);return t[0]=1,t[1]=0,t[2]=0,t[3]=1,t},o.clone=function(t){var a=new r.ARRAY_TYPE(4);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a[3]=t[3],a},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t},o.identity=function(t){return t[0]=1,t[1]=0,t[2]=0,t[3]=1,t},o.fromValues=function(t,a,n,o){var u=new r.ARRAY_TYPE(4);return u[0]=t,u[1]=a,u[2]=n,u[3]=o,u},o.set=function(t,a,n,r,o){return t[0]=a,t[1]=n,t[2]=r,t[3]=o,t},o.transpose=function(t,a){if(t===a){var n=a[1];t[1]=a[2],t[2]=n}else t[0]=a[0],t[1]=a[2],t[2]=a[1],t[3]=a[3];return t},o.invert=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=n*u-o*r;return l?(l=1/l,t[0]=u*l,t[1]=-r*l,t[2]=-o*l,t[3]=n*l,t):null},o.adjoint=function(t,a){var n=a[0];return t[0]=a[3],t[1]=-a[1],t[2]=-a[2],t[3]=n,t},o.determinant=function(t){return t[0]*t[3]-t[2]*t[1]},o.multiply=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=n[0],M=n[1],s=n[2],i=n[3];return t[0]=r*e+u*M,t[1]=o*e+l*M,t[2]=r*s+u*i,t[3]=o*s+l*i,t},o.mul=o.multiply,o.rotate=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=Math.sin(n),M=Math.cos(n);return t[0]=r*M+u*e,t[1]=o*M+l*e,t[2]=r*-e+u*M,t[3]=o*-e+l*M,t},o.scale=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=n[0],M=n[1];return t[0]=r*e,t[1]=o*e,t[2]=u*M,t[3]=l*M,t},o.fromRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=r,t[1]=n,t[2]=-n,t[3]=r,t},o.fromScaling=function(t,a){return t[0]=a[0],t[1]=0,t[2]=0,t[3]=a[1],t},o.str=function(t){return"mat2("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+")"},o.frob=function(t){return Math.sqrt(Math.pow(t[0],2)+Math.pow(t[1],2)+Math.pow(t[2],2)+Math.pow(t[3],2))},o.LDU=function(t,a,n,r){return t[2]=r[2]/r[0],n[0]=r[0],n[1]=r[1],n[3]=r[3]-t[2]*n[1],[t,a,n]},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t[3]=a[3]+n[3],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t[3]=a[3]-n[3],t},o.sub=o.subtract,o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]&&t[3]===a[3]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=t[3],e=a[0],M=a[1],s=a[2],i=a[3];return Math.abs(n-e)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(e))&&Math.abs(o-M)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(M))&&Math.abs(u-s)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(s))&&Math.abs(l-i)<=r.EPSILON*Math.max(1,Math.abs(l),Math.abs(i))},o.multiplyScalar=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t[3]=a[3]*n,t},o.multiplyScalarAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t[3]=a[3]+n[3]*r,t},t.exports=o},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(6);return t[0]=1,t[1]=0,t[2]=0,t[3]=1,t[4]=0,t[5]=0,t},o.clone=function(t){var a=new r.ARRAY_TYPE(6);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a[3]=t[3],a[4]=t[4],a[5]=t[5],a},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[4]=a[4],t[5]=a[5],t},o.identity=function(t){return t[0]=1,t[1]=0,t[2]=0,t[3]=1,t[4]=0,t[5]=0,t},o.fromValues=function(t,a,n,o,u,l){var e=new r.ARRAY_TYPE(6);return e[0]=t,e[1]=a,e[2]=n,e[3]=o,e[4]=u,e[5]=l,e},o.set=function(t,a,n,r,o,u,l){return t[0]=a,t[1]=n,t[2]=r,t[3]=o,t[4]=u,t[5]=l,t},o.invert=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=n*u-r*o;return M?(M=1/M,t[0]=u*M,t[1]=-r*M,t[2]=-o*M,t[3]=n*M,t[4]=(o*e-u*l)*M,t[5]=(r*l-n*e)*M,t):null},o.determinant=function(t){return t[0]*t[3]-t[1]*t[2]},o.multiply=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=n[0],i=n[1],c=n[2],h=n[3],f=n[4],S=n[5];return t[0]=r*s+u*i,t[1]=o*s+l*i,t[2]=r*c+u*h,t[3]=o*c+l*h,t[4]=r*f+u*S+e,t[5]=o*f+l*S+M,t},o.mul=o.multiply,o.rotate=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=Math.sin(n),i=Math.cos(n);return t[0]=r*i+u*s,t[1]=o*i+l*s,t[2]=r*-s+u*i,t[3]=o*-s+l*i,t[4]=e,t[5]=M,t},o.scale=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=n[0],i=n[1];return t[0]=r*s,t[1]=o*s,t[2]=u*i,t[3]=l*i,t[4]=e,t[5]=M,t},o.translate=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=n[0],i=n[1];return t[0]=r,t[1]=o,t[2]=u,t[3]=l,t[4]=r*s+u*i+e,t[5]=o*s+l*i+M,t},o.fromRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=r,t[1]=n,t[2]=-n,t[3]=r,t[4]=0,t[5]=0,t},o.fromScaling=function(t,a){return t[0]=a[0],t[1]=0,t[2]=0,t[3]=a[1],t[4]=0,t[5]=0,t},o.fromTranslation=function(t,a){return t[0]=1,t[1]=0,t[2]=0,t[3]=1,t[4]=a[0],t[5]=a[1],t},o.str=function(t){return"mat2d("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+", "+t[4]+", "+t[5]+")"},o.frob=function(t){return Math.sqrt(Math.pow(t[0],2)+Math.pow(t[1],2)+Math.pow(t[2],2)+Math.pow(t[3],2)+Math.pow(t[4],2)+Math.pow(t[5],2)+1)},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t[3]=a[3]+n[3],t[4]=a[4]+n[4],t[5]=a[5]+n[5],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t[3]=a[3]-n[3],t[4]=a[4]-n[4],t[5]=a[5]-n[5],t},o.sub=o.subtract,o.multiplyScalar=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t[3]=a[3]*n,t[4]=a[4]*n,t[5]=a[5]*n,t},o.multiplyScalarAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t[3]=a[3]+n[3]*r,t[4]=a[4]+n[4]*r,t[5]=a[5]+n[5]*r,t},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]&&t[3]===a[3]&&t[4]===a[4]&&t[5]===a[5]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=t[3],e=t[4],M=t[5],s=a[0],i=a[1],c=a[2],h=a[3],f=a[4],S=a[5];return Math.abs(n-s)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(s))&&Math.abs(o-i)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(i))&&Math.abs(u-c)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(c))&&Math.abs(l-h)<=r.EPSILON*Math.max(1,Math.abs(l),Math.abs(h))&&Math.abs(e-f)<=r.EPSILON*Math.max(1,Math.abs(e),Math.abs(f))&&Math.abs(M-S)<=r.EPSILON*Math.max(1,Math.abs(M),Math.abs(S))},t.exports=o},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(9);return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=1,t[5]=0,t[6]=0,t[7]=0,t[8]=1,t},o.fromMat4=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[4],t[4]=a[5],t[5]=a[6],t[6]=a[8],t[7]=a[9],t[8]=a[10],t},o.clone=function(t){var a=new r.ARRAY_TYPE(9);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a[3]=t[3],a[4]=t[4],a[5]=t[5],a[6]=t[6],a[7]=t[7],a[8]=t[8],a},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[4]=a[4],t[5]=a[5],t[6]=a[6],t[7]=a[7],t[8]=a[8],t},o.fromValues=function(t,a,n,o,u,l,e,M,s){var i=new r.ARRAY_TYPE(9);return i[0]=t,i[1]=a,i[2]=n,i[3]=o,i[4]=u,i[5]=l,i[6]=e,i[7]=M,i[8]=s,i},o.set=function(t,a,n,r,o,u,l,e,M,s){return t[0]=a,t[1]=n,t[2]=r,t[3]=o,t[4]=u,t[5]=l,t[6]=e,t[7]=M,t[8]=s,t},o.identity=function(t){return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=1,t[5]=0,t[6]=0,t[7]=0,t[8]=1,t},o.transpose=function(t,a){if(t===a){var n=a[1],r=a[2],o=a[5];t[1]=a[3],t[2]=a[6],t[3]=n,t[5]=a[7],t[6]=r,t[7]=o}else t[0]=a[0],t[1]=a[3],t[2]=a[6],t[3]=a[1],t[4]=a[4],t[5]=a[7],t[6]=a[2],t[7]=a[5],t[8]=a[8];return t},o.invert=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=a[6],s=a[7],i=a[8],c=i*l-e*s,h=-i*u+e*M,f=s*u-l*M,S=n*c+r*h+o*f;return S?(S=1/S,t[0]=c*S,t[1]=(-i*r+o*s)*S,t[2]=(e*r-o*l)*S,t[3]=h*S,t[4]=(i*n-o*M)*S,t[5]=(-e*n+o*u)*S,t[6]=f*S,t[7]=(-s*n+r*M)*S,t[8]=(l*n-r*u)*S,t):null},o.adjoint=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=a[6],s=a[7],i=a[8];return t[0]=l*i-e*s,t[1]=o*s-r*i,t[2]=r*e-o*l,t[3]=e*M-u*i,t[4]=n*i-o*M,t[5]=o*u-n*e,t[6]=u*s-l*M,t[7]=r*M-n*s,t[8]=n*l-r*u,t},o.determinant=function(t){var a=t[0],n=t[1],r=t[2],o=t[3],u=t[4],l=t[5],e=t[6],M=t[7],s=t[8];return a*(s*u-l*M)+n*(-s*o+l*e)+r*(M*o-u*e)},o.multiply=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=a[6],i=a[7],c=a[8],h=n[0],f=n[1],S=n[2],I=n[3],x=n[4],D=n[5],F=n[6],m=n[7],d=n[8];return t[0]=h*r+f*l+S*s,t[1]=h*o+f*e+S*i,t[2]=h*u+f*M+S*c,t[3]=I*r+x*l+D*s,t[4]=I*o+x*e+D*i,t[5]=I*u+x*M+D*c,t[6]=F*r+m*l+d*s,t[7]=F*o+m*e+d*i,t[8]=F*u+m*M+d*c,t},o.mul=o.multiply,o.translate=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=a[6],i=a[7],c=a[8],h=n[0],f=n[1];return t[0]=r,t[1]=o,t[2]=u,t[3]=l,t[4]=e,t[5]=M,t[6]=h*r+f*l+s,t[7]=h*o+f*e+i,t[8]=h*u+f*M+c,t},o.rotate=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=a[6],i=a[7],c=a[8],h=Math.sin(n),f=Math.cos(n);return t[0]=f*r+h*l,t[1]=f*o+h*e,t[2]=f*u+h*M,t[3]=f*l-h*r,t[4]=f*e-h*o,t[5]=f*M-h*u,t[6]=s,t[7]=i,t[8]=c,t},o.scale=function(t,a,n){var r=n[0],o=n[1];return t[0]=r*a[0],t[1]=r*a[1],t[2]=r*a[2],t[3]=o*a[3],t[4]=o*a[4],t[5]=o*a[5],t[6]=a[6],t[7]=a[7],t[8]=a[8],t},o.fromTranslation=function(t,a){return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=1,t[5]=0,t[6]=a[0],t[7]=a[1],t[8]=1,t},o.fromRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=r,t[1]=n,t[2]=0,t[3]=-n,t[4]=r,t[5]=0,t[6]=0,t[7]=0,t[8]=1,t},o.fromScaling=function(t,a){return t[0]=a[0],t[1]=0,t[2]=0,t[3]=0,t[4]=a[1],t[5]=0,t[6]=0,t[7]=0,t[8]=1,t},o.fromMat2d=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=0,t[3]=a[2],t[4]=a[3],t[5]=0,t[6]=a[4],t[7]=a[5],t[8]=1,t},o.fromQuat=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=n+n,e=r+r,M=o+o,s=n*l,i=r*l,c=r*e,h=o*l,f=o*e,S=o*M,I=u*l,x=u*e,D=u*M;return t[0]=1-c-S,t[3]=i-D,t[6]=h+x,t[1]=i+D,t[4]=1-s-S,t[7]=f-I,t[2]=h-x,t[5]=f+I,t[8]=1-s-c,t},o.normalFromMat4=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=a[6],s=a[7],i=a[8],c=a[9],h=a[10],f=a[11],S=a[12],I=a[13],x=a[14],D=a[15],F=n*e-r*l,m=n*M-o*l,d=n*s-u*l,v=r*M-o*e,b=r*s-u*e,p=o*s-u*M,z=i*I-c*S,w=i*x-h*S,E=i*D-f*S,A=c*x-h*I,P=c*D-f*I,L=h*D-f*x,q=F*L-m*P+d*A+v*E-b*w+p*z;return q?(q=1/q,t[0]=(e*L-M*P+s*A)*q,t[1]=(M*E-l*L-s*w)*q,t[2]=(l*P-e*E+s*z)*q,t[3]=(o*P-r*L-u*A)*q,t[4]=(n*L-o*E+u*w)*q,t[5]=(r*E-n*P-u*z)*q,t[6]=(I*p-x*b+D*v)*q,t[7]=(x*d-S*p-D*m)*q,t[8]=(S*b-I*d+D*F)*q,t):null},o.str=function(t){return"mat3("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+", "+t[4]+", "+t[5]+", "+t[6]+", "+t[7]+", "+t[8]+")"},o.frob=function(t){return Math.sqrt(Math.pow(t[0],2)+Math.pow(t[1],2)+Math.pow(t[2],2)+Math.pow(t[3],2)+Math.pow(t[4],2)+Math.pow(t[5],2)+Math.pow(t[6],2)+Math.pow(t[7],2)+Math.pow(t[8],2))},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t[3]=a[3]+n[3],t[4]=a[4]+n[4],t[5]=a[5]+n[5],t[6]=a[6]+n[6],t[7]=a[7]+n[7],t[8]=a[8]+n[8],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t[3]=a[3]-n[3],t[4]=a[4]-n[4],t[5]=a[5]-n[5],t[6]=a[6]-n[6],t[7]=a[7]-n[7],t[8]=a[8]-n[8],t},o.sub=o.subtract,o.multiplyScalar=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t[3]=a[3]*n,t[4]=a[4]*n,t[5]=a[5]*n,t[6]=a[6]*n,t[7]=a[7]*n,t[8]=a[8]*n,t},o.multiplyScalarAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t[3]=a[3]+n[3]*r,t[4]=a[4]+n[4]*r,t[5]=a[5]+n[5]*r,t[6]=a[6]+n[6]*r,t[7]=a[7]+n[7]*r,t[8]=a[8]+n[8]*r,t},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]&&t[3]===a[3]&&t[4]===a[4]&&t[5]===a[5]&&t[6]===a[6]&&t[7]===a[7]&&t[8]===a[8]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=t[3],e=t[4],M=t[5],s=t[6],i=t[7],c=t[8],h=a[0],f=a[1],S=a[2],I=a[3],x=a[4],D=a[5],F=t[6],m=a[7],d=a[8];return Math.abs(n-h)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(h))&&Math.abs(o-f)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(f))&&Math.abs(u-S)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(S))&&Math.abs(l-I)<=r.EPSILON*Math.max(1,Math.abs(l),Math.abs(I))&&Math.abs(e-x)<=r.EPSILON*Math.max(1,Math.abs(e),Math.abs(x))&&Math.abs(M-D)<=r.EPSILON*Math.max(1,Math.abs(M),Math.abs(D))&&Math.abs(s-F)<=r.EPSILON*Math.max(1,Math.abs(s),Math.abs(F))&&Math.abs(i-m)<=r.EPSILON*Math.max(1,Math.abs(i),Math.abs(m))&&Math.abs(c-d)<=r.EPSILON*Math.max(1,Math.abs(c),Math.abs(d))},t.exports=o},function(t,a,n){var r=n(1),o={scalar:{},SIMD:{}};o.create=function(){var t=new r.ARRAY_TYPE(16);return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=1,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=1,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.clone=function(t){var a=new r.ARRAY_TYPE(16);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a[3]=t[3],a[4]=t[4],a[5]=t[5],a[6]=t[6],a[7]=t[7],a[8]=t[8],a[9]=t[9],a[10]=t[10],a[11]=t[11],a[12]=t[12],a[13]=t[13],a[14]=t[14],a[15]=t[15],a},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[4]=a[4],t[5]=a[5],t[6]=a[6],t[7]=a[7],t[8]=a[8],t[9]=a[9],t[10]=a[10],t[11]=a[11],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15],t},o.fromValues=function(t,a,n,o,u,l,e,M,s,i,c,h,f,S,I,x){var D=new r.ARRAY_TYPE(16);return D[0]=t,D[1]=a,D[2]=n,D[3]=o,D[4]=u,D[5]=l,D[6]=e,D[7]=M,D[8]=s,D[9]=i,D[10]=c,D[11]=h,D[12]=f,D[13]=S,D[14]=I,D[15]=x,D},o.set=function(t,a,n,r,o,u,l,e,M,s,i,c,h,f,S,I,x){return t[0]=a,t[1]=n,t[2]=r,t[3]=o,t[4]=u,t[5]=l,t[6]=e,t[7]=M,t[8]=s,t[9]=i,t[10]=c,t[11]=h,t[12]=f,t[13]=S,t[14]=I,t[15]=x,t},o.identity=function(t){return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=1,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=1,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.scalar.transpose=function(t,a){if(t===a){var n=a[1],r=a[2],o=a[3],u=a[6],l=a[7],e=a[11];t[1]=a[4],t[2]=a[8],t[3]=a[12],t[4]=n,t[6]=a[9],t[7]=a[13],t[8]=r,t[9]=u,t[11]=a[14],t[12]=o,t[13]=l,t[14]=e}else t[0]=a[0],t[1]=a[4],t[2]=a[8],t[3]=a[12],t[4]=a[1],t[5]=a[5],t[6]=a[9],t[7]=a[13],t[8]=a[2],t[9]=a[6],t[10]=a[10],t[11]=a[14],t[12]=a[3],t[13]=a[7],t[14]=a[11],t[15]=a[15];return t},o.SIMD.transpose=function(t,a){var n,r,o,u,l,e,M,s,i,c;return n=SIMD.Float32x4.load(a,0),r=SIMD.Float32x4.load(a,4),o=SIMD.Float32x4.load(a,8),u=SIMD.Float32x4.load(a,12),l=SIMD.Float32x4.shuffle(n,r,0,1,4,5),e=SIMD.Float32x4.shuffle(o,u,0,1,4,5),M=SIMD.Float32x4.shuffle(l,e,0,2,4,6),s=SIMD.Float32x4.shuffle(l,e,1,3,5,7),SIMD.Float32x4.store(t,0,M),SIMD.Float32x4.store(t,4,s),l=SIMD.Float32x4.shuffle(n,r,2,3,6,7),e=SIMD.Float32x4.shuffle(o,u,2,3,6,7),i=SIMD.Float32x4.shuffle(l,e,0,2,4,6),c=SIMD.Float32x4.shuffle(l,e,1,3,5,7),SIMD.Float32x4.store(t,8,i),SIMD.Float32x4.store(t,12,c),t},o.transpose=r.USE_SIMD?o.SIMD.transpose:o.scalar.transpose,o.scalar.invert=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=a[6],s=a[7],i=a[8],c=a[9],h=a[10],f=a[11],S=a[12],I=a[13],x=a[14],D=a[15],F=n*e-r*l,m=n*M-o*l,d=n*s-u*l,v=r*M-o*e,b=r*s-u*e,p=o*s-u*M,z=i*I-c*S,w=i*x-h*S,E=i*D-f*S,A=c*x-h*I,P=c*D-f*I,L=h*D-f*x,q=F*L-m*P+d*A+v*E-b*w+p*z;return q?(q=1/q,t[0]=(e*L-M*P+s*A)*q,t[1]=(o*P-r*L-u*A)*q,t[2]=(I*p-x*b+D*v)*q,t[3]=(h*b-c*p-f*v)*q,t[4]=(M*E-l*L-s*w)*q,t[5]=(n*L-o*E+u*w)*q,t[6]=(x*d-S*p-D*m)*q,t[7]=(i*p-h*d+f*m)*q,t[8]=(l*P-e*E+s*z)*q,t[9]=(r*E-n*P-u*z)*q,t[10]=(S*b-I*d+D*F)*q,t[11]=(c*d-i*b-f*F)*q,t[12]=(e*w-l*A-M*z)*q,t[13]=(n*A-r*w+o*z)*q,t[14]=(I*m-S*v-x*F)*q,t[15]=(i*v-c*m+h*F)*q,t):null},o.SIMD.invert=function(t,a){var n,r,o,u,l,e,M,s,i,c,h=SIMD.Float32x4.load(a,0),f=SIMD.Float32x4.load(a,4),S=SIMD.Float32x4.load(a,8),I=SIMD.Float32x4.load(a,12);return l=SIMD.Float32x4.shuffle(h,f,0,1,4,5),r=SIMD.Float32x4.shuffle(S,I,0,1,4,5),n=SIMD.Float32x4.shuffle(l,r,0,2,4,6),r=SIMD.Float32x4.shuffle(r,l,1,3,5,7),l=SIMD.Float32x4.shuffle(h,f,2,3,6,7),u=SIMD.Float32x4.shuffle(S,I,2,3,6,7),o=SIMD.Float32x4.shuffle(l,u,0,2,4,6),u=SIMD.Float32x4.shuffle(u,l,1,3,5,7),l=SIMD.Float32x4.mul(o,u),l=SIMD.Float32x4.swizzle(l,1,0,3,2),e=SIMD.Float32x4.mul(r,l),M=SIMD.Float32x4.mul(n,l),l=SIMD.Float32x4.swizzle(l,2,3,0,1),e=SIMD.Float32x4.sub(SIMD.Float32x4.mul(r,l),e),M=SIMD.Float32x4.sub(SIMD.Float32x4.mul(n,l),M),M=SIMD.Float32x4.swizzle(M,2,3,0,1),l=SIMD.Float32x4.mul(r,o),l=SIMD.Float32x4.swizzle(l,1,0,3,2),e=SIMD.Float32x4.add(SIMD.Float32x4.mul(u,l),e),i=SIMD.Float32x4.mul(n,l),l=SIMD.Float32x4.swizzle(l,2,3,0,1),e=SIMD.Float32x4.sub(e,SIMD.Float32x4.mul(u,l)),i=SIMD.Float32x4.sub(SIMD.Float32x4.mul(n,l),i),i=SIMD.Float32x4.swizzle(i,2,3,0,1),l=SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(r,2,3,0,1),u),l=SIMD.Float32x4.swizzle(l,1,0,3,2),o=SIMD.Float32x4.swizzle(o,2,3,0,1),e=SIMD.Float32x4.add(SIMD.Float32x4.mul(o,l),e),s=SIMD.Float32x4.mul(n,l),l=SIMD.Float32x4.swizzle(l,2,3,0,1),e=SIMD.Float32x4.sub(e,SIMD.Float32x4.mul(o,l)),s=SIMD.Float32x4.sub(SIMD.Float32x4.mul(n,l),s),s=SIMD.Float32x4.swizzle(s,2,3,0,1),l=SIMD.Float32x4.mul(n,r),l=SIMD.Float32x4.swizzle(l,1,0,3,2),s=SIMD.Float32x4.add(SIMD.Float32x4.mul(u,l),s),i=SIMD.Float32x4.sub(SIMD.Float32x4.mul(o,l),i),l=SIMD.Float32x4.swizzle(l,2,3,0,1),s=SIMD.Float32x4.sub(SIMD.Float32x4.mul(u,l),s),i=SIMD.Float32x4.sub(i,SIMD.Float32x4.mul(o,l)),l=SIMD.Float32x4.mul(n,u),l=SIMD.Float32x4.swizzle(l,1,0,3,2),M=SIMD.Float32x4.sub(M,SIMD.Float32x4.mul(o,l)),s=SIMD.Float32x4.add(SIMD.Float32x4.mul(r,l),s),l=SIMD.Float32x4.swizzle(l,2,3,0,1),M=SIMD.Float32x4.add(SIMD.Float32x4.mul(o,l),M),s=SIMD.Float32x4.sub(s,SIMD.Float32x4.mul(r,l)),l=SIMD.Float32x4.mul(n,o),l=SIMD.Float32x4.swizzle(l,1,0,3,2),M=SIMD.Float32x4.add(SIMD.Float32x4.mul(u,l),M),i=SIMD.Float32x4.sub(i,SIMD.Float32x4.mul(r,l)),l=SIMD.Float32x4.swizzle(l,2,3,0,1),M=SIMD.Float32x4.sub(M,SIMD.Float32x4.mul(u,l)),i=SIMD.Float32x4.add(SIMD.Float32x4.mul(r,l),i),c=SIMD.Float32x4.mul(n,e),c=SIMD.Float32x4.add(SIMD.Float32x4.swizzle(c,2,3,0,1),c),c=SIMD.Float32x4.add(SIMD.Float32x4.swizzle(c,1,0,3,2),c),l=SIMD.Float32x4.reciprocalApproximation(c),c=SIMD.Float32x4.sub(SIMD.Float32x4.add(l,l),SIMD.Float32x4.mul(c,SIMD.Float32x4.mul(l,l))),(c=SIMD.Float32x4.swizzle(c,0,0,0,0))?(SIMD.Float32x4.store(t,0,SIMD.Float32x4.mul(c,e)),SIMD.Float32x4.store(t,4,SIMD.Float32x4.mul(c,M)),SIMD.Float32x4.store(t,8,SIMD.Float32x4.mul(c,s)),SIMD.Float32x4.store(t,12,SIMD.Float32x4.mul(c,i)),t):null},o.invert=r.USE_SIMD?o.SIMD.invert:o.scalar.invert,o.scalar.adjoint=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=a[4],e=a[5],M=a[6],s=a[7],i=a[8],c=a[9],h=a[10],f=a[11],S=a[12],I=a[13],x=a[14],D=a[15];return t[0]=e*(h*D-f*x)-c*(M*D-s*x)+I*(M*f-s*h),t[1]=-(r*(h*D-f*x)-c*(o*D-u*x)+I*(o*f-u*h)),t[2]=r*(M*D-s*x)-e*(o*D-u*x)+I*(o*s-u*M),t[3]=-(r*(M*f-s*h)-e*(o*f-u*h)+c*(o*s-u*M)),t[4]=-(l*(h*D-f*x)-i*(M*D-s*x)+S*(M*f-s*h)),t[5]=n*(h*D-f*x)-i*(o*D-u*x)+S*(o*f-u*h),t[6]=-(n*(M*D-s*x)-l*(o*D-u*x)+S*(o*s-u*M)),t[7]=n*(M*f-s*h)-l*(o*f-u*h)+i*(o*s-u*M),t[8]=l*(c*D-f*I)-i*(e*D-s*I)+S*(e*f-s*c),t[9]=-(n*(c*D-f*I)-i*(r*D-u*I)+S*(r*f-u*c)),t[10]=n*(e*D-s*I)-l*(r*D-u*I)+S*(r*s-u*e),t[11]=-(n*(e*f-s*c)-l*(r*f-u*c)+i*(r*s-u*e)),t[12]=-(l*(c*x-h*I)-i*(e*x-M*I)+S*(e*h-M*c)),t[13]=n*(c*x-h*I)-i*(r*x-o*I)+S*(r*h-o*c),t[14]=-(n*(e*x-M*I)-l*(r*x-o*I)+S*(r*M-o*e)),t[15]=n*(e*h-M*c)-l*(r*h-o*c)+i*(r*M-o*e),t},o.SIMD.adjoint=function(t,a){var n,r,o,u,l,e,M,s,i,c,h,f,S;return n=SIMD.Float32x4.load(a,0),r=SIMD.Float32x4.load(a,4),o=SIMD.Float32x4.load(a,8),u=SIMD.Float32x4.load(a,12),i=SIMD.Float32x4.shuffle(n,r,0,1,4,5),e=SIMD.Float32x4.shuffle(o,u,0,1,4,5),l=SIMD.Float32x4.shuffle(i,e,0,2,4,6),e=SIMD.Float32x4.shuffle(e,i,1,3,5,7),i=SIMD.Float32x4.shuffle(n,r,2,3,6,7),s=SIMD.Float32x4.shuffle(o,u,2,3,6,7),M=SIMD.Float32x4.shuffle(i,s,0,2,4,6),s=SIMD.Float32x4.shuffle(s,i,1,3,5,7),i=SIMD.Float32x4.mul(M,s),i=SIMD.Float32x4.swizzle(i,1,0,3,2),c=SIMD.Float32x4.mul(e,i),h=SIMD.Float32x4.mul(l,i),i=SIMD.Float32x4.swizzle(i,2,3,0,1),c=SIMD.Float32x4.sub(SIMD.Float32x4.mul(e,i),c),h=SIMD.Float32x4.sub(SIMD.Float32x4.mul(l,i),h),h=SIMD.Float32x4.swizzle(h,2,3,0,1),i=SIMD.Float32x4.mul(e,M),i=SIMD.Float32x4.swizzle(i,1,0,3,2),c=SIMD.Float32x4.add(SIMD.Float32x4.mul(s,i),c),S=SIMD.Float32x4.mul(l,i),i=SIMD.Float32x4.swizzle(i,2,3,0,1),c=SIMD.Float32x4.sub(c,SIMD.Float32x4.mul(s,i)),S=SIMD.Float32x4.sub(SIMD.Float32x4.mul(l,i),S),S=SIMD.Float32x4.swizzle(S,2,3,0,1),i=SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(e,2,3,0,1),s),i=SIMD.Float32x4.swizzle(i,1,0,3,2),M=SIMD.Float32x4.swizzle(M,2,3,0,1),c=SIMD.Float32x4.add(SIMD.Float32x4.mul(M,i),c),f=SIMD.Float32x4.mul(l,i),i=SIMD.Float32x4.swizzle(i,2,3,0,1),c=SIMD.Float32x4.sub(c,SIMD.Float32x4.mul(M,i)),f=SIMD.Float32x4.sub(SIMD.Float32x4.mul(l,i),f),f=SIMD.Float32x4.swizzle(f,2,3,0,1),i=SIMD.Float32x4.mul(l,e),i=SIMD.Float32x4.swizzle(i,1,0,3,2),f=SIMD.Float32x4.add(SIMD.Float32x4.mul(s,i),f),S=SIMD.Float32x4.sub(SIMD.Float32x4.mul(M,i),S),i=SIMD.Float32x4.swizzle(i,2,3,0,1),f=SIMD.Float32x4.sub(SIMD.Float32x4.mul(s,i),f),S=SIMD.Float32x4.sub(S,SIMD.Float32x4.mul(M,i)),i=SIMD.Float32x4.mul(l,s),i=SIMD.Float32x4.swizzle(i,1,0,3,2),h=SIMD.Float32x4.sub(h,SIMD.Float32x4.mul(M,i)),f=SIMD.Float32x4.add(SIMD.Float32x4.mul(e,i),f),i=SIMD.Float32x4.swizzle(i,2,3,0,1),h=SIMD.Float32x4.add(SIMD.Float32x4.mul(M,i),h),f=SIMD.Float32x4.sub(f,SIMD.Float32x4.mul(e,i)),i=SIMD.Float32x4.mul(l,M),i=SIMD.Float32x4.swizzle(i,1,0,3,2),h=SIMD.Float32x4.add(SIMD.Float32x4.mul(s,i),h),S=SIMD.Float32x4.sub(S,SIMD.Float32x4.mul(e,i)),i=SIMD.Float32x4.swizzle(i,2,3,0,1),h=SIMD.Float32x4.sub(h,SIMD.Float32x4.mul(s,i)),S=SIMD.Float32x4.add(SIMD.Float32x4.mul(e,i),S),SIMD.Float32x4.store(t,0,c),SIMD.Float32x4.store(t,4,h),SIMD.Float32x4.store(t,8,f),SIMD.Float32x4.store(t,12,S),t},o.adjoint=r.USE_SIMD?o.SIMD.adjoint:o.scalar.adjoint,o.determinant=function(t){var a=t[0],n=t[1],r=t[2],o=t[3],u=t[4],l=t[5],e=t[6],M=t[7],s=t[8],i=t[9],c=t[10],h=t[11],f=t[12],S=t[13],I=t[14],x=t[15],D=a*l-n*u,F=a*e-r*u,m=a*M-o*u,d=n*e-r*l,v=n*M-o*l,b=r*M-o*e,p=s*S-i*f,z=s*I-c*f,w=s*x-h*f,E=i*I-c*S,A=i*x-h*S,P=c*x-h*I;return D*P-F*A+m*E+d*w-v*z+b*p},o.SIMD.multiply=function(t,a,n){var r=SIMD.Float32x4.load(a,0),o=SIMD.Float32x4.load(a,4),u=SIMD.Float32x4.load(a,8),l=SIMD.Float32x4.load(a,12),e=SIMD.Float32x4.load(n,0),M=SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(e,0,0,0,0),r),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(e,1,1,1,1),o),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(e,2,2,2,2),u),SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(e,3,3,3,3),l))));SIMD.Float32x4.store(t,0,M);var s=SIMD.Float32x4.load(n,4),i=SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(s,0,0,0,0),r),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(s,1,1,1,1),o),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(s,2,2,2,2),u),SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(s,3,3,3,3),l))));SIMD.Float32x4.store(t,4,i);var c=SIMD.Float32x4.load(n,8),h=SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(c,0,0,0,0),r),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(c,1,1,1,1),o),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(c,2,2,2,2),u),SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(c,3,3,3,3),l))));SIMD.Float32x4.store(t,8,h);var f=SIMD.Float32x4.load(n,12),S=SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(f,0,0,0,0),r),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(f,1,1,1,1),o),SIMD.Float32x4.add(SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(f,2,2,2,2),u),SIMD.Float32x4.mul(SIMD.Float32x4.swizzle(f,3,3,3,3),l))));return SIMD.Float32x4.store(t,12,S),t},o.scalar.multiply=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=a[6],i=a[7],c=a[8],h=a[9],f=a[10],S=a[11],I=a[12],x=a[13],D=a[14],F=a[15],m=n[0],d=n[1],v=n[2],b=n[3];return t[0]=m*r+d*e+v*c+b*I,t[1]=m*o+d*M+v*h+b*x,t[2]=m*u+d*s+v*f+b*D,t[3]=m*l+d*i+v*S+b*F,m=n[4],d=n[5],v=n[6],b=n[7],t[4]=m*r+d*e+v*c+b*I,t[5]=m*o+d*M+v*h+b*x,t[6]=m*u+d*s+v*f+b*D,t[7]=m*l+d*i+v*S+b*F,m=n[8],d=n[9],v=n[10],b=n[11],t[8]=m*r+d*e+v*c+b*I,t[9]=m*o+d*M+v*h+b*x,t[10]=m*u+d*s+v*f+b*D,t[11]=m*l+d*i+v*S+b*F,m=n[12],d=n[13],v=n[14],b=n[15],t[12]=m*r+d*e+v*c+b*I,t[13]=m*o+d*M+v*h+b*x,t[14]=m*u+d*s+v*f+b*D,t[15]=m*l+d*i+v*S+b*F,t},o.multiply=r.USE_SIMD?o.SIMD.multiply:o.scalar.multiply,o.mul=o.multiply,o.scalar.translate=function(t,a,n){var r,o,u,l,e,M,s,i,c,h,f,S,I=n[0],x=n[1],D=n[2];return a===t?(t[12]=a[0]*I+a[4]*x+a[8]*D+a[12],t[13]=a[1]*I+a[5]*x+a[9]*D+a[13],t[14]=a[2]*I+a[6]*x+a[10]*D+a[14],t[15]=a[3]*I+a[7]*x+a[11]*D+a[15]):(r=a[0],o=a[1],u=a[2],l=a[3],e=a[4],M=a[5],s=a[6],i=a[7],c=a[8],h=a[9],f=a[10],S=a[11],t[0]=r,t[1]=o,t[2]=u,t[3]=l,t[4]=e,t[5]=M,t[6]=s,t[7]=i,t[8]=c,t[9]=h,t[10]=f,t[11]=S,t[12]=r*I+e*x+c*D+a[12],t[13]=o*I+M*x+h*D+a[13],t[14]=u*I+s*x+f*D+a[14],t[15]=l*I+i*x+S*D+a[15]),t},o.SIMD.translate=function(t,a,n){var r=SIMD.Float32x4.load(a,0),o=SIMD.Float32x4.load(a,4),u=SIMD.Float32x4.load(a,8),l=SIMD.Float32x4.load(a,12),e=SIMD.Float32x4(n[0],n[1],n[2],0);a!==t&&(t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[4]=a[4],t[5]=a[5],t[6]=a[6],t[7]=a[7],t[8]=a[8],t[9]=a[9],t[10]=a[10],t[11]=a[11]),r=SIMD.Float32x4.mul(r,SIMD.Float32x4.swizzle(e,0,0,0,0)),o=SIMD.Float32x4.mul(o,SIMD.Float32x4.swizzle(e,1,1,1,1)),u=SIMD.Float32x4.mul(u,SIMD.Float32x4.swizzle(e,2,2,2,2));var M=SIMD.Float32x4.add(r,SIMD.Float32x4.add(o,SIMD.Float32x4.add(u,l)));return SIMD.Float32x4.store(t,12,M),t},o.translate=r.USE_SIMD?o.SIMD.translate:o.scalar.translate,o.scalar.scale=function(t,a,n){var r=n[0],o=n[1],u=n[2];return t[0]=a[0]*r,t[1]=a[1]*r,t[2]=a[2]*r,t[3]=a[3]*r,t[4]=a[4]*o,t[5]=a[5]*o,t[6]=a[6]*o,t[7]=a[7]*o,t[8]=a[8]*u,t[9]=a[9]*u,t[10]=a[10]*u,t[11]=a[11]*u,t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15],t},o.SIMD.scale=function(t,a,n){var r,o,u,l=SIMD.Float32x4(n[0],n[1],n[2],0);return r=SIMD.Float32x4.load(a,0),SIMD.Float32x4.store(t,0,SIMD.Float32x4.mul(r,SIMD.Float32x4.swizzle(l,0,0,0,0))),o=SIMD.Float32x4.load(a,4),SIMD.Float32x4.store(t,4,SIMD.Float32x4.mul(o,SIMD.Float32x4.swizzle(l,1,1,1,1))),u=SIMD.Float32x4.load(a,8),SIMD.Float32x4.store(t,8,SIMD.Float32x4.mul(u,SIMD.Float32x4.swizzle(l,2,2,2,2))),t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15],t},o.scale=r.USE_SIMD?o.SIMD.scale:o.scalar.scale,o.rotate=function(t,a,n,o){var u,l,e,M,s,i,c,h,f,S,I,x,D,F,m,d,v,b,p,z,w,E,A,P,L=o[0],q=o[1],R=o[2],N=Math.sqrt(L*L+q*q+R*R);return Math.abs(N)<r.EPSILON?null:(N=1/N,L*=N,q*=N,R*=N,u=Math.sin(n),l=Math.cos(n),e=1-l,M=a[0],s=a[1],i=a[2],c=a[3],h=a[4],f=a[5],S=a[6],I=a[7],x=a[8],D=a[9],F=a[10],m=a[11],d=L*L*e+l,v=q*L*e+R*u,b=R*L*e-q*u,p=L*q*e-R*u,z=q*q*e+l,w=R*q*e+L*u,E=L*R*e+q*u,A=q*R*e-L*u,P=R*R*e+l,t[0]=M*d+h*v+x*b,t[1]=s*d+f*v+D*b,t[2]=i*d+S*v+F*b,t[3]=c*d+I*v+m*b,t[4]=M*p+h*z+x*w,t[5]=s*p+f*z+D*w,t[6]=i*p+S*z+F*w,t[7]=c*p+I*z+m*w,t[8]=M*E+h*A+x*P,t[9]=s*E+f*A+D*P,t[10]=i*E+S*A+F*P,t[11]=c*E+I*A+m*P,a!==t&&(t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]),t)},o.scalar.rotateX=function(t,a,n){var r=Math.sin(n),o=Math.cos(n),u=a[4],l=a[5],e=a[6],M=a[7],s=a[8],i=a[9],c=a[10],h=a[11];return a!==t&&(t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]),t[4]=u*o+s*r,t[5]=l*o+i*r,t[6]=e*o+c*r,t[7]=M*o+h*r,t[8]=s*o-u*r,t[9]=i*o-l*r,t[10]=c*o-e*r,t[11]=h*o-M*r,t},o.SIMD.rotateX=function(t,a,n){var r=SIMD.Float32x4.splat(Math.sin(n)),o=SIMD.Float32x4.splat(Math.cos(n));a!==t&&(t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]);var u=SIMD.Float32x4.load(a,4),l=SIMD.Float32x4.load(a,8);return SIMD.Float32x4.store(t,4,SIMD.Float32x4.add(SIMD.Float32x4.mul(u,o),SIMD.Float32x4.mul(l,r))),SIMD.Float32x4.store(t,8,SIMD.Float32x4.sub(SIMD.Float32x4.mul(l,o),SIMD.Float32x4.mul(u,r))),t},o.rotateX=r.USE_SIMD?o.SIMD.rotateX:o.scalar.rotateX,o.scalar.rotateY=function(t,a,n){var r=Math.sin(n),o=Math.cos(n),u=a[0],l=a[1],e=a[2],M=a[3],s=a[8],i=a[9],c=a[10],h=a[11];return a!==t&&(t[4]=a[4],t[5]=a[5],t[6]=a[6],t[7]=a[7],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]),t[0]=u*o-s*r,t[1]=l*o-i*r,t[2]=e*o-c*r,t[3]=M*o-h*r,t[8]=u*r+s*o,t[9]=l*r+i*o,t[10]=e*r+c*o,t[11]=M*r+h*o,t},o.SIMD.rotateY=function(t,a,n){var r=SIMD.Float32x4.splat(Math.sin(n)),o=SIMD.Float32x4.splat(Math.cos(n));a!==t&&(t[4]=a[4],t[5]=a[5],t[6]=a[6],t[7]=a[7],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]);var u=SIMD.Float32x4.load(a,0),l=SIMD.Float32x4.load(a,8);return SIMD.Float32x4.store(t,0,SIMD.Float32x4.sub(SIMD.Float32x4.mul(u,o),SIMD.Float32x4.mul(l,r))),SIMD.Float32x4.store(t,8,SIMD.Float32x4.add(SIMD.Float32x4.mul(u,r),SIMD.Float32x4.mul(l,o))),t},o.rotateY=r.USE_SIMD?o.SIMD.rotateY:o.scalar.rotateY,o.scalar.rotateZ=function(t,a,n){var r=Math.sin(n),o=Math.cos(n),u=a[0],l=a[1],e=a[2],M=a[3],s=a[4],i=a[5],c=a[6],h=a[7];return a!==t&&(t[8]=a[8],t[9]=a[9],t[10]=a[10],t[11]=a[11],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]),t[0]=u*o+s*r,t[1]=l*o+i*r,t[2]=e*o+c*r,t[3]=M*o+h*r,t[4]=s*o-u*r,t[5]=i*o-l*r,t[6]=c*o-e*r,t[7]=h*o-M*r,t},o.SIMD.rotateZ=function(t,a,n){var r=SIMD.Float32x4.splat(Math.sin(n)),o=SIMD.Float32x4.splat(Math.cos(n));a!==t&&(t[8]=a[8],t[9]=a[9],t[10]=a[10],t[11]=a[11],t[12]=a[12],t[13]=a[13],t[14]=a[14],t[15]=a[15]);var u=SIMD.Float32x4.load(a,0),l=SIMD.Float32x4.load(a,4);return SIMD.Float32x4.store(t,0,SIMD.Float32x4.add(SIMD.Float32x4.mul(u,o),SIMD.Float32x4.mul(l,r))),SIMD.Float32x4.store(t,4,SIMD.Float32x4.sub(SIMD.Float32x4.mul(l,o),SIMD.Float32x4.mul(u,r))),t},o.rotateZ=r.USE_SIMD?o.SIMD.rotateZ:o.scalar.rotateZ,o.fromTranslation=function(t,a){return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=1,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=1,t[11]=0,t[12]=a[0],t[13]=a[1],t[14]=a[2],t[15]=1,t},o.fromScaling=function(t,a){return t[0]=a[0],t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=a[1],t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=a[2],t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.fromRotation=function(t,a,n){var o,u,l,e=n[0],M=n[1],s=n[2],i=Math.sqrt(e*e+M*M+s*s);return Math.abs(i)<r.EPSILON?null:(i=1/i,e*=i,M*=i,s*=i,o=Math.sin(a),u=Math.cos(a),l=1-u,t[0]=e*e*l+u,t[1]=M*e*l+s*o,t[2]=s*e*l-M*o,t[3]=0,t[4]=e*M*l-s*o,t[5]=M*M*l+u,t[6]=s*M*l+e*o,t[7]=0,t[8]=e*s*l+M*o,t[9]=M*s*l-e*o,t[10]=s*s*l+u,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t)},o.fromXRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=1,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=r,t[6]=n,t[7]=0,t[8]=0,t[9]=-n,t[10]=r,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.fromYRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=r,t[1]=0,t[2]=-n,t[3]=0,t[4]=0,t[5]=1,t[6]=0,t[7]=0,t[8]=n,t[9]=0,t[10]=r,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.fromZRotation=function(t,a){var n=Math.sin(a),r=Math.cos(a);return t[0]=r,t[1]=n,t[2]=0,t[3]=0,t[4]=-n,t[5]=r,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=1,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.fromRotationTranslation=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=r+r,M=o+o,s=u+u,i=r*e,c=r*M,h=r*s,f=o*M,S=o*s,I=u*s,x=l*e,D=l*M,F=l*s;return t[0]=1-(f+I),t[1]=c+F,t[2]=h-D,t[3]=0,t[4]=c-F,t[5]=1-(i+I),t[6]=S+x,t[7]=0,t[8]=h+D,t[9]=S-x,t[10]=1-(i+f),t[11]=0,t[12]=n[0],t[13]=n[1],t[14]=n[2],t[15]=1,t},o.getTranslation=function(t,a){return t[0]=a[12],t[1]=a[13],t[2]=a[14],t},o.getRotation=function(t,a){var n=a[0]+a[5]+a[10],r=0;return n>0?(r=2*Math.sqrt(n+1),t[3]=.25*r,t[0]=(a[6]-a[9])/r,t[1]=(a[8]-a[2])/r,t[2]=(a[1]-a[4])/r):a[0]>a[5]&a[0]>a[10]?(r=2*Math.sqrt(1+a[0]-a[5]-a[10]),t[3]=(a[6]-a[9])/r,t[0]=.25*r,t[1]=(a[1]+a[4])/r,t[2]=(a[8]+a[2])/r):a[5]>a[10]?(r=2*Math.sqrt(1+a[5]-a[0]-a[10]),t[3]=(a[8]-a[2])/r,t[0]=(a[1]+a[4])/r,t[1]=.25*r,t[2]=(a[6]+a[9])/r):(r=2*Math.sqrt(1+a[10]-a[0]-a[5]),t[3]=(a[1]-a[4])/r,t[0]=(a[8]+a[2])/r,t[1]=(a[6]+a[9])/r,t[2]=.25*r),t},o.fromRotationTranslationScale=function(t,a,n,r){var o=a[0],u=a[1],l=a[2],e=a[3],M=o+o,s=u+u,i=l+l,c=o*M,h=o*s,f=o*i,S=u*s,I=u*i,x=l*i,D=e*M,F=e*s,m=e*i,d=r[0],v=r[1],b=r[2];return t[0]=(1-(S+x))*d,t[1]=(h+m)*d,t[2]=(f-F)*d,t[3]=0,t[4]=(h-m)*v,t[5]=(1-(c+x))*v,t[6]=(I+D)*v,t[7]=0,t[8]=(f+F)*b,t[9]=(I-D)*b,t[10]=(1-(c+S))*b,t[11]=0,t[12]=n[0],t[13]=n[1],t[14]=n[2],t[15]=1,t},o.fromRotationTranslationScaleOrigin=function(t,a,n,r,o){
 var u=a[0],l=a[1],e=a[2],M=a[3],s=u+u,i=l+l,c=e+e,h=u*s,f=u*i,S=u*c,I=l*i,x=l*c,D=e*c,F=M*s,m=M*i,d=M*c,v=r[0],b=r[1],p=r[2],z=o[0],w=o[1],E=o[2];return t[0]=(1-(I+D))*v,t[1]=(f+d)*v,t[2]=(S-m)*v,t[3]=0,t[4]=(f-d)*b,t[5]=(1-(h+D))*b,t[6]=(x+F)*b,t[7]=0,t[8]=(S+m)*p,t[9]=(x-F)*p,t[10]=(1-(h+I))*p,t[11]=0,t[12]=n[0]+z-(t[0]*z+t[4]*w+t[8]*E),t[13]=n[1]+w-(t[1]*z+t[5]*w+t[9]*E),t[14]=n[2]+E-(t[2]*z+t[6]*w+t[10]*E),t[15]=1,t},o.fromQuat=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=n+n,e=r+r,M=o+o,s=n*l,i=r*l,c=r*e,h=o*l,f=o*e,S=o*M,I=u*l,x=u*e,D=u*M;return t[0]=1-c-S,t[1]=i+D,t[2]=h-x,t[3]=0,t[4]=i-D,t[5]=1-s-S,t[6]=f+I,t[7]=0,t[8]=h+x,t[9]=f-I,t[10]=1-s-c,t[11]=0,t[12]=0,t[13]=0,t[14]=0,t[15]=1,t},o.frustum=function(t,a,n,r,o,u,l){var e=1/(n-a),M=1/(o-r),s=1/(u-l);return t[0]=2*u*e,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=2*u*M,t[6]=0,t[7]=0,t[8]=(n+a)*e,t[9]=(o+r)*M,t[10]=(l+u)*s,t[11]=-1,t[12]=0,t[13]=0,t[14]=l*u*2*s,t[15]=0,t},o.perspective=function(t,a,n,r,o){var u=1/Math.tan(a/2),l=1/(r-o);return t[0]=u/n,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=u,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=(o+r)*l,t[11]=-1,t[12]=0,t[13]=0,t[14]=2*o*r*l,t[15]=0,t},o.perspectiveFromFieldOfView=function(t,a,n,r){var o=Math.tan(a.upDegrees*Math.PI/180),u=Math.tan(a.downDegrees*Math.PI/180),l=Math.tan(a.leftDegrees*Math.PI/180),e=Math.tan(a.rightDegrees*Math.PI/180),M=2/(l+e),s=2/(o+u);return t[0]=M,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=s,t[6]=0,t[7]=0,t[8]=-((l-e)*M*.5),t[9]=(o-u)*s*.5,t[10]=r/(n-r),t[11]=-1,t[12]=0,t[13]=0,t[14]=r*n/(n-r),t[15]=0,t},o.ortho=function(t,a,n,r,o,u,l){var e=1/(a-n),M=1/(r-o),s=1/(u-l);return t[0]=-2*e,t[1]=0,t[2]=0,t[3]=0,t[4]=0,t[5]=-2*M,t[6]=0,t[7]=0,t[8]=0,t[9]=0,t[10]=2*s,t[11]=0,t[12]=(a+n)*e,t[13]=(o+r)*M,t[14]=(l+u)*s,t[15]=1,t},o.lookAt=function(t,a,n,u){var l,e,M,s,i,c,h,f,S,I,x=a[0],D=a[1],F=a[2],m=u[0],d=u[1],v=u[2],b=n[0],p=n[1],z=n[2];return Math.abs(x-b)<r.EPSILON&&Math.abs(D-p)<r.EPSILON&&Math.abs(F-z)<r.EPSILON?o.identity(t):(h=x-b,f=D-p,S=F-z,I=1/Math.sqrt(h*h+f*f+S*S),h*=I,f*=I,S*=I,l=d*S-v*f,e=v*h-m*S,M=m*f-d*h,I=Math.sqrt(l*l+e*e+M*M),I?(I=1/I,l*=I,e*=I,M*=I):(l=0,e=0,M=0),s=f*M-S*e,i=S*l-h*M,c=h*e-f*l,I=Math.sqrt(s*s+i*i+c*c),I?(I=1/I,s*=I,i*=I,c*=I):(s=0,i=0,c=0),t[0]=l,t[1]=s,t[2]=h,t[3]=0,t[4]=e,t[5]=i,t[6]=f,t[7]=0,t[8]=M,t[9]=c,t[10]=S,t[11]=0,t[12]=-(l*x+e*D+M*F),t[13]=-(s*x+i*D+c*F),t[14]=-(h*x+f*D+S*F),t[15]=1,t)},o.str=function(t){return"mat4("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+", "+t[4]+", "+t[5]+", "+t[6]+", "+t[7]+", "+t[8]+", "+t[9]+", "+t[10]+", "+t[11]+", "+t[12]+", "+t[13]+", "+t[14]+", "+t[15]+")"},o.frob=function(t){return Math.sqrt(Math.pow(t[0],2)+Math.pow(t[1],2)+Math.pow(t[2],2)+Math.pow(t[3],2)+Math.pow(t[4],2)+Math.pow(t[5],2)+Math.pow(t[6],2)+Math.pow(t[7],2)+Math.pow(t[8],2)+Math.pow(t[9],2)+Math.pow(t[10],2)+Math.pow(t[11],2)+Math.pow(t[12],2)+Math.pow(t[13],2)+Math.pow(t[14],2)+Math.pow(t[15],2))},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t[3]=a[3]+n[3],t[4]=a[4]+n[4],t[5]=a[5]+n[5],t[6]=a[6]+n[6],t[7]=a[7]+n[7],t[8]=a[8]+n[8],t[9]=a[9]+n[9],t[10]=a[10]+n[10],t[11]=a[11]+n[11],t[12]=a[12]+n[12],t[13]=a[13]+n[13],t[14]=a[14]+n[14],t[15]=a[15]+n[15],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t[3]=a[3]-n[3],t[4]=a[4]-n[4],t[5]=a[5]-n[5],t[6]=a[6]-n[6],t[7]=a[7]-n[7],t[8]=a[8]-n[8],t[9]=a[9]-n[9],t[10]=a[10]-n[10],t[11]=a[11]-n[11],t[12]=a[12]-n[12],t[13]=a[13]-n[13],t[14]=a[14]-n[14],t[15]=a[15]-n[15],t},o.sub=o.subtract,o.multiplyScalar=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t[3]=a[3]*n,t[4]=a[4]*n,t[5]=a[5]*n,t[6]=a[6]*n,t[7]=a[7]*n,t[8]=a[8]*n,t[9]=a[9]*n,t[10]=a[10]*n,t[11]=a[11]*n,t[12]=a[12]*n,t[13]=a[13]*n,t[14]=a[14]*n,t[15]=a[15]*n,t},o.multiplyScalarAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t[3]=a[3]+n[3]*r,t[4]=a[4]+n[4]*r,t[5]=a[5]+n[5]*r,t[6]=a[6]+n[6]*r,t[7]=a[7]+n[7]*r,t[8]=a[8]+n[8]*r,t[9]=a[9]+n[9]*r,t[10]=a[10]+n[10]*r,t[11]=a[11]+n[11]*r,t[12]=a[12]+n[12]*r,t[13]=a[13]+n[13]*r,t[14]=a[14]+n[14]*r,t[15]=a[15]+n[15]*r,t},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]&&t[3]===a[3]&&t[4]===a[4]&&t[5]===a[5]&&t[6]===a[6]&&t[7]===a[7]&&t[8]===a[8]&&t[9]===a[9]&&t[10]===a[10]&&t[11]===a[11]&&t[12]===a[12]&&t[13]===a[13]&&t[14]===a[14]&&t[15]===a[15]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=t[3],e=t[4],M=t[5],s=t[6],i=t[7],c=t[8],h=t[9],f=t[10],S=t[11],I=t[12],x=t[13],D=t[14],F=t[15],m=a[0],d=a[1],v=a[2],b=a[3],p=a[4],z=a[5],w=a[6],E=a[7],A=a[8],P=a[9],L=a[10],q=a[11],R=a[12],N=a[13],O=a[14],Y=a[15];return Math.abs(n-m)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(m))&&Math.abs(o-d)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(d))&&Math.abs(u-v)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(v))&&Math.abs(l-b)<=r.EPSILON*Math.max(1,Math.abs(l),Math.abs(b))&&Math.abs(e-p)<=r.EPSILON*Math.max(1,Math.abs(e),Math.abs(p))&&Math.abs(M-z)<=r.EPSILON*Math.max(1,Math.abs(M),Math.abs(z))&&Math.abs(s-w)<=r.EPSILON*Math.max(1,Math.abs(s),Math.abs(w))&&Math.abs(i-E)<=r.EPSILON*Math.max(1,Math.abs(i),Math.abs(E))&&Math.abs(c-A)<=r.EPSILON*Math.max(1,Math.abs(c),Math.abs(A))&&Math.abs(h-P)<=r.EPSILON*Math.max(1,Math.abs(h),Math.abs(P))&&Math.abs(f-L)<=r.EPSILON*Math.max(1,Math.abs(f),Math.abs(L))&&Math.abs(S-q)<=r.EPSILON*Math.max(1,Math.abs(S),Math.abs(q))&&Math.abs(I-R)<=r.EPSILON*Math.max(1,Math.abs(I),Math.abs(R))&&Math.abs(x-N)<=r.EPSILON*Math.max(1,Math.abs(x),Math.abs(N))&&Math.abs(D-O)<=r.EPSILON*Math.max(1,Math.abs(D),Math.abs(O))&&Math.abs(F-Y)<=r.EPSILON*Math.max(1,Math.abs(F),Math.abs(Y))},t.exports=o},function(t,a,n){var r=n(1),o=n(4),u=n(7),l=n(8),e={};e.create=function(){var t=new r.ARRAY_TYPE(4);return t[0]=0,t[1]=0,t[2]=0,t[3]=1,t},e.rotationTo=function(){var t=u.create(),a=u.fromValues(1,0,0),n=u.fromValues(0,1,0);return function(r,o,l){var M=u.dot(o,l);return-.999999>M?(u.cross(t,a,o),u.length(t)<1e-6&&u.cross(t,n,o),u.normalize(t,t),e.setAxisAngle(r,t,Math.PI),r):M>.999999?(r[0]=0,r[1]=0,r[2]=0,r[3]=1,r):(u.cross(t,o,l),r[0]=t[0],r[1]=t[1],r[2]=t[2],r[3]=1+M,e.normalize(r,r))}}(),e.setAxes=function(){var t=o.create();return function(a,n,r,o){return t[0]=r[0],t[3]=r[1],t[6]=r[2],t[1]=o[0],t[4]=o[1],t[7]=o[2],t[2]=-n[0],t[5]=-n[1],t[8]=-n[2],e.normalize(a,e.fromMat3(a,t))}}(),e.clone=l.clone,e.fromValues=l.fromValues,e.copy=l.copy,e.set=l.set,e.identity=function(t){return t[0]=0,t[1]=0,t[2]=0,t[3]=1,t},e.setAxisAngle=function(t,a,n){n=.5*n;var r=Math.sin(n);return t[0]=r*a[0],t[1]=r*a[1],t[2]=r*a[2],t[3]=Math.cos(n),t},e.getAxisAngle=function(t,a){var n=2*Math.acos(a[3]),r=Math.sin(n/2);return 0!=r?(t[0]=a[0]/r,t[1]=a[1]/r,t[2]=a[2]/r):(t[0]=1,t[1]=0,t[2]=0),n},e.add=l.add,e.multiply=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3],e=n[0],M=n[1],s=n[2],i=n[3];return t[0]=r*i+l*e+o*s-u*M,t[1]=o*i+l*M+u*e-r*s,t[2]=u*i+l*s+r*M-o*e,t[3]=l*i-r*e-o*M-u*s,t},e.mul=e.multiply,e.scale=l.scale,e.rotateX=function(t,a,n){n*=.5;var r=a[0],o=a[1],u=a[2],l=a[3],e=Math.sin(n),M=Math.cos(n);return t[0]=r*M+l*e,t[1]=o*M+u*e,t[2]=u*M-o*e,t[3]=l*M-r*e,t},e.rotateY=function(t,a,n){n*=.5;var r=a[0],o=a[1],u=a[2],l=a[3],e=Math.sin(n),M=Math.cos(n);return t[0]=r*M-u*e,t[1]=o*M+l*e,t[2]=u*M+r*e,t[3]=l*M-o*e,t},e.rotateZ=function(t,a,n){n*=.5;var r=a[0],o=a[1],u=a[2],l=a[3],e=Math.sin(n),M=Math.cos(n);return t[0]=r*M+o*e,t[1]=o*M-r*e,t[2]=u*M+l*e,t[3]=l*M-u*e,t},e.calculateW=function(t,a){var n=a[0],r=a[1],o=a[2];return t[0]=n,t[1]=r,t[2]=o,t[3]=Math.sqrt(Math.abs(1-n*n-r*r-o*o)),t},e.dot=l.dot,e.lerp=l.lerp,e.slerp=function(t,a,n,r){var o,u,l,e,M,s=a[0],i=a[1],c=a[2],h=a[3],f=n[0],S=n[1],I=n[2],x=n[3];return u=s*f+i*S+c*I+h*x,0>u&&(u=-u,f=-f,S=-S,I=-I,x=-x),1-u>1e-6?(o=Math.acos(u),l=Math.sin(o),e=Math.sin((1-r)*o)/l,M=Math.sin(r*o)/l):(e=1-r,M=r),t[0]=e*s+M*f,t[1]=e*i+M*S,t[2]=e*c+M*I,t[3]=e*h+M*x,t},e.sqlerp=function(){var t=e.create(),a=e.create();return function(n,r,o,u,l,M){return e.slerp(t,r,l,M),e.slerp(a,o,u,M),e.slerp(n,t,a,2*M*(1-M)),n}}(),e.invert=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=n*n+r*r+o*o+u*u,e=l?1/l:0;return t[0]=-n*e,t[1]=-r*e,t[2]=-o*e,t[3]=u*e,t},e.conjugate=function(t,a){return t[0]=-a[0],t[1]=-a[1],t[2]=-a[2],t[3]=a[3],t},e.length=l.length,e.len=e.length,e.squaredLength=l.squaredLength,e.sqrLen=e.squaredLength,e.normalize=l.normalize,e.fromMat3=function(t,a){var n,r=a[0]+a[4]+a[8];if(r>0)n=Math.sqrt(r+1),t[3]=.5*n,n=.5/n,t[0]=(a[5]-a[7])*n,t[1]=(a[6]-a[2])*n,t[2]=(a[1]-a[3])*n;else{var o=0;a[4]>a[0]&&(o=1),a[8]>a[3*o+o]&&(o=2);var u=(o+1)%3,l=(o+2)%3;n=Math.sqrt(a[3*o+o]-a[3*u+u]-a[3*l+l]+1),t[o]=.5*n,n=.5/n,t[3]=(a[3*u+l]-a[3*l+u])*n,t[u]=(a[3*u+o]+a[3*o+u])*n,t[l]=(a[3*l+o]+a[3*o+l])*n}return t},e.str=function(t){return"quat("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+")"},e.exactEquals=l.exactEquals,e.equals=l.equals,t.exports=e},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(3);return t[0]=0,t[1]=0,t[2]=0,t},o.clone=function(t){var a=new r.ARRAY_TYPE(3);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a},o.fromValues=function(t,a,n){var o=new r.ARRAY_TYPE(3);return o[0]=t,o[1]=a,o[2]=n,o},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t},o.set=function(t,a,n,r){return t[0]=a,t[1]=n,t[2]=r,t},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t},o.sub=o.subtract,o.multiply=function(t,a,n){return t[0]=a[0]*n[0],t[1]=a[1]*n[1],t[2]=a[2]*n[2],t},o.mul=o.multiply,o.divide=function(t,a,n){return t[0]=a[0]/n[0],t[1]=a[1]/n[1],t[2]=a[2]/n[2],t},o.div=o.divide,o.ceil=function(t,a){return t[0]=Math.ceil(a[0]),t[1]=Math.ceil(a[1]),t[2]=Math.ceil(a[2]),t},o.floor=function(t,a){return t[0]=Math.floor(a[0]),t[1]=Math.floor(a[1]),t[2]=Math.floor(a[2]),t},o.min=function(t,a,n){return t[0]=Math.min(a[0],n[0]),t[1]=Math.min(a[1],n[1]),t[2]=Math.min(a[2],n[2]),t},o.max=function(t,a,n){return t[0]=Math.max(a[0],n[0]),t[1]=Math.max(a[1],n[1]),t[2]=Math.max(a[2],n[2]),t},o.round=function(t,a){return t[0]=Math.round(a[0]),t[1]=Math.round(a[1]),t[2]=Math.round(a[2]),t},o.scale=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t},o.scaleAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t},o.distance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1],o=a[2]-t[2];return Math.sqrt(n*n+r*r+o*o)},o.dist=o.distance,o.squaredDistance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1],o=a[2]-t[2];return n*n+r*r+o*o},o.sqrDist=o.squaredDistance,o.length=function(t){var a=t[0],n=t[1],r=t[2];return Math.sqrt(a*a+n*n+r*r)},o.len=o.length,o.squaredLength=function(t){var a=t[0],n=t[1],r=t[2];return a*a+n*n+r*r},o.sqrLen=o.squaredLength,o.negate=function(t,a){return t[0]=-a[0],t[1]=-a[1],t[2]=-a[2],t},o.inverse=function(t,a){return t[0]=1/a[0],t[1]=1/a[1],t[2]=1/a[2],t},o.normalize=function(t,a){var n=a[0],r=a[1],o=a[2],u=n*n+r*r+o*o;return u>0&&(u=1/Math.sqrt(u),t[0]=a[0]*u,t[1]=a[1]*u,t[2]=a[2]*u),t},o.dot=function(t,a){return t[0]*a[0]+t[1]*a[1]+t[2]*a[2]},o.cross=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=n[0],e=n[1],M=n[2];return t[0]=o*M-u*e,t[1]=u*l-r*M,t[2]=r*e-o*l,t},o.lerp=function(t,a,n,r){var o=a[0],u=a[1],l=a[2];return t[0]=o+r*(n[0]-o),t[1]=u+r*(n[1]-u),t[2]=l+r*(n[2]-l),t},o.hermite=function(t,a,n,r,o,u){var l=u*u,e=l*(2*u-3)+1,M=l*(u-2)+u,s=l*(u-1),i=l*(3-2*u);return t[0]=a[0]*e+n[0]*M+r[0]*s+o[0]*i,t[1]=a[1]*e+n[1]*M+r[1]*s+o[1]*i,t[2]=a[2]*e+n[2]*M+r[2]*s+o[2]*i,t},o.bezier=function(t,a,n,r,o,u){var l=1-u,e=l*l,M=u*u,s=e*l,i=3*u*e,c=3*M*l,h=M*u;return t[0]=a[0]*s+n[0]*i+r[0]*c+o[0]*h,t[1]=a[1]*s+n[1]*i+r[1]*c+o[1]*h,t[2]=a[2]*s+n[2]*i+r[2]*c+o[2]*h,t},o.random=function(t,a){a=a||1;var n=2*r.RANDOM()*Math.PI,o=2*r.RANDOM()-1,u=Math.sqrt(1-o*o)*a;return t[0]=Math.cos(n)*u,t[1]=Math.sin(n)*u,t[2]=o*a,t},o.transformMat4=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=n[3]*r+n[7]*o+n[11]*u+n[15];return l=l||1,t[0]=(n[0]*r+n[4]*o+n[8]*u+n[12])/l,t[1]=(n[1]*r+n[5]*o+n[9]*u+n[13])/l,t[2]=(n[2]*r+n[6]*o+n[10]*u+n[14])/l,t},o.transformMat3=function(t,a,n){var r=a[0],o=a[1],u=a[2];return t[0]=r*n[0]+o*n[3]+u*n[6],t[1]=r*n[1]+o*n[4]+u*n[7],t[2]=r*n[2]+o*n[5]+u*n[8],t},o.transformQuat=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=n[0],e=n[1],M=n[2],s=n[3],i=s*r+e*u-M*o,c=s*o+M*r-l*u,h=s*u+l*o-e*r,f=-l*r-e*o-M*u;return t[0]=i*s+f*-l+c*-M-h*-e,t[1]=c*s+f*-e+h*-l-i*-M,t[2]=h*s+f*-M+i*-e-c*-l,t},o.rotateX=function(t,a,n,r){var o=[],u=[];return o[0]=a[0]-n[0],o[1]=a[1]-n[1],o[2]=a[2]-n[2],u[0]=o[0],u[1]=o[1]*Math.cos(r)-o[2]*Math.sin(r),u[2]=o[1]*Math.sin(r)+o[2]*Math.cos(r),t[0]=u[0]+n[0],t[1]=u[1]+n[1],t[2]=u[2]+n[2],t},o.rotateY=function(t,a,n,r){var o=[],u=[];return o[0]=a[0]-n[0],o[1]=a[1]-n[1],o[2]=a[2]-n[2],u[0]=o[2]*Math.sin(r)+o[0]*Math.cos(r),u[1]=o[1],u[2]=o[2]*Math.cos(r)-o[0]*Math.sin(r),t[0]=u[0]+n[0],t[1]=u[1]+n[1],t[2]=u[2]+n[2],t},o.rotateZ=function(t,a,n,r){var o=[],u=[];return o[0]=a[0]-n[0],o[1]=a[1]-n[1],o[2]=a[2]-n[2],u[0]=o[0]*Math.cos(r)-o[1]*Math.sin(r),u[1]=o[0]*Math.sin(r)+o[1]*Math.cos(r),u[2]=o[2],t[0]=u[0]+n[0],t[1]=u[1]+n[1],t[2]=u[2]+n[2],t},o.forEach=function(){var t=o.create();return function(a,n,r,o,u,l){var e,M;for(n||(n=3),r||(r=0),M=o?Math.min(o*n+r,a.length):a.length,e=r;M>e;e+=n)t[0]=a[e],t[1]=a[e+1],t[2]=a[e+2],u(t,t,l),a[e]=t[0],a[e+1]=t[1],a[e+2]=t[2];return a}}(),o.angle=function(t,a){var n=o.fromValues(t[0],t[1],t[2]),r=o.fromValues(a[0],a[1],a[2]);o.normalize(n,n),o.normalize(r,r);var u=o.dot(n,r);return u>1?0:Math.acos(u)},o.str=function(t){return"vec3("+t[0]+", "+t[1]+", "+t[2]+")"},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=a[0],e=a[1],M=a[2];return Math.abs(n-l)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(l))&&Math.abs(o-e)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(e))&&Math.abs(u-M)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(M))},t.exports=o},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(4);return t[0]=0,t[1]=0,t[2]=0,t[3]=0,t},o.clone=function(t){var a=new r.ARRAY_TYPE(4);return a[0]=t[0],a[1]=t[1],a[2]=t[2],a[3]=t[3],a},o.fromValues=function(t,a,n,o){var u=new r.ARRAY_TYPE(4);return u[0]=t,u[1]=a,u[2]=n,u[3]=o,u},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t[2]=a[2],t[3]=a[3],t},o.set=function(t,a,n,r,o){return t[0]=a,t[1]=n,t[2]=r,t[3]=o,t},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t[2]=a[2]+n[2],t[3]=a[3]+n[3],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t[2]=a[2]-n[2],t[3]=a[3]-n[3],t},o.sub=o.subtract,o.multiply=function(t,a,n){return t[0]=a[0]*n[0],t[1]=a[1]*n[1],t[2]=a[2]*n[2],t[3]=a[3]*n[3],t},o.mul=o.multiply,o.divide=function(t,a,n){return t[0]=a[0]/n[0],t[1]=a[1]/n[1],t[2]=a[2]/n[2],t[3]=a[3]/n[3],t},o.div=o.divide,o.ceil=function(t,a){return t[0]=Math.ceil(a[0]),t[1]=Math.ceil(a[1]),t[2]=Math.ceil(a[2]),t[3]=Math.ceil(a[3]),t},o.floor=function(t,a){return t[0]=Math.floor(a[0]),t[1]=Math.floor(a[1]),t[2]=Math.floor(a[2]),t[3]=Math.floor(a[3]),t},o.min=function(t,a,n){return t[0]=Math.min(a[0],n[0]),t[1]=Math.min(a[1],n[1]),t[2]=Math.min(a[2],n[2]),t[3]=Math.min(a[3],n[3]),t},o.max=function(t,a,n){return t[0]=Math.max(a[0],n[0]),t[1]=Math.max(a[1],n[1]),t[2]=Math.max(a[2],n[2]),t[3]=Math.max(a[3],n[3]),t},o.round=function(t,a){return t[0]=Math.round(a[0]),t[1]=Math.round(a[1]),t[2]=Math.round(a[2]),t[3]=Math.round(a[3]),t},o.scale=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t[2]=a[2]*n,t[3]=a[3]*n,t},o.scaleAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t[2]=a[2]+n[2]*r,t[3]=a[3]+n[3]*r,t},o.distance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1],o=a[2]-t[2],u=a[3]-t[3];return Math.sqrt(n*n+r*r+o*o+u*u)},o.dist=o.distance,o.squaredDistance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1],o=a[2]-t[2],u=a[3]-t[3];return n*n+r*r+o*o+u*u},o.sqrDist=o.squaredDistance,o.length=function(t){var a=t[0],n=t[1],r=t[2],o=t[3];return Math.sqrt(a*a+n*n+r*r+o*o)},o.len=o.length,o.squaredLength=function(t){var a=t[0],n=t[1],r=t[2],o=t[3];return a*a+n*n+r*r+o*o},o.sqrLen=o.squaredLength,o.negate=function(t,a){return t[0]=-a[0],t[1]=-a[1],t[2]=-a[2],t[3]=-a[3],t},o.inverse=function(t,a){return t[0]=1/a[0],t[1]=1/a[1],t[2]=1/a[2],t[3]=1/a[3],t},o.normalize=function(t,a){var n=a[0],r=a[1],o=a[2],u=a[3],l=n*n+r*r+o*o+u*u;return l>0&&(l=1/Math.sqrt(l),t[0]=n*l,t[1]=r*l,t[2]=o*l,t[3]=u*l),t},o.dot=function(t,a){return t[0]*a[0]+t[1]*a[1]+t[2]*a[2]+t[3]*a[3]},o.lerp=function(t,a,n,r){var o=a[0],u=a[1],l=a[2],e=a[3];return t[0]=o+r*(n[0]-o),t[1]=u+r*(n[1]-u),t[2]=l+r*(n[2]-l),t[3]=e+r*(n[3]-e),t},o.random=function(t,a){return a=a||1,t[0]=r.RANDOM(),t[1]=r.RANDOM(),t[2]=r.RANDOM(),t[3]=r.RANDOM(),o.normalize(t,t),o.scale(t,t,a),t},o.transformMat4=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=a[3];return t[0]=n[0]*r+n[4]*o+n[8]*u+n[12]*l,t[1]=n[1]*r+n[5]*o+n[9]*u+n[13]*l,t[2]=n[2]*r+n[6]*o+n[10]*u+n[14]*l,t[3]=n[3]*r+n[7]*o+n[11]*u+n[15]*l,t},o.transformQuat=function(t,a,n){var r=a[0],o=a[1],u=a[2],l=n[0],e=n[1],M=n[2],s=n[3],i=s*r+e*u-M*o,c=s*o+M*r-l*u,h=s*u+l*o-e*r,f=-l*r-e*o-M*u;return t[0]=i*s+f*-l+c*-M-h*-e,t[1]=c*s+f*-e+h*-l-i*-M,t[2]=h*s+f*-M+i*-e-c*-l,t[3]=a[3],t},o.forEach=function(){var t=o.create();return function(a,n,r,o,u,l){var e,M;for(n||(n=4),r||(r=0),M=o?Math.min(o*n+r,a.length):a.length,e=r;M>e;e+=n)t[0]=a[e],t[1]=a[e+1],t[2]=a[e+2],t[3]=a[e+3],u(t,t,l),a[e]=t[0],a[e+1]=t[1],a[e+2]=t[2],a[e+3]=t[3];return a}}(),o.str=function(t){return"vec4("+t[0]+", "+t[1]+", "+t[2]+", "+t[3]+")"},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]&&t[2]===a[2]&&t[3]===a[3]},o.equals=function(t,a){var n=t[0],o=t[1],u=t[2],l=t[3],e=a[0],M=a[1],s=a[2],i=a[3];return Math.abs(n-e)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(e))&&Math.abs(o-M)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(M))&&Math.abs(u-s)<=r.EPSILON*Math.max(1,Math.abs(u),Math.abs(s))&&Math.abs(l-i)<=r.EPSILON*Math.max(1,Math.abs(l),Math.abs(i))},t.exports=o},function(t,a,n){var r=n(1),o={};o.create=function(){var t=new r.ARRAY_TYPE(2);return t[0]=0,t[1]=0,t},o.clone=function(t){var a=new r.ARRAY_TYPE(2);return a[0]=t[0],a[1]=t[1],a},o.fromValues=function(t,a){var n=new r.ARRAY_TYPE(2);return n[0]=t,n[1]=a,n},o.copy=function(t,a){return t[0]=a[0],t[1]=a[1],t},o.set=function(t,a,n){return t[0]=a,t[1]=n,t},o.add=function(t,a,n){return t[0]=a[0]+n[0],t[1]=a[1]+n[1],t},o.subtract=function(t,a,n){return t[0]=a[0]-n[0],t[1]=a[1]-n[1],t},o.sub=o.subtract,o.multiply=function(t,a,n){return t[0]=a[0]*n[0],t[1]=a[1]*n[1],t},o.mul=o.multiply,o.divide=function(t,a,n){return t[0]=a[0]/n[0],t[1]=a[1]/n[1],t},o.div=o.divide,o.ceil=function(t,a){return t[0]=Math.ceil(a[0]),t[1]=Math.ceil(a[1]),t},o.floor=function(t,a){return t[0]=Math.floor(a[0]),t[1]=Math.floor(a[1]),t},o.min=function(t,a,n){return t[0]=Math.min(a[0],n[0]),t[1]=Math.min(a[1],n[1]),t},o.max=function(t,a,n){return t[0]=Math.max(a[0],n[0]),t[1]=Math.max(a[1],n[1]),t},o.round=function(t,a){return t[0]=Math.round(a[0]),t[1]=Math.round(a[1]),t},o.scale=function(t,a,n){return t[0]=a[0]*n,t[1]=a[1]*n,t},o.scaleAndAdd=function(t,a,n,r){return t[0]=a[0]+n[0]*r,t[1]=a[1]+n[1]*r,t},o.distance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1];return Math.sqrt(n*n+r*r)},o.dist=o.distance,o.squaredDistance=function(t,a){var n=a[0]-t[0],r=a[1]-t[1];return n*n+r*r},o.sqrDist=o.squaredDistance,o.length=function(t){var a=t[0],n=t[1];return Math.sqrt(a*a+n*n)},o.len=o.length,o.squaredLength=function(t){var a=t[0],n=t[1];return a*a+n*n},o.sqrLen=o.squaredLength,o.negate=function(t,a){return t[0]=-a[0],t[1]=-a[1],t},o.inverse=function(t,a){return t[0]=1/a[0],t[1]=1/a[1],t},o.normalize=function(t,a){var n=a[0],r=a[1],o=n*n+r*r;return o>0&&(o=1/Math.sqrt(o),t[0]=a[0]*o,t[1]=a[1]*o),t},o.dot=function(t,a){return t[0]*a[0]+t[1]*a[1]},o.cross=function(t,a,n){var r=a[0]*n[1]-a[1]*n[0];return t[0]=t[1]=0,t[2]=r,t},o.lerp=function(t,a,n,r){var o=a[0],u=a[1];return t[0]=o+r*(n[0]-o),t[1]=u+r*(n[1]-u),t},o.random=function(t,a){a=a||1;var n=2*r.RANDOM()*Math.PI;return t[0]=Math.cos(n)*a,t[1]=Math.sin(n)*a,t},o.transformMat2=function(t,a,n){var r=a[0],o=a[1];return t[0]=n[0]*r+n[2]*o,t[1]=n[1]*r+n[3]*o,t},o.transformMat2d=function(t,a,n){var r=a[0],o=a[1];return t[0]=n[0]*r+n[2]*o+n[4],t[1]=n[1]*r+n[3]*o+n[5],t},o.transformMat3=function(t,a,n){var r=a[0],o=a[1];return t[0]=n[0]*r+n[3]*o+n[6],t[1]=n[1]*r+n[4]*o+n[7],t},o.transformMat4=function(t,a,n){var r=a[0],o=a[1];return t[0]=n[0]*r+n[4]*o+n[12],t[1]=n[1]*r+n[5]*o+n[13],t},o.forEach=function(){var t=o.create();return function(a,n,r,o,u,l){var e,M;for(n||(n=2),r||(r=0),M=o?Math.min(o*n+r,a.length):a.length,e=r;M>e;e+=n)t[0]=a[e],t[1]=a[e+1],u(t,t,l),a[e]=t[0],a[e+1]=t[1];return a}}(),o.str=function(t){return"vec2("+t[0]+", "+t[1]+")"},o.exactEquals=function(t,a){return t[0]===a[0]&&t[1]===a[1]},o.equals=function(t,a){var n=t[0],o=t[1],u=a[0],l=a[1];return Math.abs(n-u)<=r.EPSILON*Math.max(1,Math.abs(n),Math.abs(u))&&Math.abs(o-l)<=r.EPSILON*Math.max(1,Math.abs(o),Math.abs(l))},t.exports=o}])}),loadjs=function(){function t(t,a){t=t.push?t:[t];var n,r,o,u,l=[],s=t.length,i=s;for(n=function(t,n){n.length&&l.push(t),i--,i||a(l)};s--;)r=t[s],o=e[r],o?n(r,o):(u=M[r]=M[r]||[],u.push(n))}function a(t,a){if(t){var n=M[t];if(e[t]=a,n)for(;n.length;)n[0](t,a),n.splice(0,1)}}function n(t,a){var n=document,r=n.createElement("script");r.src=t,r.onload=r.onerror=r.onbeforeload=function(n){a(t,n.type[0],n.defaultPrevented)},n.head.appendChild(r)}function r(t,a){t=t.push?t:[t];var r,o=t.length,u=o,l=[];for(r=function(t,n,r){if("e"==n&&l.push(t),"b"==n){if(!r)return;l.push(t)}u--,u||a(l)};o--;)n(t[o],r)}function o(t,n,o,e){var M,s,i;if(n&&!n.call&&(M=n),s=M?o:n,i=M?e:o,M){if(M in l)throw new Error("LoadJS: Bundle already defined");l[M]=!0}r(t,function(t){t.length?(i||u)(t):(s||u)(),a(M,t)})}var u=function(){},l={},e={},M={};return o.ready=function(a,n,r){return t(a,function(t){t.length?(r||u)(t):(n||u)()}),o},o.done=function(t){a(t,[])},o}();
 //# sourceMappingURL=libs.core.min.js.map
@@ -18,156 +18,17 @@ var CABLES=CABLES||{};
 CABLES.OPS=CABLES.OPS||{};
 
 var Ops=Ops || {};
-Ops.Ui=Ops.Ui || {};
 Ops.Gl=Ops.Gl || {};
 Ops.Math=Ops.Math || {};
-Ops.Anim=Ops.Anim || {};
-Ops.Value=Ops.Value || {};
-Ops.Color=Ops.Color || {};
-Ops.Boolean=Ops.Boolean || {};
-Ops.Devices=Ops.Devices || {};
-Ops.Sidebar=Ops.Sidebar || {};
 Ops.Trigger=Ops.Trigger || {};
+Ops.Gl.Meshes=Ops.Gl.Meshes || {};
 Ops.Gl.Shader=Ops.Gl.Shader || {};
 Ops.Gl.Matrix=Ops.Gl.Matrix || {};
-Ops.Gl.Meshes=Ops.Gl.Meshes || {};
-Ops.Devices.Midi=Ops.Devices.Midi || {};
-Ops.Devices.Mouse=Ops.Devices.Mouse || {};
-Ops.Devices.Keyboard=Ops.Devices.Keyboard || {};
+Ops.Gl.Textures=Ops.Gl.Textures || {};
+Ops.Gl.Geometry=Ops.Gl.Geometry || {};
+Ops.Gl.ShaderEffects=Ops.Gl.ShaderEffects || {};
 Ops.Gl.TextureEffects=Ops.Gl.TextureEffects || {};
-
-
-
-// **************************************************************
-// 
-// Ops.Gl.Matrix.CircleTransform
-// 
-// **************************************************************
-
-Ops.Gl.Matrix.CircleTransform = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    render=op.inTrigger('render'),
-    segments=op.inValueInt("segments",40),
-    radius=op.inValueFloat("radius",1),
-    percent=op.inValueSlider("percent",1),
-    inRotate=op.inValueBool("Rotate"),
-    trigger=op.outTrigger('trigger'),
-    index=op.outValue("index");
-
-var cgl=op.patch.cgl;
-
-segments.set(40);
-radius.set(1);
-percent.set(1);
-
-var pos=[];
-segments.onChange=calcLater;
-radius.onChange=calcLater;
-percent.onChange=calcLater;
-var needsCalc=true;
-
-render.onTriggered=doRender;
-
-function doRender()
-{
-    if(needsCalc)calc();
-    var doRot=inRotate.get();
-    for(var i=0;i<pos.length;i++)
-    {
-        cgl.pushModelMatrix();
-
-        mat4.translate(cgl.mMatrix,cgl.mMatrix, pos[i] );
-        if(doRot)mat4.rotateZ(cgl.mMatrix,cgl.mMatrix, (i/pos.length*percent.get())*CGL.DEG2RAD*-360);
-
-        index.set(i);
-        trigger.trigger();
-
-        cgl.popModelMatrix();
-    }
-}
-
-function calcLater()
-{
-    needsCalc=true;
-}
-
-function calc()
-{
-    pos.length=0;
-
-    var i=0,degInRad=0;
-    var segs=segments.get();
-    if(segs<1)segs=1;
-
-    for (i=0; i < Math.round(segs*percent.get()); i++)
-    {
-        degInRad = (360/Math.round(segs))*i*CGL.DEG2RAD;
-        pos.push(
-            [
-            Math.sin(degInRad)*radius.get(),
-            Math.cos(degInRad)*radius.get(),
-            0
-            ]
-            );
-    }
-
-    needsCalc=false;
-}
-
-
-
-};
-
-Ops.Gl.Matrix.CircleTransform.prototype = new CABLES.Op();
-CABLES.OPS["4e96d5a2-a1ec-4f83-954d-7c34a9021e9c"]={f:Ops.Gl.Matrix.CircleTransform,objName:"Ops.Gl.Matrix.CircleTransform"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Sequence
-// 
-// **************************************************************
-
-Ops.Sequence = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-
-const exe=op.inTrigger("exe");
-const exes=[];
-const triggers=[];
-const num=16;
-exe.onTriggered=triggerAll;
-
-function triggerAll()
-{
-    for(var i=0;i<triggers.length;i++) triggers[i].trigger();
-}
-
-for(var i=0;i<num;i++)
-{
-    triggers.push( op.outTrigger("trigger "+i));
-
-    if(i<num-1)
-    {
-        var newExe=op.inTrigger("exe "+i);
-        newExe.onTriggered=triggerAll;
-        exes.push( newExe );
-    }
-}
-
-};
-
-Ops.Sequence.prototype = new CABLES.Op();
-CABLES.OPS["a466bc1f-06e9-4595-8849-bffb9fe22f99"]={f:Ops.Sequence,objName:"Ops.Sequence"};
-
+Ops.Gl.TextureEffects.Noise=Ops.Gl.TextureEffects.Noise || {};
 
 
 
@@ -403,436 +264,866 @@ CABLES.OPS["b0472a1d-db16-4ba6-8787-f300fbdc77bb"]={f:Ops.Gl.MainLoop,objName:"O
 
 // **************************************************************
 // 
-// Ops.Gl.Meshes.Cube
+// Ops.Gl.Shader.BasicMaterial
 // 
 // **************************************************************
 
-Ops.Gl.Meshes.Cube = function()
+Ops.Gl.Shader.BasicMaterial = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={shader_frag:"{{MODULES_HEAD}}\n\nIN vec2 texCoord;\n#ifdef HAS_TEXTURES\n    IN vec2 texCoordOrig;\n    #ifdef HAS_TEXTURE_DIFFUSE\n        UNI sampler2D tex;\n    #endif\n    #ifdef HAS_TEXTURE_OPACITY\n        UNI sampler2D texOpacity;\n   #endif\n#endif\nUNI float r;\nUNI float g;\nUNI float b;\nUNI float a;\n\nvoid main()\n{\n    {{MODULE_BEGIN_FRAG}}\n    vec4 col=vec4(r,g,b,a);\n\n    #ifdef HAS_TEXTURES\n        #ifdef HAS_TEXTURE_DIFFUSE\n\n           col=texture(tex,vec2(texCoord.x,(1.0-texCoord.y)));\n\n           #ifdef COLORIZE_TEXTURE\n               col.r*=r;\n               col.g*=g;\n               col.b*=b;\n           #endif\n        #endif\n\n        col.a*=a;\n        #ifdef HAS_TEXTURE_OPACITY\n            #ifdef TRANSFORMALPHATEXCOORDS\n                col.a*=texture(texOpacity,vec2(texCoordOrig.s,1.0-texCoordOrig.t)).g;\n            #endif\n            #ifndef TRANSFORMALPHATEXCOORDS\n                col.a*=texture(texOpacity,vec2(texCoord.s,1.0-texCoord.t)).g;\n            #endif\n       #endif\n\n    #endif\n\n    {{MODULE_COLOR}}\n\n    outColor = col;\n\n\n}\n",shader_vert:"{{MODULES_HEAD}}\n\nIN vec3 vPosition;\nIN vec3 attrVertNormal;\nIN vec2 attrTexCoord;\n\nOUT vec3 norm;\nOUT vec2 texCoord;\nOUT vec2 texCoordOrig;\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\n#ifdef HAS_TEXTURES\n    #ifdef TEXTURE_REPEAT\n        UNI float diffuseRepeatX;\n        UNI float diffuseRepeatY;\n        UNI float texOffsetX;\n        UNI float texOffsetY;\n    #endif\n#endif\n\n\nvoid main()\n{\n    mat4 mMatrix=modelMatrix;\n    mat4 mvMatrix;\n    \n    texCoordOrig=attrTexCoord;\n    texCoord=attrTexCoord;\n    #ifdef HAS_TEXTURES\n        #ifdef TEXTURE_REPEAT\n            texCoord.x=texCoord.x*diffuseRepeatX+texOffsetX;\n            texCoord.y=texCoord.y*diffuseRepeatY+texOffsetY;\n        #endif\n    #endif\n\n    vec4 pos = vec4( vPosition, 1. );\n\n\n    #ifdef BILLBOARD\n       vec3 position=vPosition;\n       mvMatrix=viewMatrix*modelMatrix;\n\n       gl_Position = projMatrix * mvMatrix * vec4((\n           position.x * vec3(\n               mvMatrix[0][0],\n               mvMatrix[1][0],\n               mvMatrix[2][0] ) +\n           position.y * vec3(\n               mvMatrix[0][1],\n               mvMatrix[1][1],\n               mvMatrix[2][1]) ), 1.0);\n    #endif\n\n    {{MODULE_VERTEX_POSITION}}\n\n    #ifndef BILLBOARD\n        mvMatrix=viewMatrix * mMatrix;\n    #endif\n\n\n    #ifndef BILLBOARD\n        // gl_Position = projMatrix * viewMatrix * modelMatrix * pos;\n        gl_Position = projMatrix * mvMatrix * pos;\n    #endif\n}\n",};
+const render=op.inTrigger("render"),
+    trigger=op.outTrigger("trigger"),
+    shaderOut=op.outObject("shader");
+
+shaderOut.ignoreValueSerialize=true;
+const cgl=op.patch.cgl;
+
+var shader=new CGL.Shader(cgl,'BasicMaterial');
+shader.setModules(['MODULE_VERTEX_POSITION','MODULE_COLOR','MODULE_BEGIN_FRAG']);
+shader.bindTextures=bindTextures;
+shader.setSource(attachments.shader_vert,attachments.shader_frag);
+shaderOut.set(shader);
+
+render.onTriggered=doRender;
+
+var textureOpacity=null;
+var textureOpacityUniform=null;
+
+
+function bindTextures()
+{
+    if(diffuseTexture.get()) cgl.setTexture(0, diffuseTexture.get().tex);
+    if(textureOpacity.get()) cgl.setTexture(1, textureOpacity.get().tex);
+}
+
+op.preRender=function()
+{
+    shader.bind();
+    doRender();
+};
+
+function doRender()
+{
+    if(!shader)return;
+
+    cgl.setShader(shader);
+    shader.bindTextures();
+
+    trigger.trigger();
+
+    cgl.setPreviousShader();
+}
+
+
+{
+    // rgba colors
+    const r = op.inValueSlider("r", Math.random()),
+        g = op.inValueSlider("g", Math.random()),
+        b = op.inValueSlider("b", Math.random()),
+        a = op.inValueSlider("a",1.0);
+        r.setUiAttribs({ colorPick: true });
+
+
+
+    a.uniform=new CGL.Uniform(shader,'f','a',a);
+    b.uniform=new CGL.Uniform(shader,'f','b',b);
+    r.uniform=new CGL.Uniform(shader,'f','r',r);
+    g.uniform=new CGL.Uniform(shader,'f','g',g);
+
+    op.setPortGroup('Color',[r,g,b,a]);
+
+}
+
+{
+    // diffuse outTexture
+
+
+    var diffuseTexture=op.inTexture("texture");
+    var diffuseTextureUniform=null;
+    shader.bindTextures=bindTextures;
+
+    diffuseTexture.onChange=function()
+    {
+        if(diffuseTexture.get())
+        {
+            // if(diffuseTextureUniform!==null)return;
+            // shader.addveUniform('texDiffuse');
+            if(!shader.hasDefine('HAS_TEXTURE_DIFFUSE'))shader.define('HAS_TEXTURE_DIFFUSE');
+            if(!diffuseTextureUniform)diffuseTextureUniform=new CGL.Uniform(shader,'t','texDiffuse',0);
+            updateTexRepeat();
+        }
+        else
+        {
+            shader.removeUniform('texDiffuse');
+            shader.removeDefine('HAS_TEXTURE_DIFFUSE');
+            diffuseTextureUniform=null;
+        }
+    };
+}
+
+{
+    // opacity texture
+    textureOpacity=op.inTexture("textureOpacity");
+
+    textureOpacity.onChange=function()
+    {
+        if(textureOpacity.get())
+        {
+            if(textureOpacityUniform!==null)return;
+            shader.removeUniform('texOpacity');
+            shader.define('HAS_TEXTURE_OPACITY');
+            if(!textureOpacityUniform)textureOpacityUniform=new CGL.Uniform(shader,'t','texOpacity',1);
+        }
+        else
+        {
+            shader.removeUniform('texOpacity');
+            shader.removeDefine('HAS_TEXTURE_OPACITY');
+            textureOpacityUniform=null;
+        }
+    };
+
+}
+
+op.colorizeTexture=op.inValueBool("colorizeTexture");
+op.colorizeTexture.set(false);
+op.colorizeTexture.onChange=function()
+{
+    if(op.colorizeTexture.get()) shader.define('COLORIZE_TEXTURE');
+        else shader.removeDefine('COLORIZE_TEXTURE');
+};
+
+op.doBillboard=op.inValueBool("billboard");
+op.doBillboard.set(false);
+
+op.doBillboard.onChange=function()
+{
+    if(op.doBillboard.get()) shader.define('BILLBOARD');
+        else shader.removeDefine('BILLBOARD');
+};
+
+var texCoordAlpha=op.inValueBool("Opacity TexCoords Transform",false);
+
+texCoordAlpha.onChange=function()
+{
+    if(texCoordAlpha.get()) shader.define('TRANSFORMALPHATEXCOORDS');
+        else shader.removeDefine('TRANSFORMALPHATEXCOORDS');
+
+};
+
+var preMultipliedAlpha=op.inValueBool("preMultiplied alpha");
+
+function updateTexRepeat()
+{
+    if(!diffuseRepeatXUniform)
+    {
+        diffuseRepeatXUniform=new CGL.Uniform(shader,'f','diffuseRepeatX',diffuseRepeatX);
+        diffuseRepeatYUniform=new CGL.Uniform(shader,'f','diffuseRepeatY',diffuseRepeatY);
+        diffuseOffsetXUniform=new CGL.Uniform(shader,'f','texOffsetX',diffuseOffsetX);
+        diffuseOffsetYUniform=new CGL.Uniform(shader,'f','texOffsetY',diffuseOffsetY);
+    }
+
+    diffuseRepeatXUniform.setValue(diffuseRepeatX.get());
+    diffuseRepeatYUniform.setValue(diffuseRepeatY.get());
+    diffuseOffsetXUniform.setValue(diffuseOffsetX.get());
+    diffuseOffsetYUniform.setValue(diffuseOffsetY.get());
+}
+
+{
+    // texture coords
+
+    var diffuseRepeatX=op.inValueFloat("diffuseRepeatX",1);
+    var diffuseRepeatY=op.inValueFloat("diffuseRepeatY",1);
+    var diffuseOffsetX=op.inValueFloat("Tex Offset X");
+    var diffuseOffsetY=op.inValueFloat("Tex Offset Y");
+
+    op.setPortGroup('Transform Texture',[diffuseRepeatX,diffuseRepeatY,diffuseOffsetX,diffuseOffsetY]);
+
+    diffuseRepeatX.onChange=updateTexRepeat;
+    diffuseRepeatY.onChange=updateTexRepeat;
+    diffuseOffsetY.onChange=updateTexRepeat;
+    diffuseOffsetX.onChange=updateTexRepeat;
+
+    var diffuseRepeatXUniform=null;
+    var diffuseRepeatYUniform=null;
+    var diffuseOffsetXUniform=null;
+    var diffuseOffsetYUniform=null;
+
+    shader.define('TEXTURE_REPEAT');
+
+    diffuseOffsetX.set(0);
+    diffuseOffsetY.set(0);
+    diffuseRepeatX.set(1);
+    diffuseRepeatY.set(1);
+}
+
+
+updateTexRepeat();
+
+
+};
+
+Ops.Gl.Shader.BasicMaterial.prototype = new CABLES.Op();
+CABLES.OPS["85ae5cfa-5eca-4dd8-8b30-850ac34f7cd5"]={f:Ops.Gl.Shader.BasicMaterial,objName:"Ops.Gl.Shader.BasicMaterial"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Matrix.Scale
+// 
+// **************************************************************
+
+Ops.Gl.Matrix.Scale = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+const
+    render=op.inTrigger("render"),
+    scale=op.inValueFloat("scale",1.0),
+    trigger=op.outTrigger("trigger");
+
+const cgl=op.patch.cgl;
+const vScale=vec3.create();
+
+scale.onChange=scaleChanged;
+scaleChanged();
+
+render.onTriggered=function()
+{
+    cgl.pushModelMatrix();
+    mat4.scale(cgl.mMatrix,cgl.mMatrix, vScale);
+    trigger.trigger();
+    cgl.popModelMatrix();
+};
+
+function scaleChanged()
+{
+    var s=scale.get();
+    vec3.set(vScale, s,s,s);
+}
+
+
+
+};
+
+Ops.Gl.Matrix.Scale.prototype = new CABLES.Op();
+CABLES.OPS["50e7f565-0cdb-47ca-912b-87c04e2f00e3"]={f:Ops.Gl.Matrix.Scale,objName:"Ops.Gl.Matrix.Scale"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Shader.PointMaterial
+// 
+// **************************************************************
+
+Ops.Gl.Shader.PointMaterial = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={shader_frag:"\n{{MODULES_HEAD}}\n\nIN vec2 texCoord;\n#ifdef HAS_TEXTURES\n\n   #ifdef HAS_TEXTURE_DIFFUSE\n       UNI sampler2D diffTex;\n   #endif\n   #ifdef HAS_TEXTURE_MASK\n       UNI sampler2D texMask;\n   #endif\n#endif\nUNI float r;\nUNI float g;\nUNI float b;\nUNI float a;\n\n#ifdef VERTEX_COLORS\n    IN vec3 vertexColor;\n#endif\n\nvoid main()\n{\n    {{MODULE_BEGIN_FRAG}}\n\n    vec4 col=vec4(r,g,b,a);\n\n    #ifdef HAS_TEXTURES\n\n        #ifdef HAS_TEXTURE_MASK\n            float mask=texture(texMask,vec2(gl_PointCoord.x,(1.0-gl_PointCoord.y))).r;\n        #endif\n\n        #ifdef HAS_TEXTURE_DIFFUSE\n\n            #ifdef LOOKUP_TEXTURE\n                col=texture(diffTex,texCoord);\n            #endif\n            #ifndef LOOKUP_TEXTURE\n                col=texture(diffTex,vec2(gl_PointCoord.x,(1.0-gl_PointCoord.y)));\n            #endif\n\n            #ifdef COLORIZE_TEXTURE\n              col.r*=r;\n              col.g*=g;\n              col.b*=b;\n            #endif\n        #endif\n        col.a*=a;\n    #endif\n\n    {{MODULE_COLOR}}\n\n    #ifdef MAKE_ROUND\n        if ((gl_PointCoord.x-0.5)*(gl_PointCoord.x-0.5) + (gl_PointCoord.y-0.5)*(gl_PointCoord.y-0.5) > 0.25) discard; //col.a=0.0;\n    #endif\n\n    #ifdef VERTEX_COLORS\n        col.rgb*=vertexColor;\n    #endif\n\n\n    #ifdef HAS_TEXTURE_MASK\n        col.a=mask;\n    #endif\n\n\n    // #ifdef RANDOMIZE_COLOR\n        // col.rgb*=fract(sin(dot(texCoord.xy ,vec2(12.9898,78.233))) * 43758.5453);\n    // #endif\n\n\n\n    outColor = col;\n}\n",shader_vert:"{{MODULES_HEAD}}\nIN vec3 vPosition;\nIN vec2 attrTexCoord;\nIN vec3 attrVertNormal;\n\n#ifdef VERTEX_COLORS\n    IN vec3 attrVertColor;\n    OUT vec3 vertexColor;\n#endif\n\nOUT vec3 norm;\n#ifdef HAS_TEXTURES\n    OUT vec2 texCoord;\n#endif\n\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\n\nUNI float pointSize;\nUNI vec3 camPos;\n\nUNI float canvasWidth;\nUNI float canvasHeight;\nUNI float camDistMul;\n\nUNI float randomSize;\n\nIN float attrVertIndex;\n\n\nfloat rand(float n){return fract(sin(n) * 43758.5453123);}\n\n#define POINTMATERIAL\n\nvoid main()\n{\n    float psMul=sqrt(canvasWidth/canvasHeight)+0.00000000001;\n    float sizeMultiply=1.0;\n\n    #ifdef VERTEX_COLORS\n        vertexColor=attrVertColor;\n    #endif\n\n    #ifdef HAS_TEXTURES\n        texCoord=attrTexCoord;\n    #endif\n\n    mat4 mMatrix=modelMatrix;\n\n    vec4 pos = vec4( vPosition, 1. );\n\n    {{MODULE_VERTEX_POSITION}}\n\n    vec4 model=mMatrix * pos;\n\n    psMul+=rand(attrVertIndex)*randomSize;\n\n    psMul*=sizeMultiply;\n\n    #ifndef SCALE_BY_DISTANCE\n        gl_PointSize = pointSize * psMul;\n    #endif\n    #ifdef SCALE_BY_DISTANCE\n        float cameraDist = distance(model.xyz, camPos);\n        gl_PointSize = (pointSize / cameraDist) * psMul;\n    #endif\n\n    gl_Position = projMatrix * viewMatrix * model;\n}\n",};
+const cgl=op.patch.cgl;
+
+const
+    render=op.inTrigger("render"),
+    pointSize=op.inValueFloat("PointSize",3),
+    randomSize=op.inValue("Random Size",3),
+    makeRound=op.inValueBool("Round",true),
+    doScale=op.inValueBool("Scale by Distance",false),
+    r = op.inValueSlider("r", Math.random()),
+    g = op.inValueSlider("g", Math.random()),
+    b = op.inValueSlider("b", Math.random()),
+    a = op.inValueSlider("a",1),
+    preMultipliedAlpha=op.inValueBool("preMultiplied alpha"),
+    vertCols=op.inBool("Vertex Colors",false),
+    texture=op.inTexture("texture"),
+    textureMask=op.inTexture("Texture Mask"),
+    colorizeTexture=op.inValueBool("colorizeTexture",false),
+    textureLookup=op.inValueBool("texture Lookup",false),
+    trigger=op.outTrigger('trigger'),
+    shaderOut=op.outObject("shader");
+
+op.setPortGroup("Texture",[textureLookup,textureMask,texture,colorizeTexture]);
+op.setPortGroup("Color",[r,g,b,a,preMultipliedAlpha,vertCols]);
+op.setPortGroup("Size",[pointSize,randomSize,makeRound,doScale]);
+r.setUiAttribs({ colorPick: true });
+
+const shader=new CGL.Shader(cgl,'PointMaterial');
+shader.setModules(['MODULE_VERTEX_POSITION','MODULE_COLOR','MODULE_BEGIN_FRAG']);
+shader.define('MAKE_ROUND');
+
+const
+    uniPointSize=new CGL.Uniform(shader,'f','pointSize',pointSize),
+    uniRandomSize=new CGL.Uniform(shader,'f','randomSize',randomSize),
+    runiform=new CGL.Uniform(shader,'f','r',r),
+    guniform=new CGL.Uniform(shader,'f','g',g),
+    buniform=new CGL.Uniform(shader,'f','b',b),
+    auniform=new CGL.Uniform(shader,'f','a',a),
+    uniWidth=new CGL.Uniform(shader,'f','canvasWidth',cgl.canvasWidth),
+    uniHeight=new CGL.Uniform(shader,'f','canvasHeight',cgl.canvasHeight);
+
+shaderOut.set(shader);
+shader.setSource(attachments.shader_vert,attachments.shader_frag);
+shader.glPrimitive=cgl.gl.POINTS;
+shader.bindTextures=bindTextures;
+shaderOut.ignoreValueSerialize=true;
+
+render.onTriggered=doRender;
+
+var textureUniform=null;
+var textureMaskUniform=null;
+
+op.preRender=function()
+{
+    if(shader)shader.bind();
+    doRender();
+};
+
+function bindTextures()
+{
+    if(texture.get()) cgl.setTexture(0,texture.get().tex);
+    if(textureMask.get()) cgl.setTexture(1,textureMask.get().tex);
+}
+
+function doRender()
+{
+    uniWidth.setValue(cgl.canvasWidth);
+    uniHeight.setValue(cgl.canvasHeight);
+
+    cgl.setShader(shader);
+    bindTextures();
+    if(preMultipliedAlpha.get())cgl.gl.blendFunc(cgl.gl.ONE, cgl.gl.ONE_MINUS_SRC_ALPHA);
+
+    trigger.trigger();
+    if(preMultipliedAlpha.get())cgl.gl.blendFunc(cgl.gl.SRC_ALPHA,cgl.gl.ONE_MINUS_SRC_ALPHA);
+
+    cgl.setPreviousShader();
+}
+
+doScale.onChange=function()
+{
+    shader.toggleDefine('SCALE_BY_DISTANCE',doScale.get());
+};
+
+makeRound.onChange=function()
+{
+    shader.toggleDefine('MAKE_ROUND',makeRound.get());
+};
+
+colorizeTexture.onChange=function()
+{
+    shader.toggleDefine('COLORIZE_TEXTURE',colorizeTexture.get());
+};
+
+textureLookup.onChange=function()
+{
+    shader.toggleDefine('LOOKUP_TEXTURE',textureLookup.get());
+};
+
+vertCols.onChange=function()
+{
+    shader.toggleDefine('VERTEX_COLORS',vertCols.get());
+};
+
+texture.onChange=function()
+{
+    if(texture.get())
+    {
+        if(textureUniform!==null)return;
+        shader.removeUniform('diffTex');
+        shader.define('HAS_TEXTURE_DIFFUSE');
+        textureUniform=new CGL.Uniform(shader,'t','diffTex',0);
+    }
+    else
+    {
+        shader.removeUniform('diffTex');
+        shader.removeDefine('HAS_TEXTURE_DIFFUSE');
+        textureUniform=null;
+    }
+};
+
+textureMask.onChange=function()
+{
+    if(textureMask.get())
+    {
+        if(textureMaskUniform!==null)return;
+        shader.removeUniform('texMask');
+        shader.define('HAS_TEXTURE_MASK');
+        textureMaskUniform=new CGL.Uniform(shader,'t','texMask',1);
+    }
+    else
+    {
+        shader.removeUniform('texMask');
+        shader.removeDefine('HAS_TEXTURE_MASK');
+        textureMaskUniform=null;
+    }
+};
+
+
+
+};
+
+Ops.Gl.Shader.PointMaterial.prototype = new CABLES.Op();
+CABLES.OPS["f86a4a07-00ee-4f68-8839-e02d51d1cd2f"]={f:Ops.Gl.Shader.PointMaterial,objName:"Ops.Gl.Shader.PointMaterial"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Shader.WireframeMaterial
+// 
+// **************************************************************
+
+Ops.Gl.Shader.WireframeMaterial = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={wireframe_frag:"IN vec3 barycentric;\nUNI float width;\nUNI float opacity;\nUNI float r,g,b;\nUNI float fr,fg,fb;\nIN vec3 norm;\n\nfloat edgeFactor()\n{\n    vec3 d = fwidth(barycentric);\n    vec3 a3 = smoothstep(vec3(0.0), d*width*4.0, barycentric);\n    return min(min(a3.x, a3.y), a3.z);\n}\n\nvoid main()\n{\n    vec4 col;\n\n    #ifdef WIREFRAME_FILL\n        float v=opacity*(1.0-edgeFactor())*0.95;\n        vec3 wire = vec3(fr, fg, fb);\n        col.rgb = vec3(r, g, b);\n        col.rgb = mix(wire,col.rgb,v);\n        col.a = opacity;\n    #endif\n\n    #ifndef WIREFRAME_FILL\n       col = vec4(r,g,b, opacity*(1.0-edgeFactor())*0.95);\n    #endif\n    \n    // col=vec4(barycentric,1.0);\n    \n    outColor=col;\n\n}",wireframe_vert:"{{MODULES_HEAD}}\n\nIN vec3 vPosition;\nIN vec3 attrBarycentric;\nUNI mat4 projMatrix;\nUNI mat4 modelMatrix;\nUNI mat4 viewMatrix;\nOUT vec3 barycentric;\nIN vec2 attrTexCoord;\nOUT vec2 texCoord;\n\nIN vec3 attrVertNormal;\nOUT vec3 norm;\n\nvoid main()\n{\n    norm=attrVertNormal;\n    texCoord=attrTexCoord;\n    barycentric=attrBarycentric;\n    vec4 pos = vec4( vPosition, 1. );\n    {{MODULE_VERTEX_POSITION}}\n    gl_Position = projMatrix * viewMatrix * modelMatrix * pos;\n}\n",};
+var cgl=op.patch.cgl;
+
+var render=op.inTrigger("render");
+var trigger=op.outTrigger('trigger');
+
+var enableDepth=op.inValueBool("enable depth testing",true);
+
+var fill=op.inValueBool("fill",true);
+
+function setDefines()
+{
+    if(shader)
+        if(fill.get()) shader.define('WIREFRAME_FILL');
+            else shader.removeDefine('WIREFRAME_FILL');
+}
+fill.onChange=function()
+{
+    setDefines();
+};
+
+var w=op.inValueSlider("width",0.25);
+w.onChange=function(){ uniformWidth.setValue(w.get()); };
+
+var opacity=op.inValueSlider("opacity",1);
+opacity.onChange=function(){ uniformOpacity.setValue(opacity.get()); };
+
+if(cgl.glVersion==1 && !cgl.gl.getExtension('OES_standard_derivatives') )
+{
+    op.uiAttr( { 'error': 'no oes standart derivatives!' } );
+}
+else
+{
+    op.uiAttr( { 'error': null } );
+}
+
+var doRender=function()
+{
+    // if(true!==enableDepth.get()) cgl.gl.disable(cgl.gl.DEPTH_TEST);
+        // else cgl.gl.enable(cgl.gl.DEPTH_TEST);
+    cgl.pushDepthTest(enableDepth.get());
+
+    cgl.setShader(shader);
+    trigger.trigger();
+    cgl.setPreviousShader();
+
+    // if(true!==enableDepth.get()) cgl.gl.enable(cgl.gl.DEPTH_TEST);
+    cgl.popDepthTest();
+
+};
+
+var shader=new CGL.Shader(cgl,'Wireframe Material');
+
+if(cgl.glVersion>1)shader.glslVersion=300;
+var uniformWidth=new CGL.Uniform(shader,'f','width',w.get());
+var uniformOpacity=new CGL.Uniform(shader,'f','opacity',opacity.get());
+
+if(cgl.glVersion==1)shader.enableExtension('OES_standard_derivatives');
+
+shader.setSource(attachments.wireframe_vert||'',attachments.wireframe_frag||'');
+shader.setModules(['MODULE_VERTEX_POSITION','MODULE_COLOR','MODULE_BEGIN_FRAG']);
+shader.wireframe=true;
+setDefines();
+
+{
+    // diffuse color
+
+    var r=op.inValueSlider("diffuse r",Math.random());
+    r.setUiAttribs({ colorPick: true });
+    r.onChange=function()
+    {
+        if(!r.uniform) r.uniform=new CGL.Uniform(shader,'f','r',r.get());
+        else r.uniform.setValue(r.get());
+    };
+
+    var g=op.inValueSlider("diffuse g",Math.random());
+    g.onChange=function()
+    {
+        if(!g.uniform) g.uniform=new CGL.Uniform(shader,'f','g',g.get());
+        else g.uniform.setValue(g.get());
+    };
+
+    var b=op.inValueSlider("diffuse b",Math.random());
+    b.onChange=function()
+    {
+        if(!b.uniform) b.uniform=new CGL.Uniform(shader,'f','b',b.get());
+        else b.uniform.setValue(b.get());
+    };
+
+}
+
+{
+    // diffuse color
+
+    var fr=op.inValueSlider("Fill R",Math.random());
+    fr.setUiAttribs({colorPick : true});
+    fr.uniform=new CGL.Uniform(shader,'f','fr',fr);
+
+    var fg=op.inValueSlider("Fill G",Math.random());
+    fg.uniform=new CGL.Uniform(shader,'f','fg',fg);
+
+    var fb=op.inValueSlider("Fill B",Math.random());
+    fb.uniform=new CGL.Uniform(shader,'f','fb',fb);
+}
+
+render.onTriggered=doRender;
+
+doRender();
+
+
+};
+
+Ops.Gl.Shader.WireframeMaterial.prototype = new CABLES.Op();
+CABLES.OPS["e5d64a7d-b161-4f85-907e-e10a34691733"]={f:Ops.Gl.Shader.WireframeMaterial,objName:"Ops.Gl.Shader.WireframeMaterial"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.ShaderEffects.ExplodeDividedMesh
+// 
+// **************************************************************
+
+Ops.Gl.ShaderEffects.ExplodeDividedMesh = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={explode_divided_mesh_vert:"UNI float MOD_dist;\n\nUNI float MOD_x;\nUNI float MOD_y;\nUNI float MOD_z;\n\nUNI float MOD_posx;\nUNI float MOD_posy;\nUNI float MOD_posz;\nUNI float MOD_size;\n\nUNI float MOD_mulx;\nUNI float MOD_muly;\nUNI float MOD_mulz;\n\nfloat MOD_rand(vec2 co)\n{\n    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);\n}\n\nvec4 MOD_deform(vec4 pos,vec3 normal,float index)\n{\n    index=floor(index/3.0);\n\n    vec4 p=abs(pos);\n    p.x+=MOD_x+0.01;\n    p.y+=MOD_y+0.01;\n    p.z+=MOD_z+0.01;\n    \n    vec4 pp=vec4(normal*(MOD_rand(vec2(index)) * MOD_dist-MOD_dist/2.0),1.0) * p;\n    \n    #ifdef ABSOLUTE\n        pp=abs(pp);\n    #endif\n\n    pp.x*=MOD_mulx;\n    pp.y*=MOD_muly;\n    pp.z*=MOD_mulz;\n    \n    \n    float MOD_falloff=0.2;\n    float distMul=distance(vec3(MOD_posx,MOD_posy,MOD_posz),pos.xyz);\n    distMul=1.0-smoothstep(MOD_falloff*MOD_size,MOD_size,distMul);\n\n    \n    \n    pos.xyz += distMul*pp.xyz;\n    \n    return pos;\n}\n",};
+
+var cgl=op.patch.cgl;
+
+op.render=op.inTrigger("render");
+op.trigger=op.outTrigger("trigger");
+
+var inDistance=op.inValue("Distance",1);
+var inAbsolute=op.inValueBool("Absolute",false);
+
+{
+    var x=op.inValue("add x");
+    var y=op.inValue("add y");
+    var z=op.inValue("add z");
+
+    var mulx=op.inValue("mul x",1);
+    var muly=op.inValue("mul y",1);
+    var mulz=op.inValue("mul z",1);
+
+    var posx=op.inValue("x");
+    var posy=op.inValue("y");
+    var posz=op.inValue("z");
+}
+
+var inSize=op.inValue("Size",1);
+
+var shader=null;
+
+var srcHeadVert=attachments.explode_divided_mesh_vert;
+
+var srcBodyVert=''
+    .endl()+'pos=MOD_deform(pos,attrVertNormal,attrVertIndex);'
+    .endl();
+
+var moduleVert=null;
+
+function removeModule()
+{
+    if(shader && moduleVert) shader.removeModule(moduleVert);
+    shader=null;
+}
+
+var absoluteChanged=false;
+
+inAbsolute.onChange=function()
+{
+    absoluteChanged=true;
+};
+
+op.render.onLinkChanged=removeModule;
+
+op.render.onTriggered=function()
+{
+    if(!cgl.getShader())
+    {
+         op.trigger.trigger();
+         return;
+    }
+
+    if(CABLES.UI && gui.patch().isCurrentOp(op))
+        gui.setTransformGizmo(
+            {
+                posX:posx,
+                posY:posy,
+                posZ:posz
+            });
+
+    if(cgl.getShader()!=shader)
+    {
+        if(shader) removeModule();
+        shader=cgl.getShader();
+
+        moduleVert=shader.addModule(
+            {
+                title:op.objName,
+                name:'MODULE_VERTEX_POSITION',
+                srcHeadVert:srcHeadVert,
+                srcBodyVert:srcBodyVert
+            });
+
+        inDistance.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'dist',inDistance);
+
+        x.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'x',x);
+        y.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'y',y);
+        z.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'z',z);
+
+        mulx.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'mulx',mulx);
+        muly.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'muly',muly);
+        mulz.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'mulz',mulz);
+
+        posx.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'posx',posx);
+        posy.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'posy',posy);
+        posz.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'posz',posz);
+
+        inSize.uniform=new CGL.Uniform(shader,'f',moduleVert.prefix+'size',inSize);
+    }
+
+    if(absoluteChanged)
+    {
+        absoluteChanged=false;
+        if(inAbsolute.get()) shader.define("ABSOLUTE");
+            else shader.removeDefine("ABSOLUTE");
+
+    }
+
+    if(!shader)return;
+
+    op.trigger.trigger();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+
+Ops.Gl.ShaderEffects.ExplodeDividedMesh.prototype = new CABLES.Op();
+CABLES.OPS["b6d933cf-1ef8-41d6-95c1-593be0b4be90"]={f:Ops.Gl.ShaderEffects.ExplodeDividedMesh,objName:"Ops.Gl.ShaderEffects.ExplodeDividedMesh"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.RenderGeometry
+// 
+// **************************************************************
+
+Ops.Gl.RenderGeometry = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
 const
     render=op.inTrigger('render'),
-    width=op.inValue('width',1),
-    height=op.inValue('height',1),
-    lengt=op.inValue('length',1),
-    center=op.inValueBool('center',true),
-    active=op.inValueBool('Active',true),
-    trigger=op.outTrigger('trigger'),
-    geomOut=op.outObject("geometry");
+    geometry=op.inObject("Geometry"),
+    updateAll=op.inValueBool('Update All',true),
+    updateFaces=op.inValueBool('Update Face Indices',false),
+    updateVerts=op.inValueBool('Update Vertices',false),
+    updateTexcoords=op.inValueBool('Update Texcoords',false),
+    vertNums=op.inValueBool('Vertex Numbers',true),
+    trigger=op.outTrigger('trigger');
 
-const cgl=op.patch.cgl;
+geometry.ignoreValueSerialize=true;
 
-op.setPortGroup("Geometry",[width,height,lengt]);
+vertNums.onChange=
+    geometry.onChange=update;
 
-var geom=null;
 var mesh=null;
-
-width.onChange=buildMesh;
-height.onChange=buildMesh;
-lengt.onChange=buildMesh;
-center.onChange=buildMesh;
-
-buildMesh();
-
 
 render.onTriggered=function()
 {
-    if(active.get() && mesh) mesh.render(cgl.getShader());
+    if(mesh) mesh.render(op.patch.cgl.getShader());
     trigger.trigger();
 };
 
-op.preRender=function()
+
+function update()
 {
-    buildMesh();
-    mesh.render(cgl.getShader());
-};
-
-function buildMesh()
-{
-    if(!geom)geom=new CGL.Geometry("cubemesh");
-    geom.clear();
-
-    var x=width.get();
-    var nx=-1*width.get();
-    var y=lengt.get();
-    var ny=-1*lengt.get();
-    var z=height.get();
-    var nz=-1*height.get();
-
-    if(!center.get())
+    var geom=geometry.get();
+    if(geom)
     {
-        nx=0;
-        ny=0;
-        nz=0;
+        if(mesh)mesh.dispose();
+        if(!mesh)
+        {
+            mesh=new CGL.Mesh(op.patch.cgl,geom);
+            mesh.addVertexNumbers=vertNums.get();
+            mesh.setGeom(geom);
+        }
+
+        if(updateFaces.get() || updateAll.get())
+            mesh.setVertexIndices(geom.verticesIndices);
+
+        if(updateTexcoords.get() || updateAll.get())
+            mesh.updateTexCoords(geom);
+
+        if(updateVerts.get() || updateAll.get())
+            mesh.updateVertices(geom);
+
+        mesh.addVertexNumbers=vertNums.get();
+
+        if(updateAll.get())
+        {
+            if(geom.hasOwnProperty('tangents') && geom.tangents && geom.tangents.length>0) mesh.setAttribute('attrTangent',geom.tangents,3);
+            if(geom.hasOwnProperty('biTangents') && geom.biTangents && geom.biTangents.length>0) mesh.setAttribute('attrBiTangent',geom.biTangents,3);
+        }
     }
     else
     {
-        x*=0.5;
-        nx*=0.5;
-        y*=0.5;
-        ny*=0.5;
-        z*=0.5;
-        nz*=0.5;
+        mesh=null;
     }
-
-    geom.vertices = [
-        // Front face
-        nx, ny,  z,
-        x, ny,  z,
-        x,  y,  z,
-        nx,  y,  z,
-        // Back face
-        nx, ny, nz,
-        nx,  y, nz,
-        x,  y, nz,
-        x, ny, nz,
-        // Top face
-        nx,  y, nz,
-        nx,  y,  z,
-        x,  y,  z,
-        x,  y, nz,
-        // Bottom face
-        nx, ny, nz,
-        x, ny, nz,
-        x, ny,  z,
-        nx, ny,  z,
-        // Right face
-        x, ny, nz,
-        x,  y, nz,
-        x,  y,  z,
-        x, ny,  z,
-        // zeft face
-        nx, ny, nz,
-        nx, ny,  z,
-        nx,  y,  z,
-        nx,  y, nz
-        ];
-
-    geom.setTexCoords( [
-          // Front face
-          0.0, 1.0,
-          1.0, 1.0,
-          1.0, 0.0,
-          0.0, 0.0,
-          // Back face
-          1.0, 1.0,
-          1.0, 0.0,
-          0.0, 0.0,
-          0.0, 1.0,
-          // Top face
-          0.0, 0.0,
-          0.0, 1.0,
-          1.0, 1.0,
-          1.0, 0.0,
-          // Bottom face
-          1.0, 0.0,
-          0.0, 0.0,
-          0.0, 1.0,
-          1.0, 1.0,
-          // Right face
-          1.0, 1.0,
-          1.0, 0.0,
-          0.0, 0.0,
-          0.0, 1.0,
-          // Left face
-          0.0, 1.0,
-          1.0, 1.0,
-          1.0, 0.0,
-          0.0, 0.0,
-        ]);
-
-    geom.vertexNormals = [
-        // Front face
-         0.0,  0.0,  1.0,
-         0.0,  0.0,  1.0,
-         0.0,  0.0,  1.0,
-         0.0,  0.0,  1.0,
-
-        // Back face
-         0.0,  0.0, -1.0,
-         0.0,  0.0, -1.0,
-         0.0,  0.0, -1.0,
-         0.0,  0.0, -1.0,
-
-        // Top face
-         0.0,  1.0,  0.0,
-         0.0,  1.0,  0.0,
-         0.0,  1.0,  0.0,
-         0.0,  1.0,  0.0,
-
-        // Bottom face
-         0.0, -1.0,  0.0,
-         0.0, -1.0,  0.0,
-         0.0, -1.0,  0.0,
-         0.0, -1.0,  0.0,
-
-        // Right face
-         1.0,  0.0,  0.0,
-         1.0,  0.0,  0.0,
-         1.0,  0.0,  0.0,
-         1.0,  0.0,  0.0,
-
-        // Left face
-        -1.0,  0.0,  0.0,
-        -1.0,  0.0,  0.0,
-        -1.0,  0.0,  0.0,
-        -1.0,  0.0,  0.0
-    ];
-    geom.tangents = [
-        // front face
-        -1,0,0, -1,0,0, -1,0,0, -1,0,0,
-        // back face
-        1,0,0, 1,0,0, 1,0,0, 1,0,0,
-        // top face
-        1,0,0, 1,0,0, 1,0,0, 1,0,0,
-        // bottom face
-        -1,0,0, -1,0,0, -1,0,0, -1,0,0,
-        // right face
-        0,0,-1, 0,0,-1, 0,0,-1, 0,0,-1,
-        // left face
-        0,0,1, 0,0,1, 0,0,1, 0,0,1
-    ];
-    geom.biTangents = [
-        // front face
-        0,-1,0, 0,-1,0, 0,-1,0, 0,-1,0,
-        // back face
-        0,1,0, 0,1,0, 0,1,0, 0,1,0,
-        // top face
-        0,0,-1, 0,0,-1, 0,0,-1, 0,0,-1,
-        // bottom face
-        0,0,1, 0,0,1, 0,0,1, 0,0,1,
-        // right face
-        0,1,0, 0,1,0, 0,1,0, 0,1,0,
-        // left face
-        0,1,0, 0,1,0, 0,1,0, 0,1,0
-    ];
-
-    geom.verticesIndices = [
-        0, 1, 2,      0, 2, 3,    // Front face
-        4, 5, 6,      4, 6, 7,    // Back face
-        8, 9, 10,     8, 10, 11,  // Top face
-        12, 13, 14,   12, 14, 15, // Bottom face
-        16, 17, 18,   16, 18, 19, // Right face
-        20, 21, 22,   20, 22, 23  // Left face
-    ];
-
-    if(mesh)mesh.dispose();
-    mesh=new CGL.Mesh(cgl,geom);
-    geomOut.set(null);
-    geomOut.set(geom);
 }
 
 
-op.onDelete=function()
-{
-    if(mesh)mesh.dispose();
-}
 
 };
 
-Ops.Gl.Meshes.Cube.prototype = new CABLES.Op();
-CABLES.OPS["ff0535e2-603a-4c07-9ce6-e9e0db857dfe"]={f:Ops.Gl.Meshes.Cube,objName:"Ops.Gl.Meshes.Cube"};
+Ops.Gl.RenderGeometry.prototype = new CABLES.Op();
+CABLES.OPS["40fa6f13-ee0e-4386-a86b-711e1fbcf1bc"]={f:Ops.Gl.RenderGeometry,objName:"Ops.Gl.RenderGeometry"};
 
 
 
 
 // **************************************************************
 // 
-// Ops.Gl.Matrix.Transform
+// Ops.Gl.Geometry.GeometryUnIndex
 // 
 // **************************************************************
 
-Ops.Gl.Matrix.Transform = function()
+Ops.Gl.Geometry.GeometryUnIndex = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
 const
-    render=op.inTrigger("render"),
-    posX=op.inValue("posX",0),
-    posY=op.inValue("posY",0),
-    posZ=op.inValue("posZ",0),
-    scale=op.inValue("scale",1),
-    rotX=op.inValue("rotX",0),
-    rotY=op.inValue("rotY",0),
-    rotZ=op.inValue("rotZ",0),
-    trigger=op.outTrigger("trigger");
+    geometry=op.inObject("Geometry"),
+    result=op.outObject("Result");
 
-op.setPortGroup('Rotation',[rotX,rotY,rotZ]);
-op.setPortGroup('Position',[posX,posY,posZ]);
-op.setPortGroup('Scale',[scale]);
-op.setUiAxisPorts(posX,posY,posZ);
+geometry.onChange=function()
+{
+    var geom=geometry.get();
 
-const cgl=op.patch.cgl;
-var vPos=vec3.create();
-var vScale=vec3.create();
-var transMatrix = mat4.create();
-mat4.identity(transMatrix);
+    if(geom)
+    {
+        if(!geom.isIndexed())
+        {
+            result.set(geom);
+            return;
+        }
 
-var
-    doScale=false,
-    doTranslate=false,
-    translationChanged=true,
-    scaleChanged=true,
-    rotChanged=true;
+        var newGeom=geom.copy();
+        newGeom.unIndex();
+        result.set(newGeom);
+    }
+    else result.set(null);
 
-rotX.onChange=rotY.onChange=rotZ.onChange=setRotChanged;
-posX.onChange=posY.onChange=posZ.onChange=setTranslateChanged;
-scale.onChange=setScaleChanged;
+};
+
+};
+
+Ops.Gl.Geometry.GeometryUnIndex.prototype = new CABLES.Op();
+CABLES.OPS["b0b2430c-5206-4d1f-a0a6-bc5d79a29027"]={f:Ops.Gl.Geometry.GeometryUnIndex,objName:"Ops.Gl.Geometry.GeometryUnIndex"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Meshes.CablesLogo
+// 
+// **************************************************************
+
+Ops.Gl.Meshes.CablesLogo = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+const render=op.inTrigger('render');
+const scale=op.inValue("Scale",1);
+const trigger=op.outTrigger('trigger');
+const geomOut=op.outObject('Geometry');
+
+const verts=[14.4166,163.754,0,18.4809,210.763,0,54.9491,204.346,0,42.7849,158.762,0,22.5453,257.772,0,67.1133,249.93,0,109.532,234.597,0,89.7001,191.777,0,69.8685,148.956,0,121.577,173.384,0,94.8187,134.563,0,148.336,212.204,0,185.332,186.28,0,150.011,149.481,0,116.915,116.086,0,174.431,120.383,0,135.438,94.0268,0,213.424,146.739,0,241.515,107.197,0,193.515,87.7918,0,149.882,69.1061,0,205.939,53.4095,0,159.743,42.0425,0,252.134,64.7765,0,259.112,21.5601,0,211.953,17.6223,0,164.793,13.6845,0,211.807,-19.1835,0,164.803,-15.1197,0,258.81,-23.2474,0,251.027,-67.8259,0,205.438,-55.6602,0,159.849,-43.4946,0,192.786,-90.46,0,150.007,-70.5651,0,235.565,-110.355,0,213.005,-149.583,0,174.326,-122.559,0,135.648,-95.5346,0,150.535,-150.933,0,117.14,-117.606,0,183.929,-184.259,0,149.313,-213.406,0,122.21,-174.782,0,95.1064,-136.159,0,90.1486,-193.307,0,70.1663,-150.569,0,110.131,-236.046,0,67.6335,-251.595,0,55.3747,-206.031,0,43.116,-160.467,0,18.9111,-212.474,0,14.7512,-165.479,0,23.071,-259.469,0,-22.1816,-259.545,0,-18.1173,-212.536,0,-14.0529,-165.527,0,-54.5854,-206.119,0,-42.4212,-160.536,0,-66.7496,-251.703,0,-108.973,-236.672,0,-89.239,-193.701,0,-69.5049,-150.73,0,-120.824,-175.76,0,-94.4551,-136.336,0,-147.193,-215.185,0,-183.41,-190.469,0,-148.964,-152.339,0,-116.552,-117.859,0,-173.286,-123.476,0,-135.074,-95.8,0,-211.498,-151.152,0,-239.586,-111.835,0,-192.467,-90.79,0,-149.518,-70.8793,0,-205.184,-55.8988,0,-159.38,-43.8157,0,-250.988,-67.9818,0,-258.553,-23.6913,0,-211.491,-19.5745,0,-164.429,-15.4577,0,-211.443,17.4104,0,-164.439,13.3465,0,-258.446,21.4742,0,-250.664,66.0527,0,-205.075,53.8871,0,-159.486,41.7214,0,-192.423,88.6869,0,-149.644,68.7919,0,-235.201,108.582,0,-212.641,147.81,0,-173.962,120.786,0,-135.284,93.7614,0,-150.171,149.16,0,-116.777,115.833,0,-183.566,182.486,0,-148.949,211.632,0,-121.846,173.009,0,-94.7427,134.385,0,-89.7849,191.534,0,-69.8026,148.796,0,-109.767,234.272,0,-67.2698,249.822,0,-55.011,204.258,0,-42.7523,158.694,0,-18.5474,210.7,0,-14.3875,163.705,0,-22.7074,257.695,0,22.5453,257.772,0,18.4809,210.763,0,14.4166,163.754,0,256.822,264.163,0,296.476,236.296,0,276.952,212.586,0,276.952,212.586,0,240.805,244.919,0,256.822,264.163,0,336.13,208.429,0,313.099,180.253,0,276.952,212.586,0,276.952,212.586,0,296.476,236.296,0,336.13,208.429,0,288.309,152.686,0,255.898,189.327,0,313.099,180.253,0,223.486,225.968,0,240.805,244.919,0,285.635,306.513,0,328.243,283.496,0,313.087,259.335,0,313.087,259.335,0,271.643,284.706,0,285.635,306.513,0,370.852,260.478,0,354.53,233.964,0,313.087,259.335,0,313.087,259.335,0,328.243,283.496,0,370.852,260.478,0,336.13,208.429,0,296.476,236.296,0,354.53,233.964,0,336.13,208.429,0,256.822,264.163,0,271.643,284.706,0,296.476,236.296,0,256.822,264.163,0,311.134,352.806,0,357.268,338.992,0,343.405,310.57,0,343.405,310.57,0,299.162,329.55,0,311.134,352.806,0,403.403,325.177,0,387.649,291.589,0,343.405,310.57,0,343.405,310.57,0,357.268,338.992,0,403.403,325.177,0,370.852,260.478,0,328.243,283.496,0,387.649,291.589,0,370.852,260.478,0,285.635,306.513,0,299.162,329.55,0,328.243,283.496,0,285.635,306.513,0,328.173,398.813,0,377.479,395.259,0,368.527,367.195,0,368.527,367.195,0,320.46,375.27,0,328.173,398.813,0,426.784,391.705,0,416.594,359.12,0,368.527,367.195,0,368.527,367.195,0,377.479,395.259,0,426.784,391.705,0,403.403,325.177,0,357.268,338.992,0,416.594,359.12,0,403.403,325.177,0,311.134,352.806,0,320.46,375.27,0,357.268,338.992,0,311.134,352.806,0,341.169,453.101,0,389.523,451.215,0,384.421,423.263,0,384.421,423.263,0,335.304,425.309,0,341.169,453.101,0,437.877,449.328,0,433.538,421.218,0,384.421,423.263,0,384.421,423.263,0,389.523,451.215,0,437.877,449.328,0,426.784,391.705,0,377.479,395.259,0,433.538,421.218,0,426.784,391.705,0,328.173,398.813,0,335.304,425.309,0,377.479,395.259,0,328.173,398.813,0,347.768,502.233,0,394.824,501.411,0,392.954,479.119,0,392.954,479.119,0,345.086,480.533,0,347.768,502.233,0,441.88,500.589,0,440.822,477.705,0,392.954,479.119,0,392.954,479.119,0,394.824,501.411,0,441.88,500.589,0,437.877,449.328,0,389.523,451.215,0,440.822,477.705,0,437.877,449.328,0,341.169,453.101,0,345.086,480.533,0,389.523,451.215,0,341.169,453.101,0,352.384,517.252,0,394.985,517.267,0,395.241,512.525,0,395.241,512.525,0,349.927,512.83,0,352.384,517.252,0,437.585,517.282,0,440.555,512.22,0,395.241,512.525,0,395.241,512.525,0,394.985,517.267,0,437.585,517.282,0,441.88,500.589,0,394.824,501.411,0,440.555,512.22,0,441.88,500.589,0,347.768,502.233,0,349.927,512.83,0,394.824,501.411,0,347.768,502.233,0,360.098,522.975,0,394.737,522.834,0,394.834,520.442,0,394.834,520.442,0,355.961,520.425,0,360.098,522.975,0,429.375,522.693,0,433.707,520.459,0,394.834,520.442,0,394.834,520.442,0,394.737,522.834,0,429.375,522.693,0,437.585,517.282,0,394.985,517.267,0,433.707,520.459,0,437.585,517.282,0,355.961,520.425,0,394.834,520.442,0,394.985,517.267,0,352.384,517.252,0,185.332,186.28,0,204.761,206.303,0,234.697,167.64,0,213.424,146.739,0,264.633,128.977,0,241.515,107.197,0,-255.099,-268.612,0,-294.753,-240.745,0,-275.229,-217.035,0,-275.229,-217.035,0,-239.082,-249.368,0,-255.099,-268.612,0,-334.408,-212.878,0,-311.376,-184.702,0,-275.229,-217.035,0,-275.229,-217.035,0,-294.753,-240.745,0,-334.408,-212.878,0,-286.56,-157.158,0,-254.149,-193.771,0,-311.376,-184.702,0,-221.739,-230.385,0,-239.082,-249.368,0,-283.912,-310.962,0,-326.521,-287.944,0,-311.364,-263.784,0,-311.364,-263.784,0,-269.92,-289.154,0,-283.912,-310.962,0,-369.129,-264.927,0,-352.807,-238.413,0,-311.364,-263.784,0,-311.364,-263.784,0,-326.521,-287.944,0,-369.129,-264.927,0,-334.408,-212.878,0,-294.753,-240.745,0,-352.807,-238.413,0,-334.408,-212.878,0,-255.099,-268.612,0,-269.92,-289.154,0,-294.753,-240.745,0,-255.099,-268.612,0,-309.411,-357.255,0,-355.546,-343.44,0,-341.683,-315.018,0,-341.683,-315.018,0,-297.439,-333.999,0,-309.411,-357.255,0,-401.681,-329.626,0,-385.927,-296.038,0,-341.683,-315.018,0,-341.683,-315.018,0,-355.546,-343.44,0,-401.681,-329.626,0,-369.129,-264.927,0,-326.521,-287.944,0,-385.927,-296.038,0,-369.129,-264.927,0,-283.912,-310.962,0,-297.439,-333.999,0,-326.521,-287.944,0,-283.912,-310.962,0,-326.45,-403.262,0,-375.756,-399.708,0,-366.804,-371.644,0,-366.804,-371.644,0,-318.737,-379.718,0,-326.45,-403.262,0,-425.061,-396.154,0,-414.871,-363.569,0,-366.804,-371.644,0,-366.804,-371.644,0,-375.756,-399.708,0,-425.061,-396.154,0,-401.681,-329.626,0,-355.546,-343.44,0,-414.871,-363.569,0,-401.681,-329.626,0,-309.411,-357.255,0,-318.737,-379.718,0,-355.546,-343.44,0,-309.411,-357.255,0,-339.446,-457.55,0,-387.8,-455.663,0,-382.698,-427.712,0,-382.698,-427.712,0,-333.581,-429.758,0,-339.446,-457.55,0,-436.154,-453.776,0,-431.815,-425.666,0,-382.698,-427.712,0,-382.698,-427.712,0,-387.8,-455.663,0,-436.154,-453.776,0,-425.061,-396.154,0,-375.756,-399.708,0,-431.815,-425.666,0,-425.061,-396.154,0,-326.45,-403.262,0,-333.581,-429.758,0,-375.756,-399.708,0,-326.45,-403.262,0,-346.045,-506.682,0,-393.101,-505.86,0,-391.232,-483.568,0,-391.232,-483.568,0,-343.363,-484.982,0,-346.045,-506.682,0,-440.157,-505.037,0,-439.1,-482.153,0,-391.232,-483.568,0,-391.232,-483.568,0,-393.101,-505.86,0,-440.157,-505.037,0,-436.154,-453.776,0,-387.8,-455.663,0,-439.1,-482.153,0,-436.154,-453.776,0,-339.446,-457.55,0,-343.363,-484.982,0,-387.8,-455.663,0,-339.446,-457.55,0,-350.661,-521.701,0,-393.262,-521.716,0,-393.518,-516.974,0,-393.518,-516.974,0,-348.204,-517.279,0,-350.661,-521.701,0,-435.862,-521.731,0,-438.832,-516.669,0,-393.518,-516.974,0,-393.518,-516.974,0,-393.262,-521.716,0,-435.862,-521.731,0,-440.157,-505.037,0,-393.101,-505.86,0,-438.832,-516.669,0,-440.157,-505.037,0,-346.045,-506.682,0,-348.204,-517.279,0,-393.101,-505.86,0,-346.045,-506.682,0,-358.375,-527.424,0,-393.014,-527.283,0,-393.111,-524.891,0,-393.111,-524.891,0,-354.238,-524.874,0,-358.375,-527.424,0,-427.653,-527.142,0,-431.985,-524.908,0,-393.111,-524.891,0,-393.111,-524.891,0,-393.014,-527.283,0,-427.653,-527.142,0,-435.862,-521.731,0,-393.262,-521.716,0,-431.985,-524.908,0,-435.862,-521.731,0,-354.238,-524.874,0,-393.111,-524.891,0,-393.262,-521.716,0,-350.661,-521.701,0,-183.41,-190.469,0,-202.939,-210.621,0,-232.873,-172.071,0,-211.498,-151.152,0,-262.807,-133.52,0,-239.586,-111.835,0];
+const indices=[0,1,2,2,3,0,2,1,4,4,5,2,6,7,2,2,5,6,8,3,2,2,7,8,6,11,9,9,7,6,8,7,9,9,10,8,12,13,9,9,11,12,14,10,9,9,13,14,12,17,15,15,13,12,14,13,15,15,16,14,18,19,15,15,17,18,20,16,15,15,19,20,18,23,21,21,19,18,20,19,21,21,22,20,24,25,21,21,23,24,26,22,21,21,25,26,24,29,27,27,25,24,26,25,27,27,28,26,30,31,27,27,29,30,32,28,27,27,31,32,30,35,33,33,31,30,32,31,33,33,34,32,36,37,33,33,35,36,38,34,33,33,37,38,36,41,39,39,37,36,38,37,39,39,40,38,42,43,39,39,41,42,44,40,39,39,43,44,42,47,45,45,43,42,44,43,45,45,46,44,48,49,45,45,47,48,50,46,45,45,49,50,48,53,51,51,49,48,50,49,51,51,52,50,54,55,51,51,53,54,56,52,51,51,55,56,54,59,57,57,55,54,56,55,57,57,58,56,60,61,57,57,59,60,62,58,57,57,61,62,60,65,63,63,61,60,62,61,63,63,64,62,66,67,63,63,65,66,68,64,63,63,67,68,66,71,69,69,67,66,68,67,69,69,70,68,72,73,69,69,71,72,74,70,69,69,73,74,72,77,75,75,73,72,74,73,75,75,76,74,78,79,75,75,77,78,80,76,75,75,79,80,78,83,81,81,79,78,80,79,81,81,82,80,84,85,81,81,83,84,86,82,81,81,85,86,84,89,87,87,85,84,86,85,87,87,88,86,90,91,87,87,89,90,92,88,87,87,91,92,90,95,93,93,91,90,92,91,93,93,94,92,96,97,93,93,95,96,98,94,93,93,97,98,96,101,99,99,97,96,98,97,99,99,100,98,102,103,99,99,101,102,104,100,99,99,103,104,102,107,105,105,103,102,104,103,105,105,106,104,108,109,105,105,107,108,110,106,105,105,109,110,111,112,113,123,124,113,113,125,123,126,127,113,113,124,126,123,272,270,270,124,123,126,124,270,270,269,126,268,269,270,270,271,268,273,271,270,270,272,273,114,115,116,117,118,119,120,121,122,128,129,130,130,142,143,131,132,133,140,141,131,134,135,136,136,146,147,137,138,139,144,145,137,148,149,150,150,162,163,151,152,153,160,161,151,154,155,156,156,166,167,157,158,159,164,165,157,168,169,170,170,182,183,171,172,173,180,181,171,174,175,176,176,186,187,177,178,179,184,185,177,188,189,190,190,202,203,191,192,193,200,201,191,194,195,196,196,206,207,197,198,199,204,205,197,208,209,210,210,222,223,211,212,213,220,221,211,214,215,216,216,226,227,217,218,219,224,225,217,228,229,230,228,264,250,230,242,243,248,249,250,250,262,263,231,232,233,240,241,231,234,235,236,236,246,247,237,238,239,244,245,237,251,252,253,260,261,251,254,255,256,257,258,259,265,266,267,274,275,276,286,287,276,276,288,286,289,290,276,276,287,289,286,435,433,433,287,286,289,287,433,433,432,289,431,432,433,433,434,431,436,434,433,433,435,436,277,278,279,280,281,282,283,284,285,291,292,293,293,305,306,294,295,296,303,304,294,297,298,299,299,309,310,300,301,302,307,308,300,311,312,313,313,325,326,314,315,316,323,324,314,317,318,319,319,329,330,320,321,322,327,328,320,331,332,333,333,345,346,334,335,336,343,344,334,337,338,339,339,349,350,340,341,342,347,348,340,351,352,353,353,365,366,354,355,356,363,364,354,357,358,359,359,369,370,360,361,362,367,368,360,371,372,373,373,385,386,374,375,376,383,384,374,377,378,379,379,389,390,380,381,382,387,388,380,391,392,393,391,427,413,393,405,406,411,412,413,413,425,426,394,395,396,403,404,394,397,398,399,399,409,410,400,401,402,407,408,400,414,415,416,423,424,414,417,418,419,420,421,422,428,429,430];
+
+var geom=new CGL.Geometry();
+var mesh=null;
+scale.onChange=build;
+build();
+
+function build()
+{
+    var sc=scale.get();
+    var vertices=verts.slice(0);
+
+    for(var i=0;i<vertices.length;i++) vertices[i]=vertices[i]/1000*sc;
+
+    geom.vertices=vertices;
+    geom.mapTexCoords2d();
+    geom.verticesIndices=indices;
+    geom.tangents=vertices.map(function(v,i){return i%3==0?1:0});
+    geom.biTangents=vertices.map(function(v,i){return i%3==1?1:0});
+    geom.vertexNormals=vertices.map(function(v,i){return i%3==2?1:0});
+    geomOut.set(null);
+    geomOut.set(geom);
+
+    if(!mesh)mesh=new CGL.Mesh(op.patch.cgl,geom);
+        else mesh.setGeom(geom);
+}
 
 render.onTriggered=function()
 {
-    // if(!CGL.TextureEffect.checkOpNotInTextureEffect(op)) return;
-
-    var updateMatrix=false;
-    if(translationChanged)
-    {
-        updateTranslation();
-        updateMatrix=true;
-    }
-    if(scaleChanged)
-    {
-        updateScale();
-        updateMatrix=true;
-    }
-    if(rotChanged) updateMatrix=true;
-
-    if(updateMatrix) doUpdateMatrix();
-
-    cgl.pushModelMatrix();
-    mat4.multiply(cgl.mMatrix,cgl.mMatrix,transMatrix);
-
+    mesh.render(op.patch.cgl.getShader());
     trigger.trigger();
-    cgl.popModelMatrix();
-
-    if(CABLES.UI && gui.patch().isCurrentOp(op))
-        gui.setTransformGizmo(
-            {
-                posX:posX,
-                posY:posY,
-                posZ:posZ,
-            });
 };
-
-op.transform3d=function()
-{
-    return { pos:[posX,posY,posZ] };
-};
-
-function doUpdateMatrix()
-{
-    mat4.identity(transMatrix);
-    if(doTranslate)mat4.translate(transMatrix,transMatrix, vPos);
-
-    if(rotX.get()!==0)mat4.rotateX(transMatrix,transMatrix, rotX.get()*CGL.DEG2RAD);
-    if(rotY.get()!==0)mat4.rotateY(transMatrix,transMatrix, rotY.get()*CGL.DEG2RAD);
-    if(rotZ.get()!==0)mat4.rotateZ(transMatrix,transMatrix, rotZ.get()*CGL.DEG2RAD);
-
-    if(doScale)mat4.scale(transMatrix,transMatrix, vScale);
-    rotChanged=false;
-}
-
-function updateTranslation()
-{
-    doTranslate=false;
-    if(posX.get()!==0.0 || posY.get()!==0.0 || posZ.get()!==0.0) doTranslate=true;
-    vec3.set(vPos, posX.get(),posY.get(),posZ.get());
-    translationChanged=false;
-}
-
-function updateScale()
-{
-    // doScale=false;
-    // if(scale.get()!==0.0)
-    doScale=true;
-    vec3.set(vScale, scale.get(),scale.get(),scale.get());
-    scaleChanged=false;
-}
-
-function setTranslateChanged()
-{
-    translationChanged=true;
-}
-
-function setScaleChanged()
-{
-    scaleChanged=true;
-}
-
-function setRotChanged()
-{
-    rotChanged=true;
-}
-
-doUpdateMatrix();
-
 
 
 
 };
 
-Ops.Gl.Matrix.Transform.prototype = new CABLES.Op();
-CABLES.OPS["650baeb1-db2d-4781-9af6-ab4e9d4277be"]={f:Ops.Gl.Matrix.Transform,objName:"Ops.Gl.Matrix.Transform"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Gl.Matrix.ScaleXYZ
-// 
-// **************************************************************
-
-Ops.Gl.Matrix.ScaleXYZ = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    render=op.inTrigger("render"),
-    scaleX=op.inValueFloat("x",1),
-    scaleY=op.inValueFloat("y",1),
-    scaleZ=op.inValueFloat("z",1),
-    trigger=op.outTrigger("trigger");
-
-const cgl=op.patch.cgl;
-const vScale=vec3.create();
-
-var hasChanged=true;
-
-scaleX.onChange=scaleY.onChange=scaleZ.onChange=scaleChanged;
-
-scaleChanged();
-
-render.onTriggered=execrender;
-
-function execrender()
-{
-    if(hasChanged)
-    {
-        vec3.set(vScale, scaleX.get(),scaleY.get(),scaleZ.get());
-        hasChanged=false;
-    }
-
-    cgl.pushModelMatrix();
-    mat4.scale(cgl.mMatrix,cgl.mMatrix, vScale);
-    trigger.trigger();
-    cgl.popModelMatrix();
-}
-
-function scaleChanged()
-{
-    hasChanged=true;
-}
-
-
-
-};
-
-Ops.Gl.Matrix.ScaleXYZ.prototype = new CABLES.Op();
-CABLES.OPS["9ba52457-5f0d-4b20-a97c-4ec4856b8e29"]={f:Ops.Gl.Matrix.ScaleXYZ,objName:"Ops.Gl.Matrix.ScaleXYZ"};
+Ops.Gl.Meshes.CablesLogo.prototype = new CABLES.Op();
+CABLES.OPS["d53b5d7b-99b5-420e-b5a1-2d7c2c1f1ebb"]={f:Ops.Gl.Meshes.CablesLogo,objName:"Ops.Gl.Meshes.CablesLogo"};
 
 
 
@@ -1084,393 +1375,333 @@ CABLES.OPS["7857ee9e-6d60-4c30-9bc0-dfdddf2b47ad"]={f:Ops.Gl.Shader.MatCapMateri
 
 // **************************************************************
 // 
-// Ops.Math.RandomNumbers
+// Ops.Gl.Textures.ColorTexture
 // 
 // **************************************************************
 
-Ops.Math.RandomNumbers = function()
+Ops.Gl.Textures.ColorTexture = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
-const index=op.inValueInt("index");
-const seed=op.inValueFloat("random seed");
-const min=op.inValueFloat("Min");
-const max=op.inValueFloat("Max");
-const outX=op.outValue("X");
-const outY=op.outValue("Y");
-const outZ=op.outValue("Z");
+const r = op.inValueSlider("r", Math.random());
+const g = op.inValueSlider("g", Math.random());
+const b = op.inValueSlider("b", Math.random());
+const a = op.inValueSlider("a", 1.0);
+const texOut=op.outTexture("texture_out");
 
-var numValues=100;
-min.set(-1);
-max.set(1);
-seed.set(Math.round(Math.random()*99999));
+r.setUiAttribs({ colorPick: true });
+const cgl=op.patch.cgl;
 
-max.onChange=init;
-min.onChange=init;
-seed.onChange=init;
+var fb=null;
 
-var arr=[];
-init();
+r.onChange=
+    g.onChange=
+    b.onChange=
+    a.onChange=render;
 
-index.onChange=function()
+render();
+
+function render()
 {
-    var idx=Math.floor(index.get())||0;
-    if(idx*3>=arr.length)
+    if(!fb)
     {
-        numValues=idx+100;
-        init();
+        if(cgl.glVersion==1) fb=new CGL.Framebuffer(cgl,4,4);
+            else fb=new CGL.Framebuffer2(cgl,4,4);
+        fb.setFilter(CGL.Texture.FILTER_MIPMAP);
     }
 
-    idx*=3;
+    fb.renderStart();
+    cgl.gl.clearColor(r.get(),g.get(),b.get(),a.get());
+    cgl.gl.clear(cgl.gl.COLOR_BUFFER_BIT);
+    fb.renderEnd();
 
-    outX.set(arr[idx+0]);
-    outY.set(arr[idx+1]);
-    outZ.set(arr[idx+2]);
+    texOut.set(fb.getTextureColor());
+}
+
 };
 
-function init()
-{
-    Math.randomSeed=seed.get();
+Ops.Gl.Textures.ColorTexture.prototype = new CABLES.Op();
+CABLES.OPS["59b94270-0364-4c0f-a9fc-ba2561696a23"]={f:Ops.Gl.Textures.ColorTexture,objName:"Ops.Gl.Textures.ColorTexture"};
 
-    arr.length=Math.floor(numValues*3) || 300;
-    for(var i=0;i<arr.length;i+=3)
+
+
+
+// **************************************************************
+// 
+// Ops.Trigger.TimedSequence
+// 
+// **************************************************************
+
+Ops.Trigger.TimedSequence = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+const exe=op.inTrigger("exe");
+const current=op.inValueInt("current",0);
+const overwriteTime=op.inValueBool("overwriteTime");
+const ignoreInSubPatch=op.inValueBool("ignoreInSubPatch",false);
+const triggerAlways=op.outTrigger("triggerAlways");
+const outNames=op.outArray("Names",[]);
+const currentKeyTime=op.outValue("currentKeyTime");
+const outCurrent=op.outValue("Current");
+var triggers=[];
+
+for(var i=0;i<32;i++)
+{
+    var p=op.outTrigger("trigger "+i);
+    p.onLinkChanged=updateNames;
+    triggers.push( p );
+}
+
+function updateNames()
+{
+    var names=[];
+    for(var i=0;i<triggers.length;i++)
+        if(triggers[i].isLinked()) names.push(triggers[i].links[0].getOtherPort(triggers[i]).parent.uiAttribs.title);
+            else names.push("none");
+
+    outNames.set(names);
+}
+
+op.onLoaded=updateNames;
+
+var lastUiValue=-1;
+
+exe.onTriggered=doTrigger;
+
+function doTrigger(_time)
+{
+    var spl=0;
+
+    var outIndex=Math.round(current.get()-0.5);
+
+    if(window.gui)
     {
-        arr[i+0]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
-        arr[i+1]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
-        arr[i+2]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
+
+        if(current.get()!=lastUiValue)
+        {
+            lastUiValue=current.get();
+            for(spl=0;spl<triggers.length;spl++)
+            {
+                if(spl==lastUiValue) triggers[spl].setUiActiveState(true);
+                    else triggers[spl].setUiActiveState(false);
+            }
+        }
     }
+
+    if(current.anim)
+    {
+        var time=_time;
+        if(_time===undefined) time=current.parent.patch.timer.getTime();
+
+        currentKeyTime.set(time-current.anim.getKey(time).time);
+
+        if(current.isAnimated())
+        {
+            if(overwriteTime.get())
+            {
+                current.parent.patch.timer.overwriteTime=currentKeyTime.get();  // todo  why current ? why  not self ?
+            }
+        }
+    }
+
+    if(op.patch.gui && ignoreInSubPatch.get() )
+    {
+        for(var i=0;i<triggers.length;i++)
+        {
+            for(spl=0;spl<triggers[i].links.length;spl++)
+            {
+                if(triggers[i].links[spl])
+                {
+                    if(triggers[i].links[spl].portIn.parent.patchId)
+                    {
+                        if(gui.patch().getCurrentSubPatch() == triggers[i].links[spl].portIn.parent.patchId.get())
+                        {
+                            op.patch.timer.overwriteTime=-1;
+                            triggers[i].trigger();
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    if(outIndex>=0 && outIndex<triggers.length)
+    {
+        outCurrent.set(outIndex);
+        triggers[outIndex].trigger();
+    }
+
+    op.patch.timer.overwriteTime=-1;
+    triggerAlways.trigger();
 }
 
 
 };
 
-Ops.Math.RandomNumbers.prototype = new CABLES.Op();
-CABLES.OPS["855880fa-6a85-4ba0-aac8-50440ccae948"]={f:Ops.Math.RandomNumbers,objName:"Ops.Math.RandomNumbers"};
+Ops.Trigger.TimedSequence.prototype = new CABLES.Op();
+CABLES.OPS["73c892c9-3e81-4ddc-952a-fbe6bf00ef2c"]={f:Ops.Trigger.TimedSequence,objName:"Ops.Trigger.TimedSequence"};
 
 
 
 
 // **************************************************************
 // 
-// Ops.Math.Multiply
+// Ops.Trigger.TriggerCounter
 // 
 // **************************************************************
 
-Ops.Math.Multiply = function()
+Ops.Trigger.TriggerCounter = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
+const
+    exe=op.inTriggerButton("exe"),
+    reset=op.inTriggerButton("reset"),
+    trigger=op.outTrigger("trigger"),
+    num=op.outValue("timesTriggered");
+
+op.toWorkPortsNeedToBeLinked(exe);
+
+var n=0;
+
+exe.onTriggered= function()
+{
+    n++;
+    num.set(n);
+    trigger.trigger();
+};
+
+reset.onTriggered= function()
+{
+    n=0;
+    num.set(n);
+};
+
+};
+
+Ops.Trigger.TriggerCounter.prototype = new CABLES.Op();
+CABLES.OPS["e640619f-235c-4543-bbf8-b358e0283180"]={f:Ops.Trigger.TriggerCounter,objName:"Ops.Trigger.TriggerCounter"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Trigger.Interval
+// 
+// **************************************************************
+
+Ops.Trigger.Interval = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+var interval=op.inValue('interval');
+var trigger=op.outTrigger('trigger');
+var active=op.inValueBool("Active",true);
+
+active.onChange=function()
+{
+    if(!active.get())
+    {
+        clearTimeout(timeOutId);
+        timeOutId=-1;
+    }
+    else exec();
+};
+
+interval.set(1000);
+var timeOutId=-1;
+
+function exec()
+{
+    if(!active.get())return;
+    if(timeOutId!=-1)return;
+
+    timeOutId=setTimeout(function()
+    {
+        timeOutId=-1;
+        trigger.trigger();
+        exec();
+    },
+    interval.get() );
+}
+
+interval.onChange=exec;
+
+exec();
+
+};
+
+Ops.Trigger.Interval.prototype = new CABLES.Op();
+CABLES.OPS["3e9bae10-38af-4e36-9fcc-35faeeaf57f8"]={f:Ops.Trigger.Interval,objName:"Ops.Trigger.Interval"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Math.Modulo
+// 
+// **************************************************************
+
+Ops.Math.Modulo = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+
+const result=op.outValue("result");
 const number1=op.inValueFloat("number1");
 const number2=op.inValueFloat("number2");
-const result=op.outValue("result");
+const pingpong=op.inValueBool("pingpong");
+
+var doPingPong=false;
+
+number1.onChange=exec;
+number2.onChange=exec;
 
 number1.set(1);
 number2.set(2);
 
-number1.onChange=update;
-number2.onChange=update;
-update();
+pingpong.onChange=updatePingPong;
 
-function update()
+function exec()
 {
-    const n1=number1.get();
-    const n2=number2.get();
+    var n2=number2.get();
+    var n1=number1.get();
 
-    if(isNaN(n1))n1=0;
-    if(isNaN(n2))n2=0;
-
-    result.set( n1*n2 );
-}
-
-
-
-};
-
-Ops.Math.Multiply.prototype = new CABLES.Op();
-CABLES.OPS["1bbdae06-fbb2-489b-9bcc-36c9d65bd441"]={f:Ops.Math.Multiply,objName:"Ops.Math.Multiply"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Gl.Texture
-// 
-// **************************************************************
-
-Ops.Gl.Texture = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var filename=op.inFile("file");
-var tfilter=op.inSwitch("filter",['nearest','linear','mipmap']);
-var wrap=op.inValueSelect("wrap",['repeat','mirrored repeat','clamp to edge'],"clamp to edge");
-var flip=op.inValueBool("flip",false);
-var unpackAlpha=op.inValueBool("unpackPreMultipliedAlpha",false);
-
-var textureOut=op.outTexture("texture");
-var width=op.outValue("width");
-var height=op.outValue("height");
-var loading=op.outValue("loading");
-var ratio=op.outValue("Aspect Ratio");
-
-
-op.setPortGroup("Size",[width,height]);
-
-unpackAlpha.hidePort();
-
-op.toWorkPortsNeedToBeLinked(textureOut);
-
-const cgl=op.patch.cgl;
-var cgl_filter=0;
-var cgl_wrap=0;
-
-filename.onChange=flip.onChange=function(){reloadSoon();};
-
-tfilter.onChange=onFilterChange;
-wrap.onChange=onWrapChange;
-unpackAlpha.onChange=function(){ reloadSoon(); };
-
-var timedLoader=0;
-
-tfilter.set('mipmap');
-wrap.set('repeat');
-
-textureOut.set(CGL.Texture.getEmptyTexture(cgl));
-
-var setTempTexture=function()
-{
-    var t=CGL.Texture.getTempTexture(cgl);
-    textureOut.set(t);
-};
-
-var loadingId=null;
-var tex=null;
-function reloadSoon(nocache)
-{
-    // if(!loadingId)loadingId=cgl.patch.loading.start('textureOp',filename.get());
-
-    // if(timedLoader!=0)
-    // {
-    //     console.log('tex load canceled...');
-    // }
-    clearTimeout(timedLoader);
-    timedLoader=setTimeout(function()
+    if(doPingPong)
     {
-        // console.log('tex load yay...');
-        realReload(nocache);
-    },30);
-}
-
-function realReload(nocache)
-{
-    if(!loadingId)loadingId=cgl.patch.loading.start('textureOp',filename.get());
-
-    var url=op.patch.getFilePath(String(filename.get()));
-    if(nocache)url+='?rnd='+CABLES.generateUUID();
-
-    if((filename.get() && filename.get().length>1))
-    {
-        loading.set(true);
-
-        if(tex)tex.delete();
-        tex=CGL.Texture.load(cgl,url,
-            function(err)
-            {
-                if(err)
-                {
-                    setTempTexture();
-                    op.uiAttr({'error':'could not load texture "'+filename.get()+'"'});
-                    cgl.patch.loading.finished(loadingId);
-                    return;
-                }
-                else op.uiAttr({'error':null});
-                textureOut.set(tex);
-                width.set(tex.width);
-                height.set(tex.height);
-                ratio.set(tex.width/tex.height);
-
-                if(!tex.isPowerOfTwo()) op.uiAttr(
-                    {
-                        hint:'texture dimensions not power of two! - texture filtering will not work.',
-                        warning:null
-                    });
-                    else op.uiAttr(
-                        {
-                            hint:null,
-                            warning:null
-                        });
-
-                textureOut.set(null);
-                textureOut.set(tex);
-                // tex.printInfo();
-
-            },{
-                wrap:cgl_wrap,
-                flip:flip.get(),
-                unpackAlpha:unpackAlpha.get(),
-                filter:cgl_filter
-            });
-
-        textureOut.set(null);
-        textureOut.set(tex);
-
-        if(!textureOut.get() && nocache)
-        {
-        }
-
-        cgl.patch.loading.finished(loadingId);
+        var r=n1 % n2*2;
+        if(r>n2) result.set( n2 * 2.0-r );
+            else result.set(r);
+        return;
     }
     else
     {
-        cgl.patch.loading.finished(loadingId);
-        setTempTexture();
+        var re=n1 % n2;
+        if(re!=re) re=0;
+        result.set(re);
     }
 }
 
-
-function onFilterChange()
+function updatePingPong()
 {
-    if(tfilter.get()=='nearest') cgl_filter=CGL.Texture.FILTER_NEAREST;
-    if(tfilter.get()=='linear') cgl_filter=CGL.Texture.FILTER_LINEAR;
-    if(tfilter.get()=='mipmap') cgl_filter=CGL.Texture.FILTER_MIPMAP;
-
-    reloadSoon();
+    doPingPong=pingpong.get();
 }
-
-function onWrapChange()
-{
-    if(wrap.get()=='repeat') cgl_wrap=CGL.Texture.WRAP_REPEAT;
-    if(wrap.get()=='mirrored repeat') cgl_wrap=CGL.Texture.WRAP_MIRRORED_REPEAT;
-    if(wrap.get()=='clamp to edge') cgl_wrap=CGL.Texture.WRAP_CLAMP_TO_EDGE;
-
-    reloadSoon();
-}
-
-op.onFileChanged=function(fn)
-{
-    // console.log(fn);
-    if(filename.get() && filename.get().indexOf(fn)>-1)
-    {
-        textureOut.set(null);
-        textureOut.set(CGL.Texture.getTempTexture(cgl));
-
-        realReload(true);
-    }
-};
-
-
-
-
-
 
 
 };
 
-Ops.Gl.Texture.prototype = new CABLES.Op();
-CABLES.OPS["466394d4-6c1a-4e5d-a057-0063ab0f096a"]={f:Ops.Gl.Texture,objName:"Ops.Gl.Texture"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Anim.RandomAnim
-// 
-// **************************************************************
-
-Ops.Anim.RandomAnim = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var exe=op.inTrigger("exe");
-
-var min=op.inValue("min",0);
-var max=op.inValue("max",1);
-var seed=op.inValue("random seed",0);
-
-var duration=op.inValue("duration",0.5);
-var pause=op.inValue("pause between",0);
-var next=op.outTrigger("Next");
-var result=op.outValue("result");
-var looped=op.outTrigger("Looped");
-var anim=new CABLES.Anim();
-anim.createPort(op,"easing",reinit);
-
-op.setPortGroup("Timing",[duration,pause]);
-op.setPortGroup("Value",[min,max,seed]);
-
-op.toWorkPortsNeedToBeLinked(exe);
-
-var counter=0;
-
-min.onChange=
-max.onChange=
-pause.onChange=
-seed.onChange=
-duration.onChange=reinitLater;
-
-var needsReinit=true;
-
-function reinitLater()
-{
-    needsReinit=true;
-}
-
-function getRandom()
-{
-    var minVal = ( min.get() );
-    return Math.seededRandom() * (  max.get()  - minVal ) + minVal;
-}
-
-function reinit()
-{
-    Math.randomSeed=seed.get()+counter*100;
-    init(getRandom());
-    needsReinit=false;
-}
-
-function init(v)
-{
-    anim.clear();
-
-    anim.setValue(op.patch.freeTimer.get(), v);
-    if(pause.get()!==0.0) anim.setValue(op.patch.freeTimer.get()+pause.get(), v);
-
-    anim.setValue(duration.get()+op.patch.freeTimer.get()+pause.get(), getRandom());
-}
-
-
-exe.onTriggered=updateExe;
-
-function updateExe()
-{
-    if(needsReinit)reinit();
-
-    var t=op.patch.freeTimer.get();
-    var v=anim.getValue(t);
-
-    if(anim.hasEnded(t))
-    {
-        counter++;
-        anim.clear();
-        init(v);
-        looped.trigger();
-    }
-    result.set(v);
-    next.trigger();
-};
-
-
-
-};
-
-Ops.Anim.RandomAnim.prototype = new CABLES.Op();
-CABLES.OPS["2d2e5f0e-b69f-4789-9a48-1ee6ade5049a"]={f:Ops.Anim.RandomAnim,objName:"Ops.Anim.RandomAnim"};
+Ops.Math.Modulo.prototype = new CABLES.Op();
+CABLES.OPS["ebc13b25-3705-4265-8f06-5f985b6a7bb1"]={f:Ops.Math.Modulo,objName:"Ops.Math.Modulo"};
 
 
 
@@ -1620,186 +1851,43 @@ CABLES.OPS["d01fa820-396c-4cb5-9d78-6b14762852af"]={f:Ops.Gl.Render2Texture,objN
 
 // **************************************************************
 // 
-// Ops.Gl.Meshes.FullscreenRectangle
+// Ops.Sequence
 // 
 // **************************************************************
 
-Ops.Gl.Meshes.FullscreenRectangle = function()
+Ops.Sequence = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
-const attachments={shader_frag:"\nUNI sampler2D tex;\nIN vec2 texCoord;\n\nvoid main()\n{\n   outColor= texture(tex,vec2(texCoord.x,(1.0-texCoord.y)));\n}\n",shader_vert:"{{MODULES_HEAD}}\n\nIN vec3 vPosition;\nUNI mat4 projMatrix;\nUNI mat4 mvMatrix;\n\nOUT vec2 texCoord;\nIN vec2 attrTexCoord;\n\nvoid main()\n{\n   vec4 pos=vec4(vPosition,  1.0);\n\n   texCoord=attrTexCoord;\n\n   gl_Position = projMatrix * mvMatrix * pos;\n}\n",};
-const
-    render=op.inTrigger('render'),
-    centerInCanvas=op.inValueBool("Center in Canvas"),
-    flipY=op.inValueBool("Flip Y"),
-    inTexture=op.inTexture("Texture"),
-    trigger=op.outTrigger('trigger');
+const attachments={};
 
-const cgl=op.patch.cgl;
-var mesh=null;
-var geom=new CGL.Geometry("fullscreen rectangle");
-var x=0,y=0,z=0,w=0,h=0;
+const exe=op.inTrigger("exe");
+const exes=[];
+const triggers=[];
+const num=16;
+exe.onTriggered=triggerAll;
 
-centerInCanvas.onChange=rebuild;
-flipY.onChange=rebuild;
-
-const shader=new CGL.Shader(cgl,'fullscreenrectangle');
-shader.setModules(['MODULE_VERTEX_POSITION','MODULE_COLOR','MODULE_BEGIN_FRAG']);
-
-shader.setSource(attachments.shader_vert,attachments.shader_frag);
-shader.fullscreenRectUniform=new CGL.Uniform(shader,'t','tex',0);
-
-var useShader=false;
-var updateShaderLater=true;
-render.onTriggered=doRender;
-
-op.toWorkPortsNeedToBeLinked(render);
-
-inTexture.onChange=function()
+function triggerAll()
 {
-    updateShaderLater=true;
-};
-
-function updateShader()
-{
-    var tex=inTexture.get();
-    if(tex) useShader=true;
-        else useShader=false;
+    for(var i=0;i<triggers.length;i++) triggers[i].trigger();
 }
 
-op.preRender=function()
+for(var i=0;i<num;i++)
 {
-    updateShader();
-    // if(useShader)
+    triggers.push( op.outTrigger("trigger "+i));
+
+    if(i<num-1)
     {
-        shader.bind();
-        if(mesh)mesh.render(shader);
-        doRender();
+        var newExe=op.inTrigger("exe "+i);
+        newExe.onTriggered=triggerAll;
+        exes.push( newExe );
     }
-};
-
-function doRender()
-{
-    if( cgl.getViewPort()[2]!=w || cgl.getViewPort()[3]!=h ||!mesh ) rebuild();
-
-    if(updateShaderLater) updateShader();
-
-    cgl.pushPMatrix();
-    mat4.identity(cgl.pMatrix);
-    mat4.ortho(cgl.pMatrix, 0, w,h, 0, -10.0, 1000);
-
-    cgl.pushModelMatrix();
-    mat4.identity(cgl.mMatrix);
-
-    cgl.pushViewMatrix();
-    mat4.identity(cgl.vMatrix);
-
-    if(centerInCanvas.get())
-    {
-        var x=0;
-        var y=0;
-        if(w<cgl.canvasWidth) x=(cgl.canvasWidth-w)/2;
-        if(h<cgl.canvasHeight) y=(cgl.canvasHeight-h)/2;
-
-        cgl.setViewPort(x,y,w,h);
-    }
-
-    if(useShader)
-    {
-        if(inTexture.get())
-        {
-            cgl.setTexture(0,inTexture.get().tex);
-            // cgl.gl.bindTexture(cgl.gl.TEXTURE_2D, inTexture.get().tex);
-        }
-
-        mesh.render(shader);
-    }
-    else
-    {
-        mesh.render(cgl.getShader());
-    }
-
-    cgl.gl.clear(cgl.gl.DEPTH_BUFFER_BIT);
-
-    cgl.popPMatrix();
-    cgl.popModelMatrix();
-    cgl.popViewMatrix();
-
-    trigger.trigger();
 }
-
-
-function rebuild()
-{
-    const currentViewPort=cgl.getViewPort();
-
-    if(currentViewPort[2]==w && currentViewPort[3]==h && mesh)return;
-
-    var xx=0,xy=0;
-
-    w=currentViewPort[2];
-    h=currentViewPort[3];
-
-    geom.vertices = new Float32Array([
-         xx+w, xy+h,  0.0,
-         xx,   xy+h,  0.0,
-         xx+w, xy,    0.0,
-         xx,   xy,    0.0
-    ]);
-
-    if(flipY.get())
-        geom.setTexCoords( new Float32Array([
-             1.0, 0.0,
-             0.0, 0.0,
-             1.0, 1.0,
-             0.0, 1.0
-        ]));
-    else
-        geom.setTexCoords(new Float32Array([
-             1.0, 1.0,
-             0.0, 1.0,
-             1.0, 0.0,
-             0.0, 0.0
-        ]));
-
-    geom.verticesIndices = new Float32Array([
-        2, 1, 0,
-        3, 1, 2
-    ]);
-
-
-    geom.vertexNormals=new Float32Array([
-        0,0,1,
-        0,0,1,
-        0,0,1,
-        0,0,1,
-        ]);
-    geom.tangents=new Float32Array([
-        -1,0,0,
-        -1,0,0,
-        -1,0,0,
-        -1,0,0]);
-    geom.biTangents==new Float32Array([
-        0,-1,0,
-        0,-1,0,
-        0,-1,0,
-        0,-1,0]);
-
-                // norms.push(0,0,1);
-                // tangents.push(-1,0,0);
-                // biTangents.push(0,-1,0);
-
-
-    if(!mesh) mesh=new CGL.Mesh(cgl,geom);
-        else mesh.setGeom(geom);
-}
-
 
 };
 
-Ops.Gl.Meshes.FullscreenRectangle.prototype = new CABLES.Op();
-CABLES.OPS["255bd15b-cc91-4a12-9b4e-53c710cbb282"]={f:Ops.Gl.Meshes.FullscreenRectangle,objName:"Ops.Gl.Meshes.FullscreenRectangle"};
+Ops.Sequence.prototype = new CABLES.Op();
+CABLES.OPS["a466bc1f-06e9-4595-8849-bffb9fe22f99"]={f:Ops.Sequence,objName:"Ops.Sequence"};
 
 
 
@@ -2093,71 +2181,6 @@ CABLES.OPS["5c04608d-1e42-4e36-be00-1be4a81fc309"]={f:Ops.Gl.TextureEffects.Imag
 
 // **************************************************************
 // 
-// Ops.Gl.TextureEffects.DepthTextureFocus
-// 
-// **************************************************************
-
-Ops.Gl.TextureEffects.DepthTextureFocus = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={depth_focus_frag:"IN vec2 texCoord;\nUNI sampler2D image;\nUNI float n;\nUNI float f;\nUNI float focus;\nUNI float width;\n\nvoid main()\n{\n    vec4 col=texture(image,texCoord);\n    float z=col.r;\n    float c=(2.0*n)/(f+n-z*(f-n));\n\n    c=abs( c-focus );\n    c=smoothstep(0.0,width,c);\n\n    #ifndef INVERT\n        c=1.0-c;\n    #endif\n\n    outColor = vec4(c,c,c,1.0);\n}",};
-const render=op.inTrigger('render');
-const image=op.inTexture("image");
-const farPlane=op.inValue("farplane",100);
-const nearPlane=op.inValue("nearplane",0.1);
-const inInv=op.inValueBool("Invert",false);
-const inFocus=op.inValueSlider("Center",0.5);
-const inWidth=op.inValueSlider("Width",0.2);
-const trigger=op.outTrigger('trigger');
-
-const cgl=op.patch.cgl;
-
-const shader=new CGL.Shader(cgl);
-const srcFrag=attachments.depth_focus_frag||'';
-shader.setSource(shader.getDefaultVertexShader(),srcFrag);
-
-const textureUniform=new CGL.Uniform(shader,'t','image',0);
-const uniFarplane=new CGL.Uniform(shader,'f','f',farPlane);
-const uniNearplane=new CGL.Uniform(shader,'f','n',nearPlane);
-const uniFocus=new CGL.Uniform(shader,'f','focus',inFocus);
-const uniwidth=new CGL.Uniform(shader,'f','width',inWidth);
-
-inInv.onChange=function()
-{
-    if(inInv.get())shader.define("INVERT");
-        else shader.removeDefine("INVERT");
-};
-
-render.onTriggered=function()
-{
-    if(!CGL.TextureEffect.checkOpInEffect(op)) return;
-
-    if(image.val && image.val.tex)
-    {
-        cgl.setShader(shader);
-        cgl.currentTextureEffect.bind();
-
-
-        cgl.setTexture(0,image.get().tex);
-
-        cgl.currentTextureEffect.finish();
-        cgl.setPreviousShader();
-    }
-
-    trigger.trigger();
-};
-
-};
-
-Ops.Gl.TextureEffects.DepthTextureFocus.prototype = new CABLES.Op();
-CABLES.OPS["d11b89b2-c2e3-4fcb-b4da-632d23b69075"]={f:Ops.Gl.TextureEffects.DepthTextureFocus,objName:"Ops.Gl.TextureEffects.DepthTextureFocus"};
-
-
-
-
-// **************************************************************
-// 
 // Ops.Gl.TextureEffects.DrawImage
 // 
 // **************************************************************
@@ -2338,6 +2361,265 @@ CABLES.OPS["8248b866-9492-48c8-897d-3097c6fe6fe8"]={f:Ops.Gl.TextureEffects.Draw
 
 // **************************************************************
 // 
+// Ops.Gl.TextureEffects.Pixelate
+// 
+// **************************************************************
+
+Ops.Gl.TextureEffects.Pixelate = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={pixelate_frag:"IN vec2 texCoord;\nUNI sampler2D tex;\nUNI sampler2D multiplierTex;\nUNI float amount;\nUNI float amountX;\nUNI float amountY;\n\n{{CGL.BLENDMODES}}\n\nvoid main()\n{\n    vec4 col=vec4(1.0,0.0,0.0,1.0);\n\n    float x=1.0/amountX;\n    float y=1.0/amountY;\n\n    #ifdef PIXELATE_TEXTURE\n    x += texture(multiplierTex,texCoord).r*0.1;//*0.1\n    y += texture(multiplierTex,texCoord).r*0.1;//*0.1\n    #endif\n\n    vec2 coord = vec2(x*floor(texCoord.x/x), y*floor(texCoord.y/y));\n\n    col=texture(tex,coord);\n    vec4 base=texture(tex,texCoord);\n\n    outColor=cgl_blend(base,col,amount);\n}",};
+const render=op.inTrigger('render');
+const multiplierTex = op.inTexture("Multiplier");
+const blendMode=CGL.TextureEffect.AddBlendSelect(op,"Blend Mode","normal");
+const amount=op.inValueSlider("Amount",1);
+const amountX=op.inValue("width",320.0);
+const amountY=op.inValue("height",180.0);
+const trigger=op.outTrigger('trigger');
+
+const cgl=op.patch.cgl;
+const shader=new CGL.Shader(cgl);
+
+shader.setSource(shader.getDefaultVertexShader(),attachments.pixelate_frag);
+
+const textureUniform=new CGL.Uniform(shader,'t','tex',0);
+const textureMultiplierUniform=new CGL.Uniform(shader,'t','multiplierTex',1);
+const amountUniform =new CGL.Uniform(shader,'f','amount',amount);
+const amountXUniform=new CGL.Uniform(shader,'f','amountX',0.0);
+const amountYUniform=new CGL.Uniform(shader,'f','amountY',0.0);
+
+amountX.onChange=function()
+{
+    amountXUniform.setValue(amountX.get());
+};
+
+amountY.onChange=function()
+{
+    amountYUniform.setValue(amountY.get());
+};
+multiplierTex.onChange = function()
+{
+    shader.toggleDefine('PIXELATE_TEXTURE',multiplierTex.isLinked());
+};
+
+CGL.TextureEffect.setupBlending(op,shader,blendMode,amount);
+
+render.onTriggered=function()
+{
+    if(!CGL.TextureEffect.checkOpInEffect(op)) return;
+
+    cgl.setShader(shader);
+    cgl.currentTextureEffect.bind();
+
+    cgl.setTexture(0, cgl.currentTextureEffect.getCurrentSourceTexture().tex );
+
+    if(multiplierTex.get()) cgl.setTexture(1, multiplierTex.get().tex );
+
+    cgl.currentTextureEffect.finish();
+    cgl.setPreviousShader();
+
+    trigger.trigger();
+};
+
+
+
+};
+
+Ops.Gl.TextureEffects.Pixelate.prototype = new CABLES.Op();
+CABLES.OPS["c76d3d21-e6d8-4b6c-af3d-0f0a5ecbdaa8"]={f:Ops.Gl.TextureEffects.Pixelate,objName:"Ops.Gl.TextureEffects.Pixelate"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Meshes.FullscreenRectangle
+// 
+// **************************************************************
+
+Ops.Gl.Meshes.FullscreenRectangle = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={shader_frag:"\nUNI sampler2D tex;\nIN vec2 texCoord;\n\nvoid main()\n{\n   outColor= texture(tex,vec2(texCoord.x,(1.0-texCoord.y)));\n}\n",shader_vert:"{{MODULES_HEAD}}\n\nIN vec3 vPosition;\nUNI mat4 projMatrix;\nUNI mat4 mvMatrix;\n\nOUT vec2 texCoord;\nIN vec2 attrTexCoord;\n\nvoid main()\n{\n   vec4 pos=vec4(vPosition,  1.0);\n\n   texCoord=attrTexCoord;\n\n   gl_Position = projMatrix * mvMatrix * pos;\n}\n",};
+const
+    render=op.inTrigger('render'),
+    centerInCanvas=op.inValueBool("Center in Canvas"),
+    flipY=op.inValueBool("Flip Y"),
+    inTexture=op.inTexture("Texture"),
+    trigger=op.outTrigger('trigger');
+
+const cgl=op.patch.cgl;
+var mesh=null;
+var geom=new CGL.Geometry("fullscreen rectangle");
+var x=0,y=0,z=0,w=0,h=0;
+
+centerInCanvas.onChange=rebuild;
+flipY.onChange=rebuild;
+
+const shader=new CGL.Shader(cgl,'fullscreenrectangle');
+shader.setModules(['MODULE_VERTEX_POSITION','MODULE_COLOR','MODULE_BEGIN_FRAG']);
+
+shader.setSource(attachments.shader_vert,attachments.shader_frag);
+shader.fullscreenRectUniform=new CGL.Uniform(shader,'t','tex',0);
+
+var useShader=false;
+var updateShaderLater=true;
+render.onTriggered=doRender;
+
+op.toWorkPortsNeedToBeLinked(render);
+
+inTexture.onChange=function()
+{
+    updateShaderLater=true;
+};
+
+function updateShader()
+{
+    var tex=inTexture.get();
+    if(tex) useShader=true;
+        else useShader=false;
+}
+
+op.preRender=function()
+{
+    updateShader();
+    // if(useShader)
+    {
+        shader.bind();
+        if(mesh)mesh.render(shader);
+        doRender();
+    }
+};
+
+function doRender()
+{
+    if( cgl.getViewPort()[2]!=w || cgl.getViewPort()[3]!=h ||!mesh ) rebuild();
+
+    if(updateShaderLater) updateShader();
+
+    cgl.pushPMatrix();
+    mat4.identity(cgl.pMatrix);
+    mat4.ortho(cgl.pMatrix, 0, w,h, 0, -10.0, 1000);
+
+    cgl.pushModelMatrix();
+    mat4.identity(cgl.mMatrix);
+
+    cgl.pushViewMatrix();
+    mat4.identity(cgl.vMatrix);
+
+    if(centerInCanvas.get())
+    {
+        var x=0;
+        var y=0;
+        if(w<cgl.canvasWidth) x=(cgl.canvasWidth-w)/2;
+        if(h<cgl.canvasHeight) y=(cgl.canvasHeight-h)/2;
+
+        cgl.setViewPort(x,y,w,h);
+    }
+
+    if(useShader)
+    {
+        if(inTexture.get())
+        {
+            cgl.setTexture(0,inTexture.get().tex);
+            // cgl.gl.bindTexture(cgl.gl.TEXTURE_2D, inTexture.get().tex);
+        }
+
+        mesh.render(shader);
+    }
+    else
+    {
+        mesh.render(cgl.getShader());
+    }
+
+    cgl.gl.clear(cgl.gl.DEPTH_BUFFER_BIT);
+
+    cgl.popPMatrix();
+    cgl.popModelMatrix();
+    cgl.popViewMatrix();
+
+    trigger.trigger();
+}
+
+
+function rebuild()
+{
+    const currentViewPort=cgl.getViewPort();
+
+    if(currentViewPort[2]==w && currentViewPort[3]==h && mesh)return;
+
+    var xx=0,xy=0;
+
+    w=currentViewPort[2];
+    h=currentViewPort[3];
+
+    geom.vertices = new Float32Array([
+         xx+w, xy+h,  0.0,
+         xx,   xy+h,  0.0,
+         xx+w, xy,    0.0,
+         xx,   xy,    0.0
+    ]);
+
+    if(flipY.get())
+        geom.setTexCoords( new Float32Array([
+             1.0, 0.0,
+             0.0, 0.0,
+             1.0, 1.0,
+             0.0, 1.0
+        ]));
+    else
+        geom.setTexCoords(new Float32Array([
+             1.0, 1.0,
+             0.0, 1.0,
+             1.0, 0.0,
+             0.0, 0.0
+        ]));
+
+    geom.verticesIndices = new Float32Array([
+        2, 1, 0,
+        3, 1, 2
+    ]);
+
+
+    geom.vertexNormals=new Float32Array([
+        0,0,1,
+        0,0,1,
+        0,0,1,
+        0,0,1,
+        ]);
+    geom.tangents=new Float32Array([
+        -1,0,0,
+        -1,0,0,
+        -1,0,0,
+        -1,0,0]);
+    geom.biTangents==new Float32Array([
+        0,-1,0,
+        0,-1,0,
+        0,-1,0,
+        0,-1,0]);
+
+                // norms.push(0,0,1);
+                // tangents.push(-1,0,0);
+                // biTangents.push(0,-1,0);
+
+
+    if(!mesh) mesh=new CGL.Mesh(cgl,geom);
+        else mesh.setGeom(geom);
+}
+
+
+};
+
+Ops.Gl.Meshes.FullscreenRectangle.prototype = new CABLES.Op();
+CABLES.OPS["255bd15b-cc91-4a12-9b4e-53c710cbb282"]={f:Ops.Gl.Meshes.FullscreenRectangle,objName:"Ops.Gl.Meshes.FullscreenRectangle"};
+
+
+
+
+// **************************************************************
+// 
 // Ops.Gl.TextureEffects.Blur
 // 
 // **************************************************************
@@ -2466,2319 +2748,691 @@ CABLES.OPS["54f26f53-f637-44c1-9bfb-a2f2b722e998"]={f:Ops.Gl.TextureEffects.Blur
 
 // **************************************************************
 // 
-// Ops.Gl.ClearColor
+// Ops.Gl.TextureEffects.Scroll
 // 
 // **************************************************************
 
-Ops.Gl.ClearColor = function()
+Ops.Gl.TextureEffects.Scroll = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
-const attachments={};
-const
-    render=op.inTrigger("render"),
-    trigger=op.outTrigger("trigger"),
-    r=op.inFloatSlider("r",0.1),
-    g=op.inFloatSlider("g",0.1),
-    b=op.inFloatSlider("b",0.1),
-    a=op.inFloatSlider("a",1);
+const attachments={scroll_frag:"IN vec2 texCoord;\nUNI sampler2D tex;\nUNI float amountX;\nUNI float amountY;\n\nvoid main()\n{\n    vec4 col=vec4(0.0,0.0,0.0,1.0);\n    float x=mod(texCoord.x+amountX,1.0);\n    float y=mod(texCoord.y+amountY,1.0);\n\n    #ifdef NO_REPEAT\n        x=texCoord.x+amountX*0.1;\n        y=texCoord.y+amountY*0.1;\n    #endif\n\n    col=texture(tex,vec2(x,y));\n\n    #ifdef NO_REPEAT\n        if(x>1.0 || x<0.0 || y>1.0 || y<0.0) col=vec4(0.0,0.0,0.0,1.0);\n    #endif\n    outColor= col;\n}",};
+var render=op.inTrigger('render');
+var trigger=op.outTrigger('trigger');
 
-r.setUiAttribs({ colorPick: true });
+var amountX=op.inValue("amountX");
+var amountY=op.inValue("amountY");
 
-const cgl=op.patch.cgl;
+var repeat=op.inValueBool("Repeat",true);
 
-render.onTriggered=function()
-{
-    cgl.gl.clearColor(r.get(),g.get(),b.get(),a.get());
-    cgl.gl.clear(cgl.gl.COLOR_BUFFER_BIT | cgl.gl.DEPTH_BUFFER_BIT);
-    trigger.trigger();
-};
+repeat.onChange=updateRepeat;
+
+var cgl=op.patch.cgl;
 
 
-};
-
-Ops.Gl.ClearColor.prototype = new CABLES.Op();
-CABLES.OPS["19b441eb-9f63-4f35-ba08-b87841517c4d"]={f:Ops.Gl.ClearColor,objName:"Ops.Gl.ClearColor"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Gl.TextureEffects.SSAO2
-// 
-// **************************************************************
-
-Ops.Gl.TextureEffects.SSAO2 = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={ssao_frag:"/*\nSSAO GLSL shader v1.2\nassembled by Martins Upitis (martinsh) (devlog-martinsh.blogspot.com)\noriginal technique is made by Arkano22 (www.gamedev.net/topic/550699-ssao-no-halo-artifacts/)\n\nchangelog:\n1.2 - added fog calculation to mask AO. Minor fixes.\n1.1 - added spiral sampling method from here:\n(http://www.cgafaq.info/wiki/Evenly_distributed_points_on_sphere)\n\n*/\n\nIN vec2 texCoord;\n\nUNI sampler2D texDepth;\nUNI sampler2D tex;\n// const float bgl_RenderedTextureWidth=800.0;\n// const float bgl_RenderedTextureHeight=600.0;\n\n#define PI    3.14159265\n\nUNI float width;\nUNI float height;\n// float width = 800.0; //texture width\n// float height = 600.0; //texture height\n\n// vec2 texCoord = texCoord.st;\n\n//------------------------------------------\n//general stuff\n\n//make sure that these two values are the same for your camera, otherwise distances will be wrong.\n\n// const float znear = 0.01; //Z-near\n// const float zfar = 20.0; //Z-far\nUNI float znear;\nUNI float zfar;\n\n//user variables\n// const int SAMPLES = 16; //ao sample count\n// UNI int SAMPLES;\n\n// const float radius = 3.0; //ao radius\n// const float aoclamp = 0.25; //depth clamp - reduces haloing at screen edges\n\nUNI float radius;\nUNI float aoclamp;\nUNI bool noise ; //use noise instead of pattern for sample dithering//*****\nUNI float noiseamount; //dithering amount//********\n\nconst float diffarea = 0.4; //self-shadowing reduction\nconst float gdisplace = 0.4; //gauss bell center\n\n// const bool mist = false; //use mist?\n// const float miststart = 0.0; //mist start\n// const float mistend = 16.0; //mist end\n\n// const bool onlyAO = false; //use only ambient occlusion pass?\n// const float lumInfluence = 0.7; //how much luminance affects occlusion\nUNI float lumInfluence;\n\n//--------------------------------------------------------\n\nvec2 rand(vec2 coord) //generating noise/pattern texture for dithering\n{\n\n    #ifndef NOISE\n    \treturn vec2(0.0,0.0);\n\t#endif\n\n    #ifdef NOISE\n\t\tfloat noiseX = clamp(fract(sin(dot(coord ,vec2(12.9898,78.233))) * 43758.5453),0.0,1.0)*2.0-1.0;\n\t\tfloat noiseY = clamp(fract(sin(dot(coord ,vec2(12.9898,78.233)*2.0)) * 43758.5453),0.0,1.0)*2.0-1.0;\n    \treturn vec2(noiseX,noiseY)*noiseamount/100.0;\n    #endif\n}\n\n// float doMist()\n// {\n// \tfloat zdepth = texture(texDepth,texCoord.xy).x;\n// \tfloat depth = -zfar * znear / (zdepth * (zfar - znear) - zfar);\n// \treturn clamp((depth-miststart)/mistend,0.0,1.0);\n// }\n\nfloat readDepth(in vec2 coord)\n{\n\tif (texCoord.x<0.0||texCoord.y<0.0) return 1.0;\n\treturn (2.0 * znear) / (zfar + znear - texture(texDepth, coord ).x * (zfar-znear));\n}\n\nfloat compareDepths(in float depth1, in float depth2,inout int far)\n{\n\tfloat garea = 2.0; //gauss bell width\n\tfloat diff = (depth1 - depth2)*100.0; //depth difference (0-100)\n\t//reduce left bell width to avoid self-shadowing\n\tif (diff<gdisplace)\n\t{\n\tgarea = diffarea;\n\t}else{\n\tfar = 1;\n\t}\n\n\tfloat gauss = pow(2.7182,-2.0*(diff-gdisplace)*(diff-gdisplace)/(garea*garea));\n\treturn gauss;\n}\n\nfloat calAO(float depth,float dw, float dh)\n{\n\tfloat dd = (1.0-depth)*radius;\n\n\tfloat temp = 0.0;\n\tfloat temp2 = 0.0;\n\tfloat coordw = texCoord.x + dw*dd;\n\tfloat coordh = texCoord.y + dh*dd;\n\tfloat coordw2 = texCoord.x - dw*dd;\n\tfloat coordh2 = texCoord.y - dh*dd;\n\n\tvec2 coord = vec2(coordw , coordh);\n\tvec2 coord2 = vec2(coordw2, coordh2);\n\n\tint far = 0;\n\ttemp = compareDepths(depth, readDepth(coord),far);\n\t//DEPTH EXTRAPOLATION:\n\tif (far > 0)\n\t{\n\t\ttemp2 = compareDepths(readDepth(coord2),depth,far);\n\t\ttemp += (1.0-temp)*temp2;\n\t}\n\n\treturn temp;\n}\n\nvoid main(void)\n{\n\tvec2 noise = rand(texCoord);\n\tfloat depth = readDepth(texCoord);\n\n\tfloat w = (1.0 / width)/clamp(depth,aoclamp,1.0)+(noise.x*(1.0-noise.x));\n\tfloat h = (1.0 / height)/clamp(depth,aoclamp,1.0)+(noise.y*(1.0-noise.y));\n\n\tfloat pw;\n\tfloat ph;\n\n\tfloat ao;\n\n\tfloat dl = PI*(3.0-sqrt(5.0));\n\tfloat dz = 1.0/float(SAMPLES);\n\tfloat l = 0.0;\n\tfloat z = 1.0 - dz/2.0;\n\n\tfor (int i = 0; i <= SAMPLES; i ++)\n\t{\n\t\tfloat r = sqrt(1.0-z);\n\n\t\tpw = cos(l)*r;\n\t\tph = sin(l)*r;\n\t\tao += calAO(depth,pw*w,ph*h);\n\t\tz = z - dz;\n\t\tl = l + dl;\n\t}\n\n\tao /= float(SAMPLES);\n\tao = 1.0-ao;\n\n// \tif (mist)\n// \t{\n// \tao = mix(ao, 1.0,doMist());\n// \t}\n\n\tvec3 color = texture(tex,texCoord).rgb;\n\n\tvec3 lumcoeff = vec3(0.299,0.587,0.114);\n\tfloat lum = dot(color.rgb, lumcoeff);\n\tvec3 luminance = vec3(lum, lum, lum);\n\n\tvec3 final = vec3(color*mix(vec3(ao),vec3(1.0),luminance*lumInfluence));//mix(color*ao, white, luminance)\n\n// \tif (onlyAO)\n// \t{\n// \tfinal = vec3(mix(vec3(ao),vec3(1.0),luminance*lumInfluence)); //ambient occlusion only\n// \t}\n\n\n\toutColor= vec4(final,1.0);\n\n}",};
-const
-    render=op.inTrigger("render"),
-    trigger=op.outTrigger("trigger"),
-    depth=op.inTexture("depth texture"),
-    zNear=op.inValue("Frustum Near",0.1),
-    zFar=op.inValue("Frustum Far",20),
-    samples=op.inValueInt("Samples",4),
-    aoRadius=op.inValue("Ao Radius",3),
-    aoClamp=op.inValueSlider("Ao Clamp",0.25),
-    lumInfluence=op.inValueSlider("Luminance Influence",0.7),
-    noise = op.inValueBool("Enable noise",false),
-    noiseamount = op.inValueFloat("Noise amount", 0.0008);
-
-
-
-const cgl=op.patch.cgl;
-const shader=new CGL.Shader(cgl);
-
-shader.setSource(shader.getDefaultVertexShader(),attachments.ssao_frag);
+var shader=new CGL.Shader(cgl);
+shader.setSource(shader.getDefaultVertexShader(),attachments.scroll_frag);
 var textureUniform=new CGL.Uniform(shader,'t','tex',0);
-var textureAlpha=new CGL.Uniform(shader,'t','texDepth',1);
+var amountXUniform=new CGL.Uniform(shader,'f','amountX',amountX);
+var amountYUniform=new CGL.Uniform(shader,'f','amountY',amountY);
 
-aoRadius.uniform=new CGL.Uniform(shader,'f','radius',aoRadius);
-aoClamp.uniform=new CGL.Uniform(shader,'f','aoclamp',aoClamp);
-lumInfluence.uniform=new CGL.Uniform(shader,'f','lumInfluence',lumInfluence);
-// samples.uniform=new CGL.Uniform(shader,'i','samples',samples);
+updateRepeat();
 
-zNear.uniform=new CGL.Uniform(shader,'f','znear',zNear);
-zFar.uniform=new CGL.Uniform(shader,'f','zfar',zFar);
-
-
-noiseamount.uniform=new CGL.Uniform(shader,'f','noiseamount',noiseamount);
-
-noise.onChange=function()
+function updateRepeat()
 {
-    shader.toggleDefine('NOISE',noise.get());
-};
-
-samples.onChange=function()
-{
-    shader.define('SAMPLES',samples.get());
-};
-
-var uniWidth=new CGL.Uniform(shader,'f','width',1024);
-var uniHeight=new CGL.Uniform(shader,'f','height',512);
-
-shader.define('SAMPLES',samples.get());
-aoClamp.uniform=new CGL.Uniform(shader,'f','aoclamp',aoClamp);
+    if(!repeat.get())shader.define("NO_REPEAT");
+    else shader.removeDefine("NO_REPEAT");
+}
 
 render.onTriggered=function()
 {
     if(!CGL.TextureEffect.checkOpInEffect(op)) return;
-    if(!depth.get())return;
-
-    uniWidth.setValue( depth.get().width );
-    uniHeight.setValue( depth.get().height );
 
     cgl.setShader(shader);
-
     cgl.currentTextureEffect.bind();
+
     cgl.setTexture(0, cgl.currentTextureEffect.getCurrentSourceTexture().tex );
 
 
-    if(depth.get() && depth.get().tex)
-    {
-        cgl.setTexture(1, depth.get().tex );
-        // cgl.gl.bindTexture(cgl.gl.TEXTURE_2D, depth.get().tex );
-    }
-
     cgl.currentTextureEffect.finish();
-
     cgl.setPreviousShader();
+
     trigger.trigger();
 };
 
 
 };
 
-Ops.Gl.TextureEffects.SSAO2.prototype = new CABLES.Op();
-CABLES.OPS["76d2dafc-aaf9-48ca-8b24-ee18492fba80"]={f:Ops.Gl.TextureEffects.SSAO2,objName:"Ops.Gl.TextureEffects.SSAO2"};
+Ops.Gl.TextureEffects.Scroll.prototype = new CABLES.Op();
+CABLES.OPS["9b151d99-7888-4948-81c7-cd23b334e8d4"]={f:Ops.Gl.TextureEffects.Scroll,objName:"Ops.Gl.TextureEffects.Scroll"};
 
 
 
 
 // **************************************************************
 // 
-// Ops.Anim.Timer_v2
+// Ops.Math.RandomNumbers
 // 
 // **************************************************************
 
-Ops.Anim.Timer_v2 = function()
+Ops.Math.RandomNumbers = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
-const playPause=op.inValueBool("Play",true);
-const reset=op.inTriggerButton("Reset");
-const outTime=op.outValue("Time");
-const inSpeed=op.inValue("Speed",1);
+const index=op.inValueInt("index");
+const seed=op.inValueFloat("random seed");
+const min=op.inValueFloat("Min");
+const max=op.inValueFloat("Max");
+const outX=op.outValue("X");
+const outY=op.outValue("Y");
+const outZ=op.outValue("Z");
 
-var timer=new CABLES.Timer();
-var lastTime=0;
-var time=0;
+var numValues=100;
+min.set(-1);
+max.set(1);
+seed.set(Math.round(Math.random()*99999));
 
-playPause.onChange=setState;
-setState();
+max.onChange=init;
+min.onChange=init;
+seed.onChange=init;
 
-function setState()
+var arr=[];
+init();
+
+index.onChange=function()
 {
-    if(playPause.get())
+    var idx=Math.floor(index.get())||0;
+    if(idx*3>=arr.length)
     {
-        timer.play();
-        op.patch.addOnAnimFrame(op);
+        numValues=idx+100;
+        init();
     }
-    else
+
+    idx*=3;
+
+    outX.set(arr[idx+0]);
+    outY.set(arr[idx+1]);
+    outZ.set(arr[idx+2]);
+};
+
+function init()
+{
+    Math.randomSeed=seed.get();
+
+    arr.length=Math.floor(numValues*3) || 300;
+    for(var i=0;i<arr.length;i+=3)
     {
-        timer.pause();
-        op.patch.removeOnAnimFrame(op);
+        arr[i+0]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
+        arr[i+1]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
+        arr[i+2]=Math.seededRandom()* ( max.get() - min.get() ) + min.get() ;
     }
 }
 
-reset.onTriggered=function()
-{
-    time=0;
-    lastTime=0;
-    timer.setTime(0);
-    outTime.set(0);
-};
-
-op.onAnimFrame=function()
-{
-    if(timer.isPlaying())
-    {
-        timer.update();
-        if(lastTime===0)
-        {
-            lastTime=timer.get();
-            return;
-        }
-
-        const t=timer.get()-lastTime;
-        lastTime=timer.get();
-        time+=t*inSpeed.get();
-        if(time!=time)time=0;
-        outTime.set(time);
-    }
-};
-
 
 };
 
-Ops.Anim.Timer_v2.prototype = new CABLES.Op();
-CABLES.OPS["aac7f721-208f-411a-adb3-79adae2e471a"]={f:Ops.Anim.Timer_v2,objName:"Ops.Anim.Timer_v2"};
+Ops.Math.RandomNumbers.prototype = new CABLES.Op();
+CABLES.OPS["855880fa-6a85-4ba0-aac8-50440ccae948"]={f:Ops.Math.RandomNumbers,objName:"Ops.Math.RandomNumbers"};
 
 
 
 
 // **************************************************************
 // 
-// Ops.Anim.SineAnim
+// Ops.Gl.TextureEffects.Noise.GlitchNoise
 // 
 // **************************************************************
 
-Ops.Anim.SineAnim = function()
+Ops.Gl.TextureEffects.Noise.GlitchNoise = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
-const attachments={};
+const attachments={glitchnoise_frag:"IN vec2 texCoord;\nUNI sampler2D tex;\n\n{{CGL.BLENDMODES}}\n\nUNI float amount;\nUNI float time;\nUNI float frequency;\nUNI float strength;\nUNI float blockSizeA;\nUNI float blockSizeB;\nUNI float blockSizeC;\nUNI float blockSizeD;\nUNI float scrollX;\nUNI float scrollY;\n\nfloat rng2(vec2 seed)\n{\n    return fract(sin(dot(seed * floor(time * (frequency * 10.0)), vec2(127.1,311.7))) * 43758.5453123);//43758.5453123\n}\n\nfloat rng(float seed)\n{\n    return rng2(vec2(seed, 1.0));\n}\n\nvoid main( )\n{\n    //add scroll for x and y\n    vec2 scrollXY = vec2(scrollX,scrollY);\n    vec2 blockS = floor((texCoord + scrollXY ) * vec2(blockSizeA,blockSizeB));\n    vec2 blockL = floor((texCoord )  * vec2(blockSizeC,blockSizeD));\n\n    float r = rng2(texCoord);\n    vec3 noise = (vec3(r, 1. - r, r / 2. + 0.5) * 1.0 - 2.0) * 0.08;\n\n    float lineNoise = pow(rng2(blockS), 8.0) * pow(rng2(blockL), 3.0) - pow(rng(7.2341), 17.0) * 2.;\n\n    vec4 col1 = texture(tex, texCoord);\n    vec4 col2 = texture(tex, texCoord + vec2(lineNoise * (0.05 * strength)  * rng(5.0), 1));\n    vec4 col3 = texture(tex, texCoord - vec2(lineNoise * (0.05 * strength) * rng(31.0), 1));\n\n    float glitch = (lineNoise * strength * rng(5.0)) + (lineNoise * strength * rng(31.));\n    float glitch2 = lineNoise * strength * rng(31.);\n\n    //blend section\n    vec4 col=vec4(vec3(glitch),1.0);\n    //original texture\n    vec4 base=texture(tex,texCoord);\n\n    outColor=cgl_blend(base,col,amount);\n\n}",};
 const
-    exe=op.inTrigger("exe"),
-    trigOut = op.outTrigger("Trigger out"),
-    result=op.outValue("result"),
-    phase=op.inValueFloat("phase",0),
-    mul=op.inValueFloat("frequency",1),
-    amplitude=op.inValueFloat("amplitude",1);
-
-
-op.toWorkPortsNeedToBeLinked(exe);
-
-exe.onTriggered=exec;
-exec();
-
-function exec()
-{
-    result.set( amplitude.get() * Math.sin( (op.patch.freeTimer.get()*mul.get()) + phase.get() ));
-    trigOut.trigger();
-}
-
-
-
-};
-
-Ops.Anim.SineAnim.prototype = new CABLES.Op();
-CABLES.OPS["736d3d0e-c920-449e-ade0-f5ca6018fb5c"]={f:Ops.Anim.SineAnim,objName:"Ops.Anim.SineAnim"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Ui.Comment
-// 
-// **************************************************************
-
-Ops.Ui.Comment = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-op.inTitle=op.inValueString("title",' ');
-op.text=op.inValueText("text");
-
-op.text.set(' ');
-op.name=' ';
-
-op.inTitle.set('new comment');
-
-op.inTitle.onChange=update;
-op.text.onChange=update;
-op.onLoaded=update;
-
-
-update();
-
-function updateUI()
-{
-    if(CABLES.UI)
-    {
-        var uiOp=gui.patch().getUiOp(op);
-        if(!uiOp)return;
-
-        setTimeout(function()
-        {
-            op.name=op.inTitle.get();
-            uiOp.oprect.updateComment();
-        },30);
-
-    }
-}
-
-
-function update()
-{
-    if(CABLES.UI)
-    {
-
-        op.uiAttr('title',op.inTitle.get());
-        op.name=op.inTitle.get();
-
-        updateUI();
-    }
-}
-
-
-
-
-};
-
-Ops.Ui.Comment.prototype = new CABLES.Op();
-CABLES.OPS["9de0c04f-666b-47cd-9722-a8cf36ab4720"]={f:Ops.Ui.Comment,objName:"Ops.Ui.Comment"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Devices.Mouse.Mouse
-// 
-// **************************************************************
-
-Ops.Devices.Mouse.Mouse = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    relative=op.inValueBool("relative"),
-    normalize=op.inValueBool("normalize"),
-    active=op.inValueBool("Active",true),
-    smooth=op.inValueBool("smooth"),
-    smoothSpeed=op.inValueFloat("smoothSpeed",20),
-    area=op.inValueSelect("Area",['Canvas','Document','Parent Element'],"Canvas"),
-    multiply=op.inValueFloat("multiply",1),
-    flipY=op.inValueBool("flip y",true),
-    outMouseX=op.outValue("x"),
-    outMouseY=op.outValue("y"),
-    mouseDown=op.outValueBool("button down"),
-    mouseClick=op.outTrigger("click"),
-    mouseUp=op.outTrigger("Button Up"),
-    mouseClickRight=op.outTrigger("click right"),
-    mouseOver=op.outValueBool("mouseOver"),
-    outButton=op.outValue("button");
-
-var smoothTimer=0;
-var cgl=op.patch.cgl;
-var listenerElement=null;
-
-function setValue(x,y)
-{
-    if(normalize.get())
-    {
-        var w=cgl.canvas.width/cgl.pixelDensity;
-        var h=cgl.canvas.height/cgl.pixelDensity;
-        if(listenerElement==document.body)
-        {
-            w=listenerElement.clientWidth/cgl.pixelDensity;
-            h=listenerElement.clientHeight/cgl.pixelDensity;
-        }
-        outMouseX.set( (x/w*2.0-1.0)*multiply.get() );
-        outMouseY.set( (y/h*2.0-1.0)*multiply.get() );
-    }
-    else
-    {
-        outMouseX.set( x*multiply.get() );
-        outMouseY.set( y*multiply.get() );
-    }
-}
-
-smooth.onChange=function()
-{
-    if(smooth.get()) smoothTimer = setInterval(updateSmooth, 5);
-        else if(smoothTimer)clearTimeout(smoothTimer);
-};
-
-var smoothX,smoothY;
-var lineX=0,lineY=0;
-
-normalize.onChange=function()
-{
-    mouseX=0;
-    mouseY=0;
-    setValue(mouseX,mouseY);
-};
-
-var mouseX=cgl.canvas.width/2;
-var mouseY=cgl.canvas.height/2;
-
-lineX=mouseX;
-lineY=mouseY;
-
-outMouseX.set(mouseX);
-outMouseY.set(mouseY);
-
-var relLastX=0;
-var relLastY=0;
-var offsetX=0;
-var offsetY=0;
-addListeners();
-
-area.onChange=addListeners;
-
-var speed=0;
-
-function updateSmooth()
-{
-    speed=smoothSpeed.get();
-    if(speed<=0)speed=0.01;
-    var distanceX = Math.abs(mouseX - lineX);
-    var speedX = Math.round( distanceX / speed, 0 );
-    lineX = (lineX < mouseX) ? lineX + speedX : lineX - speedX;
-
-    var distanceY = Math.abs(mouseY - lineY);
-    var speedY = Math.round( distanceY / speed, 0 );
-    lineY = (lineY < mouseY) ? lineY + speedY : lineY - speedY;
-
-    setValue(lineX,lineY);
-}
-
-function onMouseEnter(e)
-{
-    mouseDown.set(false);
-    mouseOver.set(true);
-    speed=smoothSpeed.get();
-}
-
-function onMouseDown(e)
-{
-    outButton.set(e.which);
-    mouseDown.set(true);
-}
-
-function onMouseUp(e)
-{
-    outButton.set(0);
-    mouseDown.set(false);
-    mouseUp.trigger();
-}
-
-function onClickRight(e)
-{
-    mouseClickRight.trigger();
-    e.preventDefault();
-}
-
-function onmouseclick(e)
-{
-    mouseClick.trigger();
-}
-
-
-function onMouseLeave(e)
-{
-    relLastX=0;
-    relLastY=0;
-
-    speed=100;
-
-    if(area.get()!='Document')
-    {
-        // leave anim
-        if(smooth.get())
-        {
-            mouseX=cgl.canvas.width/2;
-            mouseY=cgl.canvas.height/2;
-        }
-
-    }
-    mouseOver.set(false);
-    mouseDown.set(false);
-}
-
-relative.onChange=function()
-{
-    offsetX=0;
-    offsetY=0;
-}
-
-function onmousemove(e)
-{
-    mouseOver.set(true);
-
-    if(!relative.get())
-    {
-        if(area.get()!="Document")
-        {
-            offsetX=e.offsetX;
-            offsetY=e.offsetY;
-        }
-        else
-        {
-            offsetX=e.clientX;
-            offsetY=e.clientY;
-        }
-
-        if(smooth.get())
-        {
-            mouseX=offsetX;
-
-            if(flipY.get()) mouseY=listenerElement.clientHeight-offsetY;
-                else mouseY=offsetY;
-        }
-        else
-        {
-            if(flipY.get()) setValue(offsetX,listenerElement.clientHeight-offsetY);
-                else setValue(offsetX,offsetY);
-        }
-    }
-    else
-    {
-        if(relLastX!=0 && relLastY!=0)
-        {
-            offsetX=e.offsetX-relLastX;
-            offsetY=e.offsetY-relLastY;
-        }
-        else
-        {
-
-        }
-
-        relLastX=e.offsetX;
-        relLastY=e.offsetY;
-
-        mouseX+=offsetX;
-        mouseY+=offsetY;
-
-        if(mouseY>460)mouseY=460;
-    }
-};
-
-function ontouchstart(event)
-{
-    mouseDown.set(true);
-
-    if(event.touches && event.touches.length>0) onMouseDown(event.touches[0]);
-}
-
-function ontouchend(event)
-{
-    mouseDown.set(false);
-    onMouseUp();
-}
-
-function removeListeners()
-{
-    listenerElement.removeEventListener('touchend', ontouchend);
-    listenerElement.removeEventListener('touchstart', ontouchstart);
-
-    listenerElement.removeEventListener('click', onmouseclick);
-    listenerElement.removeEventListener('mousemove', onmousemove);
-    listenerElement.removeEventListener('mouseleave', onMouseLeave);
-    listenerElement.removeEventListener('mousedown', onMouseDown);
-    listenerElement.removeEventListener('mouseup', onMouseUp);
-    listenerElement.removeEventListener('mouseenter', onMouseEnter);
-    listenerElement.removeEventListener('contextmenu', onClickRight);
-    listenerElement=null;
-}
-
-function addListeners()
-{
-    if(listenerElement)removeListeners();
-
-    listenerElement=cgl.canvas;
-    if(area.get()=='Document') listenerElement=document.body;
-    if(area.get()=='Parent Element') listenerElement=cgl.canvas.parentElement;
-
-    listenerElement.addEventListener('touchend', ontouchend);
-    listenerElement.addEventListener('touchstart', ontouchstart);
-
-    listenerElement.addEventListener('click', onmouseclick);
-    listenerElement.addEventListener('mousemove', onmousemove);
-    listenerElement.addEventListener('mouseleave', onMouseLeave);
-    listenerElement.addEventListener('mousedown', onMouseDown);
-    listenerElement.addEventListener('mouseup', onMouseUp);
-    listenerElement.addEventListener('mouseenter', onMouseEnter);
-    listenerElement.addEventListener('contextmenu', onClickRight);
-}
-
-active.onChange=function()
-{
-    if(listenerElement)removeListeners();
-    if(active.get())addListeners();
-}
-
-op.onDelete=function()
-{
-    removeListeners();
-};
-
-addListeners();
-
-
-};
-
-Ops.Devices.Mouse.Mouse.prototype = new CABLES.Op();
-CABLES.OPS["0bf51f3e-3161-4cc5-aecf-6e9160089fd2"]={f:Ops.Devices.Mouse.Mouse,objName:"Ops.Devices.Mouse.Mouse"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Math.Sum
-// 
-// **************************************************************
-
-Ops.Math.Sum = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    number1=op.inValueFloat("number1",1),
-    number2=op.inValueFloat("number2",1),
-    result=op.outValue("result");
-
-number1.onChange=
-number2.onChange=exec;
-exec();
-
-function exec()
-{
-    var v=number1.get()+number2.get();
-    if(!isNaN(v)) result.set( v );
-}
-
-
-
-};
-
-Ops.Math.Sum.prototype = new CABLES.Op();
-CABLES.OPS["c8fb181e-0b03-4b41-9e55-06b6267bc634"]={f:Ops.Math.Sum,objName:"Ops.Math.Sum"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Trigger.SetNumberOnTrigger
-// 
-// **************************************************************
-
-Ops.Trigger.SetNumberOnTrigger = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    setValuePort = op.inTriggerButton("Set"),
-    valuePort = op.inValueFloat("Number"),
-    outValuePort = op.outValue("Out Value");
-
-outValuePort.changeAlways = true;
-
-setValuePort.onTriggered = function()
-{
-    outValuePort.set(valuePort.get());
-};
-
-};
-
-Ops.Trigger.SetNumberOnTrigger.prototype = new CABLES.Op();
-CABLES.OPS["9989b1c0-1073-4d5f-bfa0-36dd98b66e27"]={f:Ops.Trigger.SetNumberOnTrigger,objName:"Ops.Trigger.SetNumberOnTrigger"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Trigger.TriggerOnce
-// 
-// **************************************************************
-
-Ops.Trigger.TriggerOnce = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    exe=op.inTriggerButton("Exec"),
-    reset=op.inTriggerButton("Reset"),
-    next=op.outTrigger("Next");
-var outTriggered=op.outValue("Was Triggered");
-
-var triggered=false;
-
-op.toWorkPortsNeedToBeLinked(exe,next);
-
-reset.onTriggered=function()
-{
-    triggered=false;
-    outTriggered.set(triggered);
-};
-
-exe.onTriggered=function()
-{
-    if(triggered)return;
-
-    triggered=true;
-    next.trigger();
-    outTriggered.set(triggered);
-
-};
-
-};
-
-Ops.Trigger.TriggerOnce.prototype = new CABLES.Op();
-CABLES.OPS["cf3544e4-e392-432b-89fd-fcfb5c974388"]={f:Ops.Trigger.TriggerOnce,objName:"Ops.Trigger.TriggerOnce"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Math.Random2
-// 
-// **************************************************************
-
-Ops.Math.Random2 = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var exe=op.inTriggerButton('Generate');
-var min=op.inValue("min",0);
-var max=op.inValue("max",1);
-var result=op.outValue("result");
-var inInteger=op.inValueBool("Integer",false);
-
-exe.onTriggered=genRandom;
-max.onChange=genRandom;
-min.onChange=genRandom;
-inInteger.onChange=genRandom;
-
-genRandom();
-
-function genRandom()
-{
-    var r=(Math.random()*(max.get()-min.get()))+min.get();
-    if(inInteger.get())r=Math.floor(r);
-    result.set(r);
-}
-
-
-};
-
-Ops.Math.Random2.prototype = new CABLES.Op();
-CABLES.OPS["8cb69d73-3e0e-4785-b4cc-499c8372d03c"]={f:Ops.Math.Random2,objName:"Ops.Math.Random2"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Math.ApproachInterpolation
-// 
-// **************************************************************
-
-Ops.Math.ApproachInterpolation = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-//look at http://sol.gfxile.net/interpolation/
-
-var divisor=5;
-
-var exec=op.inTrigger("Update");
-var inVal=op.inValue("Value");
-
-var next=op.outTrigger("Next");
-var inDivisor=op.inValue("Divisor",divisor);
-var result=op.outValue("Result",0);
-
-var val=0;
-var goal=0;
-
-var lastTrigger=0;
-
-inVal.onChange=function()
-{
-    goal=inVal.get();
-};
-
-inDivisor.onChange=function()
-{
-    divisor=inDivisor.get();
-    if(divisor==0)divisor=5;
-};
-
-var oldVal=0;
-
-exec.onTriggered=function()
-{
-    
-    if(CABLES.now()-lastTrigger>500)val=inVal.get();
-    lastTrigger=CABLES.now();
-
-
-    if(divisor<=0)divisor=0.0001;
-    val=val+(goal-val)/divisor;
-
-    if(val>0 && val<0.000000001)val=0;
-    if(divisor!=divisor)val=0;
-    
-    if(oldVal!=val)
-    {
-        result.set(val);
-        oldVal=val;
-    }
-    
-    next.trigger();
-};
-
-};
-
-Ops.Math.ApproachInterpolation.prototype = new CABLES.Op();
-CABLES.OPS["eb4aa728-d0ee-4c53-833d-d0b086b11250"]={f:Ops.Math.ApproachInterpolation,objName:"Ops.Math.ApproachInterpolation"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Sidebar.Sidebar
-// 
-// **************************************************************
-
-Ops.Sidebar.Sidebar = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={style_css:"/*\n * SIDEBAR\n */\n\n.icon-chevron-down {\n\t\n    top: 2px;\n    right: 9px;\n}\n\n.icon-chevron-up {\n\tbackground-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);\n    top: 2px;\n    right: 9px;\n}\n.icon-refresh {\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItcmVmcmVzaC1jdyI+PHBvbHlsaW5lIHBvaW50cz0iMjMgNCAyMyAxMCAxNyAxMCI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSIxIDIwIDEgMTQgNyAxNCI+PC9wb2x5bGluZT48cGF0aCBkPSJNMy41MSA5YTkgOSAwIDAgMSAxNC44NS0zLjM2TDIzIDEwTTEgMTRsNC42NCA0LjM2QTkgOSAwIDAgMCAyMC40OSAxNSI+PC9wYXRoPjwvc3ZnPg==);\n    height: 100%;\n}\n.icon-back {\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItcm90YXRlLWNjdyI+PHBvbHlsaW5lIHBvaW50cz0iMSA0IDEgMTAgNyAxMCI+PC9wb2x5bGluZT48cGF0aCBkPSJNMy41MSAxNWE5IDkgMCAxIDAgMi4xMy05LjM2TDEgMTAiPjwvcGF0aD48L3N2Zz4=);\n    height: 100%;\n}\n\n\n.sidebar-cables-right\n{\n    right: 0px;\n    left: initial !important;\n}\n\n.sidebar-cables {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 100000;\n  color: #BBBBBB;\n  width: 220px;\n  max-height: 100%;\n  box-sizing: border-box;\n  overflow-y: auto;\n  overflow-x: hidden;\n  /* overflow-y: overlay; */\n  /* max-height: 1000px; */\n  /* ransition: max-height 0.5s; */\n  font-size: 13px;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Helvetica, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", SimSun, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n  line-height: 1em; /* prevent emojis from breaking height of the title */\n  --sidebar-border-radius: 4px;\n  --sidebar-monospace-font-stack: \"SFMono-Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n  --sidebar-hover-transition-time: .2s;\n}\n\n.sidebar-cables::selection {\n    background-color: #24baa7;\n    color: #EEEEEE;\n}\n\n.sidebar-cables::-webkit-scrollbar {\n    background-color: transparent;\n    --cables-scrollbar-width: 8px;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables::-webkit-scrollbar-track {\n    background-color: transparent;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables::-webkit-scrollbar-thumb {\n    background-color: #333333;\n    border-radius: 4px;\n    width: var(--cables-scrollbar-width);\n}\n\n.sidebar-cables--closed {\n  width: auto;\n}\n\n.sidebar__close-button {\n  background-color: #1A1A1A;\n  -webkit-user-select: none;  /* Chrome all / Safari all */\n  -moz-user-select: none;     /* Firefox all */\n  -ms-user-select: none;      /* IE 10+ */\n  user-select: none;          /* Likely future */ \n  transition: background-color var(--sidebar-hover-transition-time);\n  color: #CCCCCC;\n  height: 22px;\n  box-sizing: border-box;\n  padding-top: 2px;\n  text-align: center;\n  cursor: pointer;\n  border-top: 1px solid #272727;\n  border-radius: 0 0 var(--sidebar-border-radius) var(--sidebar-border-radius);\n  opacity: 1.0;\n  transition: opacity 0.3s;\n  overflow: hidden;\n}\n\n.sidebar__close-button-icon {\n    display: inline-block;\n    width: 21px;\n    height: 20px;\n    position: relative;\n    top: -1px;\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-repeat: no-repeat;\n    background-position: 0 -1px;\n}\n\n.sidebar--closed .sidebar__close-button {\n    margin-top: 8px;\n    margin-left: 8px;\n    padding-top: 13px;\n    padding-left: 11px;\n    padding-right: 11px;\n    width: 46px;\n    height: 46px;\n    border-radius: 50%;\n    cursor: pointer;\n    opacity: 0.3;\n}\n\n.sidebar--closed .sidebar__close-button-icon {\n    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyMnB4IiBoZWlnaHQ9IjE3cHgiIHZpZXdCb3g9IjAgMCAyMiAxNyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IkNhbnZhcy1TaWRlYmFyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJEZXNrdG9wLWdyZWVuLWJsdWlzaC1Db3B5LTkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMC4wMDAwMDAsIC0yMi4wMDAwMDApIj4gICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAuMDAwMDAwLCAyMi4wMDAwMDApIj4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNSwyLjUgTDIuNSwyLjUiIGlkPSJMaW5lLTIiIHN0cm9rZT0iIzk3OTc5NyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+PC9wYXRoPiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTAuNSwyLjUgTDIxLjUsMi41IiBpZD0iTGluZS0yIiBzdHJva2U9IiM5Nzk3OTciIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiPjwvcGF0aD4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNSw4LjUgTDExLjUsOC41IiBpZD0iTGluZS0yIiBzdHJva2U9IiM5Nzk3OTciIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiPjwvcGF0aD4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTE5LjUsOC41IEwyMS41LDguNSIgaWQ9IkxpbmUtMiIgc3Ryb2tlPSIjOTc5Nzk3IiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIj48L3BhdGg+ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjUsMTQuNSBMNS41LDE0LjUiIGlkPSJMaW5lLTIiIHN0cm9rZT0iIzk3OTc5NyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+PC9wYXRoPiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTMuNSwxNC41IEwyMS41LDE0LjUiIGlkPSJMaW5lLTIiIHN0cm9rZT0iIzk3OTc5NyIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSI+PC9wYXRoPiAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsLTMiIGZpbGw9IiM5Nzk3OTciIGN4PSI2LjUiIGN5PSIyLjUiIHI9IjIuNSI+PC9jaXJjbGU+ICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtMyIgZmlsbD0iIzk3OTc5NyIgY3g9IjE1LjUiIGN5PSI4LjUiIHI9IjIuNSI+PC9jaXJjbGU+ICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtMyIgZmlsbD0iIzk3OTc5NyIgY3g9IjkuNSIgY3k9IjE0LjUiIHI9IjIuNSI+PC9jaXJjbGU+ICAgICAgICAgICAgPC9nPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);\n    background-position: 0px 0px;\n}\n\n.sidebar__close-button:hover {\n  background-color: #111111;\n  opacity: 1.0 !important;\n}\n\n/*\n * SIDEBAR ITEMS\n */\n\n.sidebar__items {\n  /* max-height: 1000px; */\n  /* transition: max-height 0.5;*/ \n}\n\n.sidebar--closed .sidebar__items {\n  /* max-height: 0; */\n  height: 0;\n  display: none;\n  pointer-interactions: none;\n}\n\n/*\n * SIDEBAR GROUP\n */\n\n.sidebar__group {\n  background-color: #1A1A1A;\n  overflow: hidden;\n  box-sizing: border-box;\n  animate: height;\n  /* max-height: 1000px; */\n  /* transition: max-height 0.5s; */\n  --sidebar-group-header-height: 28px;\n}\n\n.sidebar__group--closed {\n  /* max-height: 13px; */\n  height: var(--sidebar-group-header-height);\n}\n\n.sidebar__group-header {\n  box-sizing: border-box;\n  color: #EEEEEE;\n  -webkit-user-select: none;  /* Chrome all / Safari all */\n  -moz-user-select: none;     /* Firefox all */\n  -ms-user-select: none;      /* IE 10+ */\n  user-select: none;          /* Likely future */ \n  height: var(--sidebar-group-header-height);\n  padding-top: 7px;\n  text-transform: uppercase;\n  letter-spacing: 0.08em;\n  cursor: pointer;\n  transition: background-color var(--sidebar-hover-transition-time);\n  position: relative;\n}\n\n.sidebar__group-header:hover {\n  background-color: #111111;\n}\n\n.sidebar__group-header-title {\n  text-align: center;\n  overflow: hidden;\n  padding: 0 24px;\n}\n\n.sidebar__group-header-icon {\n    width: 17px;\n    height: 14px;\n    background-repeat: no-repeat;\n    display: inline-block;\n    position: absolute;\n    background-size: cover;\n    \n    /* icon open */\n    /* feather icon: chevron up */\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tdXAiPjxwb2x5bGluZSBwb2ludHM9IjE4IDE1IDEyIDkgNiAxNSI+PC9wb2x5bGluZT48L3N2Zz4=);\n    top: 4px;\n    right: 5px;\n    opacity: 0.0;\n    transition: opacity 0.3;\n}\n\n.sidebar__group-header:hover .sidebar__group-header-icon {\n    opacity: 1.0;\n}\n\n/* icon closed */\n.sidebar__group--closed .sidebar__group-header-icon {\n    /* feather icon: chevron down */\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tZG93biI+PHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+PC9zdmc+);\n    top: 4px;\n    right: 5px;\n}\n\n/*\n * SIDEBAR ITEM\n */\n\n.sidebar__item {\n  background-color: #222222;\n  box-sizing: border-box;\n  padding: 7px;\n}\n\n.sidebar__item-label {\n  display: inline-block;\n  -webkit-user-select: none;  /* Chrome all / Safari all */\n  -moz-user-select: none;     /* Firefox all */\n  -ms-user-select: none;      /* IE 10+ */\n  user-select: none;          /* Likely future */ \n  width: calc(50% - 7px);\n  margin-right: 7px;\n  max-height: 1em;\n  text-overflow: ellipsis;\n  /* overflow: hidden; */\n}\n\n.sidebar__item-value-label {\n  font-family: var(--sidebar-monospace-font-stack);\n  display: inline-block;\n  text-overflow: ellipsis;\n  overflow: hidden;\n  white-space: nowrap;\n  max-width: 50%;\n}\n\n.sidebar__item-value-label::selection {\n    background-color: #24baa7;\n    color: #EEEEEE;\n}\n\n.sidebar__item + .sidebar__item,\n.sidebar__item + .sidebar__group,\n.sidebar__group + .sidebar__item,\n.sidebar__group + .sidebar__group {\n  border-top: 1px solid #272727;\n}\n\n/*\n * SIDEBAR ITEM TOGGLE\n */\n\n.sidebar__toggle {\n    cursor: pointer;    \n}\n\n.sidebar__toggle-input {\n  --sidebar-toggle-input-color: #CCCCCC;\n  --sidebar-toggle-input-color-hover: #EEEEEE;\n  --sidebar-toggle-input-border-size: 2px;\n  display: inline;\n  float: right;\n  box-sizing: border-box;\n  border-radius: 50%;\n  cursor: pointer;\n  --toggle-size: 11px;\n  margin-top: 2px;\n  background-color: transparent;\n  border: var(--sidebar-toggle-input-border-size) solid var(--sidebar-toggle-input-color);\n  width: var(--toggle-size);\n  height: var(--toggle-size);\n  transition: background-color var(--sidebar-hover-transition-time);\n  transition: border-color var(--sidebar-hover-transition-time);\n}\n.sidebar__toggle:hover .sidebar__toggle-input {\n  border-color: var(--sidebar-toggle-input-color-hover);\n}\n\n.sidebar__toggle .sidebar__item-value-label {\n  -webkit-user-select: none;  /* Chrome all / Safari all */\n  -moz-user-select: none;     /* Firefox all */\n  -ms-user-select: none;      /* IE 10+ */\n  user-select: none;          /* Likely future */ \n  max-width: calc(50% - 12px);\n}\n.sidebar__toggle-input::after { clear: both; }\n\n.sidebar__toggle--active .sidebar__toggle-input {\n  transition: background-color var(--sidebar-hover-transition-time);\n  background-color: var(--sidebar-toggle-input-color);\n}\n.sidebar__toggle--active .sidebar__toggle-input:hover {\n  background-color: var(--sidebar-toggle-input-color-hover);\n  border-color: var(--sidebar-toggle-input-color-hover);\n  transition: background-color var(--sidebar-hover-transition-time);\n  transition: border-color var(--sidebar-hover-transition-time);\n}\n\n/*\n * SIDEBAR ITEM BUTTON\n */\n\n.sidebar__button {}\n\n.sidebar__button-input {\n  -webkit-user-select: none;  /* Chrome all / Safari all */\n  -moz-user-select: none;     /* Firefox all */\n  -ms-user-select: none;      /* IE 10+ */\n  user-select: none;          /* Likely future */ \n  height: 24px;\n  background-color: #444444;\n  color: #CCCCCC;\n  box-sizing: border-box;\n  padding-top: 5px;\n  text-align: center;\n  border-radius: var(--sidebar-border-radius);\n  cursor: pointer;\n}\n\n.sidebar__button-input:hover {\n  background-color: #555555;\n}\n\n/*\n * VALUE DISPLAY (shows a value)\n */\n\n.sidebar__value-display {}\n\n/*\n * SLIDER\n */\n\n.sidebar__slider {\n  --sidebar-slider-input-height: 18px;\n}\n\n.sidebar__slider-input-wrapper {\n  width: 100%;\n  margin-top: 10px;\n  position: relative;\n}\n\n.sidebar__slider-input {\n  -webkit-appearance: none;  /* Override default CSS styles */\n  appearance: none;\n  margin: 0;\n  width: 100%;\n  height: var(--sidebar-slider-input-height);\n  background: #333333;\n  cursor: pointer;\n  outline: none;\n  -webkit-transition: .2s; /* 0.2 seconds transition on hover */\n  transition: background-color .2s;\n  border: none;\n}\n\n.sidebar__slider-input:focus, .sidebar__slider-input:hover {\n    border: none;\n}\n\n.sidebar__slider-input-active-track {\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: #CCCCCC; \n  pointer-events: none;\n  height: var(--sidebar-slider-input-height);\n  /* width: 10px; */\n}\n\n/* Mouse-over effects */\n.sidebar__slider-input:hover {\n  background-color: #444444;\n}\n\n/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ \n.sidebar__slider-input::-webkit-slider-thumb {\n    -webkit-appearance: none; /* Override default look */\n    appearance: none;\n    width: var(--sidebar-slider-input-height);\n    /* width: 0 !important; */\n    height: var(--sidebar-slider-input-height);\n    background: #EEEEEE !important;\n    z-index: 999999999999 !important;\n    border: none;\n    border-radius: 0 !important;\n    cursor: pointer;\n}\n.sidebar__slider-input:hover ::-webkit-slider-thumb {\n  background-color: #EEEEEE !important;\n}\n\n.sidebar__slider-input::-moz-range-thumb {\n    /* width: var(--sidebar-slider-input-height); */\n    width: 0 !important;\n    height: var(--sidebar-slider-input-height);\n    background: #EEEEEE;\n    cursor: pointer;\n    border-radius: 0 !important;\n    border: none;\n    outline: 0;\n    z-index: 99999999999999999 !important;\n}\n\n.sidebar__slider-input::-moz-range-track {\n  background-color: transparent;\n}\n\n.sidebar__slider-input::-moz-range-thumb:hover {\n  /* background-color: #EEEEEE; */\n}\n\n.sidebar__slider-input-wrapper:hover .sidebar__slider-input-active-track {\n  background-color: #EEEEEE;  \n}\n\n.sidebar__slider-input-wrapper:hover .sidebar__slider-input::-moz-range-thumb {\n  background-color: #EEEEEE !important;  \n}\n\n.sidebar__slider-input-wrapper:hover .sidebar__slider-input::-webkit-slider-thumb {\n  background-color: #EEEEEE;  \n}\n\n.sidebar__slider input[type=text] {\n    box-sizing: border-box;\n    background-color: #333333;\n    color: #BBBBBB;\n    display: inline-block;\n    width: 50%;\n    height: 18px;\n    outline: none;\n    border: none;\n    border-radius: 0;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n} \n\n.sidebar__slider input[type=text]:active, \n.sidebar__slider input[type=text]:focus,\n.sidebar__slider input[type=text]:hover {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\n/*\n * TEXT / DESCRIPTION\n */\n \n.sidebar__text .sidebar__item-label {\n    width: auto;\n    display: block;\n    max-height: none;\n    margin-right: 0;\n    line-height: 1.1em;\n} \n\n/*\n * SIDEBAR INPUT\n */\n.sidebar__text-input input[type=text] {\n    box-sizing: border-box;\n    background-color: #333333;\n    color: #BBBBBB;\n    display: inline-block;\n    width: 50%;\n    height: 18px;\n    outline: none;\n    border: none;\n    border-radius: 0;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n} \n\n.sidebar__text-input input[type=text]:active, \n.sidebar__text-input input[type=text]:focus,\n.sidebar__text-input input[type=text]:hover {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\n/*\n * SIDEBAR SELECT\n */\n \n .sidebar__select {}\n .sidebar__select-select {\n    color: #BBBBBB;\n    -webkit-appearance: none; \n    -moz-appearance: none;\n    appearance: none;\n    box-sizing: border-box;\n    width: 50%;\n    height: 18px;\n    background-color: #333333;\n    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM4ODg4ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLWNoZXZyb24tZG93biI+PHBvbHlsaW5lIHBvaW50cz0iNiA5IDEyIDE1IDE4IDkiPjwvcG9seWxpbmU+PC9zdmc+);\n    background-repeat: no-repeat;\n    background-position: 87px 1px;\n    background-size: 16px 16px;\n    margin: 0;\n    padding: 0 0 0 4px;\n    border-radius: 0;\n    border: none;\n    cursor: pointer;\n    outline: none;\n }\n \n.sidebar__select-select:hover,\n.sidebar__select-select:active,\n.sidebar__select-select:active {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\n/*\n * COLOR PICKER\n */\n \n .sidebar__color-picker-color-input {}\n \n .sidebar__color-picker input[type=text] {\n    box-sizing: border-box;\n    background-color: #333333;\n    color: #BBBBBB;\n    display: inline-block;\n    width: calc(50% - 21px); /* 50% minus space of picker circle */\n    height: 18px;\n    outline: none;\n    border: none;\n    border-radius: 0;\n    padding: 0 0 0 4px !important;\n    margin: 0;\n    margin-right: 7px;\n} \n\n.sidebar__color-picker input[type=text]:active, \n.sidebar__color-picker input[type=text]:focus,\n.sidebar__color-picker input[type=text]:hover {\n    background-color: #444444;\n    color: #EEEEEE;\n}\n\n.sidebar__color-picker input[type=color],\n.sidebar__palette-picker input[type=color] {\n    display: inline-block;\n    border-radius: 100%;\n    height: 14px;\n    width: 14px;\n    padding: 0;\n    border: none;\n    border-color: transparent;\n    outline: none;\n    background: none;\n    appearance: none;\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    cursor: pointer;\n    position: relative;\n    top: 3px;\n}\n.sidebar__color-picker input[type=color]:focus,\n.sidebar__palette-picker input[type=color]:focus {\n    outline: none;\n}\n.sidebar__color-picker input[type=color]::-moz-color-swatch,\n.sidebar__palette-picker input[type=color]::-moz-color-swatch {\n    border: none;\n}\n.sidebar__color-picker input[type=color]::-webkit-color-swatch-wrapper,\n.sidebar__palette-picker input[type=color]::-webkit-color-swatch-wrapper {\n    padding: 0;\t\n}\n.sidebar__color-picker input[type=color]::-webkit-color-swatch,\n.sidebar__palette-picker input[type=color]::-webkit-color-swatch {\n    border: none;\n    border-radius: 100%;\n}\n\n/*\n * Palette Picker\n */\n.sidebar__palette-picker .sidebar__palette-picker-color-input.first {\n    margin-left: 0;\n}\n.sidebar__palette-picker .sidebar__palette-picker-color-input.last {\n    margin-right: 0;\n}\n.sidebar__palette-picker .sidebar__palette-picker-color-input {\n    margin: 0 4px;\n}\n\n.sidebar__palette-picker .circlebutton {\n    width: 14px;\n    height: 14px;\n    border-radius: 1em;\n    display: inline-block;\n    top: 3px;\n    position: relative;\n}\n\n/*\n * Preset\n */\n.sidebar__item-presets-preset\n{\n    padding:4px;\n    cursor:pointer;\n    padding-left:8px;\n    padding-right:8px;\n    margin-right:4px;\n    background-color:#444;\n\n}\n\n.sidebar__item-presets-preset:hover\n{\n    background-color:#666;\n}",};
-// vars
-const CSS_ELEMENT_CLASS = 'cables-sidebar-style'; /* class for the style element to be generated */
-const CSS_ELEMENT_DYNAMIC_CLASS = 'cables-sidebar-dynamic-style'; /* things which can be set via op-port, but not attached to the elements themselves, e.g. minimized opacity */
-const SIDEBAR_CLASS = 'sidebar-cables';
-const SIDEBAR_ID = 'sidebar'+CABLES.uuid();
-const SIDEBAR_ITEMS_CLASS = 'sidebar__items';
-const SIDEBAR_OPEN_CLOSE_BTN_CLASS = 'sidebar__close-button';
-const SIDEBAR_OPEN_CLOSE_BTN_ICON_CLASS = 'sidebar__close-button-icon';
-const BTN_TEXT_OPEN = ''; // 'Close';
-const BTN_TEXT_CLOSED = ''; // 'Show Controls';
-var cssFileContent = attachments.style_css; /* the CSS style attachment */
-let openCloseBtn = null;
-let openCloseBtnIcon = null;
-
-// inputs
-var visiblePort = op.inValueBool("Visible", true);
-var opacityPort = op.inValueSlider('Opacity', 1);
-var defaultMinimizedPort = op.inValueBool('Default Minimized');
-var minimizedOpacityPort = op.inValueSlider('Minimized Opacity', 0.5);
-
-var side = op.inValueBool('Side');
-
-// outputs
-var childrenPort = op.outObject('childs');
-
-var sidebarEl = document.querySelector('.' + SIDEBAR_ID);
-if(!sidebarEl) {
-    sidebarEl = initSidebarElement();
-}
-if(!sidebarEl) return;
-var sidebarItemsEl = sidebarEl.querySelector('.' + SIDEBAR_ITEMS_CLASS);
-childrenPort.set({
-    parentElement: sidebarItemsEl,
-    parentOp: op,
-});
-onDefaultMinimizedPortChanged();
-initSidebarCss();
-updateDynamicStyles();
-
-// change listeners
-visiblePort.onChange = onVisiblePortChange;
-opacityPort.onChange = onOpacityPortChange;
-defaultMinimizedPort.onChange = onDefaultMinimizedPortChanged;
-minimizedOpacityPort.onChange = onMinimizedOpacityPortChanged;
-op.onDelete = onDelete;
-
-// functions
-
-function onMinimizedOpacityPortChanged() {
-    updateDynamicStyles();
-}
-
-side.onChange=function()
-{
-    if(side.get()) sidebarEl.classList.add('sidebar-cables-right');
-        else sidebarEl.classList.remove('sidebar-cables-right');
-};
-
-
-function onDefaultMinimizedPortChanged() {
-    if(!openCloseBtn) { return; }
-    if(defaultMinimizedPort.get()) {
-        sidebarEl.classList.add('sidebar--closed');
-        // openCloseBtn.textContent = BTN_TEXT_CLOSED;
-    } else {
-        sidebarEl.classList.remove('sidebar--closed');
-        // openCloseBtn.textContent = BTN_TEXT_OPEN;
-    }
-}
-
-function onOpacityPortChange()
-{
-    var opacity = opacityPort.get();
-    sidebarEl.style.opacity = opacity;
-}
-
-function onVisiblePortChange() {
-    if(visiblePort.get()) {
-        sidebarEl.style.display = 'block';
-    } else {
-        sidebarEl.style.display = 'none';
-    }
-}
-
-side.onChanged=function()
-{
-
-};
-
-/**
- * Some styles cannot be set directly inline, so a dynamic stylesheet is needed.
- * Here hover states can be set later on e.g.
- */
-function updateDynamicStyles() {
-    let dynamicStyles = document.querySelectorAll('.' + CSS_ELEMENT_DYNAMIC_CLASS);
-    if(dynamicStyles) {
-        dynamicStyles.forEach(function(e) {
-            e.parentNode.removeChild(e);
-        });
-    }
-    let newDynamicStyle = document.createElement('style');
-    newDynamicStyle.classList.add(CSS_ELEMENT_DYNAMIC_CLASS);
-    let cssText = '.sidebar--closed .sidebar__close-button { ';
-    cssText +=         'opacity: ' + minimizedOpacityPort.get();
-    cssText +=     '}';
-    let cssTextEl = document.createTextNode(cssText);
-    newDynamicStyle.appendChild(cssTextEl);
-    document.body.appendChild(newDynamicStyle);
-}
-
-function initSidebarElement() {
-    var element = document.createElement('div');
-    element.classList.add(SIDEBAR_CLASS);
-    element.classList.add(SIDEBAR_ID);
-    var canvasWrapper = op.patch.cgl.canvas.parentElement; /* maybe this is bad outside cables!? */
-
-    if(!canvasWrapper)
-    {
-        console.warn("[sidebar] no canvas parentelement found...");
-        return;
-    }
-    canvasWrapper.appendChild(element);
-    var items = document.createElement('div');
-    items.classList.add(SIDEBAR_ITEMS_CLASS);
-    element.appendChild(items);
-    openCloseBtn = document.createElement('div');
-    openCloseBtn.classList.add(SIDEBAR_OPEN_CLOSE_BTN_CLASS);
-    openCloseBtn.addEventListener('click', onOpenCloseBtnClick);
-    // openCloseBtn.textContent = BTN_TEXT_OPEN;
-    element.appendChild(openCloseBtn);
-    openCloseBtnIcon = document.createElement('span');
-    openCloseBtnIcon.classList.add(SIDEBAR_OPEN_CLOSE_BTN_ICON_CLASS);
-    openCloseBtn.appendChild(openCloseBtnIcon);
-    return element;
-}
-
-function setClosed(b)
-{
-
-}
-
-function onOpenCloseBtnClick(ev) {
-  ev.stopPropagation();
-//   const sidebarEl = ev.target.closest('.' + SIDEBAR_CLASS);
-  if(!sidebarEl) { console.error('Sidebar could not be closed...'); return; }
-  sidebarEl.classList.toggle('sidebar--closed');
-  const btn = ev.target;
-  let btnText = BTN_TEXT_OPEN;
-  if(sidebarEl.classList.contains('sidebar--closed')) {
-    btnText = BTN_TEXT_CLOSED;
-   }
-   // btn.textContent = btnText
-}
-
-function initSidebarCss() {
-    //var cssEl = document.getElementById(CSS_ELEMENT_ID);
-    var cssElements = document.querySelectorAll('.' + CSS_ELEMENT_CLASS);
-    // remove old script tag
-    if(cssElements) {
-        cssElements.forEach(function(e) {
-            e.parentNode.removeChild(e);
-        });
-    }
-    var newStyle = document.createElement('style');
-    newStyle.innerHTML = cssFileContent;
-    newStyle.classList.add(CSS_ELEMENT_CLASS);
-    document.body.appendChild(newStyle);
-}
-
-function onDelete() {
-    removeElementFromDOM(sidebarEl);
-}
-
-function removeElementFromDOM(el) {
-    if(el && el.parentNode && el.parentNode.removeChild) {
-        el.parentNode.removeChild(el);
-    }
-}
-
-
-
-};
-
-Ops.Sidebar.Sidebar.prototype = new CABLES.Op();
-CABLES.OPS["5a681c35-78ce-4cb3-9858-bc79c34c6819"]={f:Ops.Sidebar.Sidebar,objName:"Ops.Sidebar.Sidebar"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Sidebar.Slider
-// 
-// **************************************************************
-
-Ops.Sidebar.Slider = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-// constants
-const STEP_DEFAULT = 0.00001;
-
-// inputs
-const parentPort = op.inObject('link');
-const labelPort = op.inValueString('Text', 'Slider');
-const inputValuePort = op.inValue('Input', 0.5);
-const minPort = op.inValue("Min", 0);
-const maxPort = op.inValue("Max", 1);
-const stepPort = op.inValue("Step", STEP_DEFAULT);
-const setDefaultValueButtonPort = op.inTriggerButton('Set Default');
-
-const reset = op.inTriggerButton('Reset');
-
-const defaultValuePort = op.inValue('Default', 0.5);
-defaultValuePort.setUiAttribs({ hidePort: true, greyout: true });
-
-// outputs
-const siblingsPort = op.outObject('childs');
-const valuePort = op.outValue('Result', defaultValuePort.get());
-
-op.toWorkNeedsParent('Ops.Sidebar.Sidebar');
-
-// vars
-var el = document.createElement('div');
-el.classList.add('sidebar__item');
-el.classList.add('sidebar__slider');
-var label = document.createElement('div');
-label.classList.add('sidebar__item-label');
-var labelText = document.createTextNode(labelPort.get());
-label.appendChild(labelText);
-el.appendChild(label);
-var value = document.createElement('input');
-value.value = defaultValuePort.get();
-value.classList.add('sidebar__text-input-input');
-// value.setAttribute('type', 'number'); /* not possible to use '.' instead of ',' as separator on German computer, so not usable... */
-value.setAttribute('type', 'text');
-// value.setAttribute('lang', 'en-US'); // force '.' as decimal separator
-// value.setAttribute('pattern', '[0-9]+([\.][0-9]+)?'); // only allow '.' as separator
-// value.setAttribute('step', 'any'); /* we cannot use the slider step, as it restricts valid numbers to be entered */
-// value.setAttribute('formnovalidate', '');
-value.oninput = onTextInputChanged;
-el.appendChild(value);
-var inputWrapper = document.createElement('div');
-inputWrapper.classList.add('sidebar__slider-input-wrapper');
-el.appendChild(inputWrapper);
-var activeTrack = document.createElement('div');
-activeTrack.classList.add('sidebar__slider-input-active-track');
-inputWrapper.appendChild(activeTrack);
-var input = document.createElement('input');
-input.classList.add('sidebar__slider-input');
-input.setAttribute('min', minPort.get());
-input.setAttribute('max', maxPort.get());
-input.setAttribute('type', 'range');
-input.setAttribute('step', stepPort.get());
-input.setAttribute('value', defaultValuePort.get());
-input.style.display = 'block'; /* needed because offsetWidth returns 0 otherwise */
-inputWrapper.appendChild(input);
-updateActiveTrack();
-input.addEventListener('input', onSliderInput);
-
-// events
-parentPort.onChange = onParentChanged;
-labelPort.onChange = onLabelTextChanged;
-inputValuePort.onChange = onInputValuePortChanged;
-defaultValuePort.onChange = onDefaultValueChanged;
-setDefaultValueButtonPort.onTriggered = onSetDefaultValueButtonPress;
-minPort.onChange = onMinPortChange;
-maxPort.onChange = onMaxPortChange;
-stepPort.onChange = stepPortChanged;
-op.onDelete = onDelete;
-
-op.init=function()
-{
-    if(op.patch.config.sidebar)
-    {
-        op.patch.config.sidebar[labelPort.get()];
-        valuePort.set(op.patch.config.sidebar[labelPort.get()]);
-    }
-    else
-        valuePort.set(parseFloat(defaultValuePort.get()));
-};
-
-reset.onTriggered=function()
-{
-    var newValue=parseFloat(defaultValuePort.get());
-    valuePort.set(newValue);
-    input.value = newValue;
-    updateActiveTrack();
-};
-
-// functions
-
-function onTextInputChanged(ev) {
-    let newValue = parseFloat(ev.target.value);
-    if(isNaN(newValue)) {
-        newValue = 0;
-    }
-    const min = minPort.get();
-    const max = maxPort.get();
-    if(newValue < min) { newValue = min; }
-    else if(newValue > max) { newValue = max; }
-    // input.value = newValue;
-    valuePort.set(newValue);
-    updateActiveTrack();
-    inputValuePort.set(newValue);
-    if(CABLES.UI && gui.patch().isCurrentOp(op)){
-        gui.patch().showOpParams(op); /* update DOM */
-    }
-}
-
-function onInputValuePortChanged() {
-    let newValue = parseFloat(inputValuePort.get());
-    const minValue = minPort.get();
-    const maxValue = maxPort.get();
-    if(newValue > maxValue) { newValue = maxValue; }
-    else if(newValue < minValue) { newValue = minValue; }
-    value.value = newValue;
-    input.value = newValue;
-    valuePort.set(newValue);
-    updateActiveTrack();
-}
-
-function onSetDefaultValueButtonPress() {
-    let newValue = parseFloat(inputValuePort.get());
-    const minValue = minPort.get();
-    const maxValue = maxPort.get();
-    if(newValue > maxValue) { newValue = maxValue; }
-    else if(newValue < minValue) { newValue = minValue; }
-    value.value = newValue;
-    input.value = newValue;
-    valuePort.set(newValue);
-    defaultValuePort.set(newValue);
-    if(CABLES.UI && gui.patch().isCurrentOp(op)){
-        gui.patch().showOpParams(op); /* update DOM */
-    }
-    updateActiveTrack();
-}
-
-function onSliderInput(ev) {
-    ev.preventDefault();
-    ev.stopPropagation();
-    value.value = ev.target.value;
-    const inputFloat = parseFloat(ev.target.value);
-    valuePort.set(inputFloat);
-    inputValuePort.set(inputFloat);
-    if(CABLES.UI && gui.patch().isCurrentOp(op)){
-        gui.patch().showOpParams(op); /* update DOM */
-    }
-    updateActiveTrack();
-    return false;
-}
-
-function stepPortChanged() {
-    var step = stepPort.get();
-    input.setAttribute('step', step);
-    updateActiveTrack();
-}
-
-function updateActiveTrack(val) {
-    let valueToUse = parseFloat(input.value);
-    if(typeof val !== 'undefined') {
-        valueToUse = val;
-    }
-    let availableWidth = input.offsetWidth; /* this returns 0 at the beginning... */
-    if(availableWidth === 0) { availableWidth = 206; }
-    var trackWidth = CABLES.map(
-        valueToUse,
-        parseFloat(input.min),
-        parseFloat(input.max),
-        0,
-        availableWidth - 16 /* subtract slider thumb width */
-    );
-    // activeTrack.style.width = 'calc(' + percentage + '%' + ' - 9px)';
-    activeTrack.style.width = trackWidth + 'px';
-}
-
-function onMinPortChange() {
-    var min = minPort.get();
-    input.setAttribute('min', min);
-    updateActiveTrack();
-}
-
-function onMaxPortChange() {
-    var max = maxPort.get();
-    input.setAttribute('max', max);
-    updateActiveTrack();
-}
-
-function onDefaultValueChanged() {
-    var defaultValue = defaultValuePort.get();
-    valuePort.set(parseFloat(defaultValue));
-    onMinPortChange();
-    onMaxPortChange();
-    input.value = defaultValue;
-    value.value = defaultValue;
-    updateActiveTrack(defaultValue); // needs to be passed as argument, is this async?
-}
-
-function onLabelTextChanged() {
-    var labelText = labelPort.get();
-    label.textContent = labelText;
-    if(CABLES.UI) {
-        op.setTitle('Slider: ' + labelText);
-    }
-}
-
-function onParentChanged() {
-    var parent = parentPort.get();
-    if(parent && parent.parentElement) {
-        parent.parentElement.appendChild(el);
-        siblingsPort.set(null);
-        siblingsPort.set(parent);
-    } else { // detach
-        if(el.parentElement) {
-            el.parentElement.removeChild(el);
-        }
-    }
-}
-
-function showElement(el) {
-    if(el) {
-        el.style.display = 'block';
-    }
-}
-
-function hideElement(el) {
-    if(el) {
-        el.style.display = 'none';
-    }
-}
-
-function onDelete() {
-    removeElementFromDOM(el);
-}
-
-function removeElementFromDOM(el) {
-    if(el && el.parentNode && el.parentNode.removeChild) {
-        el.parentNode.removeChild(el);
-    }
-}
-
-
-};
-
-Ops.Sidebar.Slider.prototype = new CABLES.Op();
-CABLES.OPS["eb3232e5-e947-4683-a17f-27a72d464b2c"]={f:Ops.Sidebar.Slider,objName:"Ops.Sidebar.Slider"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Color.HSBtoRGB
-// 
-// **************************************************************
-
-Ops.Color.HSBtoRGB = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var outR=op.outValue("R");
-var outG=op.outValue("G");
-var outB=op.outValue("B");
-
-var inH=op.inValueSlider("Hue");
-var inS=op.inValueSlider("Saturation",1);
-var inV=op.inValueSlider("Brightness",0.5);
-
-// var hslToRgb = function(hue, saturation, lightness){
-inH.onChange=inS.onChange=inV.onChange=update;
-update();
-
-function update()
-{
-
-    var hue=(inH.get());
-    var saturation=(inS.get());
-    var lightness=(inV.get());
-
-    // based on algorithm from http://en.wikipedia.org/wiki/HSL_and_HSV#Converting_to_RGB
-
-    var chroma = (1 - Math.abs((2 * lightness) - 1)) * saturation;
-    var huePrime = hue *6; // / 60;
-    var secondComponent = chroma * (1 - Math.abs((huePrime % 2) - 1));
-
-    huePrime = Math.floor(huePrime)||0;
-    var red=0;
-    var green=0;
-    var blue=0;
-
-    if( huePrime === 0 ){
-        red = chroma;
-        green = secondComponent;
-        blue = 0;
-    }else if( huePrime === 1 ){
-        red = secondComponent;
-        green = chroma;
-        blue = 0;
-    }else if( huePrime === 2 ){
-        red = 0;
-        green = chroma;
-        blue = secondComponent;
-    }else if( huePrime === 3 ){
-        red = 0;
-        green = secondComponent;
-        blue = chroma;
-    }else if( huePrime === 4 ){
-        red = secondComponent;
-        green = 0;
-        blue = chroma;
-    }else if( huePrime >= 5){
-        red = chroma;
-        green = 0;
-        blue = secondComponent;
-    }
-    var lightnessAdjustment = (lightness - (chroma / 2));
-    red += lightnessAdjustment;
-    green += lightnessAdjustment;
-    blue += lightnessAdjustment;
-
-    outR.set(red);
-    outG.set(green);
-    outB.set(blue);
-
-//   return [Math.round(red * 255), Math.round(green * 255), Math.round(blue * 255)];
-
-};
-
-
-};
-
-Ops.Color.HSBtoRGB.prototype = new CABLES.Op();
-CABLES.OPS["909ee871-b0f3-477f-bee2-d0ab40bb5804"]={f:Ops.Color.HSBtoRGB,objName:"Ops.Color.HSBtoRGB"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Devices.Keyboard.KeyPressLearn
-// 
-// **************************************************************
-
-Ops.Devices.Keyboard.KeyPressLearn = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var learn = op.inTriggerButton("learn");
-var learnedKeyCode = op.inValueInt("key code");
-var canvasOnly=op.inValueBool("canvas only");
-var modKey=op.inValueSelect("Mod Key",['none','alt']);
-var inEnable=op.inValueBool("Enabled",true);
-var preventDefault=op.inValueBool("Prevent Default");
-var onPress=op.outTrigger("on press");
-var onRelease=op.outTrigger("on release");
-var outPressed=op.outValue("Pressed",false);
-
+    render=op.inTrigger("render"),
+    amount=op.inValueSlider("Amount",1),
+    blendMode=CGL.TextureEffect.AddBlendSelect(op,"Blend Mode","normal"),
+    time=op.inValue('Seed',0.5),
+    inFrequency=op.inValue('frequency',1),
+    inStrength=op.inValue('strength',8.0),
+    inBlockSizeA=op.inValue('Block size small x',24.0),
+    inBlockSizeB=op.inValue('Block size small y',9.0),
+    inBlockSizeC=op.inValue('Block size large x',8.0),
+    inBlockSizeD=op.inValue('Block size large y',4.0),
+    inScrollX=op.inValue('Scroll X',0.0),
+    inScrollY=op.inValue('Scroll Y',0.0),
+    trigger=op.outTrigger('trigger');
+
+const TEX_SLOT=0;
 const cgl=op.patch.cgl;
-var learning = false;
-
-function onKeyDown(e)
-{
-    if(learning){
-        learnedKeyCode.set(e.keyCode);
-        if(CABLES.UI){
-            gui.patch().showOpParams(op);
-        }
-        // op.log("Learned key code: " + learnedKeyCode.get());
-        learning = false;
-        removeListeners();
-        addListener();
-    } else {
-        if(e.keyCode == learnedKeyCode.get()){
-
-            if(modKey.get()=='alt' )
-            {
-                if(e.altKey===true)
-                {
-                    onPress.trigger();
-                    outPressed.set(true);
-                    if(preventDefault.get())e.preventDefault();
-                }
-            }
-            else
-            {
-                onPress.trigger();
-                outPressed.set(true);
-                if(preventDefault.get())e.preventDefault();
-            }
-
-        }
-    }
-}
-
-function onKeyUp(e) {
-    if(e.keyCode == learnedKeyCode.get()) {
-        // op.log("Key released, key code: " + e.keyCode);
-        onRelease.trigger();
-        outPressed.set(false);
-    }
-}
-
-op.onDelete=function()
-{
-    cgl.canvas.removeEventListener('keyup', onKeyUp, false);
-    cgl.canvas.removeEventListener('keydown', onKeyDown, false);
-    document.removeEventListener("keyup", onKeyUp, false);
-    document.removeEventListener("keydown", onKeyDown, false);
-};
-
-learn.onTriggered = function(){
-    // op.log("Listening for key...");
-    learning = true;
-    addDocumentListener();
-
-    setTimeout(function(){
-        learning = false;
-        removeListeners();
-        addListener();
-    }, 3000);
-};
-
-function addListener() {
-    if(canvasOnly.get() === true) {
-        addCanvasListener();
-    } else {
-        addDocumentListener();
-    }
-}
-
-function removeListeners() {
-    document.removeEventListener("keydown", onKeyDown, false);
-    document.removeEventListener("keyup", onKeyUp, false);
-    cgl.canvas.removeEventListener('keydown', onKeyDown, false);
-    cgl.canvas.removeEventListener('keyup', onKeyUp, false);
-    outPressed.set(false);
-}
-
-function addCanvasListener() {
-    cgl.canvas.addEventListener("keydown", onKeyDown, false );
-    cgl.canvas.addEventListener("keyup", onKeyUp, false );
-}
-
-function addDocumentListener() {
-    document.addEventListener("keydown", onKeyDown, false);
-    document.addEventListener("keyup", onKeyUp, false);
-}
-
-inEnable.onChange=function()
-{
-    if(!inEnable.get())
-    {
-        removeListeners();
-    }
-    else
-    {
-        addListener();
-    }
-}
-
-canvasOnly.onChange=function(){
-    removeListeners();
-    addListener();
-};
-
-canvasOnly.set(true);
-addCanvasListener();
-
-
-};
-
-Ops.Devices.Keyboard.KeyPressLearn.prototype = new CABLES.Op();
-CABLES.OPS["f069c0db-4051-4eae-989e-6ef7953787fd"]={f:Ops.Devices.Keyboard.KeyPressLearn,objName:"Ops.Devices.Keyboard.KeyPressLearn"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Boolean.ToggleBool
-// 
-// **************************************************************
-
-Ops.Boolean.ToggleBool = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-const
-    trigger=op.inTriggerButton("trigger"),
-    reset=op.inTriggerButton("reset"),
-    outBool=op.outValue("result");
-
-var theBool=false;
-outBool.set(theBool);
-outBool.ignoreValueSerialize=true;
-
-trigger.onTriggered=function()
-{
-    theBool=!theBool;
-    outBool.set(theBool);
-};
-
-reset.onTriggered=function()
-{
-    theBool=false;
-    outBool.set(theBool);
-};
-
-
-
-};
-
-Ops.Boolean.ToggleBool.prototype = new CABLES.Op();
-CABLES.OPS["712a25f4-3a93-4042-b8c5-2f56169186cc"]={f:Ops.Boolean.ToggleBool,objName:"Ops.Boolean.ToggleBool"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Devices.Midi.MidiInputDevice_v2
-// 
-// **************************************************************
-
-Ops.Devices.Midi.MidiInputDevice_v2 = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-// http://www.keithmcmillen.com/blog/making-music-in-the-browser-web-midi-api/
-
-// https://ccrma.stanford.edu/~craig/articles/linuxmidi/misc/essenmidi.html
-
-op.requirements = [CABLES.Requirements.MIDI];
-
-/* INPUTS */
-
-const deviceSelect = op.inValueSelect('Device', ['none']);
-
-var learning = false;
-const learn = op.inTriggerButton('Learn');
-const resetIn = op.inTriggerButton('Panic');
-
-op.setPortGroup('Device Select', [deviceSelect]);
-op.setPortGroup('', [learn, resetIn]);
-/* OPS */
-const opPrefix = 'Ops.Devices.Midi.Midi';
-const OPS = {
-  CC: { NAMESPACE: `${opPrefix}CC`, IN_PORT: 'CC Index' },
-  NRPN: { NAMESPACE: `${opPrefix}NRPN`, IN_PORT: 'NRPN Index' },
-  Note: { NAMESPACE: `${opPrefix}Note`, IN_PORT: 'Note' },
-};
-/* OUTPUTS */
-const OUTPUT_KEYS = [
-  'Event',
-  'Note',
-  'CC',
-
-  // "Channel Pressure",
-  // "Poly Key Pressure",
-  'NRPN',
-  // 'SysEx',
-  // "Pitchbend",
-  'Clock',
-];
-
-// unused midi signals
-const NOT_YET_USED = ['Pitchbend', 'Channel Pressure', 'Poly Key Pressure', 'SysEx'];
-
-// create outputs from keys specified above
-const OUTPUTS = OUTPUT_KEYS.reduce((acc, cur) => {
-  acc[cur] = op.outObject(cur);
-  return acc;
-}, {});
-
-op.setPortGroup('MIDI Event', [OUTPUTS.Event]);
-op.setPortGroup(
-  'MIDI Event by Type',
-  Object.keys(OUTPUTS).map(key => key !== 'Event' && OUTPUTS[key]),
-);
-
-/* CONSTANTS */
-/* http://www.indiana.edu/~emusic/etext/MIDI/chapter3_MIDI3.shtml */
-const NOTE_VALUES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-
-/* MIDI STATUS BYTES */
-const NOTE_OFF = 0x8;
-const NOTE_ON = 0x9;
-const POLY_KEY_PRESSURE = 0xa;
-const CC = 0xb;
-const PROGRAM_CHANGE = 0xc;
-const CHANNEL_PRESSURE = 0xd;
-const PITCH_BEND = 0xe;
-const CLOCK = 0xf8;
-const CLOCK_START = 0xfa;
-const CLOCK_CONTINUE = 0xfb;
-const CLOCK_STOP = 0xfc;
-const CLOCK_SIGNALS = [CLOCK, CLOCK_START, CLOCK_CONTINUE, CLOCK_STOP];
-
-const MESSAGE_TYPES = {
-  [NOTE_OFF]: 'Note',
-  [NOTE_ON]: 'Note',
-  [POLY_KEY_PRESSURE]: 'Poly Key Pressure',
-  [CC]: 'CC',
-  [PROGRAM_CHANGE]: 'Program Change',
-  [CHANNEL_PRESSURE]: 'Channel Pressure',
-  [PITCH_BEND]: 'Pitchbend',
-  [CLOCK]: 'Clock',
-};
-
-/* UTILITY FUNCTIONS */
-function getMIDIChannel(statusByte) {
-  return statusByte & 0x0f;
-}
-function getMessageType(statusByte) {
-  return MESSAGE_TYPES[statusByte >> 4] || 'UNKNOWN';
-}
-function getMIDINote(dataByte1LSB) {
-  return dataByte1LSB <= 126
-    ? `${NOTE_VALUES[dataByte1LSB % 12]}${Math.floor(dataByte1LSB / 12) - 2} - ${dataByte1LSB}`
-    : 'NO NOTE';
-}
-const NRPN_CCS = [98, 99, 6, 38];
-const NRPN_VALUE_MSB = 6;
-const NRPN_VALUE_LSB = 38;
-const NRPN_INDEX_MSB = 99;
-const NRPN_INDEX_LSB = 98;
-
-var nrpnIndexMSB = null;
-var nrpnIndexLSB = null;
-var nrpnValueMSB = null;
-var nrpnValueLSB = null;
-
-var nrpnIndex_ = null;
-var nrpnValue_ = null;
-
-/* NRPN implementations differ, we need to check whether the cycle starts with LSB or MSB */
-const MSB_START = 9;
-const LSB_START = 10;
-var FIRST_CC = null;
-var ROUTINE_TYPE = null;
-/* the state of the current NRPN construction cycle */
-
-/* eslint-disable */
-var lastLSB = null;
-var lastMSB = null;
-/* eslint-enable */
-
-const LSBRoutine = (ccIndex, ccValue) => {
-  // NOTE: this is still the MSBRoutine
-  if (ccIndex === NRPN_INDEX_MSB) nrpnIndexMSB = ccValue << 7;
-  else if (ccIndex === NRPN_INDEX_LSB) nrpnIndexLSB = ccValue;
-
-  nrpnIndex_ = nrpnIndexMSB | nrpnIndexLSB;
-
-  if (typeof nrpnIndex_ === 'number') {
-    if (ccIndex === NRPN_VALUE_MSB) {
-      nrpnValueMSB = ccValue << 7;
-
-      lastMSB = ccValue;
-      if (typeof nrpnValueLSB === 'number') {
-        nrpnValue_ = nrpnValueMSB | nrpnValueLSB;
-        return [nrpnIndex_, nrpnValue_];
-      }
-    } else if (ccIndex === NRPN_VALUE_LSB) {
-      nrpnValueLSB = ccValue;
-      lastLSB = ccValue;
-      nrpnValue_ = nrpnValueMSB | nrpnValueLSB;
-      return [nrpnIndex_, nrpnValue_];
-    }
-  }
-
-  return null;
-};
-
-const MSBRoutine = (ccIndex, ccValue) => {
-  if (ccIndex === NRPN_INDEX_MSB) nrpnIndexMSB = ccValue << 7;
-  else if (ccIndex === NRPN_INDEX_LSB) nrpnIndexLSB = ccValue;
-
-  nrpnIndex_ = nrpnIndexMSB | nrpnIndexLSB;
-  if (typeof nrpnIndex_ === 'number') {
-    if (ccIndex === NRPN_VALUE_MSB) {
-      nrpnValueMSB = ccValue << 7;
-
-      if (typeof nrpnValueLSB === 'number') {
-        nrpnValue_ = nrpnValueMSB | nrpnValueLSB;
-        return [nrpnIndex_, nrpnValue_];
-      }
-    } else if (ccIndex === NRPN_VALUE_LSB) {
-      nrpnValueLSB = ccValue;
-      nrpnValue_ = nrpnValueMSB | nrpnValueLSB;
-      return [nrpnIndex_, nrpnValue_];
-    }
-  }
-
-  return null;
-};
-
-const NRPNRoutine = (ccIndex, ccValue) => {
-  if (FIRST_CC === null) {
-    FIRST_CC = ccIndex;
-    ROUTINE_TYPE = FIRST_CC === NRPN_INDEX_MSB ? MSB_START : LSB_START;
-  }
-  if (ROUTINE_TYPE === MSB_START) {
-    return MSBRoutine(ccIndex, ccValue);
-  }
-  if (ROUTINE_TYPE === LSB_START) {
-    return LSBRoutine(ccIndex, ccValue);
-  }
-  return null;
-};
-var midi = null;
-
-/* INIT FUNCTIONS */
-var outputDevice = null;
-
-function onMIDIMessage(_event) {
-  if (!_event) return;
-
-  const { data } = _event;
-  const [statusByte, LSB, MSB] = data;
-
-  if (CLOCK_SIGNALS.includes(statusByte)) {
-    OUTPUTS.Clock.set(_event);
-    return;
-  }
-
-  if (statusByte > 248) {
-    // we don't use statusbytes above 248 for now
-    return;
-  }
-
-  const deviceName = deviceSelect.get();
-  const channel = getMIDIChannel(statusByte);
-
-  let messageType = getMessageType(statusByte);
-  const outputIndex = LSB;
-  const outputValue = MSB;
-
-  const isNRPNByte = messageType === 'CC' && NRPN_CCS.some(cc => cc === LSB);
-  let nrpnIndex;
-  let nrpnValue;
-
-  if (isNRPNByte) {
-    const nrpnValueRes = NRPNRoutine(LSB, MSB);
-    if (nrpnValueRes) {
-      const [index, value] = nrpnValueRes;
-      messageType = 'NRPN';
-      nrpnIndex = index;
-      nrpnValue = value;
-    }
-  }
-
-  const newEvent = Object.assign(
-    {
-      /* OLD EVENT v */
-      deviceName,
-      output: outputDevice,
-      inputId: 0, // what is this for?
-      messageType,
-      // ...,
-      index: outputIndex,
-      value: outputValue,
-
-      cmd: data[0] >> 4,
-      channel: data[0] & 0xf,
-      type: data[0] & 0xf0,
-      note: data[1],
-      velocity: data[2],
-      data,
-    },
-    messageType === 'Note' && {
-      newNote: [LSB, getMIDINote(LSB)],
-      velocity: outputValue,
-    },
-    messageType === 'NRPN' && { nrpnIndex, nrpnValue },
-  );
-
-  if (learning) {
-    if (['Note', 'CC', 'NRPN'].includes(messageType)) {
-      const newOp = op.patch.addOp(OPS[messageType].NAMESPACE, {
-        translate: {
-          x: op.uiAttribs.translate.x,
-          y: op.uiAttribs.translate.y + 100,
-        },
-      });
-
-      op.patch.link(op, messageType, newOp, 'MIDI Event In');
-      newOp.getPortByName('MIDI Channel').set(channel + 1);
-
-      if (messageType === 'Note') {
-        const {
-          newNote: [, noteName],
-        } = newEvent;
-        newOp.getPortByName('Note').set(noteName);
-      }
-
-      if (messageType === 'CC') {
-        const { index } = newEvent;
-        newOp.getPortByName('CC Index').set(index);
-      }
-
-      if (messageType === 'NRPN') {
-        newOp.getPortByName('NRPN Index').set(nrpnIndex);
-      }
-    }
-    learning = false;
-  }
-  // if (normalize.get()) event.velocity /= 127;
-
-  // with pressure and tilt off
-  // note off: 128, cmd: 8
-  // note on: 144, cmd: 9
-  // pressure / tilt on
-  // pressure: 176, cmd 11:
-  // bend: 224, cmd: 14
-  OUTPUTS.Event.set(null);
-  OUTPUTS.Event.set(newEvent);
-
-  if (messageType !== 'UNKNOWN' && !NOT_YET_USED.includes(messageType)) {
-    OUTPUTS[messageType].set(null);
-    OUTPUTS[messageType].set(newEvent);
-  }
-}
-
-function setDevice() {
-  if (!midi || !midi.inputs) return;
-  const name = deviceSelect.get();
-
-  op.setTitle(`Midi ${name}`);
-
-  const inputs = midi.inputs.values();
-  const outputs = midi.outputs.values();
-
-  for (let input = inputs.next(); input && !input.done; input = inputs.next()) {
-    if (input.value.name === name) {
-      input.value.onmidimessage = onMIDIMessage;
-    } else if (input.value.onmidimessage === onMIDIMessage) input.value.onmidimessage = null;
-  }
-
-  for (let output = outputs.next(); output && !output.done; output = outputs.next()) {
-    if (output.value.name === name) {
-      outputDevice = midi.outputs.get(output.value.id);
-    }
-  }
-  // doResetLights();
-}
-
-function onMIDIFailure() {
-  op.uiAttr({ warning: 'No MIDI support in your browser.' });
-}
-
-function onMIDISuccess(midiAccess) {
-  midi = midiAccess;
-  const inputs = midi.inputs.values();
-  op.uiAttr({ info: 'no midi devices found' });
-
-  const deviceNames = [];
-
-  for (let input = inputs.next(); input && !input.done; input = inputs.next()) {
-    deviceNames.push(input.value.name);
-  }
-
-  deviceSelect.uiAttribs.values = deviceNames;
-
-  if (CABLES.UI) gui.patch().showOpParams(op);
-  setDevice();
-}
-
-deviceSelect.onChange = setDevice;
-
-if (navigator.requestMIDIAccess) {
-  navigator.requestMIDIAccess({ sysex: false }).then(onMIDISuccess, onMIDIFailure);
-} else onMIDIFailure();
-
-resetIn.onTriggered = () => {
-  if (!outputDevice) return;
-  for (let i = 0; i < 12; i += 1) {
-    outputDevice.send([0x90, i, 0]);
-    outputDevice.send([0xb0, i, 0]);
-  }
-};
-
-learn.onTriggered = () => {
-  if (!outputDevice) return;
-  learning = true;
-};
-/*
-
-function doResetLights() {
-  if (outputDevice && resetLights.get()) {
-    for (let i = 0; i < 128; i++) {
-      outputDevice.send([0x90, i, 0]);
-      outputDevice.send([0xb0, i, 0]);
-    }
-  }
-}
-*/
-
-
-};
-
-Ops.Devices.Midi.MidiInputDevice_v2.prototype = new CABLES.Op();
-CABLES.OPS["484b3a00-41b7-4e3f-8a99-a1b32a764eff"]={f:Ops.Devices.Midi.MidiInputDevice_v2,objName:"Ops.Devices.Midi.MidiInputDevice_v2"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Devices.Midi.MidiNote
-// 
-// **************************************************************
-
-Ops.Devices.Midi.MidiNote = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-/* UTIL */
-const NOTE_OFF = 0x8;
-const NOTE_ON = 0x9;
-const NOTE_VALUES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-
-const MIDIChannels = Array.from(Array(16).keys()).map(i => i + 1);
-
-function getMIDINote(dataByte1LSB) {
-  return dataByte1LSB <= 126
-    ? `${NOTE_VALUES[dataByte1LSB % 12]}${Math.floor(dataByte1LSB / 12) - 2} - ${dataByte1LSB}`
-    : 'NO NOTE';
-}
-
-const noteValues = Array.from(Array(128).keys(), key => getMIDINote(key));
-
-/* IN */
-const inEvent = op.inObject('MIDI Event In');
-const midiChannelDropdown = op.inValueSelect('MIDI Channel', MIDIChannels, 1);
-const noteDropdown = op.inValueSelect('Note', noteValues, 'none');
-const normalizeDropdown = op.inSwitch(
-  'Normalize Velocity',
-  ['none', '0 to 1', '-1 to 1'],
-  'none',
-);
-const gateType = op.inBool('Toggle Gate', false);
-const learn = op.inTriggerButton('learn');
-const clear = op.inTriggerButton('clear');
-
-op.setPortGroup('MIDI', [inEvent, midiChannelDropdown]);
-op.setPortGroup('', [learn, clear]);
-op.setPortGroup('Note', [noteDropdown, normalizeDropdown, gateType]);
-
-/* OUT */
-const eventOut = op.outObject('MIDI Event Out');
-const triggerOut = op.outTrigger('Trigger Out');
-const currentNoteOut = op.outValue('Current Note');
-const velocityOut = op.outValue('Velocity');
-const gateOut = op.outValueBool('Gate');
-
-op.setPortGroup('MIDI/Trigger Out', [eventOut, triggerOut]);
-op.setPortGroup('Note Out', [currentNoteOut, velocityOut, gateOut]);
-noteDropdown.set(0);
-midiChannelDropdown.set(1);
-
-let learning = false;
-learn.onTriggered = () => {
-  learning = true;
-};
-
-clear.onTriggered = () => {
-  noteDropdown.set(0);
-  midiChannelDropdown.set(1);
-  normalizeDropdown.set(normalizeDropdown.get('none'));
-  gateType.set(false);
-  if(CABLES.UI && gui.patch().isCurrentOp(op)) gui.patch().showOpParams(op);
-};
-
-gateType.onChange = () => {
-  if (!gateType.get()) gateOut.set(false);
-};
-
-inEvent.onChange = () => {
-  const event = inEvent.get();
-  if (!event) return;
-  if (event.messageType !== 'Note') return;
-  if (!event.newNote) return;
-
-  const [statusByte] = event.data;
-
-  const { newNote, velocity } = event;
-  const [noteIndex, noteName] = newNote;
-
-  if (learning || noteDropdown.onChange) {
-    noteDropdown.set(noteName);
-    midiChannelDropdown.set(event.channel + 1);
-
-    learning = false;
-
-    if (CABLES.UI) {
-      op.uiAttr({ info: `bound to Note: ${noteDropdown.get()}` });
-      gui.patch().showOpParams(op);
-    }
-  }
-
-  if (event.channel === midiChannelDropdown.get() - 1) {
-    if (getMIDINote(noteIndex) === noteDropdown.get()) {
-      if ((statusByte >> 4 === NOTE_OFF || velocity === 0) && !gateType.get()) {
-        gateOut.set(false);
-        velocityOut.set(0);
-      } else if (statusByte >> 4 === NOTE_ON) {
-        if (gateType.get()) {
-          gateOut.set(!gateOut.get());
-        } else {
-          gateOut.set(true);
-        }
-        currentNoteOut.set(noteIndex);
-        if (normalizeDropdown.get() === '0 to 1') {
-          // (max'-min')/(max-min)*(value-min)+min'
-          velocityOut.set((1 / 126) * (velocity - 1));
-          triggerOut.trigger();
-        } else if (normalizeDropdown.get() === '-1 to 1') {
-          // (max'-min')/(max-min)*(value-min)+min'
-          const normalizedValue = (2 / 126) * (velocity - 1) - 1;
-          velocityOut.set(normalizedValue);
-          triggerOut.trigger();
-        } else if (normalizeDropdown.get() === 'none') {
-          velocityOut.set(velocity);
-          triggerOut.trigger();
-        }
-      }
-    } else if (noteDropdown.get() === 0) {
-      // no note selected
-      if ((statusByte >> 4 === NOTE_OFF || velocity === 0) && !gateType.get()) {
-        gateOut.set(false);
-        velocityOut.set(0);
-      } else if (statusByte >> 4 === NOTE_ON) {
-        if (gateType.get()) {
-          gateOut.set(!gateOut.get());
-        } else {
-          gateOut.set(true);
-        }
-        currentNoteOut.set(noteIndex);
-        if (normalizeDropdown.get() === '0 to 1') {
-          // (max'-min')/(max-min)*(value-min)+min'
-          velocityOut.set((1 / 126) * (velocity - 1));
-          triggerOut.trigger();
-        } else if (normalizeDropdown.get() === '-1 to 1') {
-          // (max'-min')/(max-min)*(value-min)+min'
-          const normalizedValue = (2 / 126) * (velocity - 1) - 1;
-          velocityOut.set(normalizedValue);
-          triggerOut.trigger();
-        } else if (normalizeDropdown.get() === 'none') {
-          velocityOut.set(velocity);
-          triggerOut.trigger();
-        }
-      }
-    }
-  }
-
-  eventOut.set(event);
-};
-
-
-};
-
-Ops.Devices.Midi.MidiNote.prototype = new CABLES.Op();
-CABLES.OPS["517ed1fc-6110-4611-9cc7-8dd459191c65"]={f:Ops.Devices.Midi.MidiNote,objName:"Ops.Devices.Midi.MidiNote"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Anim.BoolAnim
-// 
-// **************************************************************
-
-Ops.Anim.BoolAnim = function()
-{
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-var anim=new CABLES.Anim();
+const shader=new CGL.Shader(cgl);
+shader.setSource(shader.getDefaultVertexShader(),attachments.glitchnoise_frag);
 
 const
-    exe=op.inTrigger("exe"),
-    bool=op.inValueBool("bool"),
-    pease=anim.createPort(op,"easing"),
-    duration=op.inValue("duration",0.5),
-    dir=op.inValueSelect("Direction",["Animate Both","Only True","Only False"],"Both"),
-    valueFalse=op.inValue("value false",0),
-    valueTrue=op.inValue("value true",1),
-    next=op.outTrigger("trigger"),
-    value=op.outValue("value"),
-    finished=op.outValueBool("finished"),
-    finishedTrigger=op.outTrigger("Finished Trigger");
+    textureUniform=new CGL.Uniform(shader,'t','tex',TEX_SLOT),
+    uniformAmount=new CGL.Uniform(shader,'f','amount',amount),
+    timeUniform=new CGL.Uniform(shader,'f','time',time),
+    frequencyUniform=new CGL.Uniform(shader,'f','frequency',inFrequency),
+    strengthUniform=new CGL.Uniform(shader,'f','strength',inStrength),
+    sizeAUniform=new CGL.Uniform(shader,'f','blockSizeA',inBlockSizeA),
+    sizeBUniform=new CGL.Uniform(shader,'f','blockSizeB',inBlockSizeB),
+    sizeCUniform=new CGL.Uniform(shader,'f','blockSizeC',inBlockSizeC),
+    sizeDUniform=new CGL.Uniform(shader,'f','blockSizeD',inBlockSizeD),
+    scrollXUniform=new CGL.Uniform(shader,'f','scrollX',inScrollX),
+    scrollYUniform=new CGL.Uniform(shader,'f','scrollY',inScrollY);
 
+CGL.TextureEffect.setupBlending(op,shader,blendMode,amount);
 
-var startTime=CABLES.now();
-op.toWorkPortsNeedToBeLinked(exe);
-op.setPortGroup("Animation",[duration,pease]);
-op.setPortGroup("Values",[valueFalse,valueTrue]);
-
-dir.onChange=bool.onChange=valueFalse.onChange=valueTrue.onChange=duration.onChange=setAnim;
-setAnim();
-
-
-function setAnim()
+render.onTriggered=function()
 {
-    finished.set(false);
-    var now=(CABLES.now()-startTime)/1000;
-    var oldValue=anim.getValue(now);
-    anim.clear();
+    if(!CGL.TextureEffect.checkOpInEffect(op)) return;
 
-    anim.setValue(now,oldValue);
+    cgl.setShader(shader);
+    cgl.currentTextureEffect.bind();
+
+    cgl.setTexture(TEX_SLOT, cgl.currentTextureEffect.getCurrentSourceTexture().tex );
+
+    cgl.currentTextureEffect.finish();
+    cgl.setPreviousShader();
+
+    trigger.trigger();
+};
+
+};
+
+Ops.Gl.TextureEffects.Noise.GlitchNoise.prototype = new CABLES.Op();
+CABLES.OPS["a55eea17-efb8-4418-bcf9-7fefeecf40e5"]={f:Ops.Gl.TextureEffects.Noise.GlitchNoise,objName:"Ops.Gl.TextureEffects.Noise.GlitchNoise"};
 
 
-    if(!bool.get())
-    {
-        if(dir.get()!='Only True' ) anim.setValue(now+duration.get(),valueFalse.get());
-            else anim.setValue(now,valueFalse.get());
-    }
-    else
-    {
-        if(dir.get()!='Only False' ) anim.setValue(now+duration.get(),valueTrue.get());
-            else anim.setValue(now,valueTrue.get());
 
-    }
+
+// **************************************************************
+// 
+// Ops.Gl.TextureEffects.PixelDisplacement_v3
+// 
+// **************************************************************
+
+Ops.Gl.TextureEffects.PixelDisplacement_v3 = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={pixeldisplace3_frag:"IN vec2 texCoord;\nUNI sampler2D tex;\nUNI sampler2D displaceTex;\nUNI float amountX;\nUNI float amountY;\nUNI float amount;\n\n{{CGL.BLENDMODES}}\n\nvec3 getOffset(vec3 offset)\n{\n    #ifdef ZERO_BLACK\n        return offset;\n    #endif\n\n    #ifdef ZERO_GREY\n        return offset*2.0-1.0;\n    #endif\n}\n\nfloat getOffset(float offset)\n{\n    #ifdef ZERO_BLACK\n        return offset;\n    #endif\n\n    #ifdef ZERO_GREY\n        return offset*2.0-1.0;\n    #endif\n}\n\nvoid main()\n{\n    vec3 offset=texture(displaceTex,texCoord).rgb;\n    float x,y;\n\n    #ifdef INPUT_REDGREEN\n        offset=getOffset(offset);\n        x=offset.r*amountX+texCoord.x;\n        y=offset.g*amountY+texCoord.y;\n    #endif\n    #ifdef INPUT_RED\n        offset=getOffset(offset);\n        x=offset.r*amountX+texCoord.x;\n        y=offset.r*amountY+texCoord.y;\n    #endif\n    #ifdef INPUT_GREEN\n        offset=getOffset(offset);\n        x=offset.g*amountX+texCoord.x;\n        y=offset.g*amountY+texCoord.y;\n    #endif\n    #ifdef INPUT_BLUE\n        offset=getOffset(offset);\n        x=offset.b*amountX+texCoord.x;\n        y=offset.b*amountY+texCoord.y;\n    #endif\n    #ifdef INPUT_LUMINANCE\n        float o=dot(vec3(0.2126,0.7152,0.0722), offset);\n        o=getOffset(o);\n        x=o*amountX+texCoord.x;\n        y=o*amountY+texCoord.y;\n    #endif\n    #ifdef WRAP_CLAMP\n        x=clamp(x,0.0,1.0);\n        y=clamp(y,0.0,1.0);\n    #endif\n    #ifdef WRAP_REPEAT\n        x=mod(x,1.0);\n        y=mod(y,1.0);\n    #endif\n    #ifdef WRAP_MIRROR\n        float mx=mod(x,2.0);\n        float my=mod(y,2.0);\n        x=abs((floor(mx)-fract(mx)));\n        y=abs((floor(my)-fract(my)));\n    #endif\n\n    vec4 col=texture(tex,vec2(x,y));\n    vec4 base=texture(tex,texCoord);\n\n    outColor=cgl_blend(base,col,amount);\n}",};
+const
+    render=op.inTrigger("render"),
+    displaceTex=op.inTexture("displaceTex"),
+    blendMode=CGL.TextureEffect.AddBlendSelect(op,"Blend Mode","normal"),
+    amount=op.inValueSlider("Amount",1),
+    amountX=op.inValueSlider("amount X"),
+    amountY=op.inValueSlider("amount Y"),
+    inWrap=op.inSwitch("Wrap",["Mirror","Clamp","Repeat"],"Mirror"),
+    inInput=op.inValueSelect("Input",["Luminance","RedGreen","Red","Green","Blue"],"Luminance"),
+    inZero=op.inSwitch("Zero Displace",["Grey","Black"],"Grey"),
+    // displaceTex=op.inTexture("displaceTex"),
+    trigger=op.outTrigger("trigger");
+
+op.setPortGroup("Axis Displacement Strength",[amountX,amountY]);
+op.setPortGroup("Modes",[inWrap,inInput]);
+op.toWorkPortsNeedToBeLinked(displaceTex);
+
+const
+    cgl=op.patch.cgl,
+    shader=new CGL.Shader(cgl);
+
+shader.setSource(shader.getDefaultVertexShader(),attachments.pixeldisplace3_frag);
+
+const
+    textureUniform=new CGL.Uniform(shader,'t','tex',0),
+    textureDisplaceUniform=new CGL.Uniform(shader,'t','displaceTex',1),
+    amountXUniform=new CGL.Uniform(shader,'f','amountX',amountX),
+    amountYUniform=new CGL.Uniform(shader,'f','amountY',amountY),
+    amountUniform=new CGL.Uniform(shader,'f','amount',amount);
+
+inZero.onChange=updateZero;
+inWrap.onChange=updateWrap;
+inInput.onChange=updateInput;
+
+updateWrap();
+updateInput();
+updateZero();
+
+CGL.TextureEffect.setupBlending(op,shader,blendMode,amount);
+
+function updateZero()
+{
+    shader.removeDefine("ZERO_BLACK");
+    shader.removeDefine("ZERO_GREY");
+    shader.define("ZERO_"+(inZero.get()+'').toUpperCase());
 }
 
-
-exe.onTriggered=function()
+function updateWrap()
 {
-    var t=(CABLES.now()-startTime)/1000;
-    value.set(anim.getValue(t));
+    shader.removeDefine("WRAP_CLAMP");
+    shader.removeDefine("WRAP_REPEAT");
+    shader.removeDefine("WRAP_MIRROR");
+    shader.define("WRAP_"+(inWrap.get()+'').toUpperCase());
+}
 
-    if(anim.hasEnded(t))
-    {
-        if(!finished.get()) finishedTrigger.trigger();
-        finished.set(true);
-    }
-
-    next.trigger();
-};
-
-
-
-};
-
-Ops.Anim.BoolAnim.prototype = new CABLES.Op();
-CABLES.OPS["06ad9d35-ccf5-4d31-889c-e23fa062588a"]={f:Ops.Anim.BoolAnim,objName:"Ops.Anim.BoolAnim"};
-
-
-
-
-// **************************************************************
-// 
-// Ops.Devices.Midi.MidiCC
-// 
-// **************************************************************
-
-Ops.Devices.Midi.MidiCC = function()
+function updateInput()
 {
-CABLES.Op.apply(this,arguments);
-const op=this;
-const attachments={};
-/* UTIL */
-const MIDIChannels = Array.from(Array(16).keys(), i => i + 1);
-/* IN */
-const inEvent = op.inObject('MIDI Event In');
-const midiChannelDropdown = op.inValueSelect('MIDI Channel', MIDIChannels, 1);
-const ccIndexDropdown = op.inValueInt('CC Index', 0);
-const normalizeDropdown = op.inSwitch('Normalize', ['none', '0 to 1', '-1 to 1'], 'none');
-const learn = op.inTriggerButton('learn');
-const clear = op.inTriggerButton('clear');
+    shader.removeDefine("INPUT_LUMINANCE");
+    shader.removeDefine("INPUT_REDGREEN");
+    shader.removeDefine("INPUT_RED");
+    shader.define("INPUT_"+(inInput.get()+'').toUpperCase());
+}
 
-op.setPortGroup('MIDI', [inEvent, midiChannelDropdown]);
-op.setPortGroup('CC', [ccIndexDropdown, normalizeDropdown]);
-op.setPortGroup('', [learn, clear]);
+render.onTriggered=function()
+{
+    if(!CGL.TextureEffect.checkOpInEffect(op)) return;
 
-/* OUT */
-const eventOut = op.outObject('Event');
-const triggerOut = op.outTrigger('Trigger Out');
-const ccIndexOut = op.outValue('CC Index Out');
-const ccValueOut = op.outValue('CC Value Out');
+    cgl.setShader(shader);
+    cgl.currentTextureEffect.bind();
 
-op.setPortGroup('MIDI/Trigger Out', [eventOut, triggerOut]);
-op.setPortGroup('CC Out', [ccIndexOut, ccValueOut]);
+    cgl.setTexture(0, cgl.currentTextureEffect.getCurrentSourceTexture().tex );
+    if(displaceTex.get()) cgl.setTexture(1, displaceTex.get().tex );
 
-ccIndexDropdown.set(0);
-midiChannelDropdown.set(1);
-normalizeDropdown.set(normalizeDropdown.get('none'));
+    cgl.currentTextureEffect.finish();
+    cgl.setPreviousShader();
 
-let learning = false;
-learn.onTriggered = () => {
-  learning = true;
-};
-
-clear.onTriggered = () => {
-  ccIndexDropdown.set(0);
-  midiChannelDropdown.set(1);
-  normalizeDropdown.set(normalizeDropdown.get('none'));
-  if(CABLES.UI && gui.patch().isCurrentOp(op)) gui.patch().showOpParams(op);
-};
-
-inEvent.onChange = () => {
-  const event = inEvent.get();
-  if (!event) return;
-  if (event.messageType !== 'CC') return;
-
-  const [, ccIndex, ccValue] = event.data;
-  if (learning) {
-    ccIndexDropdown.set(ccIndex);
-    midiChannelDropdown.set(event.channel + 1);
-
-    learning = false;
-
-    if (CABLES.UI) {
-      op.uiAttr({ info: `bound to CC: ${ccIndexDropdown.get()}` });
-      gui.patch().showOpParams(op);
-    }
-  }
-
-  if (event.channel === midiChannelDropdown.get() - 1) {
-    if (ccIndex === ccIndexDropdown.get()) {
-      ccIndexOut.set(ccIndex);
-
-      if (normalizeDropdown.get() === '0 to 1') {
-        ccValueOut.set(ccValue / 127);
-        triggerOut.trigger();
-      } else if (normalizeDropdown.get() === '-1 to 1') {
-        const normalizedValue = ccValue / (127 / 2) - 1;
-        triggerOut.trigger();
-        ccValueOut.set(normalizedValue);
-      } else if (normalizeDropdown.get() === 'none') {
-        triggerOut.trigger();
-        ccValueOut.set(ccValue);
-      } else {
-        ccValue.set(0);
-      }
-    }
-  }
-
-  eventOut.set(event);
+    trigger.trigger();
 };
 
 
 };
 
-Ops.Devices.Midi.MidiCC.prototype = new CABLES.Op();
-CABLES.OPS["28616ffc-a761-4792-9076-8625f9ccc965"]={f:Ops.Devices.Midi.MidiCC,objName:"Ops.Devices.Midi.MidiCC"};
+Ops.Gl.TextureEffects.PixelDisplacement_v3.prototype = new CABLES.Op();
+CABLES.OPS["c089646e-9324-48b2-8b32-81240408222e"]={f:Ops.Gl.TextureEffects.PixelDisplacement_v3,objName:"Ops.Gl.TextureEffects.PixelDisplacement_v3"};
 
 
 
 
 // **************************************************************
 // 
-// Ops.Value.Number
+// Ops.Math.Abs
 // 
 // **************************************************************
 
-Ops.Value.Number = function()
+Ops.Math.Abs = function()
 {
 CABLES.Op.apply(this,arguments);
 const op=this;
 const attachments={};
-const v=op.inValueFloat("value");
+const number=op.inValue("number");
 const result=op.outValue("result");
 
-v.onChange=exec;
-
-function exec()
+number.onChange=function()
 {
-    result.set(parseFloat(v.get()));
+    result.set( Math.abs(number.get()) );
+};
+
+};
+
+Ops.Math.Abs.prototype = new CABLES.Op();
+CABLES.OPS["6b5af21d-065f-44d2-9442-8b7a254753f6"]={f:Ops.Math.Abs,objName:"Ops.Math.Abs"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.TextureEffects.ChromaticAberration
+// 
+// **************************************************************
+
+Ops.Gl.TextureEffects.ChromaticAberration = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={chromatic_frag:"\nIN vec2 texCoord;\nUNI sampler2D tex;\nUNI float pixel;\nUNI float onePixel;\nUNI float amount;\nUNI float lensDistort;\n\n#ifdef MASK\nUNI sampler2D texMask;\n#endif\n\n{{CGL.BLENDMODES}}\n\nvoid main()\n{\n   vec4 base=texture(tex,texCoord);\n   vec4 col=texture(tex,texCoord);\n\n   vec2 tc=texCoord;;\n   float pix = pixel;\n   if(lensDistort>0.0)\n   {\n       float dist = distance(texCoord, vec2(0.5,0.5));\n       tc-=0.5;\n       tc *=smoothstep(-0.9,1.0*lensDistort,1.0-dist);\n       tc+=0.5;\n   }\n\n    #ifdef MASK\n        vec4 m=texture(texMask,texCoord);\n        pix*=m.r*m.a;\n    #endif\n\n    #ifdef SMOOTH\n    #ifdef WEBGL2\n        float numSamples=round(pix/onePixel/4.0+1.0);\n        col.r=0.0;\n        col.b=0.0;\n\n        for(float off=0.0;off<numSamples;off++)\n        {\n            float diff=(pix/numSamples)*off;\n            col.r+=texture(tex,vec2(tc.x+diff,tc.y)).r/numSamples;\n            col.b+=texture(tex,vec2(tc.x-diff,tc.y)).b/numSamples;\n        }\n    #endif\n    #endif\n\n    #ifndef SMOOTH\n        col.r=texture(tex,vec2(tc.x+pix,tc.y)).r;\n        col.b=texture(tex,vec2(tc.x-pix,tc.y)).b;\n    #endif\n\n//   outColor = col;\n   outColor= cgl_blend(base,col,amount);\n\n}\n",};
+const
+    render=op.inTrigger('render'),
+    blendMode=CGL.TextureEffect.AddBlendSelect(op,"Blend Mode","normal"),
+    amount=op.inValueSlider("Amount",1),
+    pixel=op.inValue("Pixel",5),
+    lensDistort=op.inValueSlider("Lens Distort",0),
+    doSmooth=op.inValueBool("Smooth",false),
+    textureMask=op.inTexture("Mask"),
+    trigger=op.outTrigger('trigger');
+
+const cgl=op.patch.cgl;
+const shader=new CGL.Shader(cgl,"chromatic");
+
+CGL.TextureEffect.setupBlending(op,shader,blendMode,amount);
+
+shader.setSource(shader.getDefaultVertexShader(),attachments.chromatic_frag);
+const textureUniform=new CGL.Uniform(shader,'t','tex',0),
+    uniPixel=new CGL.Uniform(shader,'f','pixel',0),
+    uniOnePixel=new CGL.Uniform(shader,'f','onePixel',0),
+    unitexMask=new CGL.Uniform(shader,'t','texMask',1),
+    uniAmount=new CGL.Uniform(shader,'f','amount',amount),
+    unilensDistort=new CGL.Uniform(shader,'f','lensDistort',lensDistort);
+
+doSmooth.onChange=function()
+{
+    if(doSmooth.get())shader.define("SMOOTH");
+        else shader.removeDefine("SMOOTH");
+};
+
+textureMask.onChange=function()
+{
+    if(textureMask.get())shader.define("MASK");
+        else shader.removeDefine("MASK");
+};
+
+render.onTriggered=function()
+{
+    if(!CGL.TextureEffect.checkOpInEffect(op)) return;
+
+    var texture=cgl.currentTextureEffect.getCurrentSourceTexture();
+
+    uniPixel.setValue(pixel.get()*(1/texture.width));
+    uniOnePixel.setValue(1/texture.width);
+
+    cgl.setShader(shader);
+    cgl.currentTextureEffect.bind();
+
+    cgl.setTexture(0, texture.tex );
+
+    if(textureMask.get()) cgl.setTexture(1, textureMask.get().tex );
+
+    cgl.currentTextureEffect.finish();
+    cgl.setPreviousShader();
+
+    trigger.trigger();
+};
+
+
+};
+
+Ops.Gl.TextureEffects.ChromaticAberration.prototype = new CABLES.Op();
+CABLES.OPS["38ac43a1-1757-48f4-9450-29f07ac0d376"]={f:Ops.Gl.TextureEffects.ChromaticAberration,objName:"Ops.Gl.TextureEffects.ChromaticAberration"};
+
+
+
+
+// **************************************************************
+// 
+// Ops.Gl.Meshes.Circle
+// 
+// **************************************************************
+
+Ops.Gl.Meshes.Circle = function()
+{
+CABLES.Op.apply(this,arguments);
+const op=this;
+const attachments={};
+const render=op.inTrigger("render");
+const radius=op.inValue('radius',0.5);
+const innerRadius=op.inValueSlider('innerRadius',0);
+const segments=op.inValueInt('segments',40);
+const percent=op.inValueSlider('percent',1);
+const steps=op.inValue('steps',0);
+const invertSteps=op.inValueBool('invertSteps',false);
+const mapping=op.inSwitch("mapping",['flat','round']);
+const drawSpline=op.inValueBool("Spline",false);
+const inDraw=op.inValueBool('Draw',true);
+const trigger=op.outTrigger('trigger');
+const geomOut=op.outObject("geometry");
+
+
+op.setPortGroup('Size',[radius,innerRadius]);
+op.setPortGroup('Display',[percent,steps,invertSteps]);
+
+mapping.set('flat');
+
+mapping.onChange=
+    segments.onChange=
+    radius.onChange=
+    innerRadius.onChange=
+    percent.onChange=
+    steps.onChange=
+    invertSteps.onChange=
+    drawSpline.onChange=calcLater;
+
+geomOut.ignoreValueSerialize=true;
+const cgl=op.patch.cgl;
+
+var geom=new CGL.Geometry("circle");
+var mesh=null;
+var lastSegs=-1;
+
+var oldPrim=0;
+var shader=null;
+var needsCalc=true;
+
+op.preRender=
+render.onTriggered=function()
+{
+    if(!CGL.TextureEffect.checkOpNotInTextureEffect(op)) return;
+
+    if(needsCalc)calc();
+    shader=cgl.getShader();
+    if(!shader)return;
+    oldPrim=shader.glPrimitive;
+
+    if(drawSpline.get()) shader.glPrimitive=cgl.gl.LINE_STRIP;
+
+    if(inDraw.get())mesh.render(shader);
+    trigger.trigger();
+
+    shader.glPrimitive=oldPrim;
+};
+
+function calc()
+{
+    var segs=Math.max(3,Math.floor(segments.get()));
+
+    geom.clear();
+
+    var faces=[];
+    var texCoords=[];
+    var vertexNormals=[];
+    var tangents=[];
+    var biTangents=[];
+
+    var i=0,degInRad=0;
+    var oldPosX=0,oldPosY=0;
+    var oldPosXTexCoord=0,oldPosYTexCoord=0;
+
+    var oldPosXIn=0,oldPosYIn=0;
+    var oldPosXTexCoordIn=0,oldPosYTexCoordIn=0;
+
+    var posxTexCoordIn=0,posyTexCoordIn=0;
+    var posxTexCoord=0,posyTexCoord=0;
+    var posx=0,posy=0;
+
+    var verts=[];
+
+    if(drawSpline.get())
+    {
+        var lastX=0;
+        var lastY=0;
+        var tc=[];
+        for (i=0; i <= segs*percent.get(); i++)
+        {
+            degInRad = (360/segs)*i*CGL.DEG2RAD;
+            posx=Math.cos(degInRad)*radius.get();
+            posy=Math.sin(degInRad)*radius.get();
+
+            posyTexCoord=0.5;
+
+            if(i>0)
+            {
+                verts.push(lastX);
+                verts.push(lastY);
+                verts.push(0);
+                posxTexCoord=1.0-(i-1)/segs;
+
+                tc.push(posxTexCoord,posyTexCoord);
+            }
+            verts.push(posx);
+            verts.push(posy);
+            verts.push(0);
+
+            lastX=posx;
+            lastY=posy;
+        }
+        geom.setPointVertices(verts);
+    }
+    else
+    if(innerRadius.get()<=0)
+    {
+
+        for (i=0; i <= segs*percent.get(); i++)
+        {
+            degInRad = (360/segs)*i*CGL.DEG2RAD;
+            posx=Math.cos(degInRad)*radius.get();
+            posy=Math.sin(degInRad)*radius.get();
+
+            if(mapping.get()=='flat')
+            {
+                posxTexCoord=(Math.cos(degInRad)+1.0)/2;
+                posyTexCoord=1.0-(Math.sin(degInRad)+1.0)/2;
+                posxTexCoordIn=0.5;
+                posyTexCoordIn=0.5;
+            }
+            else if(mapping.get()=='round')
+            {
+                posxTexCoord=1.0-i/segs;
+                posyTexCoord=0;
+                posxTexCoordIn=posxTexCoord;
+                posyTexCoordIn=1;
+            }
+
+            faces.push(
+                      [posx,posy,0],
+                      [oldPosX,oldPosY,0],
+                      [0,0,0]
+                      );
+
+            texCoords.push(posxTexCoord,posyTexCoord,oldPosXTexCoord,oldPosYTexCoord,posxTexCoordIn,posyTexCoordIn);
+            vertexNormals.push(0,0,1,0,0,1,0,0,1);
+            tangents.push(1,0,0,1,0,0,1,0,0);
+            biTangents.push(0,1,0,0,1,0,0,1,0);
+
+            oldPosXTexCoord=posxTexCoord;
+            oldPosYTexCoord=posyTexCoord;
+
+            oldPosX=posx;
+            oldPosY=posy;
+        }
+
+        geom=CGL.Geometry.buildFromFaces(faces);
+        geom.vertexNormals=vertexNormals;
+        geom.tangents=tangents;
+        geom.biTangents=biTangents;
+        geom.texCoords=texCoords;
+    }
+    else
+    {
+        var count=0;
+        var numSteps=segs*percent.get();
+        var pos=0;
+
+        for (i=0; i <= numSteps; i++)
+        {
+            count++;
+
+            degInRad = (360/segs)*i*CGL.DEG2RAD;
+            posx=Math.cos(degInRad)*radius.get();
+            posy=Math.sin(degInRad)*radius.get();
+
+            var posxIn=Math.cos(degInRad)*innerRadius.get()*radius.get();
+            var posyIn=Math.sin(degInRad)*innerRadius.get()*radius.get();
+
+            if(mapping.get()=='round')
+            {
+                posxTexCoord=1.0-i/segs;
+                posyTexCoord=0;
+                posxTexCoordIn=posxTexCoord;
+                posyTexCoordIn=1;
+            }
+
+            if(steps.get()===0.0 ||
+                (count%parseInt(steps.get(),10)===0 && !invertSteps.get()) ||
+                (count%parseInt(steps.get(),10)!==0 && invertSteps.get()) )
+            {
+                faces.push(
+                        [posx,posy,0],
+                        [oldPosX,oldPosY,0],
+                        [posxIn,posyIn,0]
+                        );
+
+                faces.push(
+                        [posxIn,posyIn,0],
+                        [oldPosX,oldPosY,0],
+                        [oldPosXIn,oldPosYIn,0]
+                        );
+
+                texCoords.push(
+                    posxTexCoord,0,
+                    oldPosXTexCoord,0,
+                    posxTexCoordIn,1,
+
+                    posxTexCoord,1,
+                    oldPosXTexCoord,0,
+                    oldPosXTexCoordIn,1);
+
+                vertexNormals.push(
+                    0,0,1,0,0,1,0,0,1,
+                    0,0,1,0,0,1,0,0,1
+                );
+                tangents.push(
+                    1,0,0,1,0,0,1,0,0,
+                    1,0,0,1,0,0,1,0,0
+                );
+                biTangents.push(
+                    0,1,0,0,1,0,0,1,0,
+                    0,1,0,0,1,0,0,1,0
+                );
+            }
+
+            oldPosXTexCoordIn=posxTexCoordIn;
+            oldPosYTexCoordIn=posyTexCoordIn;
+
+            oldPosXTexCoord=posxTexCoord;
+            oldPosYTexCoord=posyTexCoord;
+
+            oldPosX=posx;
+            oldPosY=posy;
+
+            oldPosXIn=posxIn;
+            oldPosYIn=posyIn;
+        }
+
+        geom=CGL.Geometry.buildFromFaces(faces);
+        geom.vertexNormals=vertexNormals;
+        geom.tangents=tangents;
+        geom.biTangents=biTangents;
+
+        if(mapping.get()=='flat') geom.mapTexCoords2d();
+            else geom.texCoords=texCoords;
+    }
+
+    geomOut.set(null);
+    geomOut.set(geom);
+
+    if(geom.vertices.length==0)return;
+    if(mesh) mesh.dispose();
+    mesh=null;
+    mesh=new CGL.Mesh(cgl,geom);
+    needsCalc=false;
+}
+
+function calcLater()
+{
+    needsCalc=true;
+}
+
+op.onDelete=function()
+{
+    if(mesh)mesh.dispose();
 }
 
 };
 
-Ops.Value.Number.prototype = new CABLES.Op();
-CABLES.OPS["8fb2bb5d-665a-4d0a-8079-12710ae453be"]={f:Ops.Value.Number,objName:"Ops.Value.Number"};
+Ops.Gl.Meshes.Circle.prototype = new CABLES.Op();
+CABLES.OPS["4db917cc-2cef-43f4-83d5-38c4572fe943"]={f:Ops.Gl.Meshes.Circle,objName:"Ops.Gl.Meshes.Circle"};
 
 
 

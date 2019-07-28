@@ -1,4 +1,4 @@
-const { dialog, app, BrowserWindow, Menu, globalShortcut } = require('electron');
+const { dialog, app, remote, BrowserWindow, Menu } = require('electron');
 const Store = require('./Store');
 const DaPlaya = require('./DaPlaya');
 
@@ -30,13 +30,14 @@ function createWindow() {
   mainWindow.setAutoHideMenuBar(true);
 
   // load the index.html of the patch
-  let patchIndexHtml = path.join(__dirname, `/patches/${patchId}/index.html`);
-  console.log('looking into', patchIndexHtml);
+  const userDataPath = (app || remote.app).getPath('userData');
+  let patchIndexHtml = path.join(userDataPath, `/patches/${patchId}/index.html`);
+  console.log("looking for patch in ", patchIndexHtml);
   if (!apiKey || !patchId || !fs.existsSync(patchIndexHtml)) {
     // load default patch if app is unconfigured or patch is not downloaded
+    console.log("loading default patch");
     patchIndexHtml = path.join(__dirname, '/patches/default/index.html');
   }
-  console.log('loading', patchIndexHtml);
   mainWindow.loadURL(url.format({
     pathname: patchIndexHtml,
     protocol: 'file:',
@@ -72,6 +73,7 @@ function createWindow() {
                   slashes: true
                 }));
               }, (message) => {
+                console.log(message);
                 dialog.showMessageBox(mainWindow, {
                   type: 'error',
                   title: 'error',
