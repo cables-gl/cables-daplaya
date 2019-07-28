@@ -19,9 +19,7 @@ class DaPlaya {
       url: url
     });
     request.setHeader('X-apikey', apiKey);
-    console.log("request to", url, apiKey);
     request.on('response', (response) => {
-      console.log("done");
       if (response.statusCode !== 200) {
         if(typeof errorCallback === "function"){
           errorCallback(response);
@@ -40,11 +38,7 @@ class DaPlaya {
         });
         zipRequest.chunkedEncoding = true;
         zipRequest.setHeader('X-apikey', apiKey);
-        console.log("request to", zipUrl, apiKey);
-
         zipRequest.on('response', (zipResponse) => {
-          console.log("done");
-
           if (zipResponse.statusCode !== 200) {
             if(typeof errorCallback === "function"){
               errorCallback(zipResponse);
@@ -56,10 +50,7 @@ class DaPlaya {
           });
           zipResponse.on('end', () => {
 
-            const patchDir = path.join(__dirname, `/patches/${patchId}/`);
-            if (!fs.existsSync(patchDir)) {
-              fs.mkdirSync(patchDir);
-            }
+            const patchDir = path.join(__dirname, `/patches/current/`);
             fs.writeFileSync(`${patchDir}${patchId}.zip`, zipContent.read());
             const zip = AdmZip(`${patchDir}${patchId}.zip`);
             zip.extractAllTo(patchDir, true);
@@ -69,14 +60,12 @@ class DaPlaya {
           });
         });
         zipRequest.on('error', () => {
-          console.log(`http error while downloading patch (${response.statusCode})`);
           throw `http error (${response.statusCode})`;
         });
         zipRequest.end();
       });
     });
     request.on('error', () => {
-      console.log(`http error while downloading patch (${response.statusCode})`);
       throw `http error (${response.statusCode})`;
     });
     request.end();
@@ -111,7 +100,6 @@ class DaPlaya {
       child.show();
     });
     child.on('closed', () => {
-      console.log('new patch: ', store.getApiKey(), store.getPatchId());
       dialog.showMessageBox(mainWindow, {
         type: 'info',
         title: 'success',
