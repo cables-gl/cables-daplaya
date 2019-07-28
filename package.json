@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "a standalone player for cables.gl-patches using the electron framework\n\n",
   "author": "undefined development <hi@undev.de>",
