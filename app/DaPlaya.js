@@ -96,7 +96,7 @@ class DaPlaya {
         hasShadow: true,
         titleBarStyle: 'hidden',
         webPreferences: {
-          devTools: true,
+          devTools: false,
           nodeIntegration: true
 
         }
