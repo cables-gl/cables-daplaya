@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "description": "a standalone player for cables.gl-patches using the electron framework\n\n",
   "author": "undefined development <hi@undev.de>",
@@ -31,20 +31,30 @@
     "productName": "cables.gl - da Playa",
     "mac": {
       "category": "public.app-category.graphics-design",
-      "target": ["dmg"],
-      "publish": ["github"]
+      "target": [
+        "dmg"
+      ],
+      "publish": [
+        "github"
+      ]
     },
     "linux": {
       "target": [
         "AppImage",
         "deb"
       ],
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "win": {
-      "target": ["portable"],
+      "target": [
+        "portable"
+      ],
       "icon": "build/icon.png",
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     }
   },
   "dependencies": {},
