@@ -9,6 +9,7 @@ class Store {
     this.APIKEY_FIELD = 'apiKey';
     this.PATCHID_FIELD = 'patchId';
     this.CURRENTPATCHDIR_FIELD = 'currentPatchDir';
+    this.STORAGEDIR_FIELD = 'storageDir';
 
     this.opts = {};
     this.opts.defaults = {};
@@ -16,23 +17,32 @@ class Store {
     this.opts.defaults[this.APIKEY_FIELD] = null;
     this.opts.defaults[this.PATCHID_FIELD] = null;
     this.opts.defaults[this.CURRENTPATCHDIR_FIELD] = null;
+    this.opts.defaults[this.STORAGEDIR_FIELD] = null;
+    this.data = this.opts.defaults;
     this.refresh();
   }
 
   refresh() {
-    const userDataPath = (electron.app || electron.remote.app).getPath('userData');
-    this.path = path.join(userDataPath, this.opts.configName + '.json');
-    this.data = Store.parseDataFile(this.path, this.opts.defaults);
+    if (this.data && this.data.hasOwnProperty(this.STORAGEDIR_FIELD) && this.data[this.STORAGEDIR_FIELD]) {
+      const userDataPath = path.join(this.data[this.STORAGEDIR_FIELD], this.opts.configName + '.json');
+      this.data = Store.parseDataFile(userDataPath, this.opts.defaults);
+    }
   }
 
   get(key) {
     this.refresh();
+    if (!this.data) {
+      return null;
+    }
     return this.data[key];
   }
 
-  set(key, val) {
+  set(key, val, silent) {
     this.data[key] = val;
-    fs.writeFileSync(this.path, JSON.stringify(this.data));
+    let configFileName = path.join(this.data[this.STORAGEDIR_FIELD], this.opts.configName + '.json');
+    if (!silent) {
+      fs.writeFileSync(configFileName, JSON.stringify(this.data));
+    }
   }
 
   // convenience methods
@@ -50,6 +60,14 @@ class Store {
 
   setCurrentPatchDir(value) {
     this.set(this.CURRENTPATCHDIR_FIELD, value);
+  }
+
+  getStorageDir() {
+    return this.get(this.STORAGEDIR_FIELD);
+  }
+
+  setStorageDir(value) {
+    this.set(this.STORAGEDIR_FIELD, value, true);
   }
 
   getPatchId() {

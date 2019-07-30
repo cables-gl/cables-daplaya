@@ -65,7 +65,7 @@ class DaPlaya {
 
   static importPatch(store, successCallback, errorCallback) {
     DaPlaya.getPatchFile(store, (patchDir, zipContent) => {
-      const storageLocation = path.join(app.getPath('userData'), 'patches', patchDir);
+      const storageLocation = path.join(store.getStorageDir(), patchDir);
       if (!fs.existsSync(storageLocation)) {
         fs.mkdirSync(storageLocation, { recursive: true });
       }

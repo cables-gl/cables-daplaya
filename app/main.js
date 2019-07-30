@@ -8,24 +8,41 @@ const DaPlaya = require('./DaPlaya');
 const url = require('url');
 const fs = require('fs');
 
-// set userdata to a local directory next to the executable to make app portable and
-// handle multiple instances correctly
-app.setPath('userData', path.join(process.env.INIT_CWD, 'data'));
-
 // global reference to mainWindow (necessary to prevent window from being garbage collected)
 let mainWindow;
 
 const store = new Store();
+
 let isDefaultPatch = true;
 
-function createWindow() {
+function askConfigDir() {
+  if (!store.getStorageDir()) {
+    dialog.showOpenDialog(mainWindow, {
+      title: 'pick destination folder for patches and configuration',
+      defaultPath: path.join(app.getPath('home')),
+      properties: ['openDirectory']
+    }, (dirNames) => {
+      if (!dirNames || dirNames.length > 1) {
+        dialog.showMessageBox(mainWindow, {
+          type: 'warning',
+          title: 'pick one',
+          message: 'choose exactly one directory'
+        });
+      } else {
+        store.setStorageDir(dirNames[0]);
+        store.refresh();
+        setTimeout(() => {
+          createWindow();
+        }, 500);
 
-  // assure directory to store patches exists
-  let patchesDir = path.join(app.getPath('userData'), 'patches');
-  if (!fs.existsSync(patchesDir)) {
-    fs.mkdirSync(patchesDir);
+      }
+    });
+  } else {
+    createWindow();
   }
+}
 
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     backgroundColor: '#000000',
@@ -168,7 +185,7 @@ function createWindow() {
             try {
               dialog.showOpenDialog(mainWindow, {
                 title: 'select patchdir',
-                defaultPath: path.join(app.getPath('userData'), 'patches'),
+                defaultPath: store.getStorageDir(),
                 properties: ['openDirectory']
               }, (dirNames) => {
                 if (!dirNames || dirNames.length > 1) {
@@ -240,7 +257,7 @@ ipcMain.on('set-new-credentials', (e, arg) => {
 });
 
 app.on('ready', function() {
-  createWindow();
+  askConfigDir();
 });
 
 // Quit when all windows are closed.
@@ -256,6 +273,6 @@ app.on('activate', function() {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
-    createWindow();
+    askConfigDir();
   }
 });
