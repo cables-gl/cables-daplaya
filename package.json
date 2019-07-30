@@ -18,7 +18,7 @@
     "postinstall": "install-app-deps",
     "start": "npm install && electron ./app",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -wl",
+    "dist": "electron-builder -wml",
     "host": "electron-builder",
     "release": "electron-builder publish"
   },
