@@ -1,42 +1,91 @@
-const { dialog, app, remote, BrowserWindow, Menu } = require('electron');
+const { dialog, app, ipcMain, BrowserWindow, Menu } = require('electron');
+
+const path = require('path');
+
 const Store = require('./Store');
 const DaPlaya = require('./DaPlaya');
 
-const path = require('path');
 const url = require('url');
 const fs = require('fs');
+
+// set userdata to a local directory next to the executable to make app portable and
+// handle multiple instances correctly
+app.setPath('userData', path.join(process.env.INIT_CWD, 'data'));
 
 // global reference to mainWindow (necessary to prevent window from being garbage collected)
 let mainWindow;
 
-const daPlaya = new DaPlaya();
 const store = new Store();
+let isDefaultPatch = true;
 
 function createWindow() {
 
-  const apiKey = store.getApiKey();
-  const patchId = store.getPatchId();
+  // assure directory to store patches exists
+  let patchesDir = path.join(app.getPath('userData'), 'patches');
+  if (!fs.existsSync(patchesDir)) {
+    fs.mkdirSync(patchesDir);
+  }
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 1920,
-    height: 1080,
+    backgroundColor: '#000000',
+    show: false,
+    width: 1366,
+    height: 768,
     webPreferences: {
       nodeIntegration: true,
       webSecurity: false
     }
   });
-  mainWindow.setFullScreen(true);
+  mainWindow.switchPatch = () => {
+    const patchDir = store.getCurrentPatchDir();
+    let patchIndexHtml = path.join(patchDir, 'index.html');
+    mainWindow.loadURL(url.format({
+      pathname: patchIndexHtml,
+      protocol: 'file:',
+      slashes: true
+    }));
+  };
+  mainWindow.getNewPatch = () => {
+    let child = new BrowserWindow(
+      {
+        parent: mainWindow,
+        width: 320,
+        height: 150,
+        modal: true,
+        show: false,
+        center: true,
+        movable: false,
+        closable: true,
+        skipTaskbar: true,
+        frame: false,
+        hasShadow: true,
+        titleBarStyle: 'hidden',
+        webPreferences: {
+          nodeIntegration: true
+        }
+      });
+    child.loadURL(url.format({
+      pathname: path.join(__dirname, 'prompt.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+    child.once('ready-to-show', () => {
+      child.show();
+    });
+  };
+  mainWindow.setFullScreen(false);
   mainWindow.setAutoHideMenuBar(true);
 
-  // load the index.html of the patch
-  const userDataPath = (app || remote.app).getPath('userData');
-  let patchIndexHtml = path.join(userDataPath, `/patches/${patchId}/index.html`);
-  console.log("looking for patch in ", patchIndexHtml);
-  if (!apiKey || !patchId || !fs.existsSync(patchIndexHtml)) {
-    // load default patch if app is unconfigured or patch is not downloaded
-    console.log("loading default patch");
-    patchIndexHtml = path.join(__dirname, '/patches/default/index.html');
+  // load the index.html of the patch, default to the prepackaged version
+  let patchIndexHtml = path.join(__dirname, 'patches', 'default', 'index.html');
+  const patchId = store.getPatchId();
+  if (patchId) {
+    const patchLocation = store.getCurrentPatchDir();
+    if (fs.existsSync(patchLocation)) {
+      patchIndexHtml = path.join(patchLocation, 'index.html');
+      isDefaultPatch = false;
+    }
   }
   mainWindow.loadURL(url.format({
     pathname: patchIndexHtml,
@@ -51,7 +100,22 @@ function createWindow() {
     });
   });
 
-  mainWindow.on('closed', function() {
+  mainWindow.on('ready-to-show', () => {
+    mainWindow.show();
+    // needs a timeout so the below window will still draw
+    setTimeout(() => {
+      if (isDefaultPatch) {
+        dialog.showMessageBox(mainWindow, {
+          type: 'info',
+          title: 'hello!',
+          message: 'this seems to be your first time here, \npress ctrl-n to import a patch and get going \nor use the menu (press alt to show) to open existing patches\n press escape to toggle fullscreen',
+          buttons: ['OK']
+        });
+      }
+    }, 500);
+  });
+
+  mainWindow.on('closed', () => {
     mainWindow = null;
   });
 
@@ -64,16 +128,9 @@ function createWindow() {
           accelerator: 'Ctrl+R',
           click() {
             try {
-              daPlaya.reloadPatch(mainWindow, store, (patchDir) => {
-                let patchIndexHtml = `${patchDir}index.html`;
-                console.log('upadating from', patchIndexHtml);
-                mainWindow.loadURL(url.format({
-                  pathname: patchIndexHtml,
-                  protocol: 'file:',
-                  slashes: true
-                }));
+              DaPlaya.reloadPatch(store, () => {
+                mainWindow.switchPatch();
               }, (message) => {
-                console.log(message);
                 dialog.showMessageBox(mainWindow, {
                   type: 'error',
                   title: 'error',
@@ -90,12 +147,41 @@ function createWindow() {
           }
         },
         {
-          label: 'Get new patch',
+          label: 'Download new patch',
           accelerator: 'Ctrl+N',
           click() {
-            console.log('getting patch', store.get('apiKey'), store.get('patchId'));
             try {
-              daPlaya.getNewPatch(mainWindow, store);
+              mainWindow.getNewPatch();
+            } catch (e) {
+              dialog.showMessageBox(mainWindow, {
+                type: 'error',
+                title: 'error',
+                message: e.messsage
+              });
+            }
+          }
+        },
+        {
+          label: 'Open patch',
+          accelerator: 'Ctrl+O',
+          click() {
+            try {
+              dialog.showOpenDialog(mainWindow, {
+                title: 'select patchdir',
+                defaultPath: path.join(app.getPath('userData'), 'patches'),
+                properties: ['openDirectory']
+              }, (dirNames) => {
+                if (!dirNames || dirNames.length > 1) {
+                  dialog.showMessageBox(mainWindow, {
+                    type: 'warning',
+                    title: 'pick one',
+                    message: 'choose exactly one directory'
+                  });
+                } else {
+                  store.setCurrentPatchDir(dirNames[0]);
+                  mainWindow.switchPatch();
+                }
+              });
             } catch (e) {
               dialog.showMessageBox(mainWindow, {
                 type: 'error',
@@ -127,8 +213,31 @@ function createWindow() {
   ]);
 
   Menu.setApplicationMenu(menu);
-
 }
+
+ipcMain.on('set-new-credentials', (e, arg) => {
+  store.setApiKey(arg.apiKey);
+  store.setPatchId(arg.patchId);
+  DaPlaya.importPatch(store, () => {
+    mainWindow.switchPatch();
+    // needs a timeout so the below window will still draw
+    setTimeout(() => {
+      dialog.showMessageBox(mainWindow, {
+        type: 'info',
+        title: 'yay!',
+        message: 'patch successfully imported, you can use ctrl-r to resync with the cables editor',
+        buttons: ['OK']
+      });
+    }, 500);
+  }, (message) => {
+    dialog.showMessageBox(mainWindow, {
+      type: 'error',
+      title: 'error',
+      message,
+      buttons: ['damn it']
+    });
+  });
+});
 
 app.on('ready', function() {
   createWindow();

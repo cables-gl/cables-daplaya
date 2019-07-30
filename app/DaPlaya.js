@@ -1,16 +1,13 @@
-const { app, remote, net, BrowserWindow, dialog } = require('electron');
+const { app, net } = require('electron');
 
 const Stream = require('stream').Transform;
-
 const path = require('path');
-const url = require('url');
 const fs = require('fs');
-
 const AdmZip = require('adm-zip');
 
 class DaPlaya {
 
-  reloadPatch(mainWindow, store, successCallback, errorCallback) {
+  static getPatchFile(store, successCallback, errorCallback) {
     const patchId = store.getPatchId();
     const apiKey = store.getApiKey();
     const baseUrl = 'https://cables.gl';
@@ -32,6 +29,8 @@ class DaPlaya {
       response.on('end', () => {
         const info = JSON.parse(exportInfo);
         const zipUrl = `${baseUrl}${info.path}`;
+        const originalBasename = path.basename(info.path, '.zip');
+        const patchDir = originalBasename.substr(0, originalBasename.lastIndexOf('_'));
         const zipRequest = net.request({
           url: zipUrl,
           encoding: null
@@ -49,18 +48,7 @@ class DaPlaya {
             zipContent.push(zipChunk);
           });
           zipResponse.on('end', () => {
-
-            const userDataPath = (app || remote.app).getPath('userData');
-            const patchDir = path.join(userDataPath, `/patches/${patchId}/`);
-            if (!fs.existsSync(patchDir)) {
-              fs.mkdirSync(patchDir, { recursive: true });
-            }
-            fs.writeFileSync(`${patchDir}${patchId}.zip`, zipContent.read());
-            const zip = AdmZip(`${patchDir}${patchId}.zip`);
-            zip.extractAllTo(patchDir, true);
-            if (typeof successCallback === 'function') {
-              successCallback(patchDir);
-            }
+            successCallback(patchDir, zipContent);
           });
         });
         zipRequest.on('error', () => {
@@ -69,50 +57,43 @@ class DaPlaya {
         zipRequest.end();
       });
     });
-    request.on('error', () => {
+    request.on('error', (response) => {
       throw `http error (${response.statusCode})`;
     });
     request.end();
-  };
+  }
 
-  getNewPatch(mainWindow, store) {
-    let child = new BrowserWindow(
-      {
-        parent: mainWindow,
-        modal: true,
-        show: false,
-        center: true,
-        movable: false,
-        closable: true,
-        skipTaskbar: true,
-        frame: false,
-        hasShadow: true,
-        titleBarStyle: 'hidden',
-        webPreferences: {
-          devTools: false,
-          nodeIntegration: true
-
-        }
-      });
-    child.webContents.openDevTools();
-    child.loadURL(url.format({
-      pathname: path.join(__dirname, 'prompt.html'),
-      protocol: 'file:',
-      slashes: true
-    }));
-    child.once('ready-to-show', () => {
-      child.show();
+  static importPatch(store, successCallback, errorCallback) {
+    DaPlaya.getPatchFile(store, (patchDir, zipContent) => {
+      const storageLocation = path.join(app.getPath('userData'), 'patches', patchDir);
+      if (!fs.existsSync(storageLocation)) {
+        fs.mkdirSync(storageLocation, { recursive: true });
+      }
+      fs.writeFileSync(`${storageLocation}.zip`, zipContent.read());
+      const zip = AdmZip(`${storageLocation}.zip`);
+      zip.extractAllTo(storageLocation, true);
+      if (typeof successCallback === 'function') {
+        store.setCurrentPatchDir(storageLocation);
+        successCallback(storageLocation);
+      }
+    }, () => {
+      if (typeof errorCallback === 'function') {
+        errorCallback();
+      }
     });
-    child.on('closed', () => {
-      dialog.showMessageBox(mainWindow, {
-        type: 'info',
-        title: 'success',
-        message: 'new patch configured, press ctrl-r to fetch and reload now',
-        buttons: ['got it']
-      });
+  }
+
+  static reloadPatch(store, successCallback, errorCallback) {
+    DaPlaya.importPatch(store, (patchId, zipContent) => {
+      if (typeof successCallback === 'function') {
+        successCallback();
+      }
+    }, () => {
+      if (typeof errorCallback === 'function') {
+        errorCallback();
+      }
     });
   };
-
 }
 
 // expose the class

@@ -1,18 +1,17 @@
 <html>
 <head>
     <script>
-      const Store = require('./Store');
-      const store = new Store();
+      const { ipcRenderer } = require('electron');
 
       function ok() {
-        const apikeyfield = document.getElementById('apiKey');
+        const apiKeyField = document.getElementById('apiKey');
         const patchIdField = document.getElementById('patchId');
-        store.set('apiKey', apikeyfield.value);
-        store.set('patchId', patchIdField.value);
+        ipcRenderer.send('set-new-credentials', { apiKey: apiKeyField.value, patchId: patchIdField.value });
         this.close();
       }
 
       function cancel() {
+        ipcRenderer.send('cancel-credential-dialog', {});
         this.close();
       }
     </script>
@@ -20,8 +19,9 @@
 <body>
 <p id="label"></p>
 <p>
-    apiKey: <input type="text" id="apiKey" value=""><br/>
-    patchId: <input type="text" id="patchId" value=""><br/><br/>
+    apiKey: <input type="text" id="apiKey"
+                   value="bab5661dae11c52b36b7dd14588b854f35a27be238572b23ffe649cfc6e806539af1955a7b7e7d333a66048337f975dc"><br/>
+    patchId: <input type="text" id="patchId" value="5c6e9dfb469887676ee1abde"><br/><br/>
     <input type="button" id="ok" value="OK" onclick="ok()">
     <input type="button" id="cancel" value="Cancel" onclick="cancel()">
 </p>
