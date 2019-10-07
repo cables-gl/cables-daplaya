@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "appName": "daPlaya",
   "license": "MIT",
   "description": "a standalone player for cables.gl-patches using the nwjs framework",
