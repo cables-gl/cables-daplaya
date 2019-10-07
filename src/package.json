@@ -1,0 +1,26 @@
+{
+  "name": "cables-daplaya",
+  "appName": "daPlaya",
+  "version": "0.0.5",
+  "license": "MIT",
+  "description": "a standalone player for cables.gl-patches using the nwjs framework",
+  "author": "undefined development <hi@undev.de>",
+  "repository": "github:cables-gl/cables-daplaya",
+  "keywords": [
+    "cables",
+    "cables.gl",
+    "webgl",
+    "daplaya",
+    "nwjs"
+  ],
+  "main": "main.js",
+  "dependencies": {
+    "adm-zip": "0.4.11"
+  },
+  "chromium-args": "--allow-file-access-from-files --allow-file-access --user-data-dir",
+  "window": {
+    "min_width": 1366,
+    "min_height": 768,
+    "icon": "assets/icon.png"
+  }
+}
