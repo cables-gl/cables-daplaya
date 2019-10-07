@@ -63,7 +63,7 @@ Window.open(patchFile, {
       let apiKey = prompt('API-Key:', store.getApiKey() ? store.getApiKey() : '');
       store.setApiKey(apiKey);
       let patchId = prompt('Patch-ID:', store.getPatchId() ? store.getPatchId() : '');
-      if(patchId.includes("cables.gl")) {
+      if (patchId.includes('cables.gl')) {
         // we assume the user basically just pasted the URL here
         patchId = patchId.split('/').pop();
         patchId = patchId.split('?')[0];
