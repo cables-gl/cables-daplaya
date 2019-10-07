@@ -12,6 +12,7 @@
     "daplaya",
     "nwjs"
   ],
+  "nodejs": true,
   "main": "main.js",
   "dependencies": {
     "adm-zip": "0.4.11"
