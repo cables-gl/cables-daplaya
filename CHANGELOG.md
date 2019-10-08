@@ -1,6 +1,10 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [0.1.4] - 2019-10-07
+### Changed
+- try sanitize keypresses...
+
 ## [0.1.3] - 2019-10-07
 ### Changed
 - keep window size on reload

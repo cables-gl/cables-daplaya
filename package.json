@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya-build",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "a standalone player for cables.gl-patches using the nwjs framework",
   "author": "undefined development <hi@undev.de>",
   "repository": "github:cables-gl/cables-daplaya",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "cd src/ && npm install && cd .. && nwbuild --version $npm_package_devDependencies_nw -r src/",
-    "build": "cd src && npm install && cd .. && nwbuild --version $npm_package_devDependencies_nw --platforms win64,linux64,osx64 --flavor normal --cacheDir build/cache/ --buildDir build/dist/ src/",
+    "build": "cd src && npm install && cd .. && nwbuild --version $npm_package_devDependencies_nw --platforms linux64 --flavor sdk --cacheDir build/cache/ --buildDir build/dist/ src/",
     "clean": "rm -rf build/ && rm -rf node_modules/ && rm -rf src/node_modules/",
     "dist": "BASEDIR=`pwd`; cd build/dist/cables-daplaya/; for i in `find . -maxdepth 1 ! -path . -type d`; do cd $i; zip -r ../../daplaya-`basename $i`.zip *; cd ..; done; cd $BASEDIR",
     "release": "npm run clean && npm install && npm run build && npm run dist && gh-release --assets build/dist/daplaya-linux64.zip,build/dist/daplaya-osx64.zip,build/dist/daplaya-win64.zip"
