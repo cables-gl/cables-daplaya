@@ -1,6 +1,10 @@
 # CHANGELOG
 All notable changes to this project will be documented in this file.
 
+## [0.1.2a] - 2019-10-08
+### Changed
+- brush up for presentation
+
 ## [0.1.2] - 2019-10-07
 ### Changed
 - disable browser security

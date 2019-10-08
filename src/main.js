@@ -97,6 +97,11 @@ Window.open(patchFile, {
     App.registerGlobalHotKey(keyCtrlN);
     App.registerGlobalHotKey(keyEscape);
 
+    const footer = win.window.document.getElementsByTagName( "footer" )[0];
+    if(footer) {
+      footer.style.display = "none";
+    }
+
     setTimeout(() => {
       if (isDefaultPatch) {
         alert('this seems to be your first time here, \npress ctrl-n to import a patch and get going \npress escape to toggle fullscreen');
