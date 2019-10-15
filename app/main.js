@@ -142,7 +142,7 @@ function createWindow() {
       submenu: [
         {
           label: 'Reload patch',
-          accelerator: 'Ctrl+R',
+          accelerator: 'CmdOrCtrl+R',
           click() {
             try {
               DaPlaya.reloadPatch(store, () => {
@@ -165,7 +165,7 @@ function createWindow() {
         },
         {
           label: 'Download new patch',
-          accelerator: 'Ctrl+N',
+          accelerator: 'CmdOrCtrl+N',
           click() {
             try {
               mainWindow.getNewPatch();
@@ -180,7 +180,7 @@ function createWindow() {
         },
         {
           label: 'Open patch',
-          accelerator: 'Ctrl+O',
+          accelerator: 'CmdOrCtrl+O',
           click() {
             try {
               dialog.showOpenDialog(mainWindow, {
