@@ -12,7 +12,6 @@ const fs = require("fs");
 let mainWindow;
 
 const store = new Store(path.join(__dirname, 'patches'));
-console.log("storage", store.getStorageDir());
 
 let isDefaultPatch = true;
 
@@ -93,7 +92,6 @@ function createWindow() {
     "default",
     "index.html"
   );
-  console.log("default", patchIndexHtml);
   const patchId = store.getPatchId();
   if (patchId) {
     const patchLocation = store.getCurrentPatchDir();

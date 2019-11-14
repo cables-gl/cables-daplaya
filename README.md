@@ -27,20 +27,22 @@ can be used on different platforms (win, osx, linux) to use cables patches offli
 * `ctrl-n` to import a new patch
 * `ctrl-r` to synchronize the patch with the version in the cables editor (reimport)
 * `ctrl-o` open filebrowser to open patches that you have exported manually from cables
-  
-# building
+
+# development 
+
+## building
 * building requires you have run `./update_electron.sh <version>` before
 * `npm run clean`to clean up nodemodules and preimported patches and settings
 * `npm run build:linux` build linux app in build/linux-x64
 * `npm run build:win` build linux app in build/win32-x64
 * `npm run build:osx` build linux app in build/darwin-x64
 
-# releases
+## releases
 * releases will try to update electron and build all three platforms as well as the corresponding zipfiles
 * this is usually done by travis on committing a "semver"-tag
 * `npm run package`
 
-# dev
+## dev
 * for development, check out this repository, run `npm run build:<yourplatform>` then `npm run start:<yourplatform>
 * no code "hotswap" (yet)
 
