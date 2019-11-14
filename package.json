@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya-build-env",
-  "version": "0.0.8",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "electron build environment for cables-daplaya\n",
   "author": "undefined development <hi@undev.de>",
@@ -18,9 +18,7 @@
     "start:osx": "electron/linux-x64/electron src/main.js",
     "build:linux": "./build.sh linux-x64",
     "build:osx": "./build.sh darwin-x64",
-    "build:win": "./build.sh win32-x64"
-  },
-  "dependencies": {
-    "cables-daplaya": "file:src"
+    "build:win": "./build.sh win32-x64",
+    "package": "cd electron/ && ./update.sh 7.1.1 && cd .. && ./build.sh win32-x64 zip && ./build.sh darwin-x64 zip && ./build.sh linux-x64 zip"
   }
 }

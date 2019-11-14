@@ -3,9 +3,10 @@
 <head>
   <script>
     const { ipcRenderer } = require('electron');
+    const path = require('path');
+    
     const Store = require('./Store');
-    const store = new Store();
-    store.setStorageDir(__dirname);
+    const store = new Store(path.join(__dirname, 'patches/'));
 
     function ok() {
       const apiKeyField = document.getElementById('apiKey');
