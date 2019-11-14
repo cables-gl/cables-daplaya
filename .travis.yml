@@ -16,6 +16,10 @@ cache:
 
 script: npm run package
 
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"
+
 deploy:
   provider: releases
   api_key: $GH_TOKEN
