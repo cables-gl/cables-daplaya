@@ -7,6 +7,9 @@ download_and_unzip() {
     wget -q --show-progress https://github.com/electron/electron/releases/download/v${electron_version}/${1} && unzip -q ${1} && rm -f ${1}
 }
 
+mkdir -p electron/
+cd electron/
+
 for platform in "${platforms[@]}"; do
     mkdir -p $platform;
     cd $platform;
