@@ -31,7 +31,6 @@ class Store {
     this.opts.defaults[this.WINDOW_WIDTH] = 1366;
 
     this.data = this.opts.defaults;
-    console.log(this.data);
     this.refresh();
   }
 

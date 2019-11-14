@@ -15,8 +15,8 @@
   "scripts": {
     "clean": "rm -rf node_modules/ && rm -rf src/node_modules/ && find src/patches/ -maxdepth 1 -mindepth 1 ! -name default ! -name .gitignore -exec rm -rf {} \\;",
     "start:linux": "electron/linux-x64/electron src/main.js",
-    "start:win": "electron/linux-x64/electron src/main.js",
-    "start:osx": "electron/linux-x64/electron src/main.js",
+    "start:win": "electron/win32-x64/electron src/main.js",
+    "start:osx": "electron/darwin-x64/electron src/main.js",
     "build:linux": "./build.sh linux-x64",
     "build:osx": "./build.sh darwin-x64",
     "build:win": "./build.sh win32-x64",
