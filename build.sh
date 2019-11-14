@@ -1,6 +1,7 @@
 #!/bin/bash
-set -euo pipefail
+set -e
 
+zip=${2:-skip}
 platform=${1?please specify platform to build for};
 
 cd src/
@@ -31,6 +32,6 @@ else
     exit 1;
 fi
 
-if [[ "$2" == "zip" ]]; then
+if [[ "${zip}" == "zip" ]]; then
     zip -qr ../daplaya-${platform}.zip *
 fi
