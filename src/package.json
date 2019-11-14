@@ -1,0 +1,19 @@
+{
+    "name": "cables-daplaya",
+    "version": "0.2.0",
+    "license": "MIT",
+    "description": "a standalone player for cables.gl-patches using the electron framework\n",
+    "author": "undefined development <hi@undev.de>",
+    "repository": "github:cables-gl/cables-daplaya",
+    "keywords": [
+        "cables",
+        "cables.gl",
+        "webgl",
+        "daplaya",
+        "electron"
+    ],
+    "main": "main.js",
+    "dependencies": {
+        "adm-zip": "0.4.11"
+    }
+}

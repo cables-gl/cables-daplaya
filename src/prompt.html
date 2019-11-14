@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <script>
+    const { ipcRenderer } = require('electron');
+    const Store = require('./Store');
+    const store = new Store();
+    store.setStorageDir(__dirname);
+
+    function ok() {
+      const apiKeyField = document.getElementById('apiKey');
+      const patchIdField = document.getElementById('patchId');
+      ipcRenderer.send('set-new-credentials', { apiKey: apiKeyField.value, patchId: patchIdField.value });
+      this.close();
+      return false;
+    }
+
+    function cancel() {
+      ipcRenderer.send('cancel-credential-dialog', {});
+      this.close();
+    }
+
+    window.addEventListener('load', function () {
+      const apiKeyField = document.getElementById('apiKey');
+      apiKeyField.value = store.getApiKey();
+    });
+  </script>
+</head>
+
+<body>
+  <p id="label"></p>
+  <p>
+    apiKeys: <input type="text" id="apiKey" /><br />
+    patchId: <input type="text" id="patchId" /><br /><br />
+    <input type="button" id="ok" value="OK" onclick="ok()"/>
+    <input type="button" id="cancel" value="Cancel" onclick="cancel()"/>
+  </p>
+</body>
+
+</html>
