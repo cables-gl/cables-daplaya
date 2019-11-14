@@ -17,8 +17,8 @@ cache:
 script: npm run package
 
 branches:
-  except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+    only:
+    - /v\d+\.\d+[a-z]/
 
 deploy:
   provider: releases
