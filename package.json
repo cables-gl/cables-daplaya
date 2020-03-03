@@ -1,6 +1,6 @@
 {
   "name": "cables-daplaya-build-env",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "license": "MIT",
   "description": "electron build environment for cables-daplaya\n",
   "author": "undefined development <hi@undev.de>",

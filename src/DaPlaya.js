@@ -11,7 +11,7 @@ class DaPlaya {
     const patchId = store.getPatchId();
     const apiKey = store.getApiKey();
     const baseUrl = 'https://cables.gl';
-    const url = `${baseUrl}/api/project/${patchId}/export`;
+    const url = `${baseUrl}/api/project/${patchId}/export?hideMadeWithCables=true`;
     const request = net.request({
       url: url
     });
