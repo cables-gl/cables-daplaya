@@ -23,7 +23,7 @@
 
     window.addEventListener('load', function () {
       const apiKeyField = document.getElementById('apiKey');
-      // apiKeyField.value = store.getApiKey();
+      apiKeyField.value = store.getApiKey();
     });
   </script>
 </head>
@@ -31,8 +31,8 @@
 <body>
   <p id="label"></p>
   <p>
-    apiKeys: <input type="text" id="apiKey" value="c8f99be7e26611bf6c799db23e2c8a40ac57de9c4e87cc20574e751e10575423c66449afd1786125d39238488d773dd4"/><br />
-    patchId: <input type="text" id="patchId" value="7aSDJ7"/><br /><br />
+    apiKeys: <input type="text" id="apiKey" /><br />
+    patchId: <input type="text" id="patchId" /><br /><br />
     <input type="button" id="ok" value="OK" onclick="ok()"/>
     <input type="button" id="cancel" value="Cancel" onclick="cancel()"/>
   </p>
