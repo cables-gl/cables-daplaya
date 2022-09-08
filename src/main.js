@@ -31,7 +31,7 @@ function createWindow() {
       contextIsolation: false,
     }
   });
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   mainWindow.on("move", () => {
     const pos = mainWindow.getPosition();
