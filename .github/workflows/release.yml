@@ -16,15 +16,15 @@ jobs:
         with:
           node-version: '16.x'
       - name: create executable
-          id: create-executable
-          run: exec npm run package
+        id: create-executable
+        run: exec npm run package
       - name: upload build
-          uses: softprops/action-gh-release@v1
-          with:
-            name: run-${{ github.run_number }}
-            token: ${{ secrets.GITHUB_TOKEN }}
-            tag_name: run-${{ github.run_number }}
-            files: |
-              ./build/daplaya-win32-x64.zip
-              ./build/daplaya-darwin-x64.zip
-              ./build/daplaya-linux-x64.zip
+        uses: softprops/action-gh-release@v1
+        with:
+          name: run-${{ github.run_number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: run-${{ github.run_number }}
+          files: |
+            ./build/daplaya-win32-x64.zip
+            ./build/daplaya-darwin-x64.zip
+            ./build/daplaya-linux-x64.zip
