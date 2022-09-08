@@ -27,9 +27,11 @@ function createWindow() {
     height: store.getWindowHeight(),
     webPreferences: {
       nodeIntegration: true,
-      webSecurity: false
+      webSecurity: false,
+      contextIsolation: false,
     }
   });
+  mainWindow.webContents.openDevTools()
 
   mainWindow.on("move", () => {
     const pos = mainWindow.getPosition();
@@ -69,7 +71,9 @@ function createWindow() {
       hasShadow: true,
       titleBarStyle: "hidden",
       webPreferences: {
-        nodeIntegration: true
+        nodeIntegration: true,
+        webSecurity: false,
+        contextIsolation: false,
       }
     });
     child.loadURL(

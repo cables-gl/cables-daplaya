@@ -1,0 +1,30 @@
+name: 'release'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  nightly-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: create executable
+          id: create-executable
+          run: exec npm run package
+      - name: upload build
+          uses: softprops/action-gh-release@v1
+          with:
+            name: run-${{ github.run_number }}
+            token: ${{ secrets.GITHUB_TOKEN }}
+            tag_name: run-${{ github.run_number }}
+            files: |
+              ./build/daplaya-win32-x64.zip
+              ./build/daplaya-darwin-x64.zip
+              ./build/daplaya-linux-x64.zip

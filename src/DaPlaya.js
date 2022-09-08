@@ -11,7 +11,7 @@ class DaPlaya {
     const patchId = store.getPatchId();
     const apiKey = store.getApiKey();
     const baseUrl = 'https://cables.gl';
-    const url = `${baseUrl}/api/project/${patchId}/export`;
+    const url = `${baseUrl}/api/project/${patchId}/export?a=1&type=download&assets=auto&combineJS=true&skipBackups=true`;
     const request = net.request({
       url: url
     });
@@ -32,10 +32,9 @@ class DaPlaya {
         const originalBasename = path.basename(info.path, '.zip');
         const patchDir = originalBasename.substr(0, originalBasename.lastIndexOf('_'));
         const zipRequest = net.request({
-          url: zipUrl,
-          encoding: null
+          url: zipUrl
         });
-        zipRequest.chunkedEncoding = true;
+        // zipRequest.chunkedEncoding = true;
         zipRequest.setHeader('X-apikey', apiKey);
         zipRequest.on('response', (zipResponse) => {
           if (zipResponse.statusCode !== 200) {
@@ -51,10 +50,11 @@ class DaPlaya {
             successCallback(patchDir, zipContent);
           });
         });
-        zipRequest.on('error', () => {
-          throw `http error (${response.statusCode})`;
+        zipRequest.on('error', (e) => {
+          throw `http error (${zipResponse.statusCode})`;
         });
         zipRequest.end();
+
       });
     });
     request.on('error', (response) => {
@@ -72,6 +72,12 @@ class DaPlaya {
       fs.writeFileSync(`${storageLocation}.zip`, zipContent.read());
       const zip = AdmZip(`${storageLocation}.zip`);
       zip.extractAllTo(storageLocation, true);
+      let patchIndexHtml = path.join(
+          store.getStorageDir(),
+          "default",
+          "index.html"
+      );
+      fs.copyFileSync(patchIndexHtml, storageLocation + "/index.html");
       if (typeof successCallback === 'function') {
         store.setCurrentPatchDir(storageLocation);
         successCallback(storageLocation);

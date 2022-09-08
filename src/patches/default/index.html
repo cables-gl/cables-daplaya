@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>cables</title>
     <meta charset="utf-8">
-    <title>new project | made with cables</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta itemprop="name" content="cables">
+    <meta itemprop="description" content="made with cables">
+    <meta itemprop="image" content="screenshot.png">
+    <meta name="description" content="made with cables" />
+
     <style>
-        body { 
+        body {
             margin: 0;
             background-color: #000;
             color: #fff;
             font-family: Helvetica, Arial, sans-serif;
+            overflow: hidden; /* disable scrolling / rubberband effect on mobile */
         }
+
         canvas {
             display: block;
-        }
-        footer {
             position: absolute;
-            bottom: 0;
-            left: 0;
-            box-sizing: border-box;
-            width: 100vw;
-            padding: 20px;
-            text-align: right;
-            font-size: 18px;
-            color: #24baa7;
+            outline:0;
         }
-        footer a, footer a:hover, footer a:active {
-            color: #24baa7;
+
+        * {
+            /* disable on touch highlights of html elements, especially on mobile! */
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
+
     </style>
+
 </head>
+
 <body>
-    <canvas id="glcanvas" width="100vw" height="100vh"></canvas>
-    <footer>
-        made with <a href="https://cables.gl">cables</a>
-        <!-- we would greatly appreciate if you link cables somewhere on your site! and tell us your website! thanks <3 :) -->
-    </footer>
+    <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
 
-    <libs/>
-    <script type="text/javascript" src="js/patch.js"></script>
-     
-    
+
+    <script type="text/javascript" src="js/patch.js" async></script>
+
+
     <script>
-        /**
-         * Called when there was a cables error.
-         * @param {string} errId - ID of the error, e.g. 'NO_WEBGL' or 'NO_WEBAUDIO' 
-         *                         when the browser does not support the used APIs
-         * @param {string} errMsg - The error message
-         */
-        function showError(errId, errMsg) {
-            alert('An error occured: ' + errId + ', ' + errMsg);
+
+        // disable rubberband effect on mobile devices
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+        function patchInitialized(patch) {
+            // You can now access the patch object (patch), register variable watchers and so on
         }
 
-        function patchInitialized() {
-            // You can now access the patch object (CABLES.patch), register variable watchers and so on
-        }
-
-        function patchFinishedLoading() {
+        function patchFinishedLoading(patch) {
             // The patch is ready now, all assets have been loaded
         }
 
-        document.addEventListener('DOMContentLoaded', function(event) {
+        document.addEventListener('CABLES.jsLoaded', function (event) {
             CABLES.patch = new CABLES.Patch({
                 patch: CABLES.exportedPatch,
-                prefixAssetPath: '',
-                glCanvasId: 'glcanvas',
-                glCanvasResizeToWindow: true,
-                onError: showError,
-                onPatchLoaded: patchInitialized,
-                onFinishedLoading: patchFinishedLoading,
+                "prefixAssetPath": "",
+                "glCanvasId": "glcanvas",
+                "glCanvasResizeToWindow": true,
+                "onPatchLoaded": patchInitialized,
+                "onFinishedLoading": patchFinishedLoading,
+                "allowLocalFileAccess": true,
+                "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
             });
         });
     </script>
 </body>
+
 </html>

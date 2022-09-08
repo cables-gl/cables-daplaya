@@ -20,6 +20,6 @@
     "build:linux": "./build.sh linux-x64",
     "build:osx": "./build.sh darwin-x64",
     "build:win": "./build.sh win32-x64",
-    "package": "./update_electron.sh 7.1.1 && ./build.sh win32-x64 zip && ./build.sh darwin-x64 zip && ./build.sh linux-x64 zip"
+    "package": "./update_electron.sh 20.0.0 && ./build.sh win32-x64 zip && ./build.sh darwin-x64 zip && ./build.sh linux-x64 zip"
   }
 }
