@@ -4,6 +4,14 @@ a simple offline player for [cables](https://cables.gl) patches using the electr
 
 can be used on different platforms (win, osx, linux) to use cables patches offline after importing them through daplaya.
 
+# OSX NOTES!!!
+apple introduced some security features that make it next to impossible to build these kind of apps at the moment, so
+there is a few caveats when using this on OS X
+* the executable is not signed, you will need to whitelist it on every machine you run it on (right click, "open" usually does that)
+  * we cannot sign this executable, as it's contents do change when downloading a patch, this is intended...sorry...
+* once you downloaded the app, USE THE FINDER to move it basically anywhere else (like your desktop) before opening it
+  * apple puts downloaded apps into a random read-only directory UNTIL YOU MOVE IT USING FINDER, we need to write to the directory...sorry...
+
 ## features:
 * import your patches by using patchid and apikey
 * copy whole directory to usb stick and run from there
@@ -39,7 +47,7 @@ can be used on different platforms (win, osx, linux) to use cables patches offli
 
 ## releases
 * releases will try to update electron and build all three platforms as well as the corresponding zipfiles
-* this is usually done by travis on committing a "semver"-tag
+* this is usually done by github actions
 * `npm run package`
 
 ## dev
