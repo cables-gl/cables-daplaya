@@ -4,14 +4,15 @@ a simple offline player for [cables](https://cables.gl) patches using the electr
 
 can be used on different platforms (win, osx, linux) to use cables patches offline after importing them through daplaya.
 
-# OSX NOTES!!!
-apple introduced some security features that make it next to impossible to build these kind of apps at the moment, so
-there is a few caveats when using this on OS X
-* the executable is not signed, you will need to whitelist it on every machine you run it on (right click, "open" usually does that)
-  * we cannot sign this executable, as it's contents do change when downloading a patch, this is intended...sorry...
-  * there is no build for arm/m1-architecture, apple forbids running unsigned apps that are build for arm entirely, not even whitelisting is possible...
-* once you downloaded the app, USE THE FINDER to move it basically anywhere else (like your desktop) before opening it
-  * apple puts downloaded apps into a random read-only directory UNTIL YOU MOVE IT USING FINDER, we need to write to the directory...sorry...
+## CAVEATS MAC OS
+- Apple introduced some security features that make it next to impossible to build these kind of apps at the moment, so there is a few caveats when using this on MacOS.
+- The executable is not signed, you will need to whitelist it on every machine you run it on (right click, "open" usually does that).
+  - We cannot sign this executable, as it's contents do change when downloading a patch, this is intended...sorry...
+  - The build for arm/m1-architecture is even harder to run, apple forbids running unsigned apps that are build for arm entirely, not even whitelisting is possible...you may sign it on your own, though.
+- Once you downloaded the app, USE THE FINDER to move it basically anywhere else (like your desktop) before opening it
+  - Apple puts downloaded apps into a random read-only directory UNTIL YOU MOVE IT USING FINDER, we need to write to the directory...sorry...
+- There are ways to make the executable/app work on your mac: [on this website](https://appuals.com/damaged-app-cannot-be-opened-on-macos-error/) . We had success using the command line snippet: `sudo xattr -cr appName.app`
+
 
 ## features:
 * import your patches by using patchid and apikey
@@ -40,20 +41,17 @@ there is a few caveats when using this on OS X
 # development 
 
 ## building
-* building requires you have run `./update_electron.sh <version>` before
+* building requires you have run `npm run update` or `./update_electron.sh <version>` before
 * `npm run clean`to clean up nodemodules and preimported patches and settings
 * `npm run build:linux` build linux app in build/linux-x64
 * `npm run build:win` build linux app in build/win32-x64
 * `npm run build:osx` build linux app in build/darwin-x64
+* build artefacts are in build/
 
 ## releases
 * releases will try to update electron and build all three platforms as well as the corresponding zipfiles
 * this is usually done by github actions
 * `npm run package`
-
-## dev
-* for development, check out this repository, run `npm run build:<yourplatform>` then `npm run start:<yourplatform>
-* no code "hotswap" (yet)
 
 # LICENCE
 
