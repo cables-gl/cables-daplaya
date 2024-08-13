@@ -1,5 +1,7 @@
 # cables daplaya
 
+**THIS REPOSITORY IS NO LONGER MAINTAINED: check [cables standalone](https://cables.gl/standalone) or the cables [exe export](https://cables.gl/docs/4_export_embed/dev_embed/export_exe/export_exe) for alternatives!**
+
 a simple offline player for [cables](https://cables.gl) patches using the electron framework.
 
 can be used on different platforms (win, osx, linux) to use cables patches offline after importing them through daplaya.
